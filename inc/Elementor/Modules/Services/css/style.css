@@ -1,0 +1,113 @@
+button:focus,
+button:active {
+	outline: none;
+}
+/*================================
+  Services Style 1
+==================================*/
+.service-img {
+  position: relative;
+}
+.service-img > h2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+  transition: all 0.45s;
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -o-transition: all 0.45s;
+}
+.service-img figure {
+  position: relative;
+  overflow: hidden;
+}
+.service-img figure img {
+  width: 100%;
+  height: auto;
+}
+.service-img figure::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+   transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+}
+.service-img figure::after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	transition: all 0.35s;
+  	-webkit-transition: all 0.35s;
+  	-moz-transition: all 0.35s;
+  	-o-transition: all 0.35s;
+	background-image:linear-gradient(to top, rgba(0,0,0,0.7), rgba(255, 255, 2552, 0));
+}
+.service-img > a {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  padding: 2px 0 0;
+  opacity: 0;
+  left: 40px;
+  visibility: hidden;
+  transition: all 0.45s;
+  -webkit-transition: all 0.45s;
+  -moz-transition: all 0.45s;
+  -o-transition: all 0.45s;
+}
+.service-img:hover > a {
+  bottom: 45px;
+  opacity: 1;
+  visibility: visible;
+}
+.service-img:hover figure::before {
+  opacity: 1;
+  visibility: visible;
+}
+.service-img:hover figure::after {
+	visibility: hidden;
+	opacity: 0;
+}
+.service-img:hover > h2 {
+  padding-bottom: 70px;
+}
+.services-slider {
+	position: relative;
+}
+.owl-nav > button{
+	position: absolute;
+	top: 50%;
+	left: -100px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.owl-nav > button.owl-next{
+	left: auto;
+	right: -100px;
+}
+.prev-slide {
+	background-image: url('../images/arrow-left.png');
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 25px;
+}
+.next-slide {
+	background-image: url('../images/arrow-right.png');
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 25px;
+}
