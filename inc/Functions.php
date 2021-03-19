@@ -2,6 +2,7 @@
 
 use MuseumCore\Register\PostType;
 use MuseumCore\Register\Taxonomy;
+use MuseumCore\Util\Arr;
 
 if ( ! function_exists( 'printr' ) ) {
 	function printr($var) {
@@ -28,7 +29,7 @@ if ( ! function_exists( 'museum_core_mailchimp_list') ) {
 if( ! function_exists( 'museum_get' ) ) {
 	function museum_get($var, $key, $def = '') {
 		if(is_array($var)) {
-			return isset( $var[ $key ] ) ? $var[ $key ] : $def;
+			return Arr::get($var, $key, $def);
 		} elseif( is_object( $var ) ) {
 			return isset( $var->{$key} ) ? $var->{$key} : $def;
 		}
@@ -130,9 +131,9 @@ if( ! function_exists( 'museum_get_sidebars' ) ) {
 		}
 		foreach ( (array) $sidebars as $sidebar ) {
 			if ( $multi ) {
-				$data[] = array( 'value' => student_get( $sidebar, 'id' ), 'label' => student_get( $sidebar, 'name' ) );
+				$data[] = array( 'value' => museum_get( $sidebar, 'id' ), 'label' => museum_get( $sidebar, 'name' ) );
 			} else {
-				$data[ student_get( $sidebar, 'id' ) ] = student_get( $sidebar, 'name' );
+				$data[ museum_get( $sidebar, 'id' ) ] = museum_get( $sidebar, 'name' );
 			}
 		}
 

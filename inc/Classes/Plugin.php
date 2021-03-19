@@ -11,8 +11,10 @@ class Plugin
 
 		add_action('init', [__CLASS__, 'register']);
 
-		add_action('after_setup_theme', function() {
-		}, 200);
+		/*add_action('after_setup_theme', function() {
+		}, 200);*/
+
+		require_once MUSEUM_CORE_PATH . 'config/options.php';
 		add_action('wp_enqueue_scripts', [__CLASS__, 'mailchimp_list']);
 
 		self::elementor();
@@ -20,6 +22,8 @@ class Plugin
 
 		// add_action('wp_ajax_student_plugin_ajax', [Ajax::class, 'init']);
 		// add_action('wp_ajax_nopriv_student_plugin_ajax', [Ajax::class, 'init']);
+		// 
+		add_action('vc_before_init', [__CLASS__, 'vc_init']);
 	}
 
 	/**
@@ -64,7 +68,17 @@ class Plugin
 		}
 	}
 
-	/*public static function mailchimp_list() {
+	public static function vc_init() {
+		\MuseumCore\VC\About::init();
+		\MuseumCore\VC\Blog::init();
+	}
+
+	/**
+	 * Mailchimp list.
+	 *
+	 * @return [type] [description]
+	 */
+	public static function mailchimp_list() {
 	    $list = get_transient( 'studentwp_mailchimp_list' );
 		
 		if($list) {
@@ -95,5 +109,5 @@ class Plugin
 	            }
 	        }
 	    }
-	}*/
+	}
 }
