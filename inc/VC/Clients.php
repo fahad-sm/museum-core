@@ -63,19 +63,6 @@ class Clients
 			)
 		]);
 
-
-		add_filter( 'vc_autocomplete_museumwp_blog_cat_callback', [__CLASS__, 'categories'], 10, 3 );
-		add_filter( 'vc_autocomplete_museumwp_blog_cat_render', [__CLASS__, 'categories_render'], $value, $setting, $tag );
 	}
 
-	public static function categories($query, $tag, $param_name) {
-		$cats = get_categories();
-		$return = [];
-
-		foreach($cats as $cat) {
-			$return[] = array('value' => $cat->slug, 'label' => $cat->name);
-		}
-
-		return $return;
-	}
 }

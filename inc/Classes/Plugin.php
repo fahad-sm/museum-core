@@ -72,7 +72,13 @@ class Plugin
 		\MuseumCore\VC\About::init();
 		\MuseumCore\VC\Blog::init();
 		\MuseumCore\VC\Clients::init();
+		\MuseumCore\VC\Contact::init();
 		\MuseumCore\VC\Events::init();
+		\MuseumCore\VC\Gallery::init();
+		\MuseumCore\VC\GoogleMap::init();
+		\MuseumCore\VC\History::init();
+		\MuseumCore\VC\Testimonial::init();
+		\MuseumCore\VC\Timing::init();
 	}
 
 	/**

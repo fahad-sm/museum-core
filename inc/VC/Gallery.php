@@ -2,23 +2,37 @@
 
 namespace MuseumCore\VC;
 
-class Blog 
+class Gallery 
 {
 	public static function init() {
 
 		vc_map([
-			"name" => esc_html__("Blog", "museum-core"),
+			"name" => esc_html__("Gallery", "museum-core"),
 			"icon" => 'vc-site-icon',
-			"base" => "museumwp_blog",
+			"base" => "museumwp_gallery",
 			"category" => __('Museum Theme', "museum-core"),
-			"html_template" => get_theme_file_path( 'vc_templates/blog.php' ),
+			"html_template" => get_theme_file_path( 'vc_templates/gallery.php' ),
 			"params" => array(
+				array(
+					"type" => "colorpicker",
+					"heading" => __("Bg Color", "museum-core"),
+					"admin_label" => true,
+					'description'	=> esc_html__('Choose the background color', 'museum-core'),
+					"param_name" => "bg",
+				),
 				array(
 					"type" => "textfield",
 					"heading" => __("Title", "museum-core"),
 					"admin_label" => true,
 					'description'	=> esc_html__('Enter the title', 'museum-core'),
 					"param_name" => "title",
+				),
+				array(
+					"type" => "textfield",
+					"heading" => __("Description", "museum-core"),
+					"admin_label" => true,
+					'description'	=> esc_html__('Enter the description', 'museum-core'),
+					"param_name" => "desc",
 				),
 				array(
                     "type" => "textfield",
@@ -50,27 +64,20 @@ class Blog
                 ),
                 array(
                     "type" => "autocomplete",
-                    "heading" => esc_html__("Category", 'museum-core'),
-                    "param_name" => "cats",
+                    "heading" => esc_html__("Tags", 'museum-core'),
+                    "param_name" => "tags",
                     'settings'	=> [
                     	'min_length' => 1,
                     ]
                 ),
-				array(
-					"type" => "vc_link",
-					"heading" => __("Button", "museum-core"),
-					"admin_label" => true,
-					'description'	=> esc_html__('Enter the button text and link', 'museum-core'),
-					"param_name" => "btn",
-				),				
 			)
 		]);
-		add_filter( 'vc_autocomplete_museumwp_blog_cats_callback', [__CLASS__, 'categories'], 10, 3 );
-		add_filter( 'vc_autocomplete_museumwp_blog_cats_render', [__CLASS__, 'categories_render'], 10, 3 );
+		add_filter( 'vc_autocomplete_museumwp_gallery_tags_callback', [__CLASS__, 'categories'], 10, 3 );
+		add_filter( 'vc_autocomplete_museumwp_gallery_tags_render', [__CLASS__, 'categories_render'], 10, 3 );
 	}
 
 	public static function categories($query, $tag, $param_name) {
-		$cats = get_categories(['search' => $query]);
+		$cats = get_terms(['taxonomy' => 'gallery-tags', 'search' => $query, 'hide_empty' => false]);
 
 		$return = [];
 
@@ -82,7 +89,7 @@ class Blog
 	}
 
 	public static function categories_render($value, $setting, $tag) {
-		$cats = get_category_by_slug( $value['value'] );
+		$cats = get_term_by( 'slug', $value['value'], 'gallery-tags' );
 
 		$return = [];
 

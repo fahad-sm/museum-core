@@ -86,7 +86,7 @@ class Events
 	}
 
 	public static function categories($query, $tag, $param_name) {
-		$cats = get_terms(['taxonomy' => 'tribe_events_cat', 'hide_empty' => false]);
+		$cats = get_terms(['taxonomy' => 'tribe_events_cat', 'hide_empty' => false, 'search' => $query]);
 		// printr($cats);
 		$return = [];
 
