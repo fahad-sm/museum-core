@@ -71,6 +71,8 @@ class Plugin
 	public static function vc_init() {
 		\MuseumCore\VC\About::init();
 		\MuseumCore\VC\Blog::init();
+		\MuseumCore\VC\Clients::init();
+		\MuseumCore\VC\Events::init();
 	}
 
 	/**

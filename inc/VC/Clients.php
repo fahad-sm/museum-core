@@ -2,16 +2,17 @@
 
 namespace MuseumCore\VC;
 
-class Blog 
+class Clients 
 {
 	public static function init() {
 
+
 		vc_map([
-			"name" => esc_html__("Blog", "museum-core"),
+			"name" => esc_html__("Clients", "museum-core"),
 			"icon" => 'vc-site-icon',
-			"base" => "museumwp_blog",
+			"base" => "museumwp_clients",
 			"category" => __('Museum Theme', "museum-core"),
-			"html_template" => get_theme_file_path( 'vc_templates/blog.php' ),
+			"html_template" => get_theme_file_path( 'vc_templates/clients.php' ),
 			"params" => array(
 				array(
 					"type" => "textfield",
@@ -49,29 +50,26 @@ class Blog
                     "admin_label" => true
                 ),
                 array(
-                    "type" => "autocomplete",
-                    "heading" => esc_html__("Category", 'museum-core'),
-                    "param_name" => "cats",
-                    'settings'	=> [
-                    	'min_length' => 1,
-                    ]
-                ),
-				array(
-					"type" => "vc_link",
-					"heading" => __("Button", "museum-core"),
-					"admin_label" => true,
-					'description'	=> esc_html__('Enter the button text and link', 'museum-core'),
-					"param_name" => "btn",
-				),				
+					"type" => "dropdown",
+					"class" => "",
+					"heading" => __("Display Style", "museumwp-toolkit"),
+					"param_name" => "display_style",
+					"value" => array(
+						"Select an Option" => "",
+						"Grid" => "grid",
+						"List" => "list",
+					)
+				),
 			)
 		]);
-		add_filter( 'vc_autocomplete_museumwp_blog_cats_callback', [__CLASS__, 'categories'], 10, 3 );
-		add_filter( 'vc_autocomplete_museumwp_blog_cats_render', [__CLASS__, 'categories_render'], 10, 3 );
+
+
+		add_filter( 'vc_autocomplete_museumwp_blog_cat_callback', [__CLASS__, 'categories'], 10, 3 );
+		add_filter( 'vc_autocomplete_museumwp_blog_cat_render', [__CLASS__, 'categories_render'], $value, $setting, $tag );
 	}
 
 	public static function categories($query, $tag, $param_name) {
 		$cats = get_categories();
-
 		$return = [];
 
 		foreach($cats as $cat) {
@@ -80,20 +78,4 @@ class Blog
 
 		return $return;
 	}
-
-	public static function categories_render($value, $setting, $tag) {
-		$cats = get_category_by_slug( $value['value'] );
-
-		$return = [];
-
-		if($cats) {
-			$return = [
-				'value'	=> $value['value'],
-				'label' => '(ID: '.$cats->term_id . ') Name: ' . $cats->name
-			];
-		}
-
-		return $return;
-	}
-	
 }
