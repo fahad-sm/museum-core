@@ -6,6 +6,7 @@ museum_post_type(
 	esc_html__('Clients', 'museum-core')
 )->setId('museumwp_clients')
  ->addToPermalinks()
+ ->setArgument('supports', ['title', 'thumbnail'])
  ->setIcon('dashicons-admin-comments');
 
 // Gallery Post Type

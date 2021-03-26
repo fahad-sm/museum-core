@@ -51,6 +51,10 @@ final class Loader
 	}
 
 	static function includes() {
+		require_once MUSEUM_CORE_PATH .'acf/acf-fontawesome/acf-font-awesome.php';
+		require_once MUSEUM_CORE_PATH .'acf/acf-repeater/acf-repeater.php';
+		require_once MUSEUM_CORE_PATH .'acf/acf-sidebar/acf-sidebar_selector.php';
+		require_once MUSEUM_CORE_PATH .'acf/image-select/acf-image-select.php';
 		require_once MUSEUM_CORE_PATH .'inc/Libraries/ClassLoader.php';
 		require_once MUSEUM_CORE_PATH . 'inc/Functions.php';
 		require_once MUSEUM_CORE_PATH . 'redux/redux-framework.php';

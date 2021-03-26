@@ -212,6 +212,7 @@
     include MUSEUM_CORE_PATH . 'config/options/logo_setting.php';
     include MUSEUM_CORE_PATH . 'config/options/headers_setting.php';
     include MUSEUM_CORE_PATH . 'config/options/footer_setting.php';
+    include MUSEUM_CORE_PATH . 'config/options/page_setting.php';
     include MUSEUM_CORE_PATH . 'config/options/blog_setting.php';
     include MUSEUM_CORE_PATH . 'config/options/tag_setting.php';
     include MUSEUM_CORE_PATH . 'config/options/archive_setting.php';
