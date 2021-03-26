@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Controls_Manager;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class TheEventCalendarStartDate extends Tag {
 
@@ -18,7 +18,7 @@ class TheEventCalendarStartDate extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::THE_EVENT_GROUP;
+		return MuseumModules::THE_EVENT_GROUP;
 	}
 
 	public function get_categories() {

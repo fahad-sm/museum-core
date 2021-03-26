@@ -51,7 +51,7 @@ if ( ! class_exists( 'ReduxFramework_select_image' ) ) {
                 }
 
                 // Process placeholder
-                $placeholder = ( isset( $this->field['placeholder'] ) ) ? esc_attr( $this->field['placeholder'] ) : __( 'Select an item', 'student-plugin' );
+                $placeholder = ( isset( $this->field['placeholder'] ) ) ? esc_attr( $this->field['placeholder'] ) : __( 'Select an item', 'museum-core' );
 
                 if ( isset( $this->field['select2'] ) ) { // if there are any let's pass them to js
                     $select2_params = json_encode( $this->field['select2'] );
@@ -131,7 +131,7 @@ if ( ! class_exists( 'ReduxFramework_select_image' ) ) {
             } else {
 
                 // No options specified.  Really?
-                echo '<strong>' . __( 'No items of this type were found.', 'student-plugin' ) . '</strong>';
+                echo '<strong>' . __( 'No items of this type were found.', 'museum-core' ) . '</strong>';
             }
         } //function
 

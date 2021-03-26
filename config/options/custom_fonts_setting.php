@@ -3,7 +3,7 @@
 
 Redux::setSection( $opt_name, array(
 
-	'title'  => esc_html__( 'Custom Font Settings', 'student' ),
+	'title'  => esc_html__( 'Custom Font Settings', 'museum-core' ),
 
 	'id'     => 'custom_fonts_setting',
 
@@ -18,7 +18,7 @@ Redux::setSection( $opt_name, array(
 
 			'type' => 'fonts',
 
-			'desc' => esc_html__( 'Please upload your desire font file in *.ttf,  *.otf, *.eot, *.woff format', 'student' ),
+			'desc' => esc_html__( 'Please upload your desire font file in *.ttf,  *.otf, *.eot, *.woff format', 'museum-core' ),
 		),
 	),    
 ) );

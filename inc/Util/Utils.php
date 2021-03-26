@@ -158,12 +158,12 @@ class Utils {
         $options = array();
 
         if (!empty($wpuf_form_list) && !is_wp_error($wpuf_form_list)) {
-            $options[0] = esc_html__('Select Form', 'elemetskit');
+            $options[0] = esc_html__('Select Form', 'museum-core');
             foreach ($wpuf_form_list as $post) {
                 $options[$post->ID] = $post->post_title;
             }
         } else {
-            $options[0] = esc_html__('Create a form first', 'elemetskit');
+            $options[0] = esc_html__('Create a form first', 'museum-core');
         }
 
         return $options;
@@ -177,14 +177,14 @@ class Utils {
 
             if (!empty($contact_forms) && !is_wp_error($contact_forms)) {
 
-                $options[0] = esc_html__('Select Ninja Form', 'elementskit-lite');
+                $options[0] = esc_html__('Select Ninja Form', 'museum-core');
 
                 foreach ($contact_forms as $form) {
                     $options[$form->get_id()] = $form->get_setting('title');
                 }
             }
         } else {
-            $options[0] = esc_html__('Create a Form First', 'elementskit-lite');
+            $options[0] = esc_html__('Create a Form First', 'museum-core');
         }
 
         return $options;
@@ -195,20 +195,20 @@ class Utils {
 
 		if (class_exists('TablePress')) {
 			$table_ids          = \TablePress::$model_table->load_all( false );
-			$table_options[0] = esc_html__( 'Select Table', 'elemenetskit' );
+			$table_options[0] = esc_html__( 'Select Table', 'museum-core' );
 
 			foreach ( $table_ids as $table_id ) {
 				// Load table, without table data, options, and visibility settings.
 				$table = \TablePress::$model_table->load( $table_id, false, false );
 	
 				if ( '' === trim( $table['name'] ) ) {
-					$table['name'] = __( '(no name)', 'tablepress' );
+					$table['name'] = __( '(no name)', 'museum-core' );
 				}
 				
 				$table_options[$table['id']] = $table['name'];
 			}
 		} else {
-            $table_options[0] = esc_html__('Create a Table First', 'elementskit-lite');
+            $table_options[0] = esc_html__('Create a Table First', 'museum-core');
         }
 
 		return $table_options;

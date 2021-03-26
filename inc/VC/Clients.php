@@ -52,7 +52,7 @@ class Clients
                 array(
 					"type" => "dropdown",
 					"class" => "",
-					"heading" => __("Display Style", "museumwp-toolkit"),
+					"heading" => __("Display Style", "museum-core"),
 					"param_name" => "display_style",
 					"value" => array(
 						"Select an Option" => "",

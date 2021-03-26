@@ -656,7 +656,7 @@ if ( ! class_exists( 'Redux_Helpers' ) ) {
 							$found_files[ $plugin_name ][] = sprintf(
 								__(
 									'<code>%s</code> version <strong style="color:red">%s</strong> is out of date. The core version is %s',
-									'student-plugin'
+									'museum-core'
 								), str_replace( WP_CONTENT_DIR . '/themes/', '', $theme_file ),
 								$theme_version ? $theme_version : '-', $core_version
 							);

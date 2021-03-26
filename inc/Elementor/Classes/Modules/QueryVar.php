@@ -8,7 +8,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 use Elementor\Controls_Manager;
 
 class QueryVar extends Tag {
@@ -22,7 +22,7 @@ class QueryVar extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::POST_GROUP;
+		return MuseumModules::POST_GROUP;
 	}
 
 	public function get_categories() {

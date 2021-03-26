@@ -10,7 +10,7 @@ use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Controls_Manager;
 use Elementor\Embed;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 
 class Popup extends Tag {
@@ -26,7 +26,7 @@ class Popup extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::ACTION_GROUP;
+		return MuseumModules::ACTION_GROUP;
 	}
 
 	public function get_categories() {

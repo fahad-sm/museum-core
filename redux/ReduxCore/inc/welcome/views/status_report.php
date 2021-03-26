@@ -23,15 +23,15 @@
 ?>
 <div class="wrap about-wrap redux-status">
     <h1>
-        <?php esc_html_e( 'Redux Framework - System Status', 'student-plugin' ); ?>
+        <?php esc_html_e( 'Redux Framework - System Status', 'museum-core' ); ?>
     </h1>
 
     <div class="about-text">
-        <?php esc_html_e( 'Our core mantra at Redux is backwards compatibility. With hundreds of thousands of instances worldwide, you can be assured that we will take care of you and your clients.', 'student-plugin' ); ?></div>
+        <?php esc_html_e( 'Our core mantra at Redux is backwards compatibility. With hundreds of thousands of instances worldwide, you can be assured that we will take care of you and your clients.', 'museum-core' ); ?></div>
     <div class="redux-badge">
         <i class="el el-redux"></i>
         <span>
-            <?php printf( __( 'Version %s', 'student-plugin' ), esc_html(ReduxFramework::$_version )); ?>
+            <?php printf( __( 'Version %s', 'museum-core' ), esc_html(ReduxFramework::$_version )); ?>
         </span>
     </div>
 
@@ -40,17 +40,17 @@
 
     <div class="updated redux-message">
         <p>
-            <?php esc_html_e( 'Please copy and paste this information in your ticket when contacting support:', 'student-plugin' ); ?> 
+            <?php esc_html_e( 'Please copy and paste this information in your ticket when contacting support:', 'museum-core' ); ?> 
         </p>
 
         <p class="submit">
             <a href="#" class="button-primary debug-report">
-                <?php esc_html_e( 'Get System Report', 'student-plugin' ); ?>
+                <?php esc_html_e( 'Get System Report', 'museum-core' ); ?>
             </a>
             <a class="skip button-primary"
                href="http://docs.reduxframework.com/core/support/understanding-the-redux-framework-system-status-report/"
                target="_blank">
-                   <?php esc_html_e( 'Understanding the Status Report', 'student-plugin' ); ?>
+                   <?php esc_html_e( 'Understanding the Status Report', 'museum-core' ); ?>
             </a>
         </p>
 
@@ -59,8 +59,8 @@
             <p class="submit">
                 <button id="copy-for-support" 
                         class="button-primary redux-hint-qtip" 
-                        href="#" qtip-content="<?php esc_html_e( 'Copied!', 'student-plugin' ); ?>">
-                    <?php esc_html_e( 'Copy for Support', 'student-plugin' ); ?>
+                        href="#" qtip-content="<?php esc_html_e( 'Copied!', 'museum-core' ); ?>">
+                    <?php esc_html_e( 'Copy for Support', 'museum-core' ); ?>
                 </button>
             </p>
         </div>
@@ -70,26 +70,26 @@
         <thead>
         <tr>
             <th colspan="3" data-export-label="WordPress Environment">
-                <?php esc_html_e( 'WordPress Environment', 'student-plugin' ); ?>
+                <?php esc_html_e( 'WordPress Environment', 'museum-core' ); ?>
             </th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td data-export-label="Home URL">
-                <?php esc_html_e( 'Home URL', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Home URL', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The URL of your site\'s homepage.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The URL of your site\'s homepage.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td><?php echo esc_url($sysinfo['home_url']); ?></td>
         </tr>
         <tr>
             <td data-export-label="Site URL">
-                <?php esc_html_e( 'Site URL', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Site URL', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The root URL of your site.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The root URL of your site.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_url($sysinfo['site_url']); ?>
@@ -97,10 +97,10 @@
         </tr>
         <tr>
             <td data-export-label="Redux Version">
-                <?php esc_html_e( 'Redux Version', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Redux Version', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of Redux Framework installed on your site.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of Redux Framework installed on your site.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_html($sysinfo['redux_ver']); ?>
@@ -108,25 +108,25 @@
         </tr>
         <tr>
             <td data-export-label="Redux Data Directory Writable">
-                <?php esc_html_e( 'Redux Data Directory Writable', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Redux Data Directory Writable', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Redux and its extensions write data to the <code>uploads</code> directory. This directory must be writable.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Redux and its extensions write data to the <code>uploads</code> directory. This directory must be writable.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td><?php 
                     if ( $sysinfo['redux_data_writeable'] == 'true' ) {
                         echo '<mark class="yes">' . '&#10004; <code>' . esc_html($sysinfo['redux_data_dir']) . '</code></mark> ';
                     } else {
-                        printf( '<mark class="error">' . '&#10005; ' . __( 'To allow data saving, make <code>%s</code> writable.', 'student-plugin' ) . '</mark>', esc_html($sysinfo['redux_data_dir']) );
+                        printf( '<mark class="error">' . '&#10005; ' . __( 'To allow data saving, make <code>%s</code> writable.', 'museum-core' ) . '</mark>', esc_html($sysinfo['redux_data_dir']) );
                     }
                 ?></td>
         </tr>
         <tr>
             <td data-export-label="WP Content URL">
-                <?php esc_html_e( 'WP Content URL', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'WP Content URL', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The location of Wordpress\'s content URL.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The location of Wordpress\'s content URL.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo '<code>' . esc_url($sysinfo['wp_content_url']) . '</code> '; ?>
@@ -134,10 +134,10 @@
         </tr>        
         <tr>
             <td data-export-label="WP Version">
-                <?php esc_html_e( 'WP Version', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'WP Version', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of WordPress installed on your site.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of WordPress installed on your site.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php bloginfo( 'version' ); ?>
@@ -145,10 +145,10 @@
         </tr>
         <tr>
             <td data-export-label="WP Multisite">
-                <?php esc_html_e( 'WP Multisite', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'WP Multisite', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Whether or not you have WordPress Multisite enabled.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Whether or not you have WordPress Multisite enabled.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td><?php if ( $sysinfo['wp_multisite'] == true ) {
                     echo '&#10004;';
@@ -159,10 +159,10 @@
         </tr>
         <tr>
             <td data-export-label="Permalink Structure">
-                <?php esc_html_e( 'Permalink Structure', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Permalink Structure', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The current permalink structure as defined in Wordpress Settings->Permalinks.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The current permalink structure as defined in Wordpress Settings->Permalinks.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_html($sysinfo['permalink_structure']); ?>
@@ -171,9 +171,9 @@
         <?php $sof = $sysinfo['front_page_display']; ?>
         <tr>
             <td data-export-label="Front Page Display">
-                <?php esc_html_e( 'Front Page Display', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Front Page Display', 'museum-core' ); ?>:
             </td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The current Reading mode of Wordpress.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The current Reading mode of Wordpress.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td><?php echo esc_html($sof); ?></td>
         </tr>
 
@@ -182,10 +182,10 @@
 ?>
                 <tr>
                     <td data-export-label="Front Page">
-                        <?php esc_html_e( 'Front Page', 'student-plugin' ); ?>:
+                        <?php esc_html_e( 'Front Page', 'museum-core' ); ?>:
                     </td>
                     <td class="help">
-                        <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The currently selected page which acts as the site\'s Front Page.', 'student-plugin' ) . '">[?]</a>'; ?>
+                        <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The currently selected page which acts as the site\'s Front Page.', 'museum-core' ) . '">[?]</a>'; ?>
                     </td>
                     <td>
                         <?php echo esc_html($sysinfo['front_page']); ?>
@@ -193,10 +193,10 @@
                 </tr>
                 <tr>
                     <td data-export-label="Posts Page">
-                        <?php esc_html_e( 'Posts Page', 'student-plugin' ); ?>:
+                        <?php esc_html_e( 'Posts Page', 'museum-core' ); ?>:
                     </td>
                     <td class="help">
-                        <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The currently selected page in where blog posts are displayed.', 'student-plugin' ) . '">[?]</a>'; ?>
+                        <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The currently selected page in where blog posts are displayed.', 'museum-core' ) . '">[?]</a>'; ?>
                     </td>
                     <td>
                         <?php echo esc_html($sysinfo['posts_page']); ?>
@@ -207,17 +207,17 @@
 ?>
         <tr>
             <td data-export-label="WP Memory Limit">
-                <?php esc_html_e( 'WP Memory Limit', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'WP Memory Limit', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The maximum amount of memory (RAM) that your site can use at one time.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The maximum amount of memory (RAM) that your site can use at one time.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
 <?php
                     $memory = $sysinfo['wp_mem_limit']['raw'];
 
                     if ( $memory < 40000000 ) {
-                        echo '<mark class="error">' . sprintf( __( '%s - We recommend setting memory to at least 40MB. See: <a href="%s" target="_blank">Increasing memory allocated to PHP</a>', 'student-plugin' ), esc_html($sysinfo['wp_mem_limit']['size']), 'http://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP' ) . '</mark>';
+                        echo '<mark class="error">' . sprintf( __( '%s - We recommend setting memory to at least 40MB. See: <a href="%s" target="_blank">Increasing memory allocated to PHP</a>', 'museum-core' ), esc_html($sysinfo['wp_mem_limit']['size']), 'http://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP' ) . '</mark>';
                     } else {
                         echo '<mark class="yes">' . esc_html($sysinfo['wp_mem_limit']['size']) . '</mark>';
                     }
@@ -226,10 +226,10 @@
         </tr>
         <tr>
             <td data-export-label="Database Table Prefix">
-                <?php esc_html_e( 'Database Table Prefix', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Database Table Prefix', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The prefix structure of the current Wordpress database.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The prefix structure of the current Wordpress database.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_html($sysinfo['db_table_prefix']); ?>
@@ -237,10 +237,10 @@
         </tr>
         <tr>
             <td data-export-label="WP Debug Mode">
-                <?php esc_html_e( 'WP Debug Mode', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'WP Debug Mode', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Displays whether or not WordPress is in Debug Mode.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Displays whether or not WordPress is in Debug Mode.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php if ( $sysinfo['wp_debug'] === 'true' ) {
@@ -252,10 +252,10 @@
         </tr>
         <tr>
             <td data-export-label="Language">
-                <?php esc_html_e( 'Language', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Language', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The current language used by WordPress. Default = English', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The current language used by WordPress. Default = English', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_html($sysinfo['wp_lang']); ?>
@@ -267,17 +267,17 @@
         <thead>
         <tr>
             <th colspan="3" data-export-label="Browser">
-                <?php esc_html_e( 'Browser', 'student-plugin' ); ?>
+                <?php esc_html_e( 'Browser', 'museum-core' ); ?>
             </th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td data-export-label="Browser Info">
-                <?php esc_html_e( 'Browser Info', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Browser Info', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Information about web browser current in use.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Information about web browser current in use.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
 <?php
@@ -294,17 +294,17 @@
         <thead>
         <tr>
             <th colspan="3" data-export-label="Server Environment">
-                <?php esc_html_e( 'Server Environment', 'student-plugin' ); ?>
+                <?php esc_html_e( 'Server Environment', 'museum-core' ); ?>
             </th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td data-export-label="Server Info">
-                <?php esc_html_e( 'Server Info', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Server Info', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Information about the web server that is currently hosting your site.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Information about the web server that is currently hosting your site.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_html($sysinfo['server_info']); ?>
@@ -312,10 +312,10 @@
         </tr>
         <tr>
             <td data-export-label="Localhost Environment">
-                <?php esc_html_e( 'Localhost Environment', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Localhost Environment', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Is the server running in a localhost environment.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Is the server running in a localhost environment.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
 <?php
@@ -329,10 +329,10 @@
         </tr>
         <tr>
             <td data-export-label="PHP Version">
-                <?php esc_html_e( 'PHP Version', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'PHP Version', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of PHP installed on your hosting server.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of PHP installed on your hosting server.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo esc_html($sysinfo['php_ver']); ?>
@@ -340,10 +340,10 @@
         </tr>
         <tr>
             <td data-export-label="ABSPATH">
-                <?php esc_html_e( 'ABSPATH', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'ABSPATH', 'museum-core' ); ?>:
             </td>
             <td class="help">
-                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The ABSPATH variable on the server.', 'student-plugin' ) . '">[?]</a>'; ?>
+                <?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The ABSPATH variable on the server.', 'museum-core' ) . '">[?]</a>'; ?>
             </td>
             <td>
                 <?php echo '<code>' . esc_html($sysinfo['abspath']) . '</code>'; ?>
@@ -352,28 +352,28 @@
         
         <?php if ( function_exists( 'ini_get' ) ) { ?>
             <tr>
-                <td data-export-label="PHP Memory Limit"><?php esc_html_e( 'PHP Memory Limit', 'student-plugin' ); ?>:</td>
-                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The largest filesize that can be contained in one post.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                <td data-export-label="PHP Memory Limit"><?php esc_html_e( 'PHP Memory Limit', 'museum-core' ); ?>:</td>
+                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The largest filesize that can be contained in one post.', 'museum-core' ) . '">[?]</a>'; ?></td>
                 <td><?php echo esc_html($sysinfo['php_mem_limit']); ?></td>
             </tr>
             <tr>
-                <td data-export-label="PHP Post Max Size"><?php esc_html_e( 'PHP Post Max Size', 'student-plugin' ); ?>:</td>
-                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The largest filesize that can be contained in one post.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                <td data-export-label="PHP Post Max Size"><?php esc_html_e( 'PHP Post Max Size', 'museum-core' ); ?>:</td>
+                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The largest filesize that can be contained in one post.', 'museum-core' ) . '">[?]</a>'; ?></td>
                 <td><?php echo esc_html($sysinfo['php_post_max_size']); ?></td>
             </tr>
             <tr>
-                <td data-export-label="PHP Time Limit"><?php esc_html_e( 'PHP Time Limit', 'student-plugin' ); ?>:</td>
-                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                <td data-export-label="PHP Time Limit"><?php esc_html_e( 'PHP Time Limit', 'museum-core' ); ?>:</td>
+                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)', 'museum-core' ) . '">[?]</a>'; ?></td>
                 <td><?php echo esc_html($sysinfo['php_time_limit']); ?></td>
             </tr>
             <tr>
-                <td data-export-label="PHP Max Input Vars"><?php esc_html_e( 'PHP Max Input Vars', 'student-plugin' ); ?>:</td>
-                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The maximum number of variables your server can use for a single function to avoid overloads.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                <td data-export-label="PHP Max Input Vars"><?php esc_html_e( 'PHP Max Input Vars', 'museum-core' ); ?>:</td>
+                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The maximum number of variables your server can use for a single function to avoid overloads.', 'museum-core' ) . '">[?]</a>'; ?></td>
                 <td><?php echo esc_html($sysinfo['php_max_input_var']); ?></td>
             </tr>
             <tr>
-                <td data-export-label="PHP Display Errors"><?php esc_html_e( 'PHP Display Errors', 'student-plugin' ); ?>:</td>
-                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Determines if PHP will display errors within the browser.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                <td data-export-label="PHP Display Errors"><?php esc_html_e( 'PHP Display Errors', 'museum-core' ); ?>:</td>
+                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Determines if PHP will display errors within the browser.', 'museum-core' ) . '">[?]</a>'; ?></td>
                 <td><?php
                         if ( 'true' === $sysinfo['php_display_errors'] ) {
                             echo '<mark class="yes">' . '&#10004;' . '</mark>';
@@ -384,8 +384,8 @@
             </tr>
         <?php } ?>
         <tr>
-            <td data-export-label="SUHOSIN Installed"><?php esc_html_e( 'SUHOSIN Installed', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself.  If enabled on your server, Suhosin may need to be configured to increase its data submission limits.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="SUHOSIN Installed"><?php esc_html_e( 'SUHOSIN Installed', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself.  If enabled on your server, Suhosin may need to be configured to increase its data submission limits.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td>
                 <?php if ( $sysinfo['suhosin_installed'] == true ) {
                     echo '<mark class="yes">' . '&#10004;' . '</mark>';
@@ -396,24 +396,24 @@
         </tr>
 
         <tr>
-            <td data-export-label="MySQL Version"><?php esc_html_e( 'MySQL Version', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of MySQL installed on your hosting server.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="MySQL Version"><?php esc_html_e( 'MySQL Version', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The version of MySQL installed on your hosting server.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td><?php echo esc_html($sysinfo['mysql_ver']); ?></td>
         </tr>
         <tr>
-            <td data-export-label="Max Upload Size"><?php esc_html_e( 'Max Upload Size', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The largest filesize that can be uploaded to your WordPress installation.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="Max Upload Size"><?php esc_html_e( 'Max Upload Size', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The largest filesize that can be uploaded to your WordPress installation.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td><?php echo esc_html($sysinfo['max_upload_size']); ?></td>
         </tr>
         <tr>
             <td data-export-label="Default Timezone is UTC">
-                <?php esc_html_e( 'Default Timezone is UTC', 'student-plugin' ); ?>:
+                <?php esc_html_e( 'Default Timezone is UTC', 'museum-core' ); ?>:
             </td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The default timezone for your server.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The default timezone for your server.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td>
 <?php
                 if ( $sysinfo['def_tz_is_utc'] === 'false' ) {
-                    echo '<mark class="error">' . '&#10005; ' . sprintf( __( 'Default timezone is %s - it should be UTC', 'student-plugin' ), esc_html(date_default_timezone_get()) ) . '</mark>';
+                    echo '<mark class="error">' . '&#10005; ' . sprintf( __( 'Default timezone is %s - it should be UTC', 'museum-core' ), esc_html(date_default_timezone_get()) ) . '</mark>';
                 } else {
                     echo '<mark class="yes">' . '&#10004;' . '</mark>';
                 } 
@@ -425,13 +425,13 @@
 
             // fsockopen/cURL
             $posting['fsockopen_curl']['name'] = 'fsockopen/cURL';
-            $posting['fsockopen_curl']['help'] = '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Used when communicating with remote services with PHP.', 'student-plugin' ) . '">[?]</a>';
+            $posting['fsockopen_curl']['help'] = '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Used when communicating with remote services with PHP.', 'museum-core' ) . '">[?]</a>';
 
             if ( $sysinfo['fsockopen_curl'] === 'true' ) {
                 $posting['fsockopen_curl']['success'] = true;
             } else {
                 $posting['fsockopen_curl']['success'] = false;
-                $posting['fsockopen_curl']['note']    = esc_html__( 'Your server does not have fsockopen or cURL enabled - cURL is used to communicate with other servers. Please contact your hosting provider.', 'student-plugin' ) . '</mark>';
+                $posting['fsockopen_curl']['note']    = esc_html__( 'Your server does not have fsockopen or cURL enabled - cURL is used to communicate with other servers. Please contact your hosting provider.', 'museum-core' ) . '</mark>';
             }
 
             /*
@@ -470,31 +470,31 @@
             //}
 
             // WP Remote Post Check
-            $posting['wp_remote_post']['name'] = esc_html__( 'Remote Post', 'student-plugin' );
-            $posting['wp_remote_post']['help'] = '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Used to send data to remote servers.', 'student-plugin' ) . '">[?]</a>';
+            $posting['wp_remote_post']['name'] = esc_html__( 'Remote Post', 'museum-core' );
+            $posting['wp_remote_post']['help'] = '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Used to send data to remote servers.', 'museum-core' ) . '">[?]</a>';
 
             if ( $sysinfo['wp_remote_post'] === 'true' ) {
                 $posting['wp_remote_post']['success'] = true;
             } else {
-                $posting['wp_remote_post']['note'] = esc_html__( 'wp_remote_post() failed. Many advanced features may not function. Contact your hosting provider.', 'student-plugin' );
+                $posting['wp_remote_post']['note'] = esc_html__( 'wp_remote_post() failed. Many advanced features may not function. Contact your hosting provider.', 'museum-core' );
 
                 if ( $sysinfo['wp_remote_post_error'] ) {
-                    $posting['wp_remote_post']['note'] .= ' ' . sprintf( __( 'Error: %s', 'student-plugin' ), redux_clean( $sysinfo['wp_remote_post_error'] ) );
+                    $posting['wp_remote_post']['note'] .= ' ' . sprintf( __( 'Error: %s', 'museum-core' ), redux_clean( $sysinfo['wp_remote_post_error'] ) );
                 }
 
                 $posting['wp_remote_post']['success'] = false;
             }
 
             // WP Remote Get Check
-            $posting['wp_remote_get']['name'] = esc_html__( 'Remote Get', 'student-plugin' );
-            $posting['wp_remote_get']['help'] = '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Used to grab information from remote servers for updates updates.', 'student-plugin' ) . '">[?]</a>';
+            $posting['wp_remote_get']['name'] = esc_html__( 'Remote Get', 'museum-core' );
+            $posting['wp_remote_get']['help'] = '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Used to grab information from remote servers for updates updates.', 'museum-core' ) . '">[?]</a>';
 
             if ( $sysinfo['wp_remote_get'] === 'true' ) {
                 $posting['wp_remote_get']['success'] = true;
             } else {
-                $posting['wp_remote_get']['note'] = esc_html__( 'wp_remote_get() failed. This is needed to get information from remote servers. Contact your hosting provider.', 'student-plugin' );
+                $posting['wp_remote_get']['note'] = esc_html__( 'wp_remote_get() failed. This is needed to get information from remote servers. Contact your hosting provider.', 'museum-core' );
                 if ( $sysinfo['wp_remote_get_error'] ) {
-                    $posting['wp_remote_get']['note'] .= ' ' . sprintf( __( 'Error: %s', 'student-plugin' ), redux_clean( $sysinfo['wp_remote_get_error'] ) );
+                    $posting['wp_remote_get']['note'] .= ' ' . sprintf( __( 'Error: %s', 'museum-core' ), redux_clean( $sysinfo['wp_remote_get_error'] ) );
                 }
 
                 $posting['wp_remote_get']['success'] = false;
@@ -528,7 +528,7 @@
         <thead>
         <tr>
             <th colspan="3" data-export-label="Active Plugins (<?php echo esc_html(count( (array) get_option( 'active_plugins' ) ) ); ?>)">
-                <?php esc_html_e( 'Active Plugins', 'student-plugin' ); ?> (<?php echo esc_html(count( (array) get_option( 'active_plugins' ) ) ); ?>)
+                <?php esc_html_e( 'Active Plugins', 'museum-core' ); ?> (<?php echo esc_html(count( (array) get_option( 'active_plugins' ) ) ); ?>)
             </th>
         </tr>
         </thead>
@@ -543,14 +543,14 @@
                     $plugin_name = esc_html( $plugin_data['Name'] );
 
                     if ( ! empty( $plugin_data['PluginURI'] ) ) {
-                        $plugin_name = '<a href="' . esc_url( $plugin_data['PluginURI'] ) . '" title="' . esc_attr__( 'Visit plugin homepage', 'student-plugin' ) . '">' . esc_html($plugin_name) . '</a>';
+                        $plugin_name = '<a href="' . esc_url( $plugin_data['PluginURI'] ) . '" title="' . esc_attr__( 'Visit plugin homepage', 'museum-core' ) . '">' . esc_html($plugin_name) . '</a>';
                     }
 ?>
                     <tr>
                         <td><?php echo $plugin_name; ?></td>
                         <td class="help">&nbsp;</td>
                         <td>
-                            <?php echo sprintf( _x( 'by %s', 'by author', 'student-plugin' ), $plugin_data['Author'] ) . ' &ndash; ' . esc_html( $plugin_data['Version'] ) . $version_string . $network_string; ?>
+                            <?php echo sprintf( _x( 'by %s', 'by author', 'museum-core' ), $plugin_data['Author'] ) . ' &ndash; ' . esc_html( $plugin_data['Version'] ) . $version_string . $network_string; ?>
                         </td>
                     </tr>
 <?php
@@ -569,14 +569,14 @@
                     <thead>
                     <tr>
                         <th colspan="3" data-export-label="Redux Instance: <?php echo esc_html($inst_name); ?>">
-                            <?php esc_html_e( 'Redux Instance: ', 'student-plugin' );
+                            <?php esc_html_e( 'Redux Instance: ', 'museum-core' );
                             echo esc_html($inst_name); ?></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td data-export-label="opt_name">opt_name:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The opt_name argument for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The opt_name argument for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo esc_html($args['opt_name']); ?></td>
                     </tr>
                     <?php
@@ -584,7 +584,7 @@
                             ?>
                             <tr>
                                 <td data-export-label="global_variable">global_variable:</td>
-                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The global_variable argument for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The global_variable argument for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                                 <td><?php echo esc_html($args['global_variable']); ?></td>
                             </tr>
                         <?php
@@ -592,48 +592,48 @@
                     ?>
                     <tr>
                         <td data-export-label="dev_mode">dev_mode:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if developer mode is enabled for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if developer mode is enabled for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo true == $args['dev_mode'] ? '<mark class="yes">' . '&#10004;' . '</mark>' : '<mark class="no">' . '&ndash;' . '</mark>'; ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="ajax_save">ajax_save:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if ajax based saving is enabled for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if ajax based saving is enabled for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo true == $args['ajax_save'] ? '<mark class="yes">' . '&#10004;' . '</mark>' : '<mark class="no">' . '&ndash;' . '</mark>'; ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="page_slug">page_slug:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The page slug denotes the string used for the options panel page for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The page slug denotes the string used for the options panel page for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo esc_html($args['page_slug']); ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="page_permissions">page_permissions:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The page permissions variable sets the permission level required to access the options panel for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The page permissions variable sets the permission level required to access the options panel for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo esc_html($args['page_permissions']); ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="menu_type">menu_type:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'This variable set whether or not the menu is displayed as an admin menu item for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'This variable set whether or not the menu is displayed as an admin menu item for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo esc_html($args['menu_type']); ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="page_parent">page_parent:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The page parent variable sets where the options menu will be placed on the WordPress admin sidebar for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The page parent variable sets where the options menu will be placed on the WordPress admin sidebar for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo esc_html($args['page_parent']); ?></td>
                     </tr>
 
                     <tr>
                         <td data-export-label="compiler">compiler:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if the compiler flag is enabled for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if the compiler flag is enabled for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo true == $args['compiler'] ? '<mark class="yes">' . '&#10004;' . '</mark>' : '<mark class="no">' . '&ndash;' . '</mark>'; ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="output">output:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if output flag for globally shutting off all CSS output is enabled for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates if output flag for globally shutting off all CSS output is enabled for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo true == $args['output'] ? '<mark class="yes">' . '&#10004;' . '</mark>' : '<mark class="no">' . '&ndash;' . '</mark>'; ?></td>
                     </tr>
                     <tr>
                         <td data-export-label="output_tag">output_tag:</td>
-                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The output_tag variable sets whether or not dynamic CSS will be generated for the customizer and Google fonts for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                        <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The output_tag variable sets whether or not dynamic CSS will be generated for the customizer and Google fonts for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                         <td><?php echo true == $args['output_tag'] ? '<mark class="yes">' . '&#10004;' . '</mark>' : '<mark class="no">' . '&ndash;' . '</mark>'; ?></td>
                     </tr>
 
@@ -642,12 +642,12 @@
                             ?>
                             <tr>
                                 <td data-export-label="template_path">template_path:</td>
-                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The specified template path containing custom template files for this instance of Redux.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The specified template path containing custom template files for this instance of Redux.', 'museum-core' ) . '">[?]</a>'; ?></td>
                                 <td><?php echo '<code>' . esc_html($args['templates_path']) . '</code>'; ?></td>
                             </tr>
                             <tr>
                                 <td data-export-label="Templates">Templates:</td>
-                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'List of template files overriding the default Redux template files.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'List of template files overriding the default Redux template files.', 'museum-core' ) . '">[?]</a>'; ?></td>
 <?php
                                     $found_files = $data['templates'];
                                     if ( $found_files ) {
@@ -673,7 +673,7 @@
 ?>
                             <tr>
                                 <td data-export-label="Extensions">Extensions</td>
-                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates the installed Redux extensions and their version numbers.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                                <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Indicates the installed Redux extensions and their version numbers.', 'museum-core' ) . '">[?]</a>'; ?></td>
                                 <td>
 <?php
                                     foreach ( $ext as $name => $arr ) {
@@ -702,39 +702,39 @@
     <table class="redux_status_table widefat" cellspacing="0" id="status">
         <thead>
         <tr>
-            <th colspan="3" data-export-label="Theme"><?php esc_html_e( 'Theme', 'student-plugin' ); ?></th>
+            <th colspan="3" data-export-label="Theme"><?php esc_html_e( 'Theme', 'museum-core' ); ?></th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td data-export-label="Name"><?php esc_html_e( 'Name', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The name of the current active theme.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="Name"><?php esc_html_e( 'Name', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The name of the current active theme.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td><?php echo esc_html($sysinfo['theme']['name']); ?></td>
         </tr>
         <tr>
-            <td data-export-label="Version"><?php esc_html_e( 'Version', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The installed version of the current active theme.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="Version"><?php esc_html_e( 'Version', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The installed version of the current active theme.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td>
 <?php
                 echo esc_html($sysinfo['theme']['version']);
 
                 if ( ! empty( $theme_version_data['version'] ) && version_compare( $theme_version_data['version'], $active_theme->Version, '!=' ) ) {
-                    echo ' &ndash; <strong style="color:red;">' . esc_html($theme_version_data['version']) . ' ' . esc_html__( 'is available', 'student-plugin' ) . '</strong>';
+                    echo ' &ndash; <strong style="color:red;">' . esc_html($theme_version_data['version']) . ' ' . esc_html__( 'is available', 'museum-core' ) . '</strong>';
                 }
 ?>
             </td>
         </tr>
         <tr>
-            <td data-export-label="Author URL"><?php esc_html_e( 'Author URL', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The theme developers URL.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="Author URL"><?php esc_html_e( 'Author URL', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The theme developers URL.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td><?php echo esc_url($sysinfo['theme']['author_uri']); ?></td>
         </tr>
         <tr>
-            <td data-export-label="Child Theme"><?php esc_html_e( 'Child Theme', 'student-plugin' ); ?>:</td>
-            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Displays whether or not the current theme is a child theme.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+            <td data-export-label="Child Theme"><?php esc_html_e( 'Child Theme', 'museum-core' ); ?>:</td>
+            <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'Displays whether or not the current theme is a child theme.', 'museum-core' ) . '">[?]</a>'; ?></td>
             <td>
 <?php
-                echo is_child_theme() ? '<mark class="yes">' . '&#10004;' . '</mark>' : '&#10005; <br /><em>' . sprintf( __( 'If you\'re modifying Redux Framework or a parent theme you didn\'t build personally, we recommend using a child theme. See: <a href="%s" target="_blank">How to create a child theme</a>', 'student-plugin' ), 'http://codex.wordpress.org/Child_Themes' ) . '</em>';
+                echo is_child_theme() ? '<mark class="yes">' . '&#10004;' . '</mark>' : '&#10005; <br /><em>' . sprintf( __( 'If you\'re modifying Redux Framework or a parent theme you didn\'t build personally, we recommend using a child theme. See: <a href="%s" target="_blank">How to create a child theme</a>', 'museum-core' ), 'http://codex.wordpress.org/Child_Themes' ) . '</em>';
 ?>
             </td>
         </tr>
@@ -742,23 +742,23 @@
             if ( is_child_theme() ) {
 ?>
                 <tr>
-                    <td data-export-label="Parent Theme Name"><?php esc_html_e( 'Parent Theme Name', 'student-plugin' ); ?>:
+                    <td data-export-label="Parent Theme Name"><?php esc_html_e( 'Parent Theme Name', 'museum-core' ); ?>:
                     </td>
-                    <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The name of the parent theme.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                    <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The name of the parent theme.', 'museum-core' ) . '">[?]</a>'; ?></td>
                     <td><?php echo esc_html($sysinfo['theme']['parent_name']); ?></td>
                 </tr>
                 <tr>
                     <td data-export-label="Parent Theme Version">
-                        <?php esc_html_e( 'Parent Theme Version', 'student-plugin' ); ?>:
+                        <?php esc_html_e( 'Parent Theme Version', 'museum-core' ); ?>:
                     </td>
-                    <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The installed version of the parent theme.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                    <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The installed version of the parent theme.', 'museum-core' ) . '">[?]</a>'; ?></td>
                     <td><?php echo esc_html($sysinfo['theme']['parent_version']); ?></td>
                 </tr>
                 <tr>
                     <td data-export-label="Parent Theme Author URL">
-                        <?php esc_html_e( 'Parent Theme Author URL', 'student-plugin' ); ?>:
+                        <?php esc_html_e( 'Parent Theme Author URL', 'museum-core' ); ?>:
                     </td>
-                    <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The parent theme developers URL.', 'student-plugin' ) . '">[?]</a>'; ?></td>
+                    <td class="help"><?php echo '<a href="#" class="redux-hint-qtip" qtip-content="' . esc_attr__( 'The parent theme developers URL.', 'museum-core' ) . '">[?]</a>'; ?></td>
                     <td><?php echo esc_url($sysinfo['theme']['parent_author_uri']); ?></td>
                 </tr>
             <?php } ?>

@@ -17,7 +17,7 @@ class WpForms extends Widget_Base
 	}
 
 	public function get_title() {
-		return esc_html__( 'Smartx WP Forms', 'smartx-plugin' );
+		return esc_html__( 'Smartx WP Forms', 'museum-core' );
 	}
 
 	public function get_icon() {
@@ -53,13 +53,13 @@ class WpForms extends Widget_Base
 		$this->start_controls_section(
 			'forms',
 			[
-				'label' => esc_html__( 'Form', 'smartx-plugin' ),
+				'label' => esc_html__( 'Form', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'form_id', [
-				'label' => __( 'Choose Form', 'smartx-plugin' ),
+				'label' => __( 'Choose Form', 'museum-core' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => '',
 				'label_block' => true,
@@ -73,7 +73,7 @@ class WpForms extends Widget_Base
 		$this->start_controls_section(
 			'smartx_wpforms_label_style',
 			[
-				'label' => esc_html__( 'Labels', 'smartx-plugin' ),
+				'label' => esc_html__( 'Labels', 'museum-core' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -81,7 +81,7 @@ class WpForms extends Widget_Base
 		$this->add_control(
             'label_color_normal',
             [
-               'label' => esc_html_x( 'Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -94,7 +94,7 @@ class WpForms extends Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'label_typography',
-				'label' => __( 'Typography', 'smartx-plugin' ),
+				'label' => __( 'Typography', 'museum-core' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} div.wpforms-container-full .wpforms-form .wpforms-field-label',
 			]
@@ -103,7 +103,7 @@ class WpForms extends Widget_Base
 		$this->add_control(
 			'label_space',
 			[
-				'label' => __( 'Space', 'plugin-domain' ),
+				'label' => __( 'Space', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -133,7 +133,7 @@ class WpForms extends Widget_Base
 		$this->start_controls_section(
 			'smartx_wpforms_fields_style',
 			[
-				'label' => esc_html__( 'Fields', 'smartx-plugin' ),
+				'label' => esc_html__( 'Fields', 'museum-core' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -141,7 +141,7 @@ class WpForms extends Widget_Base
 		$this->add_control(
             'field_color_normal',
             [
-               'label' => esc_html_x( 'Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -152,7 +152,7 @@ class WpForms extends Widget_Base
         $this->add_control(
             'field_bg_color_normal',
             [
-               'label' => esc_html_x( 'Background Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Background Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -164,7 +164,7 @@ class WpForms extends Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'field_typography',
-				'label' => __( 'Typography', 'smartx-plugin' ),
+				'label' => __( 'Typography', 'museum-core' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} '.$field_classes,
 			]
@@ -173,7 +173,7 @@ class WpForms extends Widget_Base
 		$this->add_control(
 			'field_space',
 			[
-				'label' => __( 'Space', 'plugin-domain' ),
+				'label' => __( 'Space', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -199,7 +199,7 @@ class WpForms extends Widget_Base
 		$this->add_responsive_control(
             'smartx_field_padding',
             [
-                'label' => esc_html__( 'Padding', 'smartx-plugin' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -218,14 +218,14 @@ class WpForms extends Widget_Base
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'field_border',
-				'label' => __( 'Border', 'plugin-domain' ),
+				'label' => __( 'Border', 'museum-core' ),
 				'selector' => '{{WRAPPER}} '.$field_classes,
 			]
 		);
 		$this->add_responsive_control(
             'smartx_field_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'smartx-plugin' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -245,7 +245,7 @@ class WpForms extends Widget_Base
 		$this->start_controls_section(
 			'smartx_wpforms_button_style',
 			[
-				'label' => esc_html__( 'Button', 'smartx-plugin' ),
+				'label' => esc_html__( 'Button', 'museum-core' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -256,14 +256,14 @@ class WpForms extends Widget_Base
 		$this->start_controls_tab(
 			'wp_forms_button_coloing_normal_tab',
 			[
-				'label' =>esc_html__( 'Normal', 'smartx-plugin' ),
+				'label' =>esc_html__( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
             'button_color_normal',
             [
-               'label' => esc_html_x( 'Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -276,7 +276,7 @@ class WpForms extends Widget_Base
         $this->add_control(
             'button_bg_color_normal',
             [
-               'label' => esc_html_x( 'Background Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Background Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -292,14 +292,14 @@ class WpForms extends Widget_Base
         $this->start_controls_tab(
 			'wp_forms_button_coloing_hover_tab',
 			[
-				'label' =>esc_html__( 'Hover', 'smartx-plugin' ),
+				'label' =>esc_html__( 'Hover', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
             'button_color_hover',
             [
-               'label' => esc_html_x( 'Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -312,7 +312,7 @@ class WpForms extends Widget_Base
         $this->add_control(
             'button_bg_color_hover',
             [
-               'label' => esc_html_x( 'Background Color', 'Label Control', 'smartx-plugin' ),
+               'label' => esc_html_x( 'Background Color', 'Label Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -331,7 +331,7 @@ class WpForms extends Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'button_typography',
-				'label' => __( 'Typography', 'smartx-plugin' ),
+				'label' => __( 'Typography', 'museum-core' ),
 				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} div.wpforms-container-full .wpforms-form input[type=submit], {{WRAPPER}} div.wpforms-container-full .wpforms-form button[type=submit], {{WRAPPER}} div.wpforms-container-full .wpforms-form .wpforms-page-button',
 			]
@@ -339,7 +339,7 @@ class WpForms extends Widget_Base
 		$this->add_responsive_control(
             'smartx_button_margin',
             [
-                'label' => esc_html__( 'Margin', 'smartx-plugin' ),
+                'label' => esc_html__( 'Margin', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -354,7 +354,7 @@ class WpForms extends Widget_Base
 		$this->add_responsive_control(
             'smartx_button_padding',
             [
-                'label' => esc_html__( 'Padding', 'smartx-plugin' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -373,14 +373,14 @@ class WpForms extends Widget_Base
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'button_border',
-				'label' => __( 'Border', 'plugin-domain' ),
+				'label' => __( 'Border', 'museum-core' ),
 				'selector' => '{{WRAPPER}} div.wpforms-container-full .wpforms-form input[type=submit], {{WRAPPER}} div.wpforms-container-full .wpforms-form button[type=submit], {{WRAPPER}} div.wpforms-container-full .wpforms-form .wpforms-page-button',
 			]
 		);
 		$this->add_responsive_control(
             'smartx_button_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'smartx-plugin' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -395,20 +395,20 @@ class WpForms extends Widget_Base
         $this->add_control(
             'wp_forms_button_align',
             [
-                'label' => esc_html__( 'Alignment', 'smartx-plugin' ),
+                'label' => esc_html__( 'Alignment', 'museum-core' ),
                 'type' => Controls_Manager::CHOOSE,
                 'default'   => 'right',
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'smartx-plugin' ),
+                        'title' => esc_html__( 'Left', 'museum-core' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'smartx-plugin' ),
+                        'title' => esc_html__( 'Center', 'museum-core' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'smartx-plugin' ),
+                        'title' => esc_html__( 'Right', 'museum-core' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],

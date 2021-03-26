@@ -59,7 +59,7 @@ if ( ! class_exists( 'ReduxFramework_multi_text' ) ) {
          */
         public function render() {
 
-            $this->add_text   = ( isset( $this->field['add_text'] ) ) ? $this->field['add_text'] : __( 'Add More', 'student-plugin' );
+            $this->add_text   = ( isset( $this->field['add_text'] ) ) ? $this->field['add_text'] : __( 'Add More', 'museum-core' );
             $this->show_empty = ( isset( $this->field['show_empty'] ) ) ? $this->field['show_empty'] : true;
 
             echo '<ul id="' . $this->field['id'] . '-ul" class="redux-multi-text">';
@@ -69,14 +69,14 @@ if ( ! class_exists( 'ReduxFramework_multi_text' ) ) {
                     if ( $value != '' || ($value == '' && $this->show_empty == true) ) {
                         echo '<li>';
                         echo     '<input type="text" id="' . $this->field['id'] . '-' . $k . '" name="' . $this->field['name'] . $this->field['name_suffix'] . '[]' . '" value="' . esc_attr( $value ) . '" class="regular-text ' . $this->field['class'] . '" /> ';
-                        echo     '<a' . ' data-id="' . $this->field['id'] . '-ul" href="javascript:void(0);" class="deletion redux-multi-text-remove">' . __( 'Remove', 'student-plugin' ) . '</a>';
+                        echo     '<a' . ' data-id="' . $this->field['id'] . '-ul" href="javascript:void(0);" class="deletion redux-multi-text-remove">' . __( 'Remove', 'museum-core' ) . '</a>';
                         echo '</li>';
                     }
                 }
             } elseif ( $this->show_empty == true ) {
                 echo '<li>';
                 echo     '<input type="text" id="' . $this->field['id'] . '" name="' . $this->field['name'] . $this->field['name_suffix'] . '[]' . '" value="" class="regular-text ' . $this->field['class'] . '" /> ';
-                echo     '<a' . ' data-id="' . $this->field['id'] . '-ul"  href="javascript:void(0);" class="deletion redux-multi-text-remove">' . __( 'Remove', 'student-plugin' ) . '</a>';
+                echo     '<a' . ' data-id="' . $this->field['id'] . '-ul"  href="javascript:void(0);" class="deletion redux-multi-text-remove">' . __( 'Remove', 'museum-core' ) . '</a>';
                 echo '</li>';
             }
 
@@ -86,7 +86,7 @@ if ( ! class_exists( 'ReduxFramework_multi_text' ) ) {
             }
             
             echo     '<li style="display:none;"><input type="text" id="' . $this->field['id'] . '" name="' . $the_name . '" value="" class="regular-text" /> ';
-            echo         '<a' . ' data-id="' . $this->field['id'] . '-ul" href="javascript:void(0);" class="deletion redux-multi-text-remove">' . __( 'Remove', 'student-plugin' ) . '</a>';
+            echo         '<a' . ' data-id="' . $this->field['id'] . '-ul" href="javascript:void(0);" class="deletion redux-multi-text-remove">' . __( 'Remove', 'museum-core' ) . '</a>';
             echo     '</li>';
             echo '</ul>';
             

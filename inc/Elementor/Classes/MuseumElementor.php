@@ -38,7 +38,7 @@ class MuseumElementor {
 	public function register_cat( $elements_manager ) {
 
 		$elements_manager->add_category( 'we-widget', [
-			'title' => __( 'Student Elementor', 'museum-core' ),
+			'title' => __( 'Museum', 'museum-core' ),
 			'icon'  => 'eicon-library-open',
 		] );
 

@@ -68,10 +68,10 @@
                     "show_selection_palette" => false,
                     "allow_empty"            => true,
                     "clickout_fires_change"  => false,
-                    "choose_text"            => __( 'Choose', 'student-plugin' ),
-                    "cancel_text"            => __( 'Cancel', 'student-plugin' ),
+                    "choose_text"            => __( 'Choose', 'museum-core' ),
+                    "cancel_text"            => __( 'Cancel', 'museum-core' ),
                     "show_buttons"           => true,
-                    "input_text"             => __( 'Select Color', 'student-plugin' ),
+                    "input_text"             => __( 'Select Color', 'museum-core' ),
                     "palette"                => null,
                 );
 

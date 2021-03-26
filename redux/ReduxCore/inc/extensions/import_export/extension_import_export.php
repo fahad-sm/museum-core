@@ -117,7 +117,7 @@
             public function add_section() {
                 $this->parent->sections[] = array(
                     'id'         => 'import/export',
-                    'title'      => __( 'Import / Export', 'student-plugin' ),
+                    'title'      => __( 'Import / Export', 'museum-core' ),
                     'heading'    => '',
                     'icon'       => 'el el-refresh',
                     'customizer' => false,

@@ -108,7 +108,7 @@
                                     $output .= "</div> \n";
                                     echo $output;
                                 } else {
-                                    echo '<div ' . $add_style . ' class="' . esc_attr( $notice['type'] ) . ' notice is-dismissable"><p>' . wp_kses_post( $notice['msg'] ) . '&nbsp;&nbsp;<a href="?dismiss=true&amp;id=' . esc_attr( $notice['id'] ) . $pageName . $curTab . '">' . esc_html__( 'Dismiss', 'student-plugin' ) . '</a>.</p></div>';
+                                    echo '<div ' . $add_style . ' class="' . esc_attr( $notice['type'] ) . ' notice is-dismissable"><p>' . wp_kses_post( $notice['msg'] ) . '&nbsp;&nbsp;<a href="?dismiss=true&amp;id=' . esc_attr( $notice['id'] ) . $pageName . $curTab . '">' . esc_html__( 'Dismiss', 'museum-core' ) . '</a>.</p></div>';
                                 }
                             }
                         } else {

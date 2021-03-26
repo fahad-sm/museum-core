@@ -71,12 +71,12 @@
                             }
                         } else {
                             if ( ! self::is_enqueued( $handle, 'enqueued', $is_script ) ) {
-                                $msg = __( 'Please wait a few minutes, then try refreshing the page. Unable to load some remotely hosted scripts.', 'student-plugin' );
+                                $msg = __( 'Please wait a few minutes, then try refreshing the page. Unable to load some remotely hosted scripts.', 'museum-core' );
                                 if ( self::$_parent->args['dev_mode'] ) {
-                                    $msg = sprintf( __( 'If you are developing offline, please download and install the <a href="%s" target="_blank">Redux Vendor Support</a> plugin/extension to bypass the our CDN and avoid this warning', 'student-plugin' ), 'https://github.com/reduxframework/redux-vendor-support' );
+                                    $msg = sprintf( __( 'If you are developing offline, please download and install the <a href="%s" target="_blank">Redux Vendor Support</a> plugin/extension to bypass the our CDN and avoid this warning', 'museum-core' ), 'https://github.com/reduxframework/redux-vendor-support' );
                                 }
 
-                                $msg = '<strong>' . __( 'Redux Framework Warning', 'student-plugin' ) . '</strong><br/>' . sprintf( __( '%s CDN unavailable.  Some controls may not render properly.', 'student-plugin' ), $handle ) . '  ' . $msg;
+                                $msg = '<strong>' . __( 'Redux Framework Warning', 'museum-core' ) . '</strong><br/>' . sprintf( __( '%s CDN unavailable.  Some controls may not render properly.', 'museum-core' ), $handle ) . '  ' . $msg;
 
                                 $data = array(
                                     'parent'    => self::$_parent,
@@ -112,7 +112,7 @@
                     }
                 } else {
                     if ( ! self::$_set ) {
-                        $msg = sprintf( __( 'The <a href="%s">Vendor Support plugin</a> (or extension) is either not installed or not activated and thus, some controls may not render properly.  Please ensure that it is installed and <a href="%s">activated</a>', 'student-plugin' ), 'https://github.com/reduxframework/redux-vendor-support', admin_url( 'plugins.php' ) );
+                        $msg = sprintf( __( 'The <a href="%s">Vendor Support plugin</a> (or extension) is either not installed or not activated and thus, some controls may not render properly.  Please ensure that it is installed and <a href="%s">activated</a>', 'museum-core' ), 'https://github.com/reduxframework/redux-vendor-support', admin_url( 'plugins.php' ) );
 
                         $data = array(
                             'parent'    => self::$_parent,

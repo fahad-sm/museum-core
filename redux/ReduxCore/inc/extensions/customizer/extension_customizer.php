@@ -686,9 +686,9 @@
                 );
 
                 $localize = array(
-                    'save_pending'   => __( 'You have changes that are not saved. Would you like to save them now?', 'student-plugin' ),
-                    'reset_confirm'  => __( 'Are you sure? Resetting will lose all custom values.', 'student-plugin' ),
-                    'preset_confirm' => __( 'Your current options will be replaced with the values of this preset. Would you like to proceed?', 'student-plugin' ),
+                    'save_pending'   => __( 'You have changes that are not saved. Would you like to save them now?', 'museum-core' ),
+                    'reset_confirm'  => __( 'Are you sure? Resetting will lose all custom values.', 'museum-core' ),
+                    'preset_confirm' => __( 'Your current options will be replaced with the values of this preset. Would you like to proceed?', 'museum-core' ),
                     'opt_name'       => $this->args['opt_name'],
                     //'folds'             => $this->folds,
                     'options'        => $this->parent->options,
@@ -721,9 +721,9 @@
                 //wp_enqueue_style('redux-extension-customizer-css', $this->_extension_url . 'assets/css/customizer.css');
 
                 $localize = array(
-                    'save_pending'   => __( 'You have changes that are not saved.  Would you like to save them now?', 'student-plugin' ),
-                    'reset_confirm'  => __( 'Are you sure?  Resetting will lose all custom values.', 'student-plugin' ),
-                    'preset_confirm' => __( 'Your current options will be replaced with the values of this preset.  Would you like to proceed?', 'student-plugin' ),
+                    'save_pending'   => __( 'You have changes that are not saved.  Would you like to save them now?', 'museum-core' ),
+                    'reset_confirm'  => __( 'Are you sure?  Resetting will lose all custom values.', 'museum-core' ),
+                    'preset_confirm' => __( 'Your current options will be replaced with the values of this preset.  Would you like to proceed?', 'museum-core' ),
                     'opt_name'       => $this->args['opt_name'],
                     //'folds'             => $this->folds,
                     'field'          => $this->parent->options,

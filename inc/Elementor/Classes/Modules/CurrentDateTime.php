@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Controls_Manager;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class CurrentDateTime extends Tag {
 	public function get_name() {
@@ -21,7 +21,7 @@ class CurrentDateTime extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::SITE_GROUP;
+		return MuseumModules::SITE_GROUP;
 	}
 
 	public function get_categories() {

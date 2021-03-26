@@ -2,7 +2,7 @@
 
 Redux::setSection( $opt_name, array(
 
-	'title'         => esc_html__( 'Language Settings', 'student' ),
+	'title'         => esc_html__( 'Language Settings', 'museum-core' ),
     'id'            => 'language_settings',
     'desc'          => '',
     'icon'			=> 'el el-globe',
@@ -10,7 +10,7 @@ Redux::setSection( $opt_name, array(
 		array(
 			'id' => 'optLanguage',
 			'type' => 'language',
-			'desc' => esc_html__('Please upload .mo language file', 'student'),
+			'desc' => esc_html__('Please upload .mo language file', 'museum-core'),
 			)
 	),
 ) );

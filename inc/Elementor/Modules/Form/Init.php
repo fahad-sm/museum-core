@@ -38,7 +38,7 @@ class Init
 
 		wp_register_script(
 			'student-elementor-form', 
-			STUDENT_PLUGIN_URL . 'inc/Elementor/Modules/Form/js/index.js',
+			MUSEUM_CORE_URL . 'inc/Elementor/Modules/Form/js/index.js',
 			[],
 			$ver,
 			true
@@ -46,7 +46,7 @@ class Init
 
 		wp_register_style(
 			'student-elementor-form', 
-			STUDENT_PLUGIN_URL . 'inc/Elementor/Modules/Form/css/style.css',
+			MUSEUM_CORE_URL . 'inc/Elementor/Modules/Form/css/style.css',
 			'',
 			$ver
 		);

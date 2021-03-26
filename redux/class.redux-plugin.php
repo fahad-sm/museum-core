@@ -311,7 +311,7 @@
                 $notices = array();
                 
                 $notices   = get_option( 'ReduxFrameworkPlugin_ACTIVATED_NOTICES', array() );
-                $notices[] = __( 'Redux Framework has an embedded demo.', 'student-plugin' ) . ' <a href="./plugins.php?ReduxFrameworkPlugin=demo">' . __( 'Click here to activate the sample config file.', 'student-plugin' ) . '</a>';
+                $notices[] = __( 'Redux Framework has an embedded demo.', 'museum-core' ) . ' <a href="./plugins.php?ReduxFrameworkPlugin=demo">' . __( 'Click here to activate the sample config file.', 'museum-core' ) . '</a>';
 
                 update_option( 'ReduxFrameworkPlugin_ACTIVATED_NOTICES', $notices );
             }
@@ -412,17 +412,17 @@
                 if ( strpos( $file, 'redux-framework.php' ) !== false && is_plugin_active( $file ) ) {
 
                     $new_links = array(
-                        '<a href="' . 'http://' . 'docs.reduxframework.com/" target="_blank">' . __( 'Docs', 'student-plugin' ) . '</a>',
-                        '<a href="' . 'https://' . 'github.com/ReduxFramework/redux-framework" target="_blank">' . __( 'Repo', 'student-plugin' ) . '</a>',
-                        '<a href="' . 'http://' . 'build.reduxframework.com/" target="_blank">' . __( 'Builder', 'student-plugin' ) . '</a>',
-                        '<a href="' . admin_url( 'tools.php?page=redux-support' ) . '">' . __( 'Get Support', 'student-plugin' ) . '</a>',
+                        '<a href="' . 'http://' . 'docs.reduxframework.com/" target="_blank">' . __( 'Docs', 'museum-core' ) . '</a>',
+                        '<a href="' . 'https://' . 'github.com/ReduxFramework/redux-framework" target="_blank">' . __( 'Repo', 'museum-core' ) . '</a>',
+                        '<a href="' . 'http://' . 'build.reduxframework.com/" target="_blank">' . __( 'Builder', 'museum-core' ) . '</a>',
+                        '<a href="' . admin_url( 'tools.php?page=redux-support' ) . '">' . __( 'Get Support', 'museum-core' ) . '</a>',
                     );
 
                     if ( ( is_multisite() && $this->plugin_network_activated ) || ! is_network_admin() || ! is_multisite() ) {
                         if ( $this->options['demo'] ) {
-                            $new_links[3] .= '<br /><span style="display: block; padding-top: 6px;"><a href="./plugins.php?ReduxFrameworkPlugin=demo" style="color: #bc0b0b;">' . __( 'Deactivate Demo Mode', 'student-plugin' ) . '</a></span>';
+                            $new_links[3] .= '<br /><span style="display: block; padding-top: 6px;"><a href="./plugins.php?ReduxFrameworkPlugin=demo" style="color: #bc0b0b;">' . __( 'Deactivate Demo Mode', 'museum-core' ) . '</a></span>';
                         } else {
-                            $new_links[3] .= '<br /><span style="display: block; padding-top: 6px;"><a href="./plugins.php?ReduxFrameworkPlugin=demo" style="color: #bc0b0b;">' . __( 'Activate Demo Mode', 'student-plugin' ) . '</a></span>';
+                            $new_links[3] .= '<br /><span style="display: block; padding-top: 6px;"><a href="./plugins.php?ReduxFrameworkPlugin=demo" style="color: #bc0b0b;">' . __( 'Activate Demo Mode', 'museum-core' ) . '</a></span>';
                         }
                     }
 

@@ -1,13 +1,13 @@
 <div class="wrap about-wrap">
-    <h1><?php esc_html_e( 'Redux Framework - Changelog', 'student-plugin' ); ?></h1>
+    <h1><?php esc_html_e( 'Redux Framework - Changelog', 'museum-core' ); ?></h1>
 
     <div class="about-text">
-        <?php esc_html_e( 'Our core mantra at Redux is backwards compatibility. With hundreds of thousands of instances worldwide, you can be assured that we will take care of you and your clients.', 'student-plugin' ); ?>
+        <?php esc_html_e( 'Our core mantra at Redux is backwards compatibility. With hundreds of thousands of instances worldwide, you can be assured that we will take care of you and your clients.', 'museum-core' ); ?>
     </div>
     <div class="redux-badge">
         <i class="el el-redux"></i>
         <span>
-            <?php printf( __( 'Version %s', 'student-plugin' ), esc_html(ReduxFramework::$_version) ); ?>
+            <?php printf( __( 'Version %s', 'museum-core' ), esc_html(ReduxFramework::$_version) ); ?>
         </span>
     </div>
 

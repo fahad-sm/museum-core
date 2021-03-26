@@ -22,7 +22,7 @@ class Date extends Field_Base {
 	}
 
 	public function get_name() {
-		return __( 'Date', 'elementor-pro' );
+		return __( 'Date', 'museum-core' );
 	}
 
 	public function render( $item, $item_index, $form ) {

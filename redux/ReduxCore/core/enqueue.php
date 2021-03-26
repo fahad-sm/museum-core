@@ -449,7 +449,7 @@
                  *
                  * @param       string        save_pending string
                  */
-                $save_pending = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/save_pending", __( 'You have changes that are not saved. Would you like to save them now?', 'student-plugin' ) );
+                $save_pending = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/save_pending", __( 'You have changes that are not saved. Would you like to save them now?', 'museum-core' ) );
 
                 /**
                  * Reset all string
@@ -457,7 +457,7 @@
                  *
                  * @param       string        reset all string
                  */
-                $reset_all = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/reset", __( 'Are you sure? Resetting will lose all custom values.', 'student-plugin' ) );
+                $reset_all = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/reset", __( 'Are you sure? Resetting will lose all custom values.', 'museum-core' ) );
 
                 /**
                  * Reset section string
@@ -465,7 +465,7 @@
                  *
                  * @param       string        reset section string
                  */
-                $reset_section = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/reset_section", __( 'Are you sure? Resetting will lose all custom values in this section.', 'student-plugin' ) );
+                $reset_section = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/reset_section", __( 'Are you sure? Resetting will lose all custom values in this section.', 'museum-core' ) );
 
                 /**
                  * Preset confirm string
@@ -473,7 +473,7 @@
                  *
                  * @param       string        preset confirm string
                  */
-                $preset_confirm = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/preset", __( 'Your current options will be replaced with the values of this preset. Would you like to proceed?', 'student-plugin' ) );
+                $preset_confirm = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/preset", __( 'Your current options will be replaced with the values of this preset. Would you like to proceed?', 'museum-core' ) );
                 
                 /**
                  * Import confirm string
@@ -481,7 +481,7 @@
                  *
                  * @param       string        import confirm string
                  */
-                $import_confirm = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/import", __( 'Your current options will be replaced with the values of this import. Would you like to proceed?', 'student-plugin' ) );
+                $import_confirm = apply_filters( "redux/{$this->parent->args['opt_name']}/localize/import", __( 'Your current options will be replaced with the values of this import. Would you like to proceed?', 'museum-core' ) );
                 
                 global $pagenow;
                 $this->parent->localize_data['args'] = array(
@@ -490,7 +490,7 @@
                     'reset_section_confirm' => $reset_section,
                     'import_section_confirm' => $import_confirm,
                     'preset_confirm'        => $preset_confirm,
-                    'please_wait'           => __( 'Please Wait', 'student-plugin' ),
+                    'please_wait'           => __( 'Please Wait', 'museum-core' ),
                     'opt_name'              => $this->parent->args['opt_name'],
                     'slug'                  => $this->parent->args['page_slug'],
                     'hints'                 => $this->parent->args['hints'],
@@ -501,8 +501,8 @@
                 );
 
                 $this->parent->localize_data['ajax'] = array(
-                    'console' => __( 'There was an error saving. Here is the result of your action:', 'student-plugin' ),
-                    'alert'   => __( 'There was a problem with your action. Please try again or reload the page.', 'student-plugin' ),
+                    'console' => __( 'There was an error saving. Here is the result of your action:', 'museum-core' ),
+                    'alert'   => __( 'There was a problem with your action. Please try again or reload the page.', 'museum-core' ),
                 );
 
                 $this->parent->localize_data = apply_filters( "redux/{$this->parent->args['opt_name']}/localize", $this->parent->localize_data );

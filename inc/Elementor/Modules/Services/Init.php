@@ -33,11 +33,11 @@ class Init
 	 */
 	static function enqueue() {
 
-		$ver = (defined(WP_DEBUG) && WP_DEBUG) ? time() : STUDENT_PLUGIN_VERSION;
+		$ver = (defined(WP_DEBUG) && WP_DEBUG) ? time() : MUSEUM_CORE_VERSION;
 
 		wp_register_script(
 			'services_scripts', 
-			STUDENT_PLUGIN_URL . 'inc/Elementor/Modules/Services/js/index.js',
+			MUSEUM_CORE_URL . 'inc/Elementor/Modules/Services/js/index.js',
 			['owl-carousel'],
 			$ver,
 			true
@@ -45,14 +45,14 @@ class Init
 
 		wp_register_style(
 			'services_style', 
-			STUDENT_PLUGIN_URL . 'inc/Elementor/Modules/Services/css/style.css',
+			MUSEUM_CORE_URL . 'inc/Elementor/Modules/Services/css/style.css',
 			'',
 			$ver
 		);
 
 		wp_register_style(
 			'responsive_services_style', 
-			STUDENT_PLUGIN_URL . 'inc/Elementor/Modules/Services/css/responsive.css',
+			MUSEUM_CORE_URL . 'inc/Elementor/Modules/Services/css/responsive.css',
 			'',
 			$ver
 		);

@@ -71,7 +71,7 @@ class Testimonials extends Widget_Base {
         $repeater->add_control(
           'image',
           [
-            'label' => __( 'Choose Image', 'plugin-domain' ),
+            'label' => __( 'Choose Image', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::MEDIA,
             'default' => [
               'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -80,22 +80,22 @@ class Testimonials extends Widget_Base {
         );
         $repeater->add_control(
           'name', [
-            'label' => __( 'Name', 'plugin-domain' ),
+            'label' => __( 'Name', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::TEXT,
-            'default' => __( 'Dr. John Doe' , 'plugin-domain' ),
+            'default' => __( 'Dr. John Doe' , 'museum-core' ),
             'label_block' => true,
           ]
         );
 
         $repeater->add_control(
           'designation', [
-            'label' => __( 'Designation', 'plugin-domain' ),
+            'label' => __( 'Designation', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::TEXT,
           ]
         );
         $repeater->add_control(
           'text', [
-            'label' => __( 'Review', 'plugin-domain' ),
+            'label' => __( 'Review', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::WYSIWYG,
           ]
         );
@@ -103,25 +103,25 @@ class Testimonials extends Widget_Base {
         $this->add_control(
           'list',
           [
-            'label' => __( 'Testimonials', 'plugin-domain' ),
+            'label' => __( 'Testimonials', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::REPEATER,
             'fields' => $repeater->get_controls(),
             'default' => [
               [
-                'name' => __( 'Dr. John Doe', 'plugin-domain' ),
-                'text' => __( 'The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.', 'plugin-domain' ),
+                'name' => __( 'Dr. John Doe', 'museum-core' ),
+                'text' => __( 'The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.', 'museum-core' ),
                 'image' => '',
                 'designation' => esc_html__( 'Director', 'museum-core' )
               ],
               [
-                'name' => __( 'Dr. John Doe', 'plugin-domain' ),
-                'text' => __( 'The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.', 'plugin-domain' ),
+                'name' => __( 'Dr. John Doe', 'museum-core' ),
+                'text' => __( 'The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.', 'museum-core' ),
                 'image' => '',
                 'designation' => esc_html__( 'Director', 'museum-core' )
               ],
               [
-                'name' => __( 'Dr. John Doe', 'plugin-domain' ),
-                'text' => __( 'The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.', 'plugin-domain' ),
+                'name' => __( 'Dr. John Doe', 'museum-core' ),
+                'text' => __( 'The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.', 'museum-core' ),
                 'image' => '',
                 'designation' => esc_html__( 'Director', 'museum-core' )
               ],
@@ -147,14 +147,14 @@ class Testimonials extends Widget_Base {
        $this->start_controls_tab(
            'student_testimonials_title_normal',
            [
-               'label' =>esc_html__( 'Normal', 'elementskit-lite' ),
+               'label' =>esc_html__( 'Normal', 'museum-core' ),
            ]
        );
 
        $this->add_control(
            'student_testimonials_title_normal_color',
            [
-               'label' => esc_html_x( 'Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -167,13 +167,13 @@ class Testimonials extends Widget_Base {
        $this->start_controls_tab(
            'student_testimonials_title_hover',
            [
-               'label' =>esc_html__( 'Hover', 'elementskit-lite' ),
+               'label' =>esc_html__( 'Hover', 'museum-core' ),
            ]
        );
        $this->add_control(
            'student_testimonials_title_hover_color',
            [
-               'label' => esc_html_x( 'Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -206,14 +206,14 @@ class Testimonials extends Widget_Base {
         $this->start_controls_tab(
            'student_carousel_icon_button',
            [
-               'label' =>esc_html__( 'Normal', 'elementskit-lite' ),
+               'label' =>esc_html__( 'Normal', 'museum-core' ),
            ]
         );
 
         $this->add_control(
            'student_icon_button_color',
            [
-               'label' => esc_html_x( 'Color', 'Button Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Color', 'Button Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -224,7 +224,7 @@ class Testimonials extends Widget_Base {
         $this->add_control(
            'student_icon_button_bg_color',
            [
-               'label' => esc_html_x( 'Background Color', 'Button Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Background Color', 'Button Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -238,13 +238,13 @@ class Testimonials extends Widget_Base {
         $this->start_controls_tab(
            'student_icon_button_hover',
            [
-               'label' =>esc_html__( 'Hover', 'elementskit-lite' ),
+               'label' =>esc_html__( 'Hover', 'museum-core' ),
            ]
         );
         $this->add_control(
            'icon_button_hover_color',
            [
-               'label' => esc_html_x( 'Color', 'Button Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Color', 'Button Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -255,7 +255,7 @@ class Testimonials extends Widget_Base {
         $this->add_control(
            'icon_button_bg_hover_color',
            [
-               'label' => esc_html_x( 'Background Color', 'Button Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Background Color', 'Button Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -274,6 +274,6 @@ class Testimonials extends Widget_Base {
     public function render() {
         $settings = $this->get_settings();
         extract($settings);
-        include STUDENT_PLUGIN_PATH . 'templates/elementor/testimonials-carousel.php';
+        include MUSEUM_CORE_PATH . 'templates/elementor/testimonials-carousel.php';
     }
 }

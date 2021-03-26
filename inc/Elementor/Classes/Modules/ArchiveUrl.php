@@ -7,7 +7,7 @@
 namespace MuseumCore\Elementor\Classes\Modules;
 
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 use Elementor\Core\DynamicTags\Data_Tag;
 
 class ArchiveUrl extends Data_Tag {
@@ -17,7 +17,7 @@ class ArchiveUrl extends Data_Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::ARCHIVE_GROUP;
+		return MuseumModules::ARCHIVE_GROUP;
 	}
 
 	public function get_categories() {

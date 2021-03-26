@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Core\DynamicTags\Data_Tag;
 use Elementor\Controls_Manager;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class AuthorUrl extends Data_Tag {
 
@@ -18,7 +18,7 @@ class AuthorUrl extends Data_Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::AUTHOR_GROUP;
+		return MuseumModules::AUTHOR_GROUP;
 	}
 
 	public function get_categories() {

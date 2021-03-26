@@ -2,7 +2,7 @@
 
 Redux::setSection( $opt_name, array(
 
-    'title'         => esc_html__( 'Body Font Settings', 'student' ),
+    'title'         => esc_html__( 'Body Font Settings', 'museum-core' ),
     'id'            => 'body_font_setting',
     'desc'          => '',
     'subsection'    => true,
@@ -10,18 +10,18 @@ Redux::setSection( $opt_name, array(
         array(
             'id' => 'body_custom_fonts',
             'type' => 'switch',
-            'title' => esc_html__('Use Body,Paragraph Custom Font', 'student'),
-            'desc' => esc_html__('Enable to customize the theme body,p tag font', 'student'),
+            'title' => esc_html__('Use Body,Paragraph Custom Font', 'museum-core'),
+            'desc' => esc_html__('Enable to customize the theme body,p tag font', 'museum-core'),
         ),
         array(
             'id' => 'body_typography',
             'type' => 'typography',
-            'title' => esc_html__('Body Font Typography', 'student'),
+            'title' => esc_html__('Body Font Typography', 'museum-core'),
             'google' => true,
             'font-backup' => true,
             'output' => array('p', '.about > p', '.serv-caro li p ', '.counter-meta > p', '.funfacts > li > p', '.price-table p ', '.testimonials li p', '.ser-meta > p', '.whyus-meta > p ', '.touch-form > p ', '.category-box > p', '.experts-box .experts-box > p', '.blog-detail-meta > p', '.banner-meta > p', '.author-post > p', '.commenter-meta > p ', '.times > li p', '.complete-contact > p', '.xyz > p', '.error-page > p', '.project-deta .blog-detail-meta > p ', '.ziehharmonika > div p', '.download-box ul li p', '.soom-info > p ', '.countdown > li > p', '.s-not-found > p', '.about > p', '.serv-caro li p' ),
             'units' => 'px',
-            'subtitle' => esc_html__('Apply options to customize the body,paragraph font for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the body,paragraph font for the theme', 'museum-core'),
             'default' => array(
                 'color' => '',
                 'font-style' => '',

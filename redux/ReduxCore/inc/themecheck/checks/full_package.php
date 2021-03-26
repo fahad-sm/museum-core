@@ -13,14 +13,14 @@
             if ( $redux ) {
 
                 $blacklist = array(
-                    '.tx'                    => __( 'Redux localization utilities', 'student-plugin' ),
-                    'bin'                    => __( 'Redux Resting Diles', 'student-plugin' ),
-                    'codestyles'             => __( 'Redux Code Styles', 'student-plugin' ),
-                    'tests'                  => __( 'Redux Unit Testing', 'student-plugin' ),
-                    'class.redux-plugin.php' => __( 'Redux Plugin File', 'student-plugin' ),
-                    'bootstrap_tests.php'    => __( 'Redux Boostrap Tests', 'student-plugin' ),
-                    '.travis.yml'            => __( 'CI Testing FIle', 'student-plugin' ),
-                    'phpunit.xml'            => __( 'PHP Unit Testing', 'student-plugin' ),
+                    '.tx'                    => __( 'Redux localization utilities', 'museum-core' ),
+                    'bin'                    => __( 'Redux Resting Diles', 'museum-core' ),
+                    'codestyles'             => __( 'Redux Code Styles', 'museum-core' ),
+                    'tests'                  => __( 'Redux Unit Testing', 'museum-core' ),
+                    'class.redux-plugin.php' => __( 'Redux Plugin File', 'museum-core' ),
+                    'bootstrap_tests.php'    => __( 'Redux Boostrap Tests', 'museum-core' ),
+                    '.travis.yml'            => __( 'CI Testing FIle', 'museum-core' ),
+                    'phpunit.xml'            => __( 'PHP Unit Testing', 'museum-core' ),
                 );
 
                 $errors = array();
@@ -33,7 +33,7 @@
                 }
 
                 if ( ! empty( $errors ) ) {
-                    $error = '<span class="tc-lead tc-required">REQUIRED</span> ' . __( 'It appears that you have embedded the full Redux package inside your theme. You need only embed the <strong>ReduxCore</strong> folder. Embedding anything else will get your rejected from theme submission. Suspected Redux package file(s):', 'student-plugin' );
+                    $error = '<span class="tc-lead tc-required">REQUIRED</span> ' . __( 'It appears that you have embedded the full Redux package inside your theme. You need only embed the <strong>ReduxCore</strong> folder. Embedding anything else will get your rejected from theme submission. Suspected Redux package file(s):', 'museum-core' );
                     $error .= '<ol>';
                     foreach ( $errors as $key => $e ) {
                         $error .= '<li><strong>' . $e . '</strong>: ' . $key . '</li>';

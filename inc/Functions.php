@@ -21,7 +21,7 @@ if ( ! function_exists( 'museum_core_mailchimp_list') ) {
 	function museum_core_mailchimp_list() {
 
 	    $list = get_transient( 'museum_core_mailchimp_list' );
-	    $list = ($list) ? $list : ['' => esc_html__( 'Select List', 'student-plugin' )];
+	    $list = ($list) ? $list : ['' => esc_html__( 'Select List', 'museum-core' )];
 	    return $list;
 	}
 }

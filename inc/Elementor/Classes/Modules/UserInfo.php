@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Controls_Manager;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class UserInfo extends Tag {
 
@@ -22,7 +22,7 @@ class UserInfo extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::SITE_GROUP;
+		return MuseumModules::SITE_GROUP;
 	}
 
 	public function get_categories() {

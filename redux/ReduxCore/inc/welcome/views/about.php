@@ -1,31 +1,31 @@
 <div class="wrap about-wrap">
-    <h1><?php printf( __( 'Welcome to Redux Framework %s', 'student-plugin' ), $this->display_version ); ?></h1>
+    <h1><?php printf( __( 'Welcome to Redux Framework %s', 'museum-core' ), $this->display_version ); ?></h1>
 
     <div
-        class="about-text"><?php printf( __( 'Thank you for updating to the latest version! Redux Framework %s is a huge step forward in Redux Development. Look at all that\'s new.', 'student-plugin' ), $this->display_version ); ?></div>
+        class="about-text"><?php printf( __( 'Thank you for updating to the latest version! Redux Framework %s is a huge step forward in Redux Development. Look at all that\'s new.', 'museum-core' ), $this->display_version ); ?></div>
     <div
         class="redux-badge"><i
-            class="el el-redux"></i><span><?php printf( __( 'Version %s', 'student-plugin' ), ReduxFramework::$_version ); ?></span>
+            class="el el-redux"></i><span><?php printf( __( 'Version %s', 'museum-core' ), ReduxFramework::$_version ); ?></span>
     </div>
 
     <?php $this->actions(); ?>
     <?php $this->tabs(); ?>
 
     <div id="redux-message" class="updated">
-        <h4><?php _e( 'What is Redux Framework?', 'student-plugin' ); ?></h4>
+        <h4><?php _e( 'What is Redux Framework?', 'museum-core' ); ?></h4>
 
         <p><?php _e( 'Redux Framework is the core of many products on the web. It is an option framework which developers use to
-            enhance their products.', 'student-plugin' ); ?></p>
+            enhance their products.', 'museum-core' ); ?></p>
 
         <p class="submit">
             <a class="button-primary" href="<?php echo 'http://';?>reduxframework.com"
-               target="_blank"><?php _e( 'Learn More', 'student-plugin' ); ?></a>
+               target="_blank"><?php _e( 'Learn More', 'museum-core' ); ?></a>
         </p>
     </div>
 
     <div class="changelog">
 
-        <h2><?php _e( 'New in this Release', 'student-plugin' ); ?></h2>
+        <h2><?php _e( 'New in this Release', 'museum-core' ); ?></h2>
 
         <div class="changelog about-integrations">
             <div class="wc-feature feature-section col three-col">

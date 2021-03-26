@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Controls_Manager;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class FeaturedImageData extends Tag {
 
@@ -18,7 +18,7 @@ class FeaturedImageData extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::MEDIA_GROUP;
+		return MuseumModules::MEDIA_GROUP;
 	}
 
 	public function get_categories() {

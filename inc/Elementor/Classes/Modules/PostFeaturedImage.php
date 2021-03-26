@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Controls_Manager;
 use Elementor\Core\DynamicTags\Data_Tag;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 
 class PostFeaturedImage extends Data_Tag {
@@ -19,7 +19,7 @@ class PostFeaturedImage extends Data_Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::POST_GROUP;
+		return MuseumModules::POST_GROUP;
 	}
 
 	public function get_categories() {

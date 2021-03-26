@@ -27,7 +27,7 @@ class Form extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Form', 'elementor-pro' );
+		return __( 'Form', 'museum-core' );
 	}
 
 	public function get_icon() {
@@ -42,22 +42,22 @@ class Form extends \Elementor\Widget_Base {
 		$repeater = new Repeater();
 
 		$field_types = [
-			'text' => __( 'Text', 'elementor-pro' ),
-			'email' => __( 'Email', 'elementor-pro' ),
-			'textarea' => __( 'Textarea', 'elementor-pro' ),
-			'url' => __( 'URL', 'elementor-pro' ),
-			'tel' => __( 'Tel', 'elementor-pro' ),
-			'radio' => __( 'Radio', 'elementor-pro' ),
-			'select' => __( 'Select', 'elementor-pro' ),
-			'checkbox' => __( 'Checkbox', 'elementor-pro' ),
-			'acceptance' => __( 'Acceptance', 'elementor-pro' ),
-			'number' => __( 'Number', 'elementor-pro' ),
-			'date' => __( 'Date', 'elementor-pro' ),
-			'time' => __( 'Time', 'elementor-pro' ),
-			'upload' => __( 'File Upload', 'elementor-pro' ),
-			'password' => __( 'Password', 'elementor-pro' ),
-			'html' => __( 'HTML', 'elementor-pro' ),
-			'hidden' => __( 'Hidden', 'elementor-pro' ),
+			'text' => __( 'Text', 'museum-core' ),
+			'email' => __( 'Email', 'museum-core' ),
+			'textarea' => __( 'Textarea', 'museum-core' ),
+			'url' => __( 'URL', 'museum-core' ),
+			'tel' => __( 'Tel', 'museum-core' ),
+			'radio' => __( 'Radio', 'museum-core' ),
+			'select' => __( 'Select', 'museum-core' ),
+			'checkbox' => __( 'Checkbox', 'museum-core' ),
+			'acceptance' => __( 'Acceptance', 'museum-core' ),
+			'number' => __( 'Number', 'museum-core' ),
+			'date' => __( 'Date', 'museum-core' ),
+			'time' => __( 'Time', 'museum-core' ),
+			'upload' => __( 'File Upload', 'museum-core' ),
+			'password' => __( 'Password', 'museum-core' ),
+			'html' => __( 'HTML', 'museum-core' ),
+			'hidden' => __( 'Hidden', 'museum-core' ),
 		];
 
 		/**
@@ -74,13 +74,13 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->start_controls_tabs( 'form_fields_tabs' );
 
 		$repeater->start_controls_tab( 'form_fields_content_tab', [
-			'label' => __( 'Content', 'elementor-pro' ),
+			'label' => __( 'Content', 'museum-core' ),
 		] );
 
 		$repeater->add_control(
 			'field_type',
 			[
-				'label' => __( 'Type', 'elementor-pro' ),
+				'label' => __( 'Type', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $field_types,
 				'default' => 'text',
@@ -90,7 +90,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'field_label',
 			[
-				'label' => __( 'Label', 'elementor-pro' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 			]
@@ -99,7 +99,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'placeholder',
 			[
-				'label' => __( 'Placeholder', 'elementor-pro' ),
+				'label' => __( 'Placeholder', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'conditions' => [
@@ -125,7 +125,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'required',
 			[
-				'label' => __( 'Required', 'elementor-pro' ),
+				'label' => __( 'Required', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'default' => '',
@@ -150,10 +150,10 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'field_options',
 			[
-				'label' => __( 'Options', 'elementor-pro' ),
+				'label' => __( 'Options', 'museum-core' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'default' => '',
-				'description' => __( 'Enter each option in a separate line. To differentiate between label and value, separate them with a pipe char ("|"). For example: First Name|f_name', 'elementor-pro' ),
+				'description' => __( 'Enter each option in a separate line. To differentiate between label and value, separate them with a pipe char ("|"). For example: First Name|f_name', 'museum-core' ),
 				'conditions' => [
 					'terms' => [
 						[
@@ -173,7 +173,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'allow_multiple',
 			[
-				'label' => __( 'Multiple Selection', 'elementor-pro' ),
+				'label' => __( 'Multiple Selection', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'conditions' => [
@@ -190,7 +190,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'select_size',
 			[
-				'label' => __( 'Rows', 'elementor-pro' ),
+				'label' => __( 'Rows', 'museum-core' ),
 				'type' => Controls_Manager::NUMBER,
 				'min' => 2,
 				'step' => 1,
@@ -212,7 +212,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'inline_list',
 			[
-				'label' => __( 'Inline List', 'elementor-pro' ),
+				'label' => __( 'Inline List', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'elementor-subgroup-inline',
 				'default' => '',
@@ -234,7 +234,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'field_html',
 			[
-				'label' => __( 'HTML', 'elementor-pro' ),
+				'label' => __( 'HTML', 'museum-core' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'dynamic' => [
 					'active' => true,
@@ -253,10 +253,10 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_responsive_control(
 			'width',
 			[
-				'label' => __( 'Column Width', 'elementor-pro' ),
+				'label' => __( 'Column Width', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Default', 'elementor-pro' ),
+					'' => __( 'Default', 'museum-core' ),
 					'100' => '100%',
 					'80' => '80%',
 					'75' => '75%',
@@ -288,7 +288,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'rows',
 			[
-				'label' => __( 'Rows', 'elementor-pro' ),
+				'label' => __( 'Rows', 'museum-core' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 4,
 				'conditions' => [
@@ -304,12 +304,12 @@ class Form extends \Elementor\Widget_Base {
 
 		$repeater->add_control(
 			'recaptcha_size', [
-				'label' => __( 'Size', 'elementor-pro' ),
+				'label' => __( 'Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'normal',
 				'options' => [
-					'normal' => __( 'Normal', 'elementor-pro' ),
-					'compact' => __( 'Compact', 'elementor-pro' ),
+					'normal' => __( 'Normal', 'museum-core' ),
+					'compact' => __( 'Compact', 'museum-core' ),
 				],
 				'conditions' => [
 					'terms' => [
@@ -325,12 +325,12 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'recaptcha_style',
 			[
-				'label' => __( 'Style', 'elementor-pro' ),
+				'label' => __( 'Style', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'light',
 				'options' => [
-					'light' => __( 'Light', 'elementor-pro' ),
-					'dark' => __( 'Dark', 'elementor-pro' ),
+					'light' => __( 'Light', 'museum-core' ),
+					'dark' => __( 'Dark', 'museum-core' ),
 				],
 				'conditions' => [
 					'terms' => [
@@ -345,15 +345,15 @@ class Form extends \Elementor\Widget_Base {
 
 		$repeater->add_control(
 			'recaptcha_badge', [
-				'label' => __( 'Badge', 'elementor-pro' ),
+				'label' => __( 'Badge', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'bottomright',
 				'options' => [
-					'bottomright' => __( 'Bottom Right', 'elementor-pro' ),
-					'bottomleft' => __( 'Bottom Left', 'elementor-pro' ),
-					'inline' => __( 'Inline', 'elementor-pro' ),
+					'bottomright' => __( 'Bottom Right', 'museum-core' ),
+					'bottomleft' => __( 'Bottom Left', 'museum-core' ),
+					'inline' => __( 'Inline', 'museum-core' ),
 				],
-				'description' => __( 'To view the validation badge, switch to preview mode', 'elementor-pro' ),
+				'description' => __( 'To view the validation badge, switch to preview mode', 'museum-core' ),
 				'conditions' => [
 					'terms' => [
 						[
@@ -368,10 +368,10 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'css_classes',
 			[
-				'label' => __( 'CSS Classes', 'elementor-pro' ),
+				'label' => __( 'CSS Classes', 'museum-core' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => '',
-				'title' => __( 'Add your custom class WITHOUT the dot. e.g: my-class', 'elementor-pro' ),
+				'title' => __( 'Add your custom class WITHOUT the dot. e.g: my-class', 'museum-core' ),
 			]
 		);
 
@@ -380,7 +380,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->start_controls_tab(
 			'form_fields_advanced_tab',
 			[
-				'label' => __( 'Advanced', 'elementor-pro' ),
+				'label' => __( 'Advanced', 'museum-core' ),
 				'condition' => [
 					'field_type!' => 'html',
 				],
@@ -390,7 +390,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'field_value',
 			[
-				'label' => __( 'Default Value', 'elementor-pro' ),
+				'label' => __( 'Default Value', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'dynamic' => [
@@ -423,9 +423,9 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'custom_id',
 			[
-				'label' => __( 'ID', 'elementor-pro' ),
+				'label' => __( 'ID', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'description' => __( 'Please make sure the ID is unique and not used elsewhere in this form. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'elementor-pro' ),
+				'description' => __( 'Please make sure the ID is unique and not used elsewhere in this form. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'museum-core' ),
 				'render_type' => 'none',
 			]
 		);
@@ -433,7 +433,7 @@ class Form extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'shortcode',
 			[
-				'label' => __( 'Shortcode', 'elementor-pro' ),
+				'label' => __( 'Shortcode', 'museum-core' ),
 				'type' => Controls_Manager::RAW_HTML,
 				'classes' => 'forms-field-shortcode',
 				'raw' => '<input class="elementor-form-field-shortcode" readonly />',
@@ -447,17 +447,17 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_form_fields',
 			[
-				'label' => __( 'Form Fields', 'elementor-pro' ),
+				'label' => __( 'Form Fields', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'form_name',
 			[
-				'label' => __( 'Form Name', 'elementor-pro' ),
+				'label' => __( 'Form Name', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'New Form', 'elementor-pro' ),
-				'placeholder' => __( 'Form Name', 'elementor-pro' ),
+				'default' => __( 'New Form', 'museum-core' ),
+				'placeholder' => __( 'Form Name', 'museum-core' ),
 			]
 		);
 
@@ -470,23 +470,23 @@ class Form extends \Elementor\Widget_Base {
 					[
 						'custom_id' => 'name',
 						'field_type' => 'text',
-						'field_label' => __( 'Name', 'elementor-pro' ),
-						'placeholder' => __( 'Name', 'elementor-pro' ),
+						'field_label' => __( 'Name', 'museum-core' ),
+						'placeholder' => __( 'Name', 'museum-core' ),
 						'width' => '100',
 					],
 					[
 						'custom_id' => 'email',
 						'field_type' => 'email',
 						'required' => 'true',
-						'field_label' => __( 'Email', 'elementor-pro' ),
-						'placeholder' => __( 'Email', 'elementor-pro' ),
+						'field_label' => __( 'Email', 'museum-core' ),
+						'placeholder' => __( 'Email', 'museum-core' ),
 						'width' => '100',
 					],
 					[
 						'custom_id' => 'message',
 						'field_type' => 'textarea',
-						'field_label' => __( 'Message', 'elementor-pro' ),
-						'placeholder' => __( 'Message', 'elementor-pro' ),
+						'field_label' => __( 'Message', 'museum-core' ),
+						'placeholder' => __( 'Message', 'museum-core' ),
 						'width' => '100',
 					],
 				],
@@ -497,14 +497,14 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'input_size',
 			[
-				'label' => __( 'Input Size', 'elementor-pro' ),
+				'label' => __( 'Input Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'xs' => __( 'Extra Small', 'elementor-pro' ),
-					'sm' => __( 'Small', 'elementor-pro' ),
-					'md' => __( 'Medium', 'elementor-pro' ),
-					'lg' => __( 'Large', 'elementor-pro' ),
-					'xl' => __( 'Extra Large', 'elementor-pro' ),
+					'xs' => __( 'Extra Small', 'museum-core' ),
+					'sm' => __( 'Small', 'museum-core' ),
+					'md' => __( 'Medium', 'museum-core' ),
+					'lg' => __( 'Large', 'museum-core' ),
+					'xl' => __( 'Extra Large', 'museum-core' ),
 				],
 				'default' => 'sm',
 				'separator' => 'before',
@@ -514,10 +514,10 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_labels',
 			[
-				'label' => __( 'Label', 'elementor-pro' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'elementor-pro' ),
-				'label_off' => __( 'Hide', 'elementor-pro' ),
+				'label_on' => __( 'Show', 'museum-core' ),
+				'label_off' => __( 'Hide', 'museum-core' ),
 				'return_value' => 'true',
 				'default' => 'true',
 				'separator' => 'before',
@@ -527,10 +527,10 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'mark_required',
 			[
-				'label' => __( 'Required Mark', 'elementor-pro' ),
+				'label' => __( 'Required Mark', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'elementor-pro' ),
-				'label_off' => __( 'Hide', 'elementor-pro' ),
+				'label_on' => __( 'Show', 'museum-core' ),
+				'label_off' => __( 'Hide', 'museum-core' ),
 				'default' => '',
 				'condition' => [
 					'show_labels!' => '',
@@ -541,11 +541,11 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'label_position',
 			[
-				'label' => __( 'Label Position', 'elementor-pro' ),
+				'label' => __( 'Label Position', 'museum-core' ),
 				'type' => Controls_Manager::HIDDEN,
 				'options' => [
-					'above' => __( 'Above', 'elementor-pro' ),
-					'inline' => __( 'Inline', 'elementor-pro' ),
+					'above' => __( 'Above', 'museum-core' ),
+					'inline' => __( 'Inline', 'museum-core' ),
 				],
 				'default' => 'above',
 				'condition' => [
@@ -559,24 +559,24 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_submit_button',
 			[
-				'label' => __( 'Submit Button', 'elementor-pro' ),
+				'label' => __( 'Submit Button', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text',
 			[
-				'label' => __( 'Text', 'elementor-pro' ),
+				'label' => __( 'Text', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Send', 'elementor-pro' ),
-				'placeholder' => __( 'Send', 'elementor-pro' ),
+				'default' => __( 'Send', 'museum-core' ),
+				'placeholder' => __( 'Send', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_size',
 			[
-				'label' => __( 'Size', 'elementor-pro' ),
+				'label' => __( 'Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'sm',
 				// 'options' => self::get_button_sizes(),
@@ -586,10 +586,10 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_responsive_control(
 			'button_width',
 			[
-				'label' => __( 'Column Width', 'elementor-pro' ),
+				'label' => __( 'Column Width', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Default', 'elementor-pro' ),
+					'' => __( 'Default', 'museum-core' ),
 					'100' => '100%',
 					'80' => '80%',
 					'75' => '75%',
@@ -608,23 +608,23 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_responsive_control(
 			'button_align',
 			[
-				'label' => __( 'Alignment', 'elementor-pro' ),
+				'label' => __( 'Alignment', 'museum-core' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'start' => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => __( 'Left', 'museum-core' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => __( 'Center', 'museum-core' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'end' => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => __( 'Right', 'museum-core' ),
 						'icon' => 'eicon-text-align-right',
 					],
 					'stretch' => [
-						'title' => __( 'Justified', 'elementor-pro' ),
+						'title' => __( 'Justified', 'museum-core' ),
 						'icon' => 'eicon-text-align-justify',
 					],
 				],
@@ -636,7 +636,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'selected_button_icon',
 			[
-				'label' => __( 'Icon', 'elementor-pro' ),
+				'label' => __( 'Icon', 'museum-core' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'button_icon',
 				'label_block' => true,
@@ -646,12 +646,12 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_icon_align',
 			[
-				'label' => __( 'Icon Position', 'elementor-pro' ),
+				'label' => __( 'Icon Position', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'left',
 				'options' => [
-					'left' => __( 'Before', 'elementor-pro' ),
-					'right' => __( 'After', 'elementor-pro' ),
+					'left' => __( 'Before', 'museum-core' ),
+					'right' => __( 'After', 'museum-core' ),
 				],
 				'condition' => [
 					'selected_button_icon[value]!' => '',
@@ -662,7 +662,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_icon_indent',
 			[
-				'label' => __( 'Icon Spacing', 'elementor-pro' ),
+				'label' => __( 'Icon Spacing', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -682,12 +682,12 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_css_id',
 			[
-				'label' => __( 'Button ID', 'elementor-pro' ),
+				'label' => __( 'Button ID', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __( 'Add your custom id WITHOUT the Pound key. e.g: my-id', 'elementor-pro' ),
+				'title' => __( 'Add your custom id WITHOUT the Pound key. e.g: my-id', 'museum-core' ),
 				'label_block' => false,
-				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'elementor-pro' ),
+				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'museum-core' ),
 				'separator' => 'before',
 
 			]
@@ -698,7 +698,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_integration',
 			[
-				'label' => __( 'Actions After Submit', 'elementor-pro' ),
+				'label' => __( 'Actions After Submit', 'museum-core' ),
 			]
 		);
 
@@ -713,7 +713,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'submit_actions',
 			[
-				'label' => __( 'Add Action', 'elementor-pro' ),
+				'label' => __( 'Add Action', 'museum-core' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => true,
 				'options' => $actions_options,
@@ -722,7 +722,7 @@ class Form extends \Elementor\Widget_Base {
 				'default' => [
 					'email',
 				],
-				'description' => __( 'Add actions that will be performed after a visitor submits the form (e.g. send an email notification). Choosing an action will add its setting below.', 'elementor-pro' ),
+				'description' => __( 'Add actions that will be performed after a visitor submits the form (e.g. send an email notification). Choosing an action will add its setting below.', 'museum-core' ),
 			]
 		);
 
@@ -735,7 +735,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_form_options',
 			[
-				'label' => __( 'Additional Options', 'elementor-pro' ),
+				'label' => __( 'Additional Options', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -743,10 +743,10 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'form_id',
 			[
-				'label' => __( 'Form ID', 'elementor-pro' ),
+				'label' => __( 'Form ID', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'placeholder' => 'new_form_id',
-				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'elementor-pro' ),
+				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'museum-core' ),
 				'separator' => 'after',
 			]
 		);
@@ -754,7 +754,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'custom_messages',
 			[
-				'label' => __( 'Custom Messages', 'elementor-pro' ),
+				'label' => __( 'Custom Messages', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
 				'separator' => 'before',
@@ -767,7 +767,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'success_message',
 			[
-				'label' => __( 'Success Message', 'elementor-pro' ),
+				'label' => __( 'Success Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				//'default' => $default_messages[ Ajax_Handler::SUCCESS ],
 				//'placeholder' => $default_messages[ Ajax_Handler::SUCCESS ],
@@ -782,7 +782,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'error_message',
 			[
-				'label' => __( 'Error Message', 'elementor-pro' ),
+				'label' => __( 'Error Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				//'default' => $default_messages[ Ajax_Handler::ERROR ],
 				//'placeholder' => $default_messages[ Ajax_Handler::ERROR ],
@@ -797,7 +797,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'required_field_message',
 			[
-				'label' => __( 'Required Message', 'elementor-pro' ),
+				'label' => __( 'Required Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				//'default' => $default_messages[ Ajax_Handler::FIELD_REQUIRED ],
 				//'placeholder' => $default_messages[ Ajax_Handler::FIELD_REQUIRED ],
@@ -812,7 +812,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'invalid_message',
 			[
-				'label' => __( 'Invalid Message', 'elementor-pro' ),
+				'label' => __( 'Invalid Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				//'default' => $default_messages[ Ajax_Handler::INVALID_FORM ],
 				//'placeholder' => $default_messages[ Ajax_Handler::INVALID_FORM ],
@@ -829,7 +829,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_form_style',
 			[
-				'label' => __( 'Form', 'elementor-pro' ),
+				'label' => __( 'Form', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -837,7 +837,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'elementor-pro' ),
+				'label' => __( 'Columns Gap', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -858,7 +858,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'elementor-pro' ),
+				'label' => __( 'Rows Gap', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -880,7 +880,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'heading_label',
 			[
-				'label' => __( 'Label', 'elementor-pro' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -889,7 +889,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'label_spacing',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => __( 'Spacing', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0,
@@ -914,7 +914,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'label_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group > label, {{WRAPPER}} .elementor-field-subgroup label' => 'color: {{VALUE}};',
@@ -929,7 +929,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'mark_required_color',
 			[
-				'label' => __( 'Mark Color', 'elementor-pro' ),
+				'label' => __( 'Mark Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -955,7 +955,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_field_style',
 			[
-				'label' => __( 'Field', 'elementor-pro' ),
+				'label' => __( 'Field', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -963,7 +963,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'field_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group .elementor-field' => 'color: {{VALUE}};',
@@ -987,7 +987,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'field_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1001,7 +1001,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'field_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor-pro' ),
+				'label' => __( 'Border Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group:not(.elementor-field-type-upload) .elementor-field:not(.elementor-select-wrapper)' => 'border-color: {{VALUE}};',
@@ -1015,7 +1015,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'field_border_width',
 			[
-				'label' => __( 'Border Width', 'elementor-pro' ),
+				'label' => __( 'Border Width', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'placeholder' => '1',
 				'size_units' => [ 'px' ],
@@ -1029,7 +1029,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'field_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => __( 'Border Radius', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1044,7 +1044,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_button_style',
 			[
-				'label' => __( 'Button', 'elementor-pro' ),
+				'label' => __( 'Button', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1054,14 +1054,14 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'elementor-pro' ),
+				'label' => __( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -1076,7 +1076,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1105,7 +1105,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => __( 'Border Radius', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1117,7 +1117,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_text_padding',
 			[
-				'label' => __( 'Text Padding', 'elementor-pro' ),
+				'label' => __( 'Text Padding', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1131,14 +1131,14 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'elementor-pro' ),
+				'label' => __( 'Hover', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_background_hover_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'background-color: {{VALUE}};',
@@ -1149,7 +1149,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_hover_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'color: {{VALUE}};',
@@ -1160,7 +1160,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor-pro' ),
+				'label' => __( 'Border Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'border-color: {{VALUE}};',
@@ -1174,7 +1174,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'button_hover_animation',
 			[
-				'label' => __( 'Animation', 'elementor-pro' ),
+				'label' => __( 'Animation', 'museum-core' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -1188,7 +1188,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_messages_style',
 			[
-				'label' => __( 'Messages', 'elementor-pro' ),
+				'label' => __( 'Messages', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1205,7 +1205,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'success_message_color',
 			[
-				'label' => __( 'Success Message Color', 'elementor-pro' ),
+				'label' => __( 'Success Message Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-message.elementor-message-success' => 'color: {{COLOR}};',
@@ -1216,7 +1216,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'error_message_color',
 			[
-				'label' => __( 'Error Message Color', 'elementor-pro' ),
+				'label' => __( 'Error Message Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-message.elementor-message-danger' => 'color: {{COLOR}};',
@@ -1227,7 +1227,7 @@ class Form extends \Elementor\Widget_Base {
 		$this->add_control(
 			'inline_message_color',
 			[
-				'label' => __( 'Inline Message Color', 'elementor-pro' ),
+				'label' => __( 'Inline Message Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-message.elementor-help-inline' => 'color: {{COLOR}};',

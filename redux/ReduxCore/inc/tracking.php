@@ -126,18 +126,18 @@
                 $id    = '#wpadminbar';
                 $nonce = wp_create_nonce( 'redux_activate_tracking' );
 
-                $content = '<h3>' . esc_html__( 'Help improve Our Panel', 'student-plugin' ) . '</h3>';
-                $content .= '<p>' . esc_html__( 'Please helps us improve our panel by allowing us to gather anonymous usage stats so we know which configurations, plugins and themes to test to ensure compatibility.', 'student-plugin' ) . '</p>';
+                $content = '<h3>' . esc_html__( 'Help improve Our Panel', 'museum-core' ) . '</h3>';
+                $content .= '<p>' . esc_html__( 'Please helps us improve our panel by allowing us to gather anonymous usage stats so we know which configurations, plugins and themes to test to ensure compatibility.', 'museum-core' ) . '</p>';
                 $opt_arr = array(
                     'content'  => $content,
                     'position' => array( 'edge' => 'top', 'align' => 'center' )
                 );
-                $button2 = esc_html__( 'Allow tracking', 'student-plugin' );
+                $button2 = esc_html__( 'Allow tracking', 'museum-core' );
 
                 $function2 = 'redux_store_answer("yes","' . $nonce . '")';
                 $function1 = 'redux_store_answer("no","' . $nonce . '")';
 
-                $this->print_scripts( $id, $opt_arr, esc_html__( 'Do not allow tracking', 'student-plugin' ), $button2, $function2, $function1 );
+                $this->print_scripts( $id, $opt_arr, esc_html__( 'Do not allow tracking', 'museum-core' ), $button2, $function2, $function1 );
             }
 
             /**
@@ -148,19 +148,19 @@
                 $nonce = wp_create_nonce( 'redux_activate_tracking' );
 
 
-                $content = '<h3>' . esc_html__( 'Welcome to the Redux Demo Panel', 'student-plugin' ) . '</h3>';
-                $content .= '<p><strong>' . esc_html__( 'Getting Started', 'student-plugin' ) . '</strong><br>' . sprintf( __( 'This panel demonstrates the many features of Redux.  Before digging in, we suggest you get up to speed by reviewing %1$s.', 'student-plugin' ), '<a href="' . 'http://' . 'docs.reduxframework.com/redux-framework/getting-started/" target="_blank">' . esc_html__( 'our documentation', 'student-plugin' ) . '</a>' );
-                $content .= '<p><strong>' . esc_html__( 'Redux Generator', 'student-plugin' ) . '</strong><br>' . sprintf( __( 'Want to get a head start? Use the %1$s. It will create a customized boilerplate theme or a standalone admin folder complete with all things Redux (with the help of Underscores and TGM). Save yourself a headache and try it today.', 'student-plugin' ), '<a href="' . 'http://' . 'generate.reduxframework.com/" target="_blank">' . esc_html__( 'Redux Generator', 'student-plugin' ) . '</a>' );
-                $content .= '<p><strong>' . esc_html__( 'Redux Extensions', 'student-plugin' ) . '</strong><br>' . sprintf( __( 'Did you know we have extensions, which greatly enhance the features of Redux?  Visit our %1$s to learn more!', 'student-plugin' ), '<a href="' . 'http://' . 'reduxframework.com/extensions/" target="_blank">' . esc_html__( 'extensions directory', 'student-plugin' ) . '</a>' );
-                $content .= '<p><strong>' . esc_html__( 'Like Redux?', 'student-plugin' ) . '</strong><br>' . sprintf( __( 'If so, please %1$s and consider making a %2$s to keep development of Redux moving forward.', 'student-plugin' ), '<a target="_blank" href="' . 'http://' . 'wordpress.org/support/view/plugin-reviews/redux-framework">' . esc_html__( 'leave us a favorable review on WordPress.org', 'student-plugin' ) . '</a>', '<a href="' . 'https://' . 'www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N5AD7TSH8YA5U" target="_blank">' . esc_html__( 'donation', 'student-plugin' ) . '</a>' );
-                $content .= '<p><strong>' . esc_html__( 'Newsletter', 'student-plugin' ) . '</strong><br>' . esc_html__( 'If you\'d like to keep up to with all things Redux, please subscribe to our newsletter', 'student-plugin' ) . ':</p>';
+                $content = '<h3>' . esc_html__( 'Welcome to the Redux Demo Panel', 'museum-core' ) . '</h3>';
+                $content .= '<p><strong>' . esc_html__( 'Getting Started', 'museum-core' ) . '</strong><br>' . sprintf( __( 'This panel demonstrates the many features of Redux.  Before digging in, we suggest you get up to speed by reviewing %1$s.', 'museum-core' ), '<a href="' . 'http://' . 'docs.reduxframework.com/redux-framework/getting-started/" target="_blank">' . esc_html__( 'our documentation', 'museum-core' ) . '</a>' );
+                $content .= '<p><strong>' . esc_html__( 'Redux Generator', 'museum-core' ) . '</strong><br>' . sprintf( __( 'Want to get a head start? Use the %1$s. It will create a customized boilerplate theme or a standalone admin folder complete with all things Redux (with the help of Underscores and TGM). Save yourself a headache and try it today.', 'museum-core' ), '<a href="' . 'http://' . 'generate.reduxframework.com/" target="_blank">' . esc_html__( 'Redux Generator', 'museum-core' ) . '</a>' );
+                $content .= '<p><strong>' . esc_html__( 'Redux Extensions', 'museum-core' ) . '</strong><br>' . sprintf( __( 'Did you know we have extensions, which greatly enhance the features of Redux?  Visit our %1$s to learn more!', 'museum-core' ), '<a href="' . 'http://' . 'reduxframework.com/extensions/" target="_blank">' . esc_html__( 'extensions directory', 'museum-core' ) . '</a>' );
+                $content .= '<p><strong>' . esc_html__( 'Like Redux?', 'museum-core' ) . '</strong><br>' . sprintf( __( 'If so, please %1$s and consider making a %2$s to keep development of Redux moving forward.', 'museum-core' ), '<a target="_blank" href="' . 'http://' . 'wordpress.org/support/view/plugin-reviews/redux-framework">' . esc_html__( 'leave us a favorable review on WordPress.org', 'museum-core' ) . '</a>', '<a href="' . 'https://' . 'www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N5AD7TSH8YA5U" target="_blank">' . esc_html__( 'donation', 'museum-core' ) . '</a>' );
+                $content .= '<p><strong>' . esc_html__( 'Newsletter', 'museum-core' ) . '</strong><br>' . esc_html__( 'If you\'d like to keep up to with all things Redux, please subscribe to our newsletter', 'museum-core' ) . ':</p>';
                 $content .= '<form action="http://news.redux.io/subscribe" method="POST" target="_blank" accept-charset="utf-8" class="validate">
                                 <p style="text-align: center;">
-                                    <label for="email">' . esc_html__('Email Address', 'student-plugin') . '</label>
+                                    <label for="email">' . esc_html__('Email Address', 'museum-core') . '</label>
                                     <input type="email" name="email" class="required email" id="email"/>
                                     <input type="hidden" name="list" value="9K1qDRvB8Ux0DqpEoQSEPA"/>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="submit" class="button button-primary" name="submit" value="' . esc_html__( 'Subscribe', 'student-plugin' ) . '" id="submit"/>
+                                    <input type="submit" class="button button-primary" name="submit" value="' . esc_html__( 'Subscribe', 'museum-core' ) . '" id="submit"/>
                                     </p>
                             </form>';
                 
@@ -172,7 +172,7 @@
 
                 $function1 = 'redux_store_answer("tour","' . $nonce . '")';
 
-                $this->print_scripts( $id, $opt_arr, esc_html__( 'Close', 'student-plugin' ), false, '', $function1 );
+                $this->print_scripts( $id, $opt_arr, esc_html__( 'Close', 'museum-core' ), false, '', $function1 );
             }
 
             /**

@@ -127,6 +127,6 @@ class CSSModule {
 	 * @access public
 	 */
 	public function enqueue_editor_scripts() {
-		wp_enqueue_script( 'we-custom-css', STUDENT_PLUGIN_URL . 'assets/elementor/js/we-custom-css.js', [ 'jquery' ], '', true );
+		wp_enqueue_script( 'we-custom-css', MUSEUM_CORE_URL . 'assets/elementor/js/we-custom-css.js', [ 'jquery' ], '', true );
 	}
 }

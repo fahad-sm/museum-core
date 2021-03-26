@@ -18,8 +18,8 @@ class Ajax {
 	}
 
 	function init() {
-		add_action('wp_ajax_student_elementor_form_handler', array($this, 'handle' ) );
-		add_action('wp_ajax_nopriv_student_elementor_form_handler', array($this, 'handle' ) );
+		add_action('wp_ajax_museum_elementor_form_handler', array($this, 'handle' ) );
+		add_action('wp_ajax_nopriv_museum_elementor_form_handler', array($this, 'handle' ) );
 	}
 
 	function handle() {
@@ -101,7 +101,7 @@ class Ajax {
 
 		$nonce = esc_attr(student_get($_POST, '_wpnonce' ));
 		if( ! wp_verify_nonce( $nonce, 'webinane_elementor_form_builder' ) ) {
-			wp_send_json_error( array('message' => esc_html__('Unable to verify security check, please reload page and try again', 'webinane-elementor')) );
+			wp_send_json_error( array('message' => esc_html__('Unable to verify security check, please reload page and try again', 'museum-core')) );
 		}
 
 		$record->validate();
@@ -142,7 +142,7 @@ class Ajax {
 		$fields = [
 			'email_to' => get_option( 'admin_email' ),
 			/* translators: %s: Site title. */
-			'email_subject' => sprintf( __( 'New message from "%s"', 'webinane-elementor' ), get_bloginfo( 'name' ) ),
+			'email_subject' => sprintf( __( 'New message from "%s"', 'museum-core' ), get_bloginfo( 'name' ) ),
 			'email_content' => '[all-fields]',
 			'email_from_name' => get_bloginfo( 'name' ),
 			'email_from' => get_bloginfo( 'admin_email' ),
@@ -253,11 +253,11 @@ class Ajax {
 
 		if ( ! $email_sent ) {
 			wp_send_json_error( array( 
-				'message' => student_get( $settings, 'invalid_message', __( 'There\'s something wrong. The form is invalid.', 'webinane-elementor' ) ),
+				'message' => student_get( $settings, 'invalid_message', __( 'There\'s something wrong. The form is invalid.', 'museum-core' ) ),
 			), 403 );
 		}
 		
-		return __( 'The form was sent successfully.', 'webinane-elementor' );
+		return __( 'The form was sent successfully.', 'museum-core' );
 	}
 
 	/**

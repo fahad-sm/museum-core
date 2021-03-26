@@ -101,10 +101,10 @@
                 }
 ?>                
                 <fieldset id="<?php echo esc_attr($id); ?>-fieldset" class="redux-field redux-container-<?php echo esc_attr($this->field['type']) . ' ' . esc_attr($this->field['class']); ?>" data-id="<?php echo esc_attr($this->field['id']); ?>">
-                    <h3><?php esc_html_e( 'Options Object', 'student-plugin' ); ?></h3>
+                    <h3><?php esc_html_e( 'Options Object', 'museum-core' ); ?></h3>
                     <div id="redux-object-browser"></div>
                     <div id="redux-object-json" class="hide"><?php echo $json; ?></div>
-                    <a href="#" id="consolePrintObject" class="button"><?php esc_html_e( 'Show Object in Javascript Console Object', 'student-plugin' ); ?></a>
+                    <a href="#" id="consolePrintObject" class="button"><?php esc_html_e( 'Show Object in Javascript Console Object', 'museum-core' ); ?></a>
                 </div>
                 </fieldset>
 <?php

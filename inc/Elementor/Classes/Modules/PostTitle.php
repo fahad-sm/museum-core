@@ -8,7 +8,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class PostTitle extends Tag {
 	/**
@@ -44,7 +44,7 @@ class PostTitle extends Tag {
 	 * @return string
 	 */
 	public function get_group() {
-		return StudentModules::POST_GROUP;
+		return MuseumModules::POST_GROUP;
 	}
 
 	/**

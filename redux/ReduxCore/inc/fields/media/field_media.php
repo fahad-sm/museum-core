@@ -150,7 +150,7 @@ if ( ! class_exists( 'ReduxFramework_media' ) ) {
                 $hide = '';
             }
 
-            $placeholder = isset( $this->field['placeholder'] ) ? $this->field['placeholder'] : __( 'No media selected', 'student-plugin' );
+            $placeholder = isset( $this->field['placeholder'] ) ? $this->field['placeholder'] : __( 'No media selected', 'museum-core' );
 
             $readOnly = ' readonly="readonly"';
             if ( isset( $this->field['readonly'] ) && $this->field['readonly'] === false ) {
@@ -203,14 +203,14 @@ if ( ! class_exists( 'ReduxFramework_media' ) ) {
             echo '<div class="upload_button_div">';
 
             //If the user has WP3.5+ show upload/remove button
-            echo '<span class="button media_upload_button" id="' . $this->field['id'] . '-media">' . __( 'Upload', 'student-plugin' ) . '</span>';
+            echo '<span class="button media_upload_button" id="' . $this->field['id'] . '-media">' . __( 'Upload', 'museum-core' ) . '</span>';
 
             $hide = '';
             if ( empty( $this->value['url'] ) || $this->value['url'] == '' ) {
                 $hide = ' hide';
             }
 
-            echo '<span class="button remove-image' . $hide . '" id="reset_' . $this->field['id'] . '" rel="' . $this->field['id'] . '">' . __( 'Remove', 'student-plugin' ) . '</span>';
+            echo '<span class="button remove-image' . $hide . '" id="reset_' . $this->field['id'] . '" rel="' . $this->field['id'] . '">' . __( 'Remove', 'museum-core' ) . '</span>';
 
             echo '</div>';
         }

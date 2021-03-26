@@ -8,7 +8,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 
 use Elementor\Core\DynamicTags\Data_Tag;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class CommentsUrl extends Data_Tag {
 
@@ -21,7 +21,7 @@ class CommentsUrl extends Data_Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::COMMENTS_GROUP;
+		return MuseumModules::COMMENTS_GROUP;
 	}
 
 	public function get_categories() {

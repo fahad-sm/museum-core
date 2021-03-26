@@ -18,7 +18,7 @@ use MuseumCore\Util\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 
-class IconBox extends Widget_Base {
+class History extends Widget_Base {
     // use \ElementsKit_Lite\Widgets\Widget_Notice;
 
     public $base;
@@ -44,26 +44,26 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box',
             [
-                'label' => esc_html__( 'Icon Box', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon Box', 'museum-core' ),
             ]
         );
 
         $this->add_control(
             'ekit_icon_box_enable_header_icon', [
-                'label'       => esc_html__( 'Icon Type', 'elementskit-lite' ),
+                'label'       => esc_html__( 'Icon Type', 'museum-core' ),
                 'type'        => Controls_Manager::CHOOSE,
                 'label_block' => false,
                 'options'     => [
                     'none' => [
-                        'title' => esc_html__( 'None', 'elementskit-lite' ),
+                        'title' => esc_html__( 'None', 'museum-core' ),
                         'icon'  => 'fa fa-ban',
                     ],
                     'icon' => [
-                        'title' => esc_html__( 'Icon', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Icon', 'museum-core' ),
                         'icon'  => 'fa fa-paint-brush',
                     ],
                     'image' => [
-                        'title' => esc_html__( 'Image', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Image', 'museum-core' ),
                         'icon'  => 'fa fa-image',
                     ],
                 ],
@@ -74,11 +74,11 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_header_icons__switch',
             [
-                'label' => esc_html__('Add icon? ', 'elementskit-lite'),
+                'label' => esc_html__('Add icon? ', 'museum-core'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' =>esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' =>esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' =>esc_html__( 'Yes', 'museum-core' ),
+                'label_off' =>esc_html__( 'No', 'museum-core' ),
                 'condition' => [
                     'ekit_icon_box_enable_header_icon!' => 'none',
                 ]
@@ -88,7 +88,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_header_icons',
             [
-                'label' => esc_html__( 'Header Icon', 'elementskit-lite' ),
+                'label' => esc_html__( 'Header Icon', 'museum-core' ),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'ekit_icon_box_header_icon',
                 'default' => [
@@ -106,7 +106,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_header_image',
             [
-                'label' => esc_html__( 'Choose Image', 'elementskit-lite' ),
+                'label' => esc_html__( 'Choose Image', 'museum-core' ),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => ElementorUtils::get_placeholder_image_src(),
@@ -123,13 +123,13 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_title_text',
             [
-                'label' => esc_html__( 'Title ', 'elementskit-lite' ),
+                'label' => esc_html__( 'Title ', 'museum-core' ),
                 'type' => Controls_Manager::TEXT,
                 'dynamic' => [
                     'active' => true,
                 ],
-                'default' => esc_html__( 'Strategy and  Planning', 'elementskit-lite' ),
-                'placeholder' => esc_html__( 'Enter your title', 'elementskit-lite' ),
+                'default' => esc_html__( 'Strategy and  Planning', 'museum-core' ),
+                'placeholder' => esc_html__( 'Enter your title', 'museum-core' ),
                 'label_block' => true,
                 'separator' => 'before',
             ]
@@ -138,13 +138,13 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_description_text',
             [
-                'label' => esc_html__( 'Content', 'elementskit-lite' ),
+                'label' => esc_html__( 'Content', 'museum-core' ),
                 'type' => Controls_Manager::TEXTAREA,
                 'dynamic' => [
                     'active' => true,
                 ],
-                'default' => esc_html__( 'We bring the right people together to challenge established thinking and drive transform in 2020', 'elementskit-lite' ),
-                'placeholder' => esc_html__( 'Enter your description', 'elementskit-lite' ),
+                'default' => esc_html__( 'We bring the right people together to challenge established thinking and drive transform in 2020', 'museum-core' ),
+                'placeholder' => esc_html__( 'Enter your description', 'museum-core' ),
                 'separator' => 'none',
                 'rows' => 10,
                 'show_label' => false,
@@ -158,16 +158,16 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_section_button',
             [
-                'label' => esc_html__( 'Read More', 'elementskit-lite' ),
+                'label' => esc_html__( 'Read More', 'museum-core' ),
             ]
         );
         $this->add_control(
             'ekit_icon_box_enable_btn',
             [
-                'label' => esc_html__( 'Enable Button', 'elementskit-lite' ),
+                'label' => esc_html__( 'Enable Button', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Yes', 'museum-core' ),
+                'label_off' => esc_html__( 'No', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'separator' => 'before',
@@ -176,10 +176,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_enable_hover_btn',
             [
-                'label' => esc_html__( 'Enable Hover Btn', 'elementskit-lite' ),
+                'label' => esc_html__( 'Enable Hover Btn', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Yes', 'museum-core' ),
+                'label_off' => esc_html__( 'No', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => 'no',
                 'separator' => 'before',
@@ -192,20 +192,20 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'hover_btn_horizontal_align',
             [
-                'label' => esc_html__( 'Horizontal Alignment', 'elementskit-lite' ),
+                'label' => esc_html__( 'Horizontal Alignment', 'museum-core' ),
                 'type' => Controls_Manager::CHOOSE,
                 'default'   => 'center',
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Left', 'museum-core' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Center', 'museum-core' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Right', 'museum-core' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -219,10 +219,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_btn_text',
             [
-                'label' =>esc_html__( 'Label', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Label', 'museum-core' ),
                 'type' => Controls_Manager::TEXT,
-                'default' =>esc_html__( 'Learn more ', 'elementskit-lite' ),
-                'placeholder' =>esc_html__( 'Learn more ', 'elementskit-lite' ),
+                'default' =>esc_html__( 'Learn more ', 'museum-core' ),
+                'placeholder' =>esc_html__( 'Learn more ', 'museum-core' ),
                 'dynamic'     => array( 'active' => true ),
                 'condition' => [
                     'ekit_icon_box_enable_btn' => 'yes',
@@ -234,7 +234,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_btn_url',
             [
-                'label' =>esc_html__( 'URL', 'elementskit-lite' ),
+                'label' =>esc_html__( 'URL', 'museum-core' ),
                 'type' => Controls_Manager::URL,
                 'placeholder' =>esc_url('http://your-link.com'),
                 'default' => [
@@ -252,11 +252,11 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_icons__switch',
             [
-                'label' => esc_html__('Add icon? ', 'elementskit-lite'),
+                'label' => esc_html__('Add icon? ', 'museum-core'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' =>esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' =>esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' =>esc_html__( 'Yes', 'museum-core' ),
+                'label_off' =>esc_html__( 'No', 'museum-core' ),
                 'condition' => [
                     'ekit_icon_box_enable_btn' => 'yes',
                 ]
@@ -266,7 +266,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_icons',
             [
-                'label' =>esc_html__( 'Icon', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Icon', 'museum-core' ),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'ekit_icon_box_icon',
                 'default' => [
@@ -282,12 +282,12 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_icon_align',
             [
-                'label' =>esc_html__( 'Icon Position', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Icon Position', 'museum-core' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'left',
                 'options' => [
-                    'left' =>esc_html__( 'Before', 'elementskit-lite' ),
-                    'right' =>esc_html__( 'After', 'elementskit-lite' ),
+                    'left' =>esc_html__( 'Before', 'museum-core' ),
+                    'right' =>esc_html__( 'After', 'museum-core' ),
                 ],
                 'condition' => [
                     'ekit_icon_box_icons__switch'   => 'yes',
@@ -299,10 +299,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_show_global_link',
             [
-                'label' => esc_html__( 'Global Link', 'elementskit-lite' ),
+                'label' => esc_html__( 'Global Link', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Yes', 'museum-core' ),
+                'label_off' => esc_html__( 'No', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'condition' => [
@@ -314,9 +314,9 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_global_link',
             [
-                'label' => esc_html__( 'Link', 'elementskit-lite' ),
+                'label' => esc_html__( 'Link', 'museum-core' ),
                 'type' => Controls_Manager::URL,
-                'placeholder' => esc_html__( 'https://your-link.com', 'elementskit-lite' ),
+                'placeholder' => esc_html__( 'https://your-link.com', 'museum-core' ),
                 'show_external' => true,
                 'default' => [
                     'url' => 'https://your-link.com',
@@ -337,17 +337,17 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_section_settings',
             [
-                'label' => esc_html__( 'Settings', 'elementskit-lite' ),
+                'label' => esc_html__( 'Settings', 'museum-core' ),
             ]
         );
 
         $this->add_control(
             'ekit_icon_box_enable_water_mark',
             [
-                'label' => esc_html__( 'Enable Hover Water Mark ', 'elementskit-lite' ),
+                'label' => esc_html__( 'Enable Hover Water Mark ', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Yes', 'museum-core' ),
+                'label_off' => esc_html__( 'No', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => '',
             ]
@@ -356,7 +356,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_water_mark_icons',
             [
-                'label' => esc_html__( 'Social Icons', 'elementskit-lite' ),
+                'label' => esc_html__( 'Social Icons', 'museum-core' ),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'ekit_icon_box_water_mark_icon',
                 'default' => [
@@ -375,13 +375,13 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_icon_position',
             [
-                'label' => esc_html__( 'Icon Position', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon Position', 'museum-core' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'top',
                 'options' => [
-                    'top'  => esc_html__( 'Top', 'elementskit-lite' ),
-                    'left'  => esc_html__( 'Left', 'elementskit-lite' ),
-                    'right'  => esc_html__( 'Right', 'elementskit-lite' ),
+                    'top'  => esc_html__( 'Top', 'museum-core' ),
+                    'left'  => esc_html__( 'Left', 'museum-core' ),
+                    'right'  => esc_html__( 'Right', 'museum-core' ),
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -394,19 +394,19 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_text_align_responsive',
             [
-                'label' => esc_html__( 'Content Alignment', 'elementskit-lite' ),
+                'label' => esc_html__( 'Content Alignment', 'museum-core' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Left', 'museum-core' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Center', 'museum-core' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'elementskit-lite' ),
+                        'title' => esc_html__( 'Right', 'museum-core' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -417,7 +417,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_title_size',
             [
-                'label' => esc_html__( 'Title HTML Tag', 'elementskit-lite' ),
+                'label' => esc_html__( 'Title HTML Tag', 'museum-core' ),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'h1' => 'H1',
@@ -439,7 +439,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_badge_control_tab',
             [
-                'label' => esc_html__( 'Badge', 'elementskit-lite' ),
+                'label' => esc_html__( 'Badge', 'museum-core' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -447,10 +447,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_badge_control',
             [
-                'label' => esc_html__( 'Show Badge', 'elementskit-lite' ),
+                'label' => esc_html__( 'Show Badge', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'Hide', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Show', 'museum-core' ),
+                'label_off' => esc_html__( 'Hide', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => 'no',
             ]
@@ -458,10 +458,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_badge_title',
             [
-                'label' => esc_html__( 'Title', 'elementskit-lite' ),
+                'label' => esc_html__( 'Title', 'museum-core' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'EXCLUSIVE', 'elementskit-lite' ),
-                'placeholder' => esc_html__( 'Type your title here', 'elementskit-lite' ),
+                'default' => esc_html__( 'EXCLUSIVE', 'museum-core' ),
+                'placeholder' => esc_html__( 'Type your title here', 'museum-core' ),
                 'condition' => [
                     'ekit_icon_box_badge_control' => 'yes'
                 ]
@@ -471,17 +471,17 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_badge_position',
             [
-                'label' => esc_html__( 'Position', 'elementskit-lite' ),
+                'label' => esc_html__( 'Position', 'museum-core' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'top_left',
                 'options' => [
-                    'top-0 left-0'  => esc_html__( 'Top Left', 'elementskit-lite' ),
-                    'top-0 justify-center' => esc_html__( 'Top Center', 'elementskit-lite' ),
-                    'top-0 justify-right' => esc_html__( 'Top Right', 'elementskit-lite' ),
+                    'top-0 left-0'  => esc_html__( 'Top Left', 'museum-core' ),
+                    'top-0 justify-center' => esc_html__( 'Top Center', 'museum-core' ),
+                    'top-0 justify-right' => esc_html__( 'Top Right', 'museum-core' ),
                     // 'center_left' => esc_html__( 'Center Left', 'elementskit-lite' ),
-                    'bottom-0 left-0' => esc_html__( 'Bottom Left', 'elementskit-lite' ),
-                    'bottom-0 justify-center' => esc_html__( 'Bottom Center', 'elementskit-lite' ),
-                    'bottom-0 justify-right' => esc_html__( 'Bottom Right', 'elementskit-lite' ),
+                    'bottom-0 left-0' => esc_html__( 'Bottom Left', 'museum-core' ),
+                    'bottom-0 justify-center' => esc_html__( 'Bottom Center', 'museum-core' ),
+                    'bottom-0 justify-right' => esc_html__( 'Bottom Right', 'museum-core' ),
                 ],
                 'condition' => [
                     'ekit_icon_box_badge_control' => 'yes'
@@ -495,7 +495,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_section_background_style',
             [
-                'label' => esc_html__( 'Icon Box Container', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon Box Container', 'museum-core' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -503,14 +503,14 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_section_background_style_n_tab',
             [
-                'label' => esc_html__( 'Normal', 'elementskit-lite' ),
+                'label' => esc_html__( 'Normal', 'museum-core' ),
             ]
         );
         $this->add_group_control(
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_infobox_bg_group',
-                'label' => esc_html__( 'Background', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background', 'museum-core' ),
                 'types' => [ 'classic', 'gradient', 'video' ],
                 'selector' => '{{WRAPPER}} .elementskit-infobox',
             ]
@@ -518,7 +518,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_infobox_bg_padding',
             [
-                'label' => esc_html__( 'Padding', 'elementskit-lite' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'default' =>     [
@@ -537,7 +537,7 @@ class IconBox extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'ekit_icon_box_infobox_box_shadow_group',
-                'label' => esc_html__( 'Box Shadow', 'elementskit-lite' ),
+                'label' => esc_html__( 'Box Shadow', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-infobox',
             ]
         );
@@ -545,14 +545,14 @@ class IconBox extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'ekit_icon_box_iocnbox_border_group',
-                'label' => esc_html__( 'Border', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-infobox',
             ]
         );
         $this->add_responsive_control(
             'ekit_icon_box_infobox_border_radious',
             [
-                'label' => esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -564,14 +564,14 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_section_background_style_n_hv_tab',
             [
-                'label' => esc_html__( 'Hover', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover', 'museum-core' ),
             ]
         );
         $this->add_group_control(
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_infobox_bg_hover_group',
-                'label' => esc_html__( 'Background', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background', 'museum-core' ),
                 'types' => [ 'classic', 'gradient', 'video' ],
                 'selector' => '{{WRAPPER}} .elementskit-infobox:hover',
             ]
@@ -579,7 +579,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_infobox_bg_padding_inner',
             [
-                'label' => esc_html__( 'Padding', 'elementskit-lite' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
 
@@ -593,7 +593,7 @@ class IconBox extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'ekit_icon_box_infobox_box_shadow_hv_group',
-                'label' => esc_html__( 'Box Shadow', 'elementskit-lite' ),
+                'label' => esc_html__( 'Box Shadow', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-infobox:hover',
             ]
         );
@@ -601,14 +601,14 @@ class IconBox extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'ekit_icon_box_icon_box_border_hv_group',
-                'label' => esc_html__( 'Border', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-infobox:hover',
             ]
         );
         $this->add_responsive_control(
             'ekit_icon_box_infobox_border_radious_hv',
             [
-                'label' => esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -619,7 +619,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_info_box_hover_animation',
             [
-                'label' => esc_html__( 'Hover Animation', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover Animation', 'museum-core' ),
                 'type' => Controls_Manager::HOVER_ANIMATION,
             ]
         );
@@ -631,7 +631,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_section_style_content',
             [
-                'label' => esc_html__( 'Content', 'elementskit-lite' ),
+                'label' => esc_html__( 'Content', 'museum-core' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -639,7 +639,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_heading_title',
             [
-                'label' => esc_html__( 'Title', 'elementskit-lite' ),
+                'label' => esc_html__( 'Title', 'museum-core' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -648,7 +648,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_title_bottom_space',
             [
-                'label' => esc_html__( 'Margin', 'elementskit-lite' ),
+                'label' => esc_html__( 'Margin', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -664,7 +664,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_title_padding',
             [
-                'label' => esc_html__( 'Padding', 'elementskit-lite' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -684,7 +684,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_title_color',
             [
-                'label' => esc_html__( 'Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#000000',
                 'selectors' => [
@@ -695,7 +695,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_title_color_hover',
             [
-                'label' => esc_html__( 'Color Hover', 'elementskit-lite' ),
+                'label' => esc_html__( 'Color Hover', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#000000',
                 'selectors' => [
@@ -715,7 +715,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_heading_description',
             [
-                'label' => esc_html__( 'Description', 'elementskit-lite' ),
+                'label' => esc_html__( 'Description', 'museum-core' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -724,7 +724,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_description_color',
             [
-                'label' => esc_html__( 'Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#656565',
                 'selectors' => [
@@ -735,7 +735,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_description_color_hover',
             [
-                'label' => esc_html__( 'Color Hover as', 'elementskit-lite' ),
+                'label' => esc_html__( 'Color Hover as', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#656565',
                 'selectors' => [
@@ -756,7 +756,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_margin',
             [
-                'label' => esc_html__( 'Margin', 'elementskit-lite' ),
+                'label' => esc_html__( 'Margin', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -772,7 +772,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_watermark',
             [
-                'label' => esc_html__( 'Water Mark', 'elementskit-lite' ),
+                'label' => esc_html__( 'Water Mark', 'museum-core' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
@@ -784,7 +784,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_watermark_color',
             [
-                'label' => esc_html__( 'Water Mark Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Water Mark Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#000000',
                 'selectors' => [
@@ -800,7 +800,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_watermark_font_size',
             [
-                'label' => esc_html__( 'Water Mark Font Size', 'elementskit-lite' ),
+                'label' => esc_html__( 'Water Mark Font Size', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -830,7 +830,7 @@ class IconBox extends Widget_Base {
          $this->start_controls_section(
             'ekit_icon_box_section_style_icon',
             [
-                'label' => esc_html__( 'Icon', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon', 'museum-core' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'ekit_icon_box_enable_header_icon!' => 'none',
@@ -844,14 +844,14 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_icon_colors_normal',
             [
-                'label' => esc_html__( 'Normal', 'elementskit-lite' ),
+                'label' => esc_html__( 'Normal', 'museum-core' ),
             ]
         );
 
         $this->add_control(
             'ekit_icon_box_icon_primary_color',
             [
-                'label' => esc_html__( 'Icon Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#656565',
                 'selectors' => [
@@ -867,7 +867,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_icon_secondary_color_normal',
             [
-                'label' => esc_html__( 'Icon BG Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon BG Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -880,7 +880,7 @@ class IconBox extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'ekit_icon_box_border',
-                'label' => esc_html__( 'Border', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-info-box-icon',
             ]
         );
@@ -890,7 +890,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_icon_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -910,14 +910,14 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_icon_colors_hover',
             [
-                'label' => esc_html__( 'Hover', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover', 'museum-core' ),
             ]
         );
 
         $this->add_control(
             'ekit_icon_box_hover_primary_color',
             [
-                'label' => esc_html__( 'Icon Hover Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Icon Hover Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -933,7 +933,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_hover_background_color',
             [
-                'label' => esc_html__( 'Background Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -946,7 +946,7 @@ class IconBox extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'ekit_icon_box_border_icon_group',
-                'label' => esc_html__( 'Border', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-infobox:hover .elementskit-info-box-icon',
             ]
         );
@@ -954,14 +954,14 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_icons_hover_animation',
             [
-                'label' => esc_html__( 'Hover Animation', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover Animation', 'museum-core' ),
                 'type' =>   Controls_Manager::HOVER_ANIMATION,
             ]
         );
         $this->add_responsive_control(
             'ekit_icon_box_icons_hover_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -982,7 +982,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_icon_size',
             [
-                'label' => esc_html__( 'Size', 'elementskit-lite' ),
+                'label' => esc_html__( 'Size', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1008,7 +1008,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_icon_space',
             [
-                'label' => esc_html__( 'Spacing', 'elementskit-lite' ),
+                'label' => esc_html__( 'Spacing', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -1028,7 +1028,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_icon_padding',
             [
-                'label' => esc_html__( 'Padding', 'elementskit-lite' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -1044,7 +1044,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_rotate',
             [
-                'label' => esc_html__( 'Rotate', 'elementskit-lite' ),
+                'label' => esc_html__( 'Rotate', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 0,
@@ -1059,7 +1059,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_icon_height',
             [
-                'label' => esc_html__( 'Height', 'elementskit-lite' ),
+                'label' => esc_html__( 'Height', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1077,7 +1077,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_icon_width',
             [
-                'label' => esc_html__( 'Width', 'elementskit-lite' ),
+                'label' => esc_html__( 'Width', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1096,7 +1096,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_icon_line_height',
             [
-                'label' => esc_html__( 'Line Height', 'elementskit-lite' ),
+                'label' => esc_html__( 'Line Height', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1115,7 +1115,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_icon_vertical_align',
             [
-                'label' => esc_html__( 'Vertical Position ', 'elementskit-lite' ),
+                'label' => esc_html__( 'Vertical Position ', 'museum-core' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1138,7 +1138,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_section_style',
             [
-                'label' => esc_html__( 'Button', 'elementskit-lite' ),
+                'label' => esc_html__( 'Button', 'museum-core' ),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'ekit_icon_box_enable_btn' => 'yes',
@@ -1148,7 +1148,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_text_padding',
             [
-                'label' =>esc_html__( 'Padding', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1159,7 +1159,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_text_margin',
             [
-                'label' =>esc_html__( 'Margin', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Margin', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1172,14 +1172,14 @@ class IconBox extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'ekit_icon_box_typography_group',
-                'label' =>esc_html__( 'Typography', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Typography', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-btn',
             ]
         );
         $this->add_responsive_control(
             'ekit_icon_box_btn_icon_font_size',
             array(
-                'label'      => esc_html__( 'Icon Font Size', 'elementskit-lite' ),
+                'label'      => esc_html__( 'Icon Font Size', 'museum-core' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => array(
                     'px', 'em', 'rem',
@@ -1204,14 +1204,14 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_tab_button_normal',
             [
-                'label' => esc_html__( 'Normal', 'elementskit-lite' ),
+                'label' => esc_html__( 'Normal', 'museum-core' ),
             ]
         );
 
         $this->add_control(
             'ekit_icon_box_button_text_color',
             [
-                'label' => esc_html__( 'Text Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Text Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1225,7 +1225,7 @@ class IconBox extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_btn_background_group',
-                'label' => esc_html__( 'Background', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background', 'museum-core' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .elementskit-btn',
             ]
@@ -1235,14 +1235,14 @@ class IconBox extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'ekit_icon_box_button_border_color_group',
-                'label' => esc_html__( 'Border', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-btn',
             ]
         );
         $this->add_responsive_control(
             'ekit_icon_box_btn_border_radius',
             [
-                'label' =>esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px'],
                 'default' => [
@@ -1269,14 +1269,14 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_tab_button_hover',
             [
-                'label' => esc_html__( 'Hover', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover', 'museum-core' ),
             ]
         );
 
         $this->add_control(
             'ekit_icon_box_btn_hover_color',
             [
-                'label' => esc_html__( 'Text Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Text Color', 'museum-core' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .elementskit-infobox:hover .elementskit-btn' => 'color: {{VALUE}};',
@@ -1289,7 +1289,7 @@ class IconBox extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_btn_background_hover_group',
-                'label' => esc_html__( 'Background', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background', 'museum-core' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .elementskit-infobox:hover .elementskit-btn',
             ]
@@ -1299,14 +1299,14 @@ class IconBox extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'ekit_icon_box_button_border_hv_color_group',
-                'label' => esc_html__( 'Border', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .elementskit-infobox:hover .elementskit-btn',
             ]
         );
         $this->add_responsive_control(
             'ekit_icon_box_btn_hover_border_radius',
             [
-                'label' =>esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' =>esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px'],
                 'default' => [
@@ -1331,7 +1331,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_button_hover_animation',
             [
-                'label' => esc_html__( 'Animation', 'elementskit-lite' ),
+                'label' => esc_html__( 'Animation', 'museum-core' ),
                 'type' => Controls_Manager::HOVER_ANIMATION,
             ]
         );
@@ -1347,7 +1347,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_section_bg_ovelry_style',
             [
-                'label' => esc_html__( 'Background Overlay ', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background Overlay ', 'museum-core' ),
                 'tab' => controls_Manager::TAB_STYLE,
             ]
         );
@@ -1355,10 +1355,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_show_image_overlay',
             [
-                'label' => esc_html__( 'Enable Image Overlay', 'elementskit-lite' ),
+                'label' => esc_html__( 'Enable Image Overlay', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Yes', 'museum-core' ),
+                'label_off' => esc_html__( 'No', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => '',
             ]
@@ -1367,7 +1367,7 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_show_image',
             [
-                'label' => esc_html__( 'Choose Image', 'elementskit-lite' ),
+                'label' => esc_html__( 'Choose Image', 'museum-core' ),
                 'type' => Controls_Manager::MEDIA,
                 'dynamic' => [
                     'active' => true,
@@ -1385,7 +1385,7 @@ class IconBox extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_image_ovelry_color',
-                'label' => esc_html__( 'Background Overlay Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background Overlay Color', 'museum-core' ),
                 'types' => [ 'classic','gradient' ],
                 'selector' => '{{WRAPPER}} .elementskit-infobox.image-active::before',
                 'condition' => [
@@ -1397,10 +1397,10 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_show_overlay',
             [
-                'label' => esc_html__( 'Enable Overlay', 'elementskit-lite' ),
+                'label' => esc_html__( 'Enable Overlay', 'museum-core' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Yes', 'elementskit-lite' ),
-                'label_off' => esc_html__( 'No', 'elementskit-lite' ),
+                'label_on' => esc_html__( 'Yes', 'museum-core' ),
+                'label_off' => esc_html__( 'No', 'museum-core' ),
                 'return_value' => 'yes',
                 'default' => '',
             ]
@@ -1416,7 +1416,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_section_bg_ov_style_n_tab',
             [
-                'label' => esc_html__( 'Normal', 'elementskit-lite' ),
+                'label' => esc_html__( 'Normal', 'museum-core' ),
             ]
         );
 
@@ -1424,7 +1424,7 @@ class IconBox extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_bg_ovelry_color',
-                'label' => esc_html__( 'Background Overlay Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background Overlay Color', 'museum-core' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .elementskit-infobox.gradient-active::before',
             ]
@@ -1433,7 +1433,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_tab(
             'ekit_icon_box_section_bg_ov_style_n_hv_tab',
             [
-                'label' => esc_html__( 'Hover', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover', 'museum-core' ),
             ]
         );
 
@@ -1441,7 +1441,7 @@ class IconBox extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_bg_ovelry_color_hv',
-                'label' => esc_html__( 'Background Overlay Color', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background Overlay Color', 'museum-core' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .elementskit-infobox.gradient-active:hover::before',
             ]
@@ -1452,23 +1452,23 @@ class IconBox extends Widget_Base {
         $this->add_control(
             'ekit_icon_box_section_bg_hover_color_direction',
             [
-                'label' => esc_html__( 'Hover Direction', 'elementskit-lite' ),
+                'label' => esc_html__( 'Hover Direction', 'museum-core' ),
                 'type' =>   Controls_Manager::CHOOSE,
                 'options' => [
                     'hover_from_left' => [
-                        'title' => esc_html__( 'From Left', 'elementskit-lite' ),
+                        'title' => esc_html__( 'From Left', 'museum-core' ),
                         'icon' => 'fa fa-caret-right',
                     ],
                     'hover_from_top' => [
-                        'title' => esc_html__( 'From Top', 'elementskit-lite' ),
+                        'title' => esc_html__( 'From Top', 'museum-core' ),
                         'icon' => 'fa fa-caret-down',
                     ],
                     'hover_from_right' => [
-                        'title' => esc_html__( 'From Right', 'elementskit-lite' ),
+                        'title' => esc_html__( 'From Right', 'museum-core' ),
                         'icon' => 'fa fa-caret-left',
                     ],
                     'hover_from_bottom' => [
-                        'title' => esc_html__( 'From Bottom', 'elementskit-lite' ),
+                        'title' => esc_html__( 'From Bottom', 'museum-core' ),
                         'icon' => 'fa fa-caret-up',
                     ],
 
@@ -1485,7 +1485,7 @@ class IconBox extends Widget_Base {
         $this->start_controls_section(
             'ekit_icon_box_badge_style_tab',
             [
-                'label' => esc_html__( 'Badge', 'elementskit-lite' ),
+                'label' => esc_html__( 'Badge', 'museum-core' ),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'ekit_icon_box_badge_control' => 'yes',
@@ -1497,7 +1497,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_badge_padding',
             [
-                'label' => esc_html__( 'Padding', 'elementskit-lite' ),
+                'label' => esc_html__( 'Padding', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'default'    => [
@@ -1516,7 +1516,7 @@ class IconBox extends Widget_Base {
         $this->add_responsive_control(
             'ekit_icon_box_badge_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'label' => esc_html__( 'Border Radius', 'museum-core' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'default'    => [
@@ -1536,7 +1536,7 @@ class IconBox extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'ekit_icon_box_badge_background',
-                'label' => esc_html__( 'Background', 'elementskit-lite' ),
+                'label' => esc_html__( 'Background', 'museum-core' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .ekit-badge',
             ]
@@ -1546,7 +1546,7 @@ class IconBox extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'ekit_icon_box_badge_box_shadow',
-                'label' => esc_html__( 'Box Shadow', 'elementskit-lite' ),
+                'label' => esc_html__( 'Box Shadow', 'museum-core' ),
                 'selector' => '{{WRAPPER}} .ekit-badge',
             ]
         );
@@ -1555,7 +1555,7 @@ class IconBox extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'ekit_icon_box_badge_typography',
-                'label' => esc_html__( 'Typography', 'elementskit-lite' ),
+                'label' => esc_html__( 'Typography', 'museum-core' ),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .ekit-badge',
             ]

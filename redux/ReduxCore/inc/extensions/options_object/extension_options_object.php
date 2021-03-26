@@ -79,7 +79,7 @@
             public function add_section() {
                 $this->parent->sections[] = array(
                     'id' => 'options-object',
-                    'title' => __( 'Options Object', 'student-plugin' ),
+                    'title' => __( 'Options Object', 'museum-core' ),
                     'heading' => '',
                     'icon' => 'el el-info-circle',
                     'customizer' => false,

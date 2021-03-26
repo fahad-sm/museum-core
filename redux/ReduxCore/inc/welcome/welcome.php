@@ -101,7 +101,7 @@
         }
 
         public function change_wp_footer() {
-            echo __( 'If you like <strong>Redux</strong> please leave us a <a href="https://wordpress.org/support/view/plugin-reviews/redux-framework?filter=5#postform" target="_blank" class="redux-rating-link" data-rated="Thanks :)">&#9733;&#9733;&#9733;&#9733;&#9733;</a> rating. A huge thank you from Redux in advance!', 'student-plugin' );
+            echo __( 'If you like <strong>Redux</strong> please leave us a <a href="https://wordpress.org/support/view/plugin-reviews/redux-framework?filter=5#postform" target="_blank" class="redux-rating-link" data-rated="Thanks :)">&#9733;&#9733;&#9733;&#9733;&#9733;</a> rating. A huge thank you from Redux in advance!', 'museum-core' );
         }
 
         public function support_hash() {
@@ -178,7 +178,7 @@
                 $return['identifier'] = $data['identifier'];
             } else {
                 $return['status']  = "error";
-                $return['message'] = esc_html__( "Support hash could not be generated. Please try again later.", 'student-plugin' );
+                $return['message'] = esc_html__( "Support hash could not be generated. Please try again later.", 'museum-core' );
             }
 
             echo json_encode( $return );
@@ -200,7 +200,7 @@
 
             // About Page
             $page(
-                esc_html__( 'Welcome to Redux Framework', 'student-plugin' ), esc_html__( 'Redux Framework', 'student-plugin' ), $this->minimum_capability, 'redux-about', array(
+                esc_html__( 'Welcome to Redux Framework', 'museum-core' ), esc_html__( 'Redux Framework', 'museum-core' ), $this->minimum_capability, 'redux-about', array(
                     $this,
                     'about_screen'
                 )
@@ -208,7 +208,7 @@
 
             // Changelog Page
             $page(
-                esc_html__( 'Redux Framework Changelog', 'student-plugin' ), esc_html__( 'Redux Framework Changelog', 'student-plugin' ), $this->minimum_capability, 'redux-changelog', array(
+                esc_html__( 'Redux Framework Changelog', 'museum-core' ), esc_html__( 'Redux Framework Changelog', 'museum-core' ), $this->minimum_capability, 'redux-changelog', array(
                     $this,
                     'changelog_screen'
                 )
@@ -216,7 +216,7 @@
 
             // Support Page
             $page(
-                esc_html__( 'Get Support', 'student-plugin' ), esc_html__( 'Get Support', 'student-plugin' ), $this->minimum_capability, 'redux-support', array(
+                esc_html__( 'Get Support', 'museum-core' ), esc_html__( 'Get Support', 'museum-core' ), $this->minimum_capability, 'redux-support', array(
                     $this,
                     'get_support'
                 )
@@ -224,7 +224,7 @@
 
             // Support Page
             $page(
-                esc_html__( 'Redux Extensions', 'student-plugin' ), esc_html__( 'Redux Extensions', 'student-plugin' ), $this->minimum_capability, 'redux-extensions', array(
+                esc_html__( 'Redux Extensions', 'museum-core' ), esc_html__( 'Redux Extensions', 'museum-core' ), $this->minimum_capability, 'redux-extensions', array(
                     $this,
                     'redux_extensions'
                 )
@@ -233,7 +233,7 @@
 
             // Credits Page
             $page(
-                esc_html__( 'The people that develop Redux Framework', 'student-plugin' ), esc_html__( 'The people that develop Redux Framework', 'student-plugin' ), $this->minimum_capability, 'redux-credits', array(
+                esc_html__( 'The people that develop Redux Framework', 'museum-core' ), esc_html__( 'The people that develop Redux Framework', 'museum-core' ), $this->minimum_capability, 'redux-credits', array(
                     $this,
                     'credits_screen'
                 )
@@ -241,7 +241,7 @@
 
             // Status Page
             $page(
-                esc_html__( 'Redux Framework Status', 'student-plugin' ), esc_html__( 'Redux Framework Status', 'student-plugin' ), $this->minimum_capability, 'redux-status', array(
+                esc_html__( 'Redux Framework Status', 'museum-core' ), esc_html__( 'Redux Framework Status', 'museum-core' ), $this->minimum_capability, 'redux-status', array(
                     $this,
                     'status_screen'
                 )
@@ -341,22 +341,22 @@
             <h2 class="nav-tab-wrapper">
                 <a class="nav-tab <?php echo $selected == 'redux-about' ? 'nav-tab-active' : ''; ?>"
                     href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-about' ), 'tools.php' ) ) ); ?>">
-                    <?php esc_attr_e( "What's New", 'student-plugin' ); ?>
+                    <?php esc_attr_e( "What's New", 'museum-core' ); ?>
                 </a> <a class="nav-tab <?php echo $selected == 'redux-extensions' ? 'nav-tab-active' : ''; ?>"
                     href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-extensions' ), 'tools.php' ) ) ); ?>">
-                    <?php esc_attr_e( 'Extensions', 'student-plugin' ); ?>
+                    <?php esc_attr_e( 'Extensions', 'museum-core' ); ?>
                 </a> <a class="nav-tab <?php echo $selected == 'redux-changelog' ? 'nav-tab-active' : ''; ?>"
                     href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-changelog' ), 'tools.php' ) ) ); ?>">
-                    <?php esc_attr_e( 'Changelog', 'student-plugin' ); ?>
+                    <?php esc_attr_e( 'Changelog', 'museum-core' ); ?>
                 </a> <a class="nav-tab <?php echo $selected == 'redux-credits' ? 'nav-tab-active' : ''; ?>"
                     href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-credits' ), 'tools.php' ) ) ); ?>">
-                    <?php _e( 'Credits', 'student-plugin' ); ?>
+                    <?php _e( 'Credits', 'museum-core' ); ?>
                 </a> <a class="nav-tab <?php echo $selected == 'redux-support' ? 'nav-tab-active' : ''; ?>"
                     href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-support' ), 'tools.php' ) ) ); ?>">
-                    <?php esc_attr_e( 'Support', 'student-plugin' ); ?>
+                    <?php esc_attr_e( 'Support', 'museum-core' ); ?>
                 </a> <a class="nav-tab <?php echo $selected == 'redux-status' ? 'nav-tab-active' : ''; ?>"
                     href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'redux-status' ), 'tools.php' ) ) ); ?>">
-                    <?php esc_attr_e( 'Status', 'student-plugin' ); ?>
+                    <?php esc_attr_e( 'Status', 'museum-core' ); ?>
                 </a>
             </h2>
             <?php
@@ -516,7 +516,7 @@
 
             foreach ( $contributors as $contributor ) {
                 $contributor_list .= '<li class="wp-person">';
-                $contributor_list .= sprintf( '<a href="%s" title="%s" target="_blank">', esc_url( 'https://github.com/' . $contributor->login ), esc_html( sprintf( __( 'View %s', 'student-plugin' ), esc_html( $contributor->login ) ) )
+                $contributor_list .= sprintf( '<a href="%s" title="%s" target="_blank">', esc_url( 'https://github.com/' . $contributor->login ), esc_html( sprintf( __( 'View %s', 'museum-core' ), esc_html( $contributor->login ) ) )
                 );
                 $contributor_list .= sprintf( '<img src="%s" width="64" height="64" class="gravatar" alt="%s" />', esc_url( $contributor->avatar_url ), esc_html( $contributor->login ) );
                 $contributor_list .= '</a>';

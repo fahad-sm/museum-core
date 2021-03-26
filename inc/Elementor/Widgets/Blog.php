@@ -39,69 +39,60 @@ class Blog extends Widget_Base {
 
 	protected function _register_controls() {
 
-        // Carousel Settings
-		/*$this->start_controls_section(
-			'posts_content_carousel_section',
+        // Setting
+		$this->start_controls_section(
+			'posts_settings_section',
 			[
-				'label' => esc_html__( 'Carousel', 'museum-core' ),
+				'label' => esc_html__( 'Settings', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
-			'carousel_arrow_left_icon',
+			'title',
 			[
-				'label'     => esc_html__( 'Left Arrow Icon', 'museum-core' ),
-				'type'      => Controls_Manager::ICONS,
-				'default'   => ['library' => 'fa-solid', 'value' => 'fa-chevron-left'],
-			]
-		);
-
-		$this->add_control(
-			'carousel_arrow_right_icon',
-			[
-				'label'     => esc_html__( 'Right Arrow Icon', 'museum-core' ),
-				'type'      => Controls_Manager::ICONS,
-				'default'   => ['library' => 'fa-solid', 'value' => 'fa-chevron-right'],
-			]
-		);
-
-		$this->add_control(
-			'carousel_more_button_label',
-			[
-				'label'     => esc_html__( 'Read More Button Label', 'museum-core' ),
+				'label'     => esc_html__( 'Title', 'museum-core' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => 'See the Full list courses',
+			]
+		);
+
+		$this->add_control(
+			'enable_more_btn',
+			[
+				'label'   => esc_html__( 'Show More Button', 'museum-core' ),
+				'type'    => Controls_Manager::SWITCHER,
+				'label_on' => __( 'Show', 'museum-core' ),
+				'label_off' => __( 'Hide', 'museum-core' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
 			]
 		);
 		$this->add_control(
-			'carousel_more_button',
+			'btn',
 			[
-				'label'     => esc_html__( 'Link', 'museum-core' ),
-				'type'      => Controls_Manager::URL,
+				'label'   => esc_html__( 'More Button Text', 'museum-core' ),
+				'type'    => Controls_Manager::TEXT,
+				'default' => 'Read More',
+				'condition' => [ 'enable_more_btn' => 'yes' ]
+			]
+		);
+		$this->add_control(
+			'btn_url',
+			[
+				'label'   => esc_html__( 'More Button Link', 'museum-core' ),
+				'type'    => Controls_Manager::URL,
+				'default' => ['url' => ''],
+				'condition' => [ 'enable_more_btn' => 'yes' ]
 			]
 		);
 
+		$this->end_controls_section();
 
 
-		$this->end_controls_section();*/
-
-        // Query
+		// Query
 		$this->start_controls_section(
 			'posts_query_section',
 			[
 				'label' => esc_html__( 'Query', 'museum-core' ),
-			]
-		);
-
-		$this->add_control(
-			'style',
-			[
-				'label'     => esc_html__( 'Style', 'museum-core' ),
-				'type'      => Controls_Manager::SELECT,
-				'options'	=> [
-					''		=> esc_html__( 'Style 1', 'museum-core' ),
-					'2'		=> esc_html__( 'Style 2', 'museum-core' ),
-				],
 			]
 		);
 
@@ -196,10 +187,43 @@ class Blog extends Widget_Base {
 				'condition' => [ 'is_manual_selection!' => 'recent' ]
 			]
 		);
+		
+		
+		$this->end_controls_section();
+
+       // Section Heading Styles
+		$this->start_controls_section(
+			'section_heading_style',
+			[
+				'label' => esc_html__( 'Section Heading', 'museum-core' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		
+		$this->add_control(
+			'section_heading_color_normal',
+			[
+				'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .section-header h3' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(), [
+				'name'       => 'section_heading_typography',
+				'selector'   => '{{WRAPPER}} .section-header h3',
+			]
+		);
 
 		$this->end_controls_section();
 
-       // Title Styles
+		// Title Styles
 		$this->start_controls_section(
 			'posts_style',
 			[
@@ -212,18 +236,18 @@ class Blog extends Widget_Base {
 		$this->start_controls_tab(
 			'title_style_normal',
 			[
-				'label' =>esc_html__( 'Normal', 'elementskit-lite' ),
+				'label' =>esc_html__( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'title_color_normal',
 			[
-				'label' => esc_html_x( 'Color', 'Title Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .title a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .entry-header a' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -232,17 +256,17 @@ class Blog extends Widget_Base {
 		$this->start_controls_tab(
 			'title_color_hover_style',
 			[
-				'label' =>esc_html__( 'Hover', 'elementskit-lite' ),
+				'label' =>esc_html__( 'Hover', 'museum-core' ),
 			]
 		);
 		$this->add_control(
 			'title_color_hover',
 			[
-				'label' => esc_html_x( 'Color', 'Title Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .snap > .flex:hover .title a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .entry-header a:hover' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -252,7 +276,7 @@ class Blog extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(), [
 				'name'       => 'posts_meta_typography',
-				'selector'   => '{{WRAPPER}} .title a',
+				'selector'   => '{{WRAPPER}} .entry-header a',
 			]
 		);
 
@@ -271,29 +295,29 @@ class Blog extends Widget_Base {
 		$this->start_controls_tab(
 			'posts_read_more_button',
 			[
-				'label' =>esc_html__( 'Normal', 'elementskit-lite' ),
+				'label' =>esc_html__( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'read_more_button_color',
 			[
-				'label' => esc_html_x( 'Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .read-more a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .blog-box-inner .read-more-post' => 'color: {{VALUE}};',
 				],
 			]
 		);
 		$this->add_control(
 			'read_more_button_bg_color',
 			[
-				'label' => esc_html_x( 'Background Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Background Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .read-more a' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .blog-box-inner .read-more-post' => 'background-color: {{VALUE}};',
 				],
 			]
 		);
@@ -303,28 +327,28 @@ class Blog extends Widget_Base {
 		$this->start_controls_tab(
 			'read_more_button_hover',
 			[
-				'label' =>esc_html__( 'Hover', 'elementskit-lite' ),
+				'label' =>esc_html__( 'Hover', 'museum-core' ),
 			]
 		);
 		$this->add_control(
 			'read_more_button_hover_color',
 			[
-				'label' => esc_html_x( 'Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .read-more:hover a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .blog-box-inner .read-more-post:hover' => 'color: {{VALUE}};',
 				],
 			]
 		);
 		$this->add_control(
 			'read_more_button_bg_hover_color',
 			[
-				'label' => esc_html_x( 'Background Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Background Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .read-more:hover a' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .blog-box-inner .read-more-post:hover' => 'background-color: {{VALUE}};',
 				],
 			]
 		);
@@ -335,18 +359,48 @@ class Blog extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(), [
 				'name'       => 'read_more_button_typography',
-				'selector'   => '{{WRAPPER}} .read-more a',
+				'selector'   => '{{WRAPPER}} .blog-box-inner .read-more-post',
 			]
 		);
-
+		$this->add_control(
+			'read_more_btn_padding',
+			[
+				'label' => __( 'Padding', 'museum-core' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .blog-box-inner .read-more-post' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_control(
+			'read_more_btn_radius',
+			[
+				'label' => __( 'Border Radius', 'museum-core' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .blog-box-inner .read-more-post' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Box_Shadow::get_type(),
+			[
+				'name' => 'read_more_btn_box_shadow',
+				'label' => __( 'Box Shadow', 'museum-core' ),
+				'selector' => '{{WRAPPER}} .blog-box-inner .read-more-post',
+			]
+		);
 		$this->end_controls_section();
 
-        // Carousel arrow buttons Style.
+        // View all posts buttons Style.
 		$this->start_controls_section(
 			'arrow_style',
 			[
-				'label' => esc_html__( 'Carousel Buttons', 'museum-core' ),
+				'label' => esc_html__( 'View All Post Button', 'museum-core' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
+				'condition' => [ 'enable_more_btn' => 'yes' ]
 			]
 		);
 
@@ -354,29 +408,29 @@ class Blog extends Widget_Base {
 		$this->start_controls_tab(
 			'carousel_arrow_style_normal',
 			[
-				'label' =>esc_html__( 'Normal', 'elementskit-lite' ),
+				'label' =>esc_html__( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'carousel_arrow_style_normal_color',
 			[
-				'label' => esc_html_x( 'Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .carousel-control' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .blog-section .view-all-posts' => 'color: {{VALUE}};',
 				],
 			]
 		);
 		$this->add_control(
 			'carousel_arrow_style_normal_bg_color',
 			[
-				'label' => esc_html_x( 'Background Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Background Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .carousel-control' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .blog-section .view-all-posts' => 'background-color: {{VALUE}};',
 				],
 			]
 		);
@@ -386,28 +440,28 @@ class Blog extends Widget_Base {
 		$this->start_controls_tab(
 			'carousel_arrow_style_hover',
 			[
-				'label' =>esc_html__( 'Hover', 'elementskit-lite' ),
+				'label' =>esc_html__( 'Hover', 'museum-core' ),
 			]
 		);
 		$this->add_control(
 			'carousel_arrow_style_hover_color',
 			[
-				'label' => esc_html_x( 'Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .carousel-control:hover' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .blog-section .view-all-posts:hover' => 'color: {{VALUE}};',
 				],
 			]
 		);
 		$this->add_control(
 			'carousel_arrow_style_hover_bg_color',
 			[
-				'label' => esc_html_x( 'Background Color', 'Button Control', 'elementskit-lite' ),
+				'label' => esc_html_x( 'Background Color', 'Button Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .carousel-control:hover' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .blog-section .view-all-posts:hover' => 'background-color: {{VALUE}};',
 				],
 			]
 		);
@@ -418,10 +472,51 @@ class Blog extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(), [
 				'name'       => 'carousel_arrow_style_typography',
-				'selector'   => '{{WRAPPER}} .carousel-control',
+				'selector'   => '{{WRAPPER}} .blog-section .view-all-posts',
 			]
 		);
 
+		$this->add_control(
+			'more_btn_padding',
+			[
+				'label' => __( 'Padding', 'museum-core' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .blog-section .view-all-posts' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_control(
+			'more_btn_margin',
+			[
+				'label' => __( 'Marding', 'museum-core' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .blog-section .view-all-posts' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_control(
+			'more_btn_radius',
+			[
+				'label' => __( 'Border Radius', 'museum-core' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .blog-section .view-all-posts' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_group_control(
+			\Elementor\Group_Control_Box_Shadow::get_type(),
+			[
+				'name' => 'all_posts_btn_box_shadow',
+				'label' => __( 'Box Shadow', 'museum-core' ),
+				'selector' => '{{WRAPPER}} .blog-section .view-all-posts',
+			]
+		);
 		$this->end_controls_section();
 	}
 
@@ -433,7 +528,7 @@ class Blog extends Widget_Base {
 		$settings = $this->get_settings();
 		extract($settings);
 
-		include $this->getFile( $style );
+		include $this->getFile('');
 	}
 
 	/**
@@ -451,6 +546,6 @@ class Blog extends Widget_Base {
 			return $file;
 		}
 
-		return STUDENT_PLUGIN_PATH . 'templates/elementor/' . $filename;
+		return MUSEUM_CORE_PATH . 'templates/elementor/' . $filename;
 	}
 }

@@ -31,7 +31,7 @@ class AjaxSelect2 extends \Elementor\Base_Data_Control {
 	 */
 	public function enqueue() {
 		// script
-		wp_register_script( 'elementskit-js-ajaxchoose-control',  STUDENT_PLUGIN_URL . 'assets/js/ajaxchoose.js' );
+		wp_register_script( 'elementskit-js-ajaxchoose-control',  MUSEUM_CORE_URL . 'assets/js/ajaxchoose.js' );
 		wp_enqueue_script( 'elementskit-js-ajaxchoose-control' );
 	}
 

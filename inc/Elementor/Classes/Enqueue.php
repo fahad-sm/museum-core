@@ -39,7 +39,7 @@ class Enqueue {
 	 * @access public
 	 */
 	public function we_register_script() {
-		$ver           = ( defined( WP_DEBUG ) && WP_DEBUG ) ? time() : STUDENT_PLUGIN_VERSION;
+		$ver           = ( defined( WP_DEBUG ) && WP_DEBUG ) ? time() : MUSEUM_CORE_VERSION;
 		$_script_array = [
 			'we-frontend'                       => 'assets/elementor/js/frontend.js',
 			'knob'                              => 'assets/elementor/js/jquery.knob.js',
@@ -55,7 +55,7 @@ class Enqueue {
 		];
 
 		foreach ( $_script_array as $script_k => $script_v ) {
-			wp_register_script( $script_k, STUDENT_PLUGIN_URL . $script_v, [ 'jquery' ], $ver, true );
+			wp_register_script( $script_k, MUSEUM_CORE_URL . $script_v, [ 'jquery' ], $ver, true );
 		}
 	}
 
@@ -86,7 +86,7 @@ class Enqueue {
 	 */
 	public function we_wp_script() {
 		wp_enqueue_script( [ 'fancybox', 'webinane-elementor-module-scripts', 'we-frontend' ] );
-		wp_enqueue_style( 'we-frontend', STUDENT_PLUGIN_URL . 'assets/elementor/css/frontend.css' );
+		wp_enqueue_style( 'we-frontend', MUSEUM_CORE_URL . 'assets/elementor/css/frontend.css' );
 
 		$js = array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),

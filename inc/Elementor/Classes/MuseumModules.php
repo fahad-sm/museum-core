@@ -1,6 +1,6 @@
 <?php
 /**
- * @package   Student Elementor
+ * @package   Museum Elementor
  * @version   0.0.1
  *
  * @author    Shahbaz Ahmed <shahbazahmed9@hotmail.com>
@@ -47,7 +47,7 @@ class MuseumModules {
 	public function tci_init_dynamic_tags( $dynamic_tags ) {
 		// Include Widget files
 
-		$tci_dynamic_tag_files = glob( STUDENT_PLUGIN_PATH . 'inc/Elementor/Classes/Modules/*.php' );
+		$tci_dynamic_tag_files = glob( MUSEUM_CORE_PATH . 'inc/Elementor/Classes/Modules/*.php' );
 
 
 		foreach ( $this->tci_get_groups() as $k => $v ) {
@@ -57,7 +57,7 @@ class MuseumModules {
 		foreach ( $tci_dynamic_tag_files as $file ) {
 						
 			$class_name = str_replace(
-				[STUDENT_PLUGIN_PATH.'inc', '/', '.php'],
+				[MUSEUM_CORE_PATH.'inc', '/', '.php'],
 				['\\MuseumCore', '\\', ''],
 				$file
 			); ///__NAMESPACE__ . '\\Modules\\' . $file;
@@ -84,25 +84,25 @@ class MuseumModules {
 
 		$cats = [
 			self::POST_GROUP     => [
-				'title' => __( 'Student Post', 'museum-core' ),
+				'title' => __( 'Museum Post', 'museum-core' ),
 			],
 			self::ARCHIVE_GROUP  => [
-				'title' => __( 'Student Archive', 'museum-core' ),
+				'title' => __( 'Museum Archive', 'museum-core' ),
 			],
 			self::SITE_GROUP     => [
-				'title' => __( 'Student Site', 'museum-core' ),
+				'title' => __( 'Museum Site', 'museum-core' ),
 			],
 			self::MEDIA_GROUP    => [
-				'title' => __( 'Student Media', 'museum-core' ),
+				'title' => __( 'Museum Media', 'museum-core' ),
 			],
 			self::ACTION_GROUP   => [
-				'title' => __( 'Student Actions', 'museum-core' ),
+				'title' => __( 'Museum Actions', 'museum-core' ),
 			],
 			self::AUTHOR_GROUP   => [
-				'title' => __( 'Student Author', 'museum-core' ),
+				'title' => __( 'Museum Author', 'museum-core' ),
 			],
 			self::COMMENTS_GROUP => [
-				'title' => __( 'Student Comments', 'museum-core' ),
+				'title' => __( 'Museum Comments', 'museum-core' ),
 			],
 		];
 

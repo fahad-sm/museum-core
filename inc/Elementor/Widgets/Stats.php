@@ -53,14 +53,14 @@ class Stats extends Widget_Base {
         $repeater->add_control(
           'title',
           [
-            'label' => __( 'Title', 'plugin-domain' ),
+            'label' => __( 'Title', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::TEXT,
             'default' => 'Title',
           ]
         );
         $repeater->add_control(
           'stat', [
-            'label' => __( 'Stat', 'plugin-domain' ),
+            'label' => __( 'Stat', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
             'label_block' => true,
@@ -68,7 +68,7 @@ class Stats extends Widget_Base {
         );
         $repeater->add_control(
           'min', [
-            'label' => __( 'Minimum', 'plugin-domain' ),
+            'label' => __( 'Minimum', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
             'label_block' => true,
@@ -76,7 +76,7 @@ class Stats extends Widget_Base {
         );
         $repeater->add_control(
           'max', [
-            'label' => __( 'Maximum', 'plugin-domain' ),
+            'label' => __( 'Maximum', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::NUMBER,
             'default' => 50,
             'label_block' => true,
@@ -87,30 +87,30 @@ class Stats extends Widget_Base {
         $this->add_control(
           'list',
           [
-            'label' => __( 'Stats', 'plugin-domain' ),
+            'label' => __( 'Stats', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::REPEATER,
             'fields' => $repeater->get_controls(),
             'default' => [
               [
-                'title' => __( 'New Teachers', 'plugin-domain' ),
+                'title' => __( 'New Teachers', 'museum-core' ),
                 'stat' => 2589,
                 'min' => 20,
                 'max' => 6000
               ],
               [
-                'title' => __( 'Categories', 'plugin-domain' ),
+                'title' => __( 'Categories', 'museum-core' ),
                 'stat' => 70,
                 'min' => 5,
                 'max' => 100
               ],
               [
-                'title' => __( 'Languages', 'plugin-domain' ),
+                'title' => __( 'Languages', 'museum-core' ),
                 'stat' => 35,
                 'min' => 1,
                 'max' => 40
               ],
               [
-                'title' => __( 'Video Courses', 'plugin-domain' ),
+                'title' => __( 'Video Courses', 'museum-core' ),
                 'stat' => 2589,
                 'min' => 20,
                 'max' => 3000
@@ -137,7 +137,7 @@ class Stats extends Widget_Base {
         $this->add_control(
            'student_stats_title_color',
            [
-               'label' => esc_html_x( 'Title Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Title Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -149,7 +149,7 @@ class Stats extends Widget_Base {
         $this->add_control(
            'student_stats_numbers_color',
            [
-               'label' => esc_html_x( 'Numbers Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Numbers Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -160,7 +160,7 @@ class Stats extends Widget_Base {
         $this->add_control(
            'student_stats_knob_color',
            [
-               'label' => esc_html_x( 'Knob Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Knob Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '#8cc739',
                'selectors' => [
@@ -173,7 +173,7 @@ class Stats extends Widget_Base {
         $this->add_group_control(
           Group_Control_Typography::get_type(), [
             'name'       => 'student_stats_title_typography',
-            'label' => esc_html_x( 'Title Typography', 'Title Control', 'elementskit-lite' ),
+            'label' => esc_html_x( 'Title Typography', 'Title Control', 'museum-core' ),
             'selector'   => '{{WRAPPER}} .title',
           ]
         );
@@ -181,7 +181,7 @@ class Stats extends Widget_Base {
         $this->add_group_control(
           Group_Control_Typography::get_type(), [
             'name'       => 'student_stats_number_typography',
-            'label' => esc_html_x( 'Numbers Typography', 'Title Control', 'elementskit-lite' ),
+            'label' => esc_html_x( 'Numbers Typography', 'Title Control', 'museum-core' ),
             'selector'   => '{{WRAPPER}} .number',
           ]
         );
@@ -193,6 +193,6 @@ class Stats extends Widget_Base {
     public function render() {
         $settings = $this->get_settings();
         extract($settings);
-        include STUDENT_PLUGIN_PATH . 'templates/elementor/stats.php';
+        include MUSEUM_CORE_PATH . 'templates/elementor/stats.php';
     }
 }

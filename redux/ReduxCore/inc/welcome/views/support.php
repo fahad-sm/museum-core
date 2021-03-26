@@ -1,11 +1,11 @@
 <div class="wrap about-wrap" xmlns="http://www.w3.org/1999/html">
-    <h1><?php esc_html_e( 'Redux Framework - Support', 'student-plugin' ); ?></h1>
+    <h1><?php esc_html_e( 'Redux Framework - Support', 'museum-core' ); ?></h1>
     <div class="about-text">
-        <?php esc_html_e( 'We are an open source project used by developers to make powerful control panels.', 'student-plugin' ); ?>
+        <?php esc_html_e( 'We are an open source project used by developers to make powerful control panels.', 'museum-core' ); ?>
     </div>
     <div class="redux-badge">
         <i class="el el-redux"></i>
-        <span><?php printf( __( 'Version %s', 'student-plugin' ), esc_html(ReduxFramework::$_version) ); ?></span>
+        <span><?php printf( __( 'Version %s', 'museum-core' ), esc_html(ReduxFramework::$_version) ); ?></span>
     </div>
 
     <?php $this->actions(); ?>
@@ -16,28 +16,28 @@
         <!-- multistep form -->
         <form id="supportform">
             <ul id="progressbar" class=" breadcrumb">
-                <li class="active"><?php esc_html_e( 'Generate a Support URL', 'student-plugin' ); ?></li>
-                <li href="#"><?php esc_html_e( 'Select Support Type', 'student-plugin' ); ?></li>
-                <li href="#"><?php esc_html_e( 'How to Get Support', 'student-plugin' ); ?></li>
+                <li class="active"><?php esc_html_e( 'Generate a Support URL', 'museum-core' ); ?></li>
+                <li href="#"><?php esc_html_e( 'Select Support Type', 'museum-core' ); ?></li>
+                <li href="#"><?php esc_html_e( 'How to Get Support', 'museum-core' ); ?></li>
             </ul>
 
             <!-- fieldsets -->
             <fieldset>
                 <h2 class="fs-title">
-                    <?php esc_html_e( 'Submit a Support Request', 'student-plugin' ); ?>
+                    <?php esc_html_e( 'Submit a Support Request', 'museum-core' ); ?>
                 </h2>
 
                 <h3 class="fs-title" style="margin-top:0;">
-                    <?php esc_html_e( 'To get started, we will need to generate a support hash.', 'student-plugin' ); ?>
+                    <?php esc_html_e( 'To get started, we will need to generate a support hash.', 'museum-core' ); ?>
                 </h3>
 
                 <p>
-                    <?php echo sprintf( wp_kses( __( 'This will provide to your developer all the information they may need to remedy your issue. This action WILL send information securely to a remote server. To see the type of information sent, please look at the  <a href="%s">Status tab</a>.', 'student-plugin' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'tools.php?page=redux-status' ) ) ); ?>
+                    <?php echo sprintf( wp_kses( __( 'This will provide to your developer all the information they may need to remedy your issue. This action WILL send information securely to a remote server. To see the type of information sent, please look at the  <a href="%s">Status tab</a>.', 'museum-core' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'tools.php?page=redux-status' ) ) ); ?>
                 </p>
 
                 <p>
                     <a href="#" class="docs button button-primary button-large redux_support_hash">
-                        <?php esc_html_e( 'Generate a Support URL', 'student-plugin' ); ?>
+                        <?php esc_html_e( 'Generate a Support URL', 'museum-core' ); ?>
                     </a>
                 </p>
                 <input type="button" 
@@ -49,27 +49,27 @@
 
             <fieldset>
                 <h2 class="fs-title">
-                    <?php esc_html_e( 'Select Your Support Type', 'student-plugin' ); ?>
+                    <?php esc_html_e( 'Select Your Support Type', 'museum-core' ); ?>
                 </h2>
 
                 <h3 class="fs-subtitle" style="text-align: center;">
-                    <?php esc_html_e( 'What type of user are you?', 'student-plugin' ); ?>
+                    <?php esc_html_e( 'What type of user are you?', 'museum-core' ); ?>
                 </h3>
 
                 <table id="user_type">
                     <tr>
                         <td id="is_user">
                             <i class="el el-user"></i><br/>
-                            <?php esc_html_e( 'User', 'student-plugin' ); ?><br/>
+                            <?php esc_html_e( 'User', 'museum-core' ); ?><br/>
                             <small>
-                                <?php esc_html_e( 'I am a user, using a pre-built product.', 'student-plugin' ); ?>
+                                <?php esc_html_e( 'I am a user, using a pre-built product.', 'museum-core' ); ?>
                             </small>
                         </td>
                         <td id="is_developer">
                             <i class="el el-github"></i><br/>
-                            <?php esc_html_e( 'Developer', 'student-plugin' ); ?><br/>
+                            <?php esc_html_e( 'Developer', 'museum-core' ); ?><br/>
                             <small>
-                                <?php esc_html_e( 'I am a developer, building a product using Redux.', 'student-plugin' ); ?>
+                                <?php esc_html_e( 'I am a developer, building a product using Redux.', 'museum-core' ); ?>
                             </small>
                         </td>
                     </tr>
@@ -84,12 +84,12 @@
             
             <fieldset id="final_support">
                 <h2 class="fs-title">
-                    <?php esc_html_e( 'How to Get Support', 'student-plugin' ); ?>
+                    <?php esc_html_e( 'How to Get Support', 'museum-core' ); ?>
                 </h2>
 
                 <div class="is_developer">
                     <p>
-                        <?php esc_html_e( 'Please proceed to the Redux Framework issue tracker and supply us with your support URL below. Please also provide any information that will help us to reproduce your issue.', 'student-plugin' ); ?>
+                        <?php esc_html_e( 'Please proceed to the Redux Framework issue tracker and supply us with your support URL below. Please also provide any information that will help us to reproduce your issue.', 'museum-core' ); ?>
                     </p>
                     <a href="<?php echo esc_url('https://github.com/reduxframework/redux-framework/issues') ?>" target="_blank">
                         <h4>https://github.com/reduxframework/redux-framework/issues</h4>
@@ -98,11 +98,11 @@
                 
                 <div class="is_user">
                     <p align="left">
-                        <?php esc_html_e( 'Listed below are the Wordpress plugins and/or theme installed on your site that utilize Redux Framework. We do not directly support products created with our framework.  It is the responsibility of the plugin or theme developer to support their work. You will need to contact the author(s) of the products listed below with your support questions.', 'student-plugin' ); ?>
+                        <?php esc_html_e( 'Listed below are the Wordpress plugins and/or theme installed on your site that utilize Redux Framework. We do not directly support products created with our framework.  It is the responsibility of the plugin or theme developer to support their work. You will need to contact the author(s) of the products listed below with your support questions.', 'museum-core' ); ?>
                     </p>
                     <p>
                         <strong>
-                            <?php esc_html_e( 'Please be sure to include for your developer - via cut and paste - the Support URL in the box below.', 'student-plugin' ); ?>
+                            <?php esc_html_e( 'Please be sure to include for your developer - via cut and paste - the Support URL in the box below.', 'museum-core' ); ?>
                         </strong>
                     </p>
 <?php
@@ -131,7 +131,7 @@
 
                 <p>
                     <em>
-                        <?php echo sprintf( wp_kses( __( 'Should the developer not be responsive, read the <a href="%s" target="_blank">following article</a> before asking for support from us directly.', 'student-plugin' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( 'http://docs.reduxframework.com/core/support-defined/' ) );?>
+                        <?php echo sprintf( wp_kses( __( 'Should the developer not be responsive, read the <a href="%s" target="_blank">following article</a> before asking for support from us directly.', 'museum-core' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( 'http://docs.reduxframework.com/core/support-defined/' ) );?>
                     </em>
                 </p>
                 <input type="button" 

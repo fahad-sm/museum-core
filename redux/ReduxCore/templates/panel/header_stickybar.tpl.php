@@ -12,25 +12,25 @@
     <div id="info_bar">
 
         <a href="javascript:void(0);" class="expand_options<?php echo esc_attr(( $this->parent->args['open_expanded'] ) ? ' expanded' : ''); ?>"<?php echo $this->parent->args['hide_expand'] ? ' style="display: none;"' : '' ?>>
-            <?php esc_attr_e( 'Expand', 'student-plugin' ); ?>
+            <?php esc_attr_e( 'Expand', 'museum-core' ); ?>
         </a>
 
         <div class="redux-action_bar">
             <span class="spinner"></span>
 <?php 
             if ( false === $this->parent->args['hide_save'] ) {
-                submit_button( esc_attr__( 'Save Changes', 'student-plugin' ), 'primary', 'redux_save_sticky', false );
+                submit_button( esc_attr__( 'Save Changes', 'museum-core' ), 'primary', 'redux_save_sticky', false );
                 echo '&nbsp';
             }
             
             if ( false === $this->parent->args['hide_reset'] ) {
-                submit_button( esc_attr__( 'Reset Section', 'student-plugin' ), 'secondary', $this->parent->args['opt_name'] . '[defaults-section]', false, array( 'id' => 'redux-defaults-section-sticky' ) );
+                submit_button( esc_attr__( 'Reset Section', 'museum-core' ), 'secondary', $this->parent->args['opt_name'] . '[defaults-section]', false, array( 'id' => 'redux-defaults-section-sticky' ) );
                 echo '&nbsp';
-                submit_button( esc_attr__( 'Reset All', 'student-plugin' ), 'secondary', $this->parent->args['opt_name'] . '[defaults]', false, array( 'id' => 'redux-defaults-sticky' ) );
+                submit_button( esc_attr__( 'Reset All', 'museum-core' ), 'secondary', $this->parent->args['opt_name'] . '[defaults]', false, array( 'id' => 'redux-defaults-sticky' ) );
             }
 ?>
         </div>
-        <div class="redux-ajax-loading" alt="<?php esc_attr_e( 'Working...', 'student-plugin' ) ?>">&nbsp;</div>
+        <div class="redux-ajax-loading" alt="<?php esc_attr_e( 'Working...', 'museum-core' ) ?>">&nbsp;</div>
         <div class="clear"></div>
     </div>
 

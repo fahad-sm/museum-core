@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Controls_Manager;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class PostTerms extends Tag {
 	public function get_name() {
@@ -21,7 +21,7 @@ class PostTerms extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::POST_GROUP;
+		return MuseumModules::POST_GROUP;
 	}
 
 	public function get_categories() {
@@ -47,7 +47,7 @@ class PostTerms extends Tag {
 		 */
 		$taxonomy_filter_args = apply_filters( 'webinane_elementor/dynamic_tags/post_terms/taxonomy_args', $taxonomy_filter_args );
 
-		$taxonomies = student_get_taxonomies( $taxonomy_filter_args, 'objects' );
+		$taxonomies = museum_get_taxonomies( $taxonomy_filter_args, 'objects' );
 
 		$options = [];
 

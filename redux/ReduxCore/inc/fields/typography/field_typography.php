@@ -228,8 +228,8 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
                 echo '<input type="hidden" class="redux-typography-google-font" value="' . $isGoogleFont . '" id="' . $this->field['id'] . '-google-font">';
 
                 echo '<div class="select_wrapper typography-family" style="width: 220px; margin-right: 5px;">';
-                echo '<label>' . __( 'Font Family', 'student-plugin' ) . '</label>';
-                $placeholder = $fontFamily[0] ? $fontFamily[0] : __( 'Font family', 'student-plugin' );
+                echo '<label>' . __( 'Font Family', 'museum-core' ) . '</label>';
+                $placeholder = $fontFamily[0] ? $fontFamily[0] : __( 'Font family', 'museum-core' );
 
                 echo '<div class=" redux-typography redux-typography-family select2-container ' . $this->field['class'] . '" id="' . $this->field['id'] . '-family" placeholder="' . $placeholder . '" data-id="' . $this->field['id'] . '" data-value="' . $fontFamily[0] . '">';
 
@@ -255,8 +255,8 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
                 if ( $this->field['font-backup'] === true ) {
                     echo '<div class="select_wrapper typography-family-backup" style="width: 220px; margin-right: 5px;">';
-                    echo '<label>' . __( 'Backup Font Family', 'student-plugin' ) . '</label>';
-                    echo '<select data-placeholder="' . __( 'Backup Font Family', 'student-plugin' ) . '" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-backup]' . '" class="redux-typography redux-typography-family-backup ' . $this->field['class'] . '" id="' . $this->field['id'] . '-family-backup" data-id="' . $this->field['id'] . '" data-value="' . $this->value['font-backup'] . '">';
+                    echo '<label>' . __( 'Backup Font Family', 'museum-core' ) . '</label>';
+                    echo '<select data-placeholder="' . __( 'Backup Font Family', 'museum-core' ) . '" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-backup]' . '" class="redux-typography redux-typography-family-backup ' . $this->field['class'] . '" id="' . $this->field['id'] . '-family-backup" data-id="' . $this->field['id'] . '" data-value="' . $this->value['font-backup'] . '">';
                     echo '<option data-google="false" data-details="" value=""></option>';
 
                     foreach ( $this->field['fonts'] as $i => $family ) {
@@ -270,15 +270,15 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             /* Font Style/Weight */
             if ( $this->field['font-style'] === true || $this->field['font-weight'] === true ) {
 
-                echo '<div class="select_wrapper typography-style" original-title="' . __( 'Font style', 'student-plugin' ) . '">';
-                echo '<label>' . __( 'Font Weight &amp; Style', 'student-plugin' ) . '</label>';
+                echo '<div class="select_wrapper typography-style" original-title="' . __( 'Font style', 'museum-core' ) . '">';
+                echo '<label>' . __( 'Font Weight &amp; Style', 'museum-core' ) . '</label>';
 
                 $style = $this->value['font-weight'] . $this->value['font-style'];
 
                 echo '<input type="hidden" class="typography-font-weight" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-weight]' . '" value="' . $this->value['font-weight'] . '" data-id="' . $this->field['id'] . '"  /> ';
                 echo '<input type="hidden" class="typography-font-style" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-style]' . '" value="' . $this->value['font-style'] . '" data-id="' . $this->field['id'] . '"  /> ';
                 $multi = ( isset( $this->field['multi']['weight'] ) && $this->field['multi']['weight'] ) ? ' multiple="multiple"' : "";
-                echo '<select' . $multi . ' data-placeholder="' . __( 'Style', 'student-plugin' ) . '" class="redux-typography redux-typography-style select ' . $this->field['class'] . '" original-title="' . __( 'Font style', 'student-plugin' ) . '" id="' . $this->field['id'] . '_style" data-id="' . $this->field['id'] . '" data-value="' . $style . '">';
+                echo '<select' . $multi . ' data-placeholder="' . __( 'Style', 'museum-core' ) . '" class="redux-typography redux-typography-style select ' . $this->field['class'] . '" original-title="' . __( 'Font style', 'museum-core' ) . '" id="' . $this->field['id'] . '_style" data-id="' . $this->field['id'] . '" data-value="' . $style . '">';
 
                 if ( empty( $this->value['subsets'] ) || empty( $this->value['font-weight'] ) ) {
                     echo '<option value=""></option>';
@@ -318,11 +318,11 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
             /* Font Script */
             if ( $this->field['font-family'] == true && $this->field['subsets'] == true && $this->field['google'] == true ) {
-                echo '<div class="select_wrapper typography-script tooltip" original-title="' . __( 'Font subsets', 'student-plugin' ) . '">';
+                echo '<div class="select_wrapper typography-script tooltip" original-title="' . __( 'Font subsets', 'museum-core' ) . '">';
                 echo '<input type="hidden" class="typography-subsets" name="' . $this->field['name'] . $this->field['name_suffix'] . '[subsets]' . '" value="' . $this->value['subsets'] . '" data-id="' . $this->field['id'] . '"  /> ';
-                echo '<label>' . __( 'Font Subsets', 'student-plugin' ) . '</label>';
+                echo '<label>' . __( 'Font Subsets', 'museum-core' ) . '</label>';
                 $multi = ( isset( $this->field['multi']['subset'] ) && $this->field['multi']['subset'] ) ? ' multiple="multiple"' : "";
-                echo '<select'.$multi.' data-placeholder="' . __( 'Subsets', 'student-plugin' ) . '" class="redux-typography redux-typography-subsets ' . $this->field['class'] . '" original-title="' . __( 'Font script', 'student-plugin' ) . '"  id="' . $this->field['id'] . '-subsets" data-value="' . $this->value['subsets'] . '" data-id="' . $this->field['id'] . '" >';
+                echo '<select'.$multi.' data-placeholder="' . __( 'Subsets', 'museum-core' ) . '" class="redux-typography redux-typography-subsets ' . $this->field['class'] . '" original-title="' . __( 'Font script', 'museum-core' ) . '"  id="' . $this->field['id'] . '-subsets" data-value="' . $this->value['subsets'] . '" data-id="' . $this->field['id'] . '" >';
 
                 if ( empty( $this->value['subsets'] ) ) {
                     echo '<option value=""></option>';
@@ -339,9 +339,9 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
             /* Font Align */
             if ( $this->field['text-align'] === true ) {
-                echo '<div class="select_wrapper typography-align tooltip" original-title="' . __( 'Text Align', 'student-plugin' ) . '">';
-                echo '<label>' . __( 'Text Align', 'student-plugin' ) . '</label>';
-                echo '<select data-placeholder="' . __( 'Text Align', 'student-plugin' ) . '" class="redux-typography redux-typography-align ' . $this->field['class'] . '" original-title="' . __( 'Text Align', 'student-plugin' ) . '"  id="' . $this->field['id'] . '-align" name="' . $this->field['name'] . $this->field['name_suffix'] . '[text-align]' . '" data-value="' . $this->value['text-align'] . '" data-id="' . $this->field['id'] . '" >';
+                echo '<div class="select_wrapper typography-align tooltip" original-title="' . __( 'Text Align', 'museum-core' ) . '">';
+                echo '<label>' . __( 'Text Align', 'museum-core' ) . '</label>';
+                echo '<select data-placeholder="' . __( 'Text Align', 'museum-core' ) . '" class="redux-typography redux-typography-align ' . $this->field['class'] . '" original-title="' . __( 'Text Align', 'museum-core' ) . '"  id="' . $this->field['id'] . '-align" name="' . $this->field['name'] . $this->field['name_suffix'] . '[text-align]' . '" data-value="' . $this->value['text-align'] . '" data-id="' . $this->field['id'] . '" >';
                 echo '<option value=""></option>';
 
                 $align = array(
@@ -362,9 +362,9 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
             /* Text Transform */
             if ( $this->field['text-transform'] === true ) {
-                echo '<div class="select_wrapper typography-transform tooltip" original-title="' . __( 'Text Transform', 'student-plugin' ) . '">';
-                echo '<label>' . __( 'Text Transform', 'student-plugin' ) . '</label>';
-                echo '<select data-placeholder="' . __( 'Text Transform', 'student-plugin' ) . '" class="redux-typography redux-typography-transform ' . $this->field['class'] . '" original-title="' . __( 'Text Transform', 'student-plugin' ) . '"  id="' . $this->field['id'] . '-transform" name="' . $this->field['name'] . $this->field['name_suffix'] . '[text-transform]' . '" data-value="' . $this->value['text-transform'] . '" data-id="' . $this->field['id'] . '" >';
+                echo '<div class="select_wrapper typography-transform tooltip" original-title="' . __( 'Text Transform', 'museum-core' ) . '">';
+                echo '<label>' . __( 'Text Transform', 'museum-core' ) . '</label>';
+                echo '<select data-placeholder="' . __( 'Text Transform', 'museum-core' ) . '" class="redux-typography redux-typography-transform ' . $this->field['class'] . '" original-title="' . __( 'Text Transform', 'museum-core' ) . '"  id="' . $this->field['id'] . '-transform" name="' . $this->field['name'] . $this->field['name_suffix'] . '[text-transform]' . '" data-value="' . $this->value['text-transform'] . '" data-id="' . $this->field['id'] . '" >';
                 echo '<option value=""></option>';
 
                 $values = array(
@@ -385,9 +385,9 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
             /* Font Variant */
             if ( $this->field['font-variant'] === true ) {
-                echo '<div class="select_wrapper typography-font-variant tooltip" original-title="' . __( 'Font Variant', 'student-plugin' ) . '">';
-                echo '<label>' . __( 'Font Variant', 'student-plugin' ) . '</label>';
-                echo '<select data-placeholder="' . __( 'Font Variant', 'student-plugin' ) . '" class="redux-typography redux-typography-font-variant ' . $this->field['class'] . '" original-title="' . __( 'Font Variant', 'student-plugin' ) . '"  id="' . $this->field['id'] . '-font-variant" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-variant]' . '" data-value="' . $this->value['font-variant'] . '" data-id="' . $this->field['id'] . '" >';
+                echo '<div class="select_wrapper typography-font-variant tooltip" original-title="' . __( 'Font Variant', 'museum-core' ) . '">';
+                echo '<label>' . __( 'Font Variant', 'museum-core' ) . '</label>';
+                echo '<select data-placeholder="' . __( 'Font Variant', 'museum-core' ) . '" class="redux-typography redux-typography-font-variant ' . $this->field['class'] . '" original-title="' . __( 'Font Variant', 'museum-core' ) . '"  id="' . $this->field['id'] . '-font-variant" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-variant]' . '" data-value="' . $this->value['font-variant'] . '" data-id="' . $this->field['id'] . '" >';
                 echo '<option value=""></option>';
 
                 $values = array(
@@ -405,9 +405,9 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
             /* Text Decoration */
             if ( $this->field['text-decoration'] === true ) {
-                echo '<div class="select_wrapper typography-decoration tooltip" original-title="' . __( 'Text Decoration', 'student-plugin' ) . '">';
-                echo '<label>' . __( 'Text Decoration', 'student-plugin' ) . '</label>';
-                echo '<select data-placeholder="' . __( 'Text Decoration', 'student-plugin' ) . '" class="redux-typography redux-typography-decoration ' . $this->field['class'] . '" original-title="' . __( 'Text Decoration', 'student-plugin' ) . '"  id="' . $this->field['id'] . '-decoration" name="' . $this->field['name'] . $this->field['name_suffix'] . '[text-decoration]' . '" data-value="' . $this->value['text-decoration'] . '" data-id="' . $this->field['id'] . '" >';
+                echo '<div class="select_wrapper typography-decoration tooltip" original-title="' . __( 'Text Decoration', 'museum-core' ) . '">';
+                echo '<label>' . __( 'Text Decoration', 'museum-core' ) . '</label>';
+                echo '<select data-placeholder="' . __( 'Text Decoration', 'museum-core' ) . '" class="redux-typography redux-typography-decoration ' . $this->field['class'] . '" original-title="' . __( 'Text Decoration', 'museum-core' ) . '"  id="' . $this->field['id'] . '-decoration" name="' . $this->field['name'] . $this->field['name_suffix'] . '[text-decoration]' . '" data-value="' . $this->value['text-decoration'] . '" data-id="' . $this->field['id'] . '" >';
                 echo '<option value=""></option>';
 
                 $values = array(
@@ -429,8 +429,8 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             /* Font Size */
             if ( $this->field['font-size'] === true ) {
                 echo '<div class="input_wrapper font-size redux-container-typography">';
-                echo '<label>' . __( 'Font Size', 'student-plugin' ) . '</label>';
-                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-size mini typography-input ' . $this->field['class'] . '" title="' . __( 'Font Size', 'student-plugin' ) . '" placeholder="' . __( 'Size', 'student-plugin' ) . '" id="' . $this->field['id'] . '-size" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-size]' . '" value="' . str_replace( $unit, '', $this->value['font-size'] ) . '" data-value="' . str_replace( $unit, '', $this->value['font-size'] ) . '"><span class="add-on">' . $unit . '</span></div>';
+                echo '<label>' . __( 'Font Size', 'museum-core' ) . '</label>';
+                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-size mini typography-input ' . $this->field['class'] . '" title="' . __( 'Font Size', 'museum-core' ) . '" placeholder="' . __( 'Size', 'museum-core' ) . '" id="' . $this->field['id'] . '-size" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-size]' . '" value="' . str_replace( $unit, '', $this->value['font-size'] ) . '" data-value="' . str_replace( $unit, '', $this->value['font-size'] ) . '"><span class="add-on">' . $unit . '</span></div>';
                 echo '<input type="hidden" class="typography-font-size" name="' . $this->field['name'] . $this->field['name_suffix'] . '[font-size]' . '" value="' . $this->value['font-size'] . '" data-id="' . $this->field['id'] . '"  />';
                 echo '</div>';
             }
@@ -438,8 +438,8 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             /* Line Height */
             if ( $this->field['line-height'] === true ) {
                 echo '<div class="input_wrapper line-height redux-container-typography">';
-                echo '<label>' . __( 'Line Height', 'student-plugin' ) . '</label>';
-                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-height mini typography-input ' . $this->field['class'] . '" title="' . __( 'Line Height', 'student-plugin' ) . '" placeholder="' . __( 'Height', 'student-plugin' ) . '" id="' . $this->field['id'] . '-height" value="' . str_replace( $unit, '', $this->value['line-height'] ) . '" data-value="' . str_replace( $unit, '', $this->value['line-height'] ) . '"><span class="add-on">' . $unit . '</span></div>';
+                echo '<label>' . __( 'Line Height', 'museum-core' ) . '</label>';
+                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-height mini typography-input ' . $this->field['class'] . '" title="' . __( 'Line Height', 'museum-core' ) . '" placeholder="' . __( 'Height', 'museum-core' ) . '" id="' . $this->field['id'] . '-height" value="' . str_replace( $unit, '', $this->value['line-height'] ) . '" data-value="' . str_replace( $unit, '', $this->value['line-height'] ) . '"><span class="add-on">' . $unit . '</span></div>';
                 echo '<input type="hidden" class="typography-line-height" name="' . $this->field['name'] . $this->field['name_suffix'] . '[line-height]' . '" value="' . $this->value['line-height'] . '" data-id="' . $this->field['id'] . '"  />';
                 echo '</div>';
             }
@@ -447,8 +447,8 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             /* Word Spacing */
             if ( $this->field['word-spacing'] === true ) {
                 echo '<div class="input_wrapper word-spacing redux-container-typography">';
-                echo '<label>' . __( 'Word Spacing', 'student-plugin' ) . '</label>';
-                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-word mini typography-input ' . $this->field['class'] . '" title="' . __( 'Word Spacing', 'student-plugin' ) . '" placeholder="' . __( 'Word Spacing', 'student-plugin' ) . '" id="' . $this->field['id'] . '-word" value="' . str_replace( $unit, '', $this->value['word-spacing'] ) . '" data-value="' . str_replace( $unit, '', $this->value['word-spacing'] ) . '"><span class="add-on">' . $unit . '</span></div>';
+                echo '<label>' . __( 'Word Spacing', 'museum-core' ) . '</label>';
+                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-word mini typography-input ' . $this->field['class'] . '" title="' . __( 'Word Spacing', 'museum-core' ) . '" placeholder="' . __( 'Word Spacing', 'museum-core' ) . '" id="' . $this->field['id'] . '-word" value="' . str_replace( $unit, '', $this->value['word-spacing'] ) . '" data-value="' . str_replace( $unit, '', $this->value['word-spacing'] ) . '"><span class="add-on">' . $unit . '</span></div>';
                 echo '<input type="hidden" class="typography-word-spacing" name="' . $this->field['name'] . $this->field['name_suffix'] . '[word-spacing]' . '" value="' . $this->value['word-spacing'] . '" data-id="' . $this->field['id'] . '"  />';
                 echo '</div>';
             }
@@ -456,8 +456,8 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             /* Letter Spacing */
             if ( $this->field['letter-spacing'] === true ) {
                 echo '<div class="input_wrapper letter-spacing redux-container-typography">';
-                echo '<label>' . __( 'Letter Spacing', 'student-plugin' ) . '</label>';
-                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-letter mini typography-input ' . $this->field['class'] . '" title="' . __( 'Letter Spacing', 'student-plugin' ) . '" placeholder="' . __( 'Letter Spacing', 'student-plugin' ) . '" id="' . $this->field['id'] . '-letter" value="' . str_replace( $unit, '', $this->value['letter-spacing'] ) . '" data-value="' . str_replace( $unit, '', $this->value['letter-spacing'] ) . '"><span class="add-on">' . $unit . '</span></div>';
+                echo '<label>' . __( 'Letter Spacing', 'museum-core' ) . '</label>';
+                echo '<div class="input-append"><input type="text" class="span2 redux-typography redux-typography-letter mini typography-input ' . $this->field['class'] . '" title="' . __( 'Letter Spacing', 'museum-core' ) . '" placeholder="' . __( 'Letter Spacing', 'museum-core' ) . '" id="' . $this->field['id'] . '-letter" value="' . str_replace( $unit, '', $this->value['letter-spacing'] ) . '" data-value="' . str_replace( $unit, '', $this->value['letter-spacing'] ) . '"><span class="add-on">' . $unit . '</span></div>';
                 echo '<input type="hidden" class="typography-letter-spacing" name="' . $this->field['name'] . $this->field['name_suffix'] . '[letter-spacing]' . '" value="' . $this->value['letter-spacing'] . '" data-id="' . $this->field['id'] . '"  />';
                 echo '</div>';
             }
@@ -475,9 +475,9 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
                 }
 
                 echo '<div class="picker-wrapper">';
-                echo '<label>' . __( 'Font Color', 'student-plugin' ) . '</label>';
+                echo '<label>' . __( 'Font Color', 'museum-core' ) . '</label>';
                 echo '<div id="' . $this->field['id'] . '_color_picker" class="colorSelector typography-color"><div style="background-color: ' . $this->value['color'] . '"></div></div>';
-                echo '<input data-default-color="' . $default . '" class="redux-color redux-typography-color ' . $this->field['class'] . '" original-title="' . __( 'Font color', 'student-plugin' ) . '" id="' . $this->field['id'] . '-color" name="' . $this->field['name'] . $this->field['name_suffix'] . '[color]' . '" type="text" value="' . $this->value['color'] . '" data-id="' . $this->field['id'] . '" />';
+                echo '<input data-default-color="' . $default . '" class="redux-color redux-typography-color ' . $this->field['class'] . '" original-title="' . __( 'Font color', 'museum-core' ) . '" id="' . $this->field['id'] . '-color" name="' . $this->field['name'] . $this->field['name_suffix'] . '[color]' . '" type="text" value="' . $this->value['color'] . '" data-id="' . $this->field['id'] . '" />';
                 echo '</div>';
             }
 
@@ -910,7 +910,7 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
                 }
 
                 $this->parent->font_groups['std'] = array(
-                    'text'     => __( 'Standard Fonts', 'student-plugin' ),
+                    'text'     => __( 'Standard Fonts', 'museum-core' ),
                     'children' => array(),
                 );
 
@@ -1011,7 +1011,7 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
                     // optgroup
                     $this->parent->font_groups['google'] = array(
-                        'text'     => __( 'Google Webfonts', 'student-plugin' ),
+                        'text'     => __( 'Google Webfonts', 'museum-core' ),
                         'children' => array(),
                     );
 

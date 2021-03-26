@@ -26,7 +26,7 @@ class FormRecord {
 
 	public function get_formatted_data( $with_meta = false ) {
 		$formatted = [];
-		$no_label = __( 'No Label', 'elementor-pro' );
+		$no_label = __( 'No Label', 'museum-core' );
 		$fields = $this->fields;
 
 		if ( $with_meta ) {
@@ -91,12 +91,12 @@ class FormRecord {
 
 	public function get_default_messages() {
 		return [
-			self::SUCCESS => __( 'The form was sent successfully.', 'elementor-pro' ),
-			self::ERROR => __( 'An error occured.', 'elementor-pro' ),
-			self::FIELD_REQUIRED => __( 'This field is required.', 'elementor-pro' ),
-			self::INVALID_FORM => __( 'There\'s something wrong. The form is invalid.', 'elementor-pro' ),
-			self::SERVER_ERROR => __( 'Server error. Form not sent.', 'elementor-pro' ),
-			self::SUBSCRIBER_ALREADY_EXISTS => __( 'Subscriber already exists.', 'elementor-pro' ),
+			self::SUCCESS => __( 'The form was sent successfully.', 'museum-core' ),
+			self::ERROR => __( 'An error occured.', 'museum-core' ),
+			self::FIELD_REQUIRED => __( 'This field is required.', 'museum-core' ),
+			self::INVALID_FORM => __( 'There\'s something wrong. The form is invalid.', 'museum-core' ),
+			self::SERVER_ERROR => __( 'Server error. Form not sent.', 'museum-core' ),
+			self::SUBSCRIBER_ALREADY_EXISTS => __( 'Subscriber already exists.', 'museum-core' ),
 		];
 	}
 
@@ -110,7 +110,7 @@ class FormRecord {
 
 		$default_messages = $this->get_default_messages();
 
-		return isset( $default_messages[ $id ] ) ? $default_messages[ $id ] : __( 'Unknown', 'elementor-pro' );
+		return isset( $default_messages[ $id ] ) ? $default_messages[ $id ] : __( 'Unknown', 'museum-core' );
 	}
 
 	public function add_error( $field, $message = '' ) {
@@ -216,42 +216,42 @@ class FormRecord {
 			switch ( $metadata_type ) {
 				case 'date':
 					$this->meta['date'] = [
-						'title' => __( 'Date', 'elementor-pro' ),
+						'title' => __( 'Date', 'museum-core' ),
 						'value' => date_i18n( get_option( 'date_format' ) ),
 					];
 					break;
 
 				case 'time':
 					$this->meta['time'] = [
-						'title' => __( 'Time', 'elementor-pro' ),
+						'title' => __( 'Time', 'museum-core' ),
 						'value' => date_i18n( get_option( 'time_format' ) ),
 					];
 					break;
 
 				case 'page_url':
 					$this->meta['page_url'] = [
-						'title' => __( 'Page URL', 'elementor-pro' ),
+						'title' => __( 'Page URL', 'museum-core' ),
 						'value' => $_POST['referrer'],
 					];
 					break;
 
 				case 'user_agent':
 					$this->meta['user_agent'] = [
-						'title' => __( 'User Agent', 'elementor-pro' ),
+						'title' => __( 'User Agent', 'museum-core' ),
 						'value' => $_SERVER['HTTP_USER_AGENT'],
 					];
 					break;
 
 				case 'remote_ip':
 					$this->meta['remote_ip'] = [
-						'title' => __( 'Remote IP', 'elementor-pro' ),
+						'title' => __( 'Remote IP', 'museum-core' ),
 						//'value' => Utils::get_client_ip(),
 					];
 					break;
 				case 'credit':
 					$this->meta['credit'] = [
-						'title' => __( 'Powered by', 'elementor-pro' ),
-						'value' => __( 'Elementor', 'elementor-pro' ),
+						'title' => __( 'Powered by', 'museum-core' ),
+						'value' => __( 'Elementor', 'museum-core' ),
 					];
 					break;
 			}

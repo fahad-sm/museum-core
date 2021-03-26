@@ -87,23 +87,23 @@ if ( ! class_exists( 'ReduxFramework_link_color' ) ) {
         public function render() {
 
             if ( $this->field['regular'] === true && $this->field['default']['regular'] !== false ) {
-                echo '<span class="linkColor"><strong>' . __( 'Regular', 'student-plugin' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-regular" name="' . $this->field['name'] . $this->field['name_suffix'] . '[regular]' . '" value="' . $this->value['regular'] . '" class="redux-color redux-color-regular redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['regular'] . '" /></span>';
+                echo '<span class="linkColor"><strong>' . __( 'Regular', 'museum-core' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-regular" name="' . $this->field['name'] . $this->field['name_suffix'] . '[regular]' . '" value="' . $this->value['regular'] . '" class="redux-color redux-color-regular redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['regular'] . '" /></span>';
             }
 
             if ( $this->field['hover'] === true && $this->field['default']['hover'] !== false ) {
-                echo '<span class="linkColor"><strong>' . __( 'Hover', 'student-plugin' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-hover" name="' . $this->field['name'] . $this->field['name_suffix'] . '[hover]' . '" value="' . $this->value['hover'] . '" class="redux-color redux-color-hover redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['hover'] . '" /></span>';
+                echo '<span class="linkColor"><strong>' . __( 'Hover', 'museum-core' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-hover" name="' . $this->field['name'] . $this->field['name_suffix'] . '[hover]' . '" value="' . $this->value['hover'] . '" class="redux-color redux-color-hover redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['hover'] . '" /></span>';
             }
 
             if ( $this->field['visited'] === true && $this->field['default']['visited'] !== false ) {
-                echo '<span class="linkColor"><strong>' . __( 'Visited', 'student-plugin' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-visited" name="' . $this->field['name'] . $this->field['name_suffix'] . '[visited]' . '" value="' . $this->value['visited'] . '" class="redux-color redux-color-visited redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['visited'] . '" /></span>';
+                echo '<span class="linkColor"><strong>' . __( 'Visited', 'museum-core' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-visited" name="' . $this->field['name'] . $this->field['name_suffix'] . '[visited]' . '" value="' . $this->value['visited'] . '" class="redux-color redux-color-visited redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['visited'] . '" /></span>';
             }
 
             if ( $this->field['active'] === true && $this->field['default']['active'] !== false ) {
-                echo '<span class="linkColor"><strong>' . __( 'Active', 'student-plugin' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-active" name="' . $this->field['name'] . $this->field['name_suffix'] . '[active]' . '" value="' . $this->value['active'] . '" class="redux-color redux-color-active redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['active'] . '" /></span>';
+                echo '<span class="linkColor"><strong>' . __( 'Active', 'museum-core' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-active" name="' . $this->field['name'] . $this->field['name_suffix'] . '[active]' . '" value="' . $this->value['active'] . '" class="redux-color redux-color-active redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['active'] . '" /></span>';
             }
             
             if ( $this->field['focus'] === true && $this->field['default']['focus'] !== false ) {
-                echo '<span class="linkColor"><strong>' . __( 'Focus', 'student-plugin' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-focus" name="' . $this->field['name'] . $this->field['name_suffix'] . '[focus]' . '" value="' . $this->value['focus'] . '" class="redux-color redux-color-focus redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['focus'] . '" /></span>';
+                echo '<span class="linkColor"><strong>' . __( 'Focus', 'museum-core' ) . '</strong>&nbsp;<input id="' . $this->field['id'] . '-focus" name="' . $this->field['name'] . $this->field['name_suffix'] . '[focus]' . '" value="' . $this->value['focus'] . '" class="redux-color redux-color-focus redux-color-init ' . $this->field['class'] . '"  type="text" data-default-color="' . $this->field['default']['focus'] . '" /></span>';
             }
             
         }

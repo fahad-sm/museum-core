@@ -20,8 +20,8 @@ class Plugin
 		self::elementor();
 		add_action( 'elementor/widgets/widgets_registered', [__CLASS__, 'elementor_widgets'] );
 
-		// add_action('wp_ajax_student_plugin_ajax', [Ajax::class, 'init']);
-		// add_action('wp_ajax_nopriv_student_plugin_ajax', [Ajax::class, 'init']);
+		add_action('wp_ajax_museum_core_ajax', [Ajax::class, 'init']);
+		add_action('wp_ajax_nopriv_museum_core_ajax', [Ajax::class, 'init']);
 		// 
 		add_action('vc_before_init', [__CLASS__, 'vc_init']);
 	}

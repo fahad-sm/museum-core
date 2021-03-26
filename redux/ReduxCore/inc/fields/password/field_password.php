@@ -59,8 +59,8 @@
                     'username'    => '',
                     'password'    => '',
                     'placeholder' => array(
-                        'password' => __( 'Password', 'student-plugin' ),
-                        'username' => __( 'Username', 'student-plugin' )
+                        'password' => __( 'Password', 'museum-core' ),
+                        'username' => __( 'Username', 'museum-core' )
                     )
                 );
 

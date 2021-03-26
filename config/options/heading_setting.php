@@ -2,7 +2,7 @@
 
 Redux::setSection( $opt_name, array(
 
-    'title'         => esc_html__( 'Heading Settings', 'student' ),
+    'title'         => esc_html__( 'Heading Settings', 'museum-core' ),
     'id'            => 'heading_setting',
     'desc'          => '',
     'subsection'    => true,
@@ -14,9 +14,9 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'switch',
 
-            'title' => esc_html__('Use H1 Custom Font', 'student'),
+            'title' => esc_html__('Use H1 Custom Font', 'museum-core'),
 
-            'desc' => esc_html__('Enable to customize the theme heading h1 tag font', 'student'),
+            'desc' => esc_html__('Enable to customize the theme heading h1 tag font', 'museum-core'),
 
             ),
 
@@ -26,7 +26,7 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'typography',
 
-            'title' => esc_html__('H1 Font Typography', 'student'),
+            'title' => esc_html__('H1 Font Typography', 'museum-core'),
 
             'google' => true,
 
@@ -36,7 +36,7 @@ Redux::setSection( $opt_name, array(
 
             'units' => 'px',
 
-            'subtitle' => esc_html__('Apply options to customize the h1 heading font for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the h1 heading font for the theme', 'museum-core'),
 
             'default' => array(
 
@@ -64,9 +64,9 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'switch',
 
-            'title' => esc_html__('Use H2 Custom Font', 'student'),
+            'title' => esc_html__('Use H2 Custom Font', 'museum-core'),
 
-            'desc' => esc_html__('Enable to customize the theme heading h2 tag font', 'student'),
+            'desc' => esc_html__('Enable to customize the theme heading h2 tag font', 'museum-core'),
 
             ),
 
@@ -76,7 +76,7 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'typography',
 
-            'title' => esc_html__('H2 Font Typography', 'student'),
+            'title' => esc_html__('H2 Font Typography', 'museum-core'),
 
             'google' => true,
 
@@ -86,7 +86,7 @@ Redux::setSection( $opt_name, array(
 
             'units' => 'px',
 
-            'subtitle' => esc_html__('Apply options to customize the h2 heading font for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the h2 heading font for the theme', 'museum-core'),
 
             'default' => array(
 
@@ -115,9 +115,9 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'switch',
 
-            'title' => esc_html__('Use H3 Custom Font', 'student'),
+            'title' => esc_html__('Use H3 Custom Font', 'museum-core'),
 
-            'desc' => esc_html__('Enable to customize the theme heading h3 tag font', 'student'),
+            'desc' => esc_html__('Enable to customize the theme heading h3 tag font', 'museum-core'),
 
             ),
 
@@ -127,7 +127,7 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'typography',
 
-            'title' => esc_html__('H3 Font Typography', 'student'),
+            'title' => esc_html__('H3 Font Typography', 'museum-core'),
 
             'google' => true,
 
@@ -137,7 +137,7 @@ Redux::setSection( $opt_name, array(
 
             'units' => 'px',
 
-            'subtitle' => esc_html__('Apply options to customize the h3 heading  for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the h3 heading  for the theme', 'museum-core'),
 
             'default' => array(
 
@@ -166,9 +166,9 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'switch',
 
-            'title' => esc_html__('Use H4 Custom Font', 'student'),
+            'title' => esc_html__('Use H4 Custom Font', 'museum-core'),
 
-            'desc' => esc_html__('Enable to customize the theme heading h4 tag font', 'student'),
+            'desc' => esc_html__('Enable to customize the theme heading h4 tag font', 'museum-core'),
 
             ),
 
@@ -178,7 +178,7 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'typography',
 
-            'title' => esc_html__('H4 Font Typography', 'student'),
+            'title' => esc_html__('H4 Font Typography', 'museum-core'),
 
             'google' => true,
 
@@ -188,7 +188,7 @@ Redux::setSection( $opt_name, array(
 
             'units' => 'px',
 
-            'subtitle' => esc_html__('Apply options to customize the h4 heading font for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the h4 heading font for the theme', 'museum-core'),
 
             'default' => array(
 
@@ -217,9 +217,9 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'switch',
 
-            'title' => esc_html__('Use H5 Custom Font', 'student'),
+            'title' => esc_html__('Use H5 Custom Font', 'museum-core'),
 
-            'desc' => esc_html__('Enable to customize the theme heading h5 tag font', 'student'),
+            'desc' => esc_html__('Enable to customize the theme heading h5 tag font', 'museum-core'),
 
             ),
 
@@ -229,7 +229,7 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'typography',
 
-            'title' => esc_html__('H5 Font Typography', 'student'),
+            'title' => esc_html__('H5 Font Typography', 'museum-core'),
 
             'google' => true,
 
@@ -239,7 +239,7 @@ Redux::setSection( $opt_name, array(
 
             'units' => 'px',
 
-            'subtitle' => esc_html__('Apply options to customize the h5 heading font for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the h5 heading font for the theme', 'museum-core'),
 
             'default' => array(
 
@@ -268,9 +268,9 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'switch',
 
-            'title' => esc_html__('Use H6 Custom Font', 'student'),
+            'title' => esc_html__('Use H6 Custom Font', 'museum-core'),
 
-            'desc' => esc_html__('Enable to customize the theme heading h6 tag font', 'student'),
+            'desc' => esc_html__('Enable to customize the theme heading h6 tag font', 'museum-core'),
 
             ),
 
@@ -280,7 +280,7 @@ Redux::setSection( $opt_name, array(
 
             'type' => 'typography',
 
-            'title' => esc_html__('H6 Font Typography', 'student'),
+            'title' => esc_html__('H6 Font Typography', 'museum-core'),
 
             'google' => true,
 
@@ -290,7 +290,7 @@ Redux::setSection( $opt_name, array(
 
             'units' => 'px',
 
-            'subtitle' => esc_html__('Apply options to customize the h6 heading font for the theme', 'student'),
+            'subtitle' => esc_html__('Apply options to customize the h6 heading font for the theme', 'museum-core'),
 
             'default' => array(
 

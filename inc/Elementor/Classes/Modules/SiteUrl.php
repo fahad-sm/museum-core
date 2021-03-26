@@ -8,7 +8,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 
 use Elementor\Core\DynamicTags\Data_Tag;
 use Elementor\Modules\DynamicTags\Module;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class SiteUrl extends Data_Tag {
 
@@ -21,7 +21,7 @@ class SiteUrl extends Data_Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::SITE_GROUP;
+		return MuseumModules::SITE_GROUP;
 	}
 
 	public function get_categories() {

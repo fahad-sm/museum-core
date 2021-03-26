@@ -17,7 +17,7 @@ class Number extends Field_Base {
 	}
 
 	public function get_name() {
-		return __( 'Number', 'elementor-pro' );
+		return __( 'Number', 'museum-core' );
 	}
 
 	public function render( $item, $item_index, $form ) {

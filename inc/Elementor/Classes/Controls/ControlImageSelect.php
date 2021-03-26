@@ -34,7 +34,7 @@ class ControlImageSelect extends Base_Data_Control {
 
 	public function enqueue() {
 		// Styles
-		wp_register_style( 'webinane-control-imageselect', STUDENT_PLUGIN_URL . 'assets/elementor/css/control-imageselect.css' );
+		wp_register_style( 'webinane-control-imageselect', MUSEUM_CORE_URL . 'assets/elementor/css/control-imageselect.css' );
 		wp_enqueue_style( 'webinane-control-imageselect' );
 	}
 	/**

@@ -1,0 +1,21 @@
+{
+  "icons": [
+    "mail",
+    "phone",
+    "bag",
+    "mind",
+    "lab",
+    "teacher",
+    "portfolio",
+    "pin",
+    "circular",
+    "tool",
+    "award",
+    "tutor",
+    "school",
+    "student",
+    "mortarboard",
+    "idea",
+    "book"
+  ]
+}

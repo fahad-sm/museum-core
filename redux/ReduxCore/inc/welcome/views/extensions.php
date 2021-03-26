@@ -70,15 +70,15 @@
 
 ?>
 <div class="wrap about-wrap">
-    <h1><?php esc_html_e( 'Redux Framework - Extensions', 'student-plugin' ); ?></h1>
+    <h1><?php esc_html_e( 'Redux Framework - Extensions', 'museum-core' ); ?></h1>
 
     <div class="about-text">
-        <?php printf( __( 'Supercharge your Redux experience. Our extensions provide you with features that will take your products to the next level.', 'student-plugin' ), esc_html($this->display_version) ); ?>
+        <?php printf( __( 'Supercharge your Redux experience. Our extensions provide you with features that will take your products to the next level.', 'museum-core' ), esc_html($this->display_version) ); ?>
     </div>
     <div class="redux-badge">
         <i class="el el-redux"></i>
         <span>
-            <?php printf( __( 'Version %s', 'student-plugin' ), esc_html(ReduxFramework::$_version )); ?>
+            <?php printf( __( 'Version %s', 'museum-core' ), esc_html(ReduxFramework::$_version )); ?>
         </span>
     </div>
 
@@ -86,7 +86,7 @@
     <?php $this->tabs(); ?>
 
     <p class="about-description">
-        <?php esc_html_e( "While some are built specificially for developers, extensions such as Custom Fonts are sure to make any user happy.", 'student-plugin' ); ?>
+        <?php esc_html_e( "While some are built specificially for developers, extensions such as Custom Fonts are sure to make any user happy.", 'museum-core' ); ?>
     </p>
 
     <div class="extensions">

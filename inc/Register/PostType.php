@@ -231,7 +231,7 @@ class PostType extends Registerable
         }
         
         // Add a settings field to the permalink page
-        add_settings_field( $key, sprintf(__( '%s Base' ), $this->singular), [$this, 'permalink_callback'], 'permalink', 'optional' );
+        add_settings_field( $key, sprintf(__( '%s Base', 'museum-core' ), $this->singular), [$this, 'permalink_callback'], 'permalink', 'optional' );
         
     }
 

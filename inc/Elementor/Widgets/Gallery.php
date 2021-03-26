@@ -17,7 +17,7 @@ use MuseumCore\Util\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 
-class MasonryGallery extends Widget_Base {
+class Gallery extends Widget_Base {
 
     public $base;
 
@@ -26,7 +26,7 @@ class MasonryGallery extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'Masonry Gallery', 'museum-core' );
+        return esc_html__( 'Gallery', 'museum-core' );
     }
 
     public function get_icon() {
@@ -52,7 +52,7 @@ class MasonryGallery extends Widget_Base {
         $repeater->add_control(
           'image',
           [
-            'label' => __( 'Choose Image', 'plugin-domain' ),
+            'label' => __( 'Choose Image', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::MEDIA,
             'default' => [
               'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -61,22 +61,22 @@ class MasonryGallery extends Widget_Base {
         );
         $repeater->add_control(
           'title', [
-            'label' => __( 'Title', 'plugin-domain' ),
+            'label' => __( 'Title', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::TEXT,
-            'default' => __( 'Dr. John Doe' , 'plugin-domain' ),
+            'default' => __( 'Dr. John Doe' , 'museum-core' ),
             'label_block' => true,
           ]
         );
 
         $repeater->add_control(
           'tagline', [
-            'label' => __( 'Tagline', 'plugin-domain' ),
+            'label' => __( 'Tagline', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::TEXT,
           ]
         );
         $repeater->add_control(
           'tags', [
-            'label' => __( 'Tags', 'plugin-domain' ),
+            'label' => __( 'Tags', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::TEXT,
           ]
         );
@@ -84,25 +84,25 @@ class MasonryGallery extends Widget_Base {
         $this->add_control(
           'list',
           [
-            'label' => __( 'Testimonials', 'plugin-domain' ),
+            'label' => __( 'Testimonials', 'museum-core' ),
             'type' => \Elementor\Controls_Manager::REPEATER,
             'fields' => $repeater->get_controls(),
             'default' => [
               [
-                'title' => __( 'Dr. John Doe', 'plugin-domain' ),
-                'tagline' => __( 'Chemistry', 'plugin-domain' ),
+                'title' => __( 'Dr. John Doe', 'museum-core' ),
+                'tagline' => __( 'Chemistry', 'museum-core' ),
                 'image' => '',
                 'tags' => 'biology,chemistry'
               ],
               [
-                'title' => __( 'Dr. John Doe', 'plugin-domain' ),
-                'tagline' => __( 'Chemistry', 'plugin-domain' ),
+                'title' => __( 'Dr. John Doe', 'museum-core' ),
+                'tagline' => __( 'Chemistry', 'museum-core' ),
                 'image' => '',
                 'tags' => 'biology,chemistry'
               ],
               [
-                'title' => __( 'Dr. John Doe', 'plugin-domain' ),
-                'tagline' => __( 'Chemistry', 'plugin-domain' ),
+                'title' => __( 'Dr. John Doe', 'museum-core' ),
+                'tagline' => __( 'Chemistry', 'museum-core' ),
                 'image' => '',
                 'tags' => 'biology,chemistry'
               ],
@@ -127,14 +127,14 @@ class MasonryGallery extends Widget_Base {
        $this->start_controls_tab(
            'buttons_style_normal',
            [
-               'label' =>esc_html__( 'Normal', 'elementskit-lite' ),
+               'label' =>esc_html__( 'Normal', 'museum-core' ),
            ]
        );
 
        $this->add_control(
            'buttons_color_normal',
            [
-               'label' => esc_html_x( 'Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '',
                'selectors' => [
@@ -145,7 +145,7 @@ class MasonryGallery extends Widget_Base {
        $this->add_control(
            'buttons_bg_color_normal',
            [
-               'label' => esc_html_x( 'Background Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Background Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '#ffffff',
                'selectors' => [
@@ -158,13 +158,13 @@ class MasonryGallery extends Widget_Base {
        $this->start_controls_tab(
            'buttons_color_hover',
            [
-               'label' =>esc_html__( 'Hover', 'elementskit-lite' ),
+               'label' =>esc_html__( 'Hover', 'museum-core' ),
            ]
        );
        $this->add_control(
            'buttons_color_hover_color',
            [
-               'label' => esc_html_x( 'Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '#ffffff',
                'selectors' => [
@@ -175,7 +175,7 @@ class MasonryGallery extends Widget_Base {
        $this->add_control(
            'buttons_color_hover_bg_color',
            [
-               'label' => esc_html_x( 'Background Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Background Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '#8cc739',
                'selectors' => [
@@ -190,7 +190,7 @@ class MasonryGallery extends Widget_Base {
        $this->add_control(
            'gallery_hover_overlay_bg_color',
            [
-               'label' => esc_html_x( 'Overlay Background Color', 'Title Control', 'elementskit-lite' ),
+               'label' => esc_html_x( 'Overlay Background Color', 'Title Control', 'museum-core' ),
                'type' => Controls_Manager::COLOR,
                'default' => '#8CC739D1',
                'selectors' => [
@@ -205,6 +205,6 @@ class MasonryGallery extends Widget_Base {
     public function render() {
         $settings = $this->get_settings();
         extract($settings);
-        include STUDENT_PLUGIN_PATH . 'templates/elementor/masonry-gallery.php';
+        include MUSEUM_CORE_PATH . 'templates/elementor/masonry-gallery.php';
     }
 }

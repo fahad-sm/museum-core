@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Controls_Manager;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 
 class ArchiveTitle extends Tag {
@@ -22,7 +22,7 @@ class ArchiveTitle extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::ARCHIVE_GROUP;
+		return MuseumModules::ARCHIVE_GROUP;
 	}
 
 	public function get_categories() {

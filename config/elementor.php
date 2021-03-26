@@ -2,18 +2,15 @@
 
 return [
 	'modules'	=> [
-		StudentPlugin\Elementor\Modules\Form\Init::class
+		MuseumCore\Elementor\Modules\Form\Init::class
 	],
 	'widgets'	=> [
-		StudentPlugin\Elementor\Widgets\IconBox::class,
-		StudentPlugin\Elementor\Widgets\Courses::class,
-		StudentPlugin\Elementor\Widgets\Teachers::class,
-		StudentPlugin\Elementor\Widgets\Testimonials::class,
-		StudentPlugin\Elementor\Widgets\Blog::class,
-		StudentPlugin\Elementor\Widgets\Events::class,
-		StudentPlugin\Elementor\Widgets\MasonryGallery::class,
-		StudentPlugin\Elementor\Widgets\VideoParallax::class,
-		StudentPlugin\Elementor\Widgets\Stats::class,
-		StudentPlugin\Elementor\Widgets\VerticalTabs::class,
+		MuseumCore\Elementor\Widgets\IconBox::class,
+		MuseumCore\Elementor\Widgets\Testimonials::class,
+		MuseumCore\Elementor\Widgets\Blog::class,
+		MuseumCore\Elementor\Widgets\Events::class,
+		MuseumCore\Elementor\Widgets\MasonryGallery::class,
+		MuseumCore\Elementor\Widgets\VideoParallax::class,
+		MuseumCore\Elementor\Widgets\Stats::class,
 	]
 ];

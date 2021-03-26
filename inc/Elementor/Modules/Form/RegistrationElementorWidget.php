@@ -20,7 +20,7 @@ class Registration extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Registration', 'webinane-elementor' );
+		return __( 'Registration', 'museum-core' );
 	}
 
 	public function get_icon() {
@@ -48,32 +48,32 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_fields_content',
 			[
-				'label' => __( 'Form Fields', 'webinane-elementor' ),
+				'label' => __( 'Form Fields', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'show_labels',
 			[
-				'label' => __( 'Label', 'webinane-elementor' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_off' => __( 'Hide', 'webinane-elementor' ),
-				'label_on' => __( 'Show', 'webinane-elementor' ),
+				'label_off' => __( 'Hide', 'museum-core' ),
+				'label_on' => __( 'Show', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'input_size',
 			[
-				'label' => __( 'Input Size', 'webinane-elementor' ),
+				'label' => __( 'Input Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'xs' => __( 'Extra Small', 'webinane-elementor' ),
-					'sm' => __( 'Small', 'webinane-elementor' ),
-					'md' => __( 'Medium', 'webinane-elementor' ),
-					'lg' => __( 'Large', 'webinane-elementor' ),
-					'xl' => __( 'Extra Large', 'webinane-elementor' ),
+					'xs' => __( 'Extra Small', 'museum-core' ),
+					'sm' => __( 'Small', 'museum-core' ),
+					'md' => __( 'Medium', 'museum-core' ),
+					'lg' => __( 'Large', 'museum-core' ),
+					'xl' => __( 'Extra Large', 'museum-core' ),
 				],
 				'default' => 'sm',
 			]
@@ -84,30 +84,30 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_button_content',
 			[
-				'label' => __( 'Button', 'webinane-elementor' ),
+				'label' => __( 'Button', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text',
 			[
-				'label' => __( 'Text', 'webinane-elementor' ),
+				'label' => __( 'Text', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Register Now', 'webinane-elementor' ),
+				'default' => __( 'Register Now', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_size',
 			[
-				'label' => __( 'Size', 'webinane-elementor' ),
+				'label' => __( 'Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'xs' => __( 'Extra Small', 'webinane-elementor' ),
-					'sm' => __( 'Small', 'webinane-elementor' ),
-					'md' => __( 'Medium', 'webinane-elementor' ),
-					'lg' => __( 'Large', 'webinane-elementor' ),
-					'xl' => __( 'Extra Large', 'webinane-elementor' ),
+					'xs' => __( 'Extra Small', 'museum-core' ),
+					'sm' => __( 'Small', 'museum-core' ),
+					'md' => __( 'Medium', 'museum-core' ),
+					'lg' => __( 'Large', 'museum-core' ),
+					'xl' => __( 'Extra Large', 'museum-core' ),
 				],
 				'default' => 'sm',
 			]
@@ -116,23 +116,23 @@ class Registration extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'webinane-elementor' ),
+				'label' => __( 'Alignment', 'museum-core' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'start' => [
-						'title' => __( 'Left', 'webinane-elementor' ),
+						'title' => __( 'Left', 'museum-core' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'webinane-elementor' ),
+						'title' => __( 'Center', 'museum-core' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'end' => [
-						'title' => __( 'Right', 'webinane-elementor' ),
+						'title' => __( 'Right', 'museum-core' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'stretch' => [
-						'title' => __( 'Justified', 'webinane-elementor' ),
+						'title' => __( 'Justified', 'museum-core' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -146,14 +146,14 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_login_content',
 			[
-				'label' => __( 'Additional Options', 'webinane-elementor' ),
+				'label' => __( 'Additional Options', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'custom_labels',
 			[
-				'label' => __( 'Custom Label', 'webinane-elementor' ),
+				'label' => __( 'Custom Label', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'condition' => [
 					'show_labels' => 'yes',
@@ -164,9 +164,9 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'user_label',
 			[
-				'label' => __( 'Username Label', 'webinane-elementor' ),
+				'label' => __( 'Username Label', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Username', 'webinane-elementor' ),
+				'default' => __( 'Username', 'museum-core' ),
 				'condition' => [
 					'show_labels' => 'yes',
 					'custom_labels' => 'yes',
@@ -177,9 +177,9 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'user_placeholder',
 			[
-				'label' => __( 'Username Placeholder', 'webinane-elementor' ),
+				'label' => __( 'Username Placeholder', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Username', 'webinane-elementor' ),
+				'default' => __( 'Username', 'museum-core' ),
 				'condition' => [
 					'show_labels' => 'yes',
 					'custom_labels' => 'yes',
@@ -190,9 +190,9 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'email_label',
 			[
-				'label' => __( 'Email Address Label', 'webinane-elementor' ),
+				'label' => __( 'Email Address Label', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Email Address', 'webinane-elementor' ),
+				'default' => __( 'Email Address', 'museum-core' ),
 				'condition' => [
 					'show_labels' => 'yes',
 					'custom_labels' => 'yes',
@@ -203,9 +203,9 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'email_placeholder',
 			[
-				'label' => __( 'Email Address Placeholder', 'webinane-elementor' ),
+				'label' => __( 'Email Address Placeholder', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Email Address', 'webinane-elementor' ),
+				'default' => __( 'Email Address', 'museum-core' ),
 				'condition' => [
 					'show_labels' => 'yes',
 					'custom_labels' => 'yes',
@@ -218,7 +218,7 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Form', 'webinane-elementor' ),
+				'label' => __( 'Form', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -226,7 +226,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'webinane-elementor' ),
+				'label' => __( 'Rows Gap', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '10',
@@ -249,7 +249,7 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_labels',
 			[
-				'label' => __( 'Label', 'webinane-elementor' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'show_labels!' => '',
@@ -260,7 +260,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'label_spacing',
 			[
-				'label' => __( 'Spacing', 'webinane-elementor' ),
+				'label' => __( 'Spacing', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => '0',
@@ -281,7 +281,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'label_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-form-fields-wrapper label' => 'color: {{VALUE}};',
@@ -307,7 +307,7 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_field_style',
 			[
-				'label' => __( 'Fields', 'webinane-elementor' ),
+				'label' => __( 'Fields', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -315,7 +315,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'field_text_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group .elementor-field' => 'color: {{VALUE}};',
@@ -339,7 +339,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'field_background_color',
 			[
-				'label' => __( 'Background Color', 'webinane-elementor' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -353,7 +353,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'field_border_color',
 			[
-				'label' => __( 'Border Color', 'webinane-elementor' ),
+				'label' => __( 'Border Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group .elementor-field:not(.elementor-select-wrapper)' => 'border-color: {{VALUE}};',
@@ -367,7 +367,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'field_border_width',
 			[
-				'label' => __( 'Border Width', 'webinane-elementor' ),
+				'label' => __( 'Border Width', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'placeholder' => '1',
 				'size_units' => [ 'px' ],
@@ -381,7 +381,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'field_border_radius',
 			[
-				'label' => __( 'Border Radius', 'webinane-elementor' ),
+				'label' => __( 'Border Radius', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -396,7 +396,7 @@ class Registration extends Widget_Base {
 		$this->start_controls_section(
 			'section_button_style',
 			[
-				'label' => __( 'Button', 'webinane-elementor' ),
+				'label' => __( 'Button', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -406,14 +406,14 @@ class Registration extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'webinane-elementor' ),
+				'label' => __( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -434,7 +434,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'button_background_color',
 			[
-				'label' => __( 'Background Color', 'webinane-elementor' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -457,7 +457,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'webinane-elementor' ),
+				'label' => __( 'Border Radius', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -469,7 +469,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'button_text_padding',
 			[
-				'label' => __( 'Text Padding', 'webinane-elementor' ),
+				'label' => __( 'Text Padding', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -483,14 +483,14 @@ class Registration extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'webinane-elementor' ),
+				'label' => __( 'Hover', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_hover_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'color: {{VALUE}};',
@@ -501,7 +501,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'button_background_hover_color',
 			[
-				'label' => __( 'Background Color', 'webinane-elementor' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'background-color: {{VALUE}};',
@@ -512,7 +512,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'webinane-elementor' ),
+				'label' => __( 'Border Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'border-color: {{VALUE}};',
@@ -526,7 +526,7 @@ class Registration extends Widget_Base {
 		$this->add_control(
 			'button_hover_animation',
 			[
-				'label' => __( 'Animation', 'webinane-elementor' ),
+				'label' => __( 'Animation', 'museum-core' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -632,7 +632,7 @@ class Registration extends Widget_Base {
 
 		if(!get_option( 'users_can_register' )){
 
-			echo '<div class="elementor-login">' .__( 'Please allow the anyone can register option from general settings.', 'webinane-elementor' ).'</div>';
+			echo '<div class="elementor-login">' .__( 'Please allow the anyone can register option from general settings.', 'museum-core' ).'</div>';
 
 			return;
 		}
@@ -643,7 +643,7 @@ class Registration extends Widget_Base {
 				$current_user = wp_get_current_user();
 
 				echo '<div class="elementor-login">' .
-					sprintf( __( 'You are Logged in as %1$s (<a href="%2$s">Logout</a>)', 'webinane-elementor' ), $current_user->display_name, wp_logout_url() ) .
+					sprintf( __( 'You are Logged in as %1$s (<a href="%2$s">Logout</a>)', 'museum-core' ), $current_user->display_name, wp_logout_url() ) .
 					'</div>';
 
 			return;

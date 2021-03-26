@@ -13,7 +13,7 @@
 
                 $this->parent       = $parent;
                 $this->field        = $field;
-                $this->field['msg'] = ( isset( $this->field['msg'] ) ) ? $this->field['msg'] : __( 'You must not enter any special characters in this field, all special characters have been removed.', 'student-plugin' );
+                $this->field['msg'] = ( isset( $this->field['msg'] ) ) ? $this->field['msg'] : __( 'You must not enter any special characters in this field, all special characters have been removed.', 'museum-core' );
                 $this->value        = $value;
                 $this->current      = $current;
 

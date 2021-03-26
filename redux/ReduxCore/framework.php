@@ -218,15 +218,15 @@
                 }
 
                 if ( empty ( $this->args['footer_credit'] ) ) {
-                    $this->args['footer_credit'] = '<span id="footer-thankyou">' . sprintf( __( 'Options panel created using %1$s', 'student-plugin' ), '<a href="' . esc_url( $this->framework_url ) . '" target="_blank">' . __( 'Redux Framework', 'student-plugin' ) . '</a> v' . self::$_version ) . '</span>';
+                    $this->args['footer_credit'] = '<span id="footer-thankyou">' . sprintf( __( 'Options panel created using %1$s', 'museum-core' ), '<a href="' . esc_url( $this->framework_url ) . '" target="_blank">' . __( 'Redux Framework', 'museum-core' ) . '</a> v' . self::$_version ) . '</span>';
                 }
 
                 if ( empty ( $this->args['menu_title'] ) ) {
-                    $this->args['menu_title'] = __( 'Options', 'student-plugin' );
+                    $this->args['menu_title'] = __( 'Options', 'museum-core' );
                 }
 
                 if ( empty ( $this->args['page_title'] ) ) {
-                    $this->args['page_title'] = __( 'Options', 'student-plugin' );
+                    $this->args['page_title'] = __( 'Options', 'museum-core' );
                 }
 
                 $this->old_opt_name = $this->args['opt_name'];
@@ -1743,29 +1743,29 @@
 
                     // Default url values for enabling hints.
                     $dismiss = 'true';
-                    $s       = __( 'Enable', 'student-plugin' );
+                    $s       = __( 'Enable', 'museum-core' );
 
                     // Values for disabling hints.
                     if ( 'true' == $hint_status ) {
                         $dismiss = 'false';
-                        $s       = __( 'Disable', 'student-plugin' );
+                        $s       = __( 'Disable', 'museum-core' );
                     }
 
                     // Make URL
                     $url = '<a class="redux_hint_status" href="?dismiss=' . $dismiss . '&amp;id=hints&amp;page=' . $curPage . '&amp;tab=' . $curTab . '">' . $s . ' hints</a>';
 
-                    $event = __( 'moving the mouse over', 'student-plugin' );
+                    $event = __( 'moving the mouse over', 'museum-core' );
                     if ( 'click' == $this->args['hints']['tip_effect']['show']['event'] ) {
-                        $event = __( 'clicking', 'student-plugin' );
+                        $event = __( 'clicking', 'museum-core' );
                     }
 
                     // Construct message
-                    $msg = sprintf( __( 'Hints are tooltips that popup when %d the hint icon, offering addition information about the field in which they appear.  They can be %d d by using the link below.', 'student-plugin' ), $event, strtolower( $s ) ) . '<br/><br/>' . $url;
+                    $msg = sprintf( __( 'Hints are tooltips that popup when %d the hint icon, offering addition information about the field in which they appear.  They can be %d d by using the link below.', 'museum-core' ), $event, strtolower( $s ) ) . '<br/><br/>' . $url;
 
                     // Construct hint tab
                     $tab = array(
                         'id'      => 'redux-hint-tab',
-                        'title'   => __( 'Hints', 'student-plugin' ),
+                        'title'   => __( 'Hints', 'museum-core' ),
                         'content' => '<p>' . $msg . '</p>'
                     );
 
@@ -1892,7 +1892,7 @@
                 }
 
                 if ( ! empty ( $default_output ) ) {
-                    $default_output = __( 'Default', 'student-plugin' ) . ": " . substr( $default_output, 0, - 2 );
+                    $default_output = __( 'Default', 'museum-core' ) . ": " . substr( $default_output, 0, - 2 );
                 }
 
                 if ( ! empty ( $default_output ) ) {
@@ -2772,7 +2772,7 @@
             public function ajax_save() {
                 if ( ! wp_verify_nonce( $_REQUEST['nonce'], "redux_ajax_nonce" . $this->args['opt_name'] ) ) {
                     echo json_encode( array(
-                        'status' => __( 'Invalid security credential.  Please reload the page and try again.', 'student-plugin' ),
+                        'status' => __( 'Invalid security credential.  Please reload the page and try again.', 'museum-core' ),
                         'action' => ''
                     ) );
 
@@ -2781,7 +2781,7 @@
 
                 if ( ! self::current_user_can( $this->args['page_permissions'] ) ) {
                     echo json_encode( array(
-                        'status' => __( 'Invalid user capability.  Please reload the page and try again.', 'student-plugin' ),
+                        'status' => __( 'Invalid user capability.  Please reload the page and try again.', 'museum-core' ),
                         'action' => ''
                     ) );
 
@@ -2861,7 +2861,7 @@
                             $return_array = array( 'status' => $e->getMessage() );
                         }
                     } else {
-                        echo json_encode( array( 'status' => __( 'Your panel has no fields. Nothing to save.', 'student-plugin' ) ) );
+                        echo json_encode( array( 'status' => __( 'Your panel has no fields. Nothing to save.', 'museum-core' ) ) );
                     }
                 }
                 if ( isset ( $this->transients['run_compiler'] ) && $this->transients['run_compiler'] ) {
@@ -3981,7 +3981,7 @@
                             if ( is_array( $arr ) && ! empty( $arr ) ) {
                                 foreach ( $arr as $x => $y ) {
                                     if ( strpos( strtolower( $y ), 'redux' ) !== false ) {
-                                        $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>admin_bar_links</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'student-plugin' );
+                                        $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>admin_bar_links</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'museum-core' );
                                         $this->display_arg_change_notice( 'admin', $msg );
                                         $this->omit_admin_items = true;
                                         continue;
@@ -3997,7 +3997,7 @@
                                 foreach ( $arr as $x => $y ) {
                                     if (!$this->omit_share_icons) {
                                         if ( strpos( strtolower( $y ), 'redux' ) !== false ) {
-                                            $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>share_icons</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'student-plugin' );
+                                            $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>share_icons</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'museum-core' );
                                             $this->display_arg_change_notice( 'share', $msg );
                                             $this->omit_share_icons = true;
                                             continue;

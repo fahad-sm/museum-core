@@ -27,7 +27,7 @@ class FormElementorWidget extends FormBase {
 	}
 
 	public function get_title() {
-		return __( 'Form', 'webinane-elementor' );
+		return __( 'Form', 'museum-core' );
 	}
 
 	public function get_icon() {
@@ -42,20 +42,20 @@ class FormElementorWidget extends FormBase {
 		$repeater = new Repeater();
 
 		$field_types = [
-			'text' => __( 'Text', 'webinane-elementor' ),
-			'email' => __( 'Email', 'webinane-elementor' ),
-			'textarea' => __( 'Textarea', 'webinane-elementor' ),
-			'url' => __( 'URL', 'webinane-elementor' ),
-			'tel' => __( 'Tel', 'webinane-elementor' ),
-			'radio' => __( 'Radio', 'webinane-elementor' ),
-			'select' => __( 'Select', 'webinane-elementor' ),
-			'checkbox' => __( 'Checkbox', 'webinane-elementor' ),
-			'number' => __( 'Number', 'webinane-elementor' ),
-			'date' => __( 'Date', 'webinane-elementor' ),
-			'upload' => __( 'File Upload', 'webinane-elementor' ),
-			'password' => __( 'Password', 'webinane-elementor' ),
-			'html' => __( 'HTML', 'webinane-elementor' ),
-			'hidden' => __( 'Hidden', 'webinane-elementor' ),
+			'text' => __( 'Text', 'museum-core' ),
+			'email' => __( 'Email', 'museum-core' ),
+			'textarea' => __( 'Textarea', 'museum-core' ),
+			'url' => __( 'URL', 'museum-core' ),
+			'tel' => __( 'Tel', 'museum-core' ),
+			'radio' => __( 'Radio', 'museum-core' ),
+			'select' => __( 'Select', 'museum-core' ),
+			'checkbox' => __( 'Checkbox', 'museum-core' ),
+			'number' => __( 'Number', 'museum-core' ),
+			'date' => __( 'Date', 'museum-core' ),
+			'upload' => __( 'File Upload', 'museum-core' ),
+			'password' => __( 'Password', 'museum-core' ),
+			'html' => __( 'HTML', 'museum-core' ),
+			'hidden' => __( 'Hidden', 'museum-core' ),
 		];
 
 		/**
@@ -72,13 +72,13 @@ class FormElementorWidget extends FormBase {
 		$repeater->start_controls_tabs( 'form_fields_tabs' );
 
 		$repeater->start_controls_tab( 'form_fields_content_tab', [
-			'label' => __( 'Content', 'webinane-elementor' ),
+			'label' => __( 'Content', 'museum-core' ),
 		] );
 
 		$repeater->add_control(
 			'field_type',
 			[
-				'label' => __( 'Type', 'webinane-elementor' ),
+				'label' => __( 'Type', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $field_types,
 				'default' => 'text',
@@ -88,7 +88,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'field_label',
 			[
-				'label' => __( 'Label', 'webinane-elementor' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 			]
@@ -97,7 +97,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'placeholder',
 			[
-				'label' => __( 'Placeholder', 'webinane-elementor' ),
+				'label' => __( 'Placeholder', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'conditions' => [
@@ -123,7 +123,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'required',
 			[
-				'label' => __( 'Required', 'webinane-elementor' ),
+				'label' => __( 'Required', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'default' => '',
@@ -148,10 +148,10 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'field_options',
 			[
-				'label' => __( 'Options', 'webinane-elementor' ),
+				'label' => __( 'Options', 'museum-core' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'default' => '',
-				'description' => __( 'Enter each option in a separate line. To differentiate between label and value, separate them with a pipe char ("|"). For example: First Name|f_name', 'webinane-elementor' ),
+				'description' => __( 'Enter each option in a separate line. To differentiate between label and value, separate them with a pipe char ("|"). For example: First Name|f_name', 'museum-core' ),
 				'conditions' => [
 					'terms' => [
 						[
@@ -171,7 +171,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'allow_multiple',
 			[
-				'label' => __( 'Multiple Selection', 'webinane-elementor' ),
+				'label' => __( 'Multiple Selection', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'conditions' => [
@@ -188,7 +188,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'select_size',
 			[
-				'label' => __( 'Rows', 'webinane-elementor' ),
+				'label' => __( 'Rows', 'museum-core' ),
 				'type' => Controls_Manager::NUMBER,
 				'min' => 2,
 				'step' => 1,
@@ -210,7 +210,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'inline_list',
 			[
-				'label' => __( 'Inline List', 'webinane-elementor' ),
+				'label' => __( 'Inline List', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'elementor-subgroup-inline',
 				'default' => '',
@@ -232,7 +232,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'field_html',
 			[
-				'label' => __( 'HTML', 'webinane-elementor' ),
+				'label' => __( 'HTML', 'museum-core' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'dynamic' => [
 					'active' => true,
@@ -251,10 +251,10 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_responsive_control(
 			'width',
 			[
-				'label' => __( 'Column Width', 'webinane-elementor' ),
+				'label' => __( 'Column Width', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Default', 'webinane-elementor' ),
+					'' => __( 'Default', 'museum-core' ),
 					'100' => '100%',
 					'80' => '80%',
 					'75' => '75%',
@@ -286,7 +286,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'rows',
 			[
-				'label' => __( 'Rows', 'webinane-elementor' ),
+				'label' => __( 'Rows', 'museum-core' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 4,
 				'conditions' => [
@@ -302,12 +302,12 @@ class FormElementorWidget extends FormBase {
 
 		$repeater->add_control(
 			'recaptcha_size', [
-				'label' => __( 'Size', 'webinane-elementor' ),
+				'label' => __( 'Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'normal',
 				'options' => [
-					'normal' => __( 'Normal', 'webinane-elementor' ),
-					'compact' => __( 'Compact', 'webinane-elementor' ),
+					'normal' => __( 'Normal', 'museum-core' ),
+					'compact' => __( 'Compact', 'museum-core' ),
 				],
 				'conditions' => [
 					'terms' => [
@@ -323,12 +323,12 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'recaptcha_style',
 			[
-				'label' => __( 'Style', 'webinane-elementor' ),
+				'label' => __( 'Style', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'light',
 				'options' => [
-					'light' => __( 'Light', 'webinane-elementor' ),
-					'dark' => __( 'Dark', 'webinane-elementor' ),
+					'light' => __( 'Light', 'museum-core' ),
+					'dark' => __( 'Dark', 'museum-core' ),
 				],
 				'conditions' => [
 					'terms' => [
@@ -343,15 +343,15 @@ class FormElementorWidget extends FormBase {
 
 		$repeater->add_control(
 			'recaptcha_badge', [
-				'label' => __( 'Badge', 'webinane-elementor' ),
+				'label' => __( 'Badge', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'bottomright',
 				'options' => [
-					'bottomright' => __( 'Bottom Right', 'webinane-elementor' ),
-					'bottomleft' => __( 'Bottom Left', 'webinane-elementor' ),
-					'inline' => __( 'Inline', 'webinane-elementor' ),
+					'bottomright' => __( 'Bottom Right', 'museum-core' ),
+					'bottomleft' => __( 'Bottom Left', 'museum-core' ),
+					'inline' => __( 'Inline', 'museum-core' ),
 				],
-				'description' => __( 'Switch to frontend to view', 'webinane-elementor' ),
+				'description' => __( 'Switch to frontend to view', 'museum-core' ),
 				'conditions' => [
 					'terms' => [
 						[
@@ -366,10 +366,10 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'css_classes',
 			[
-				'label' => __( 'CSS Classes', 'webinane-elementor' ),
+				'label' => __( 'CSS Classes', 'museum-core' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => '',
-				'title' => __( 'Add your custom class WITHOUT the dot. e.g: my-class', 'webinane-elementor' ),
+				'title' => __( 'Add your custom class WITHOUT the dot. e.g: my-class', 'museum-core' ),
 			]
 		);
 
@@ -378,7 +378,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->start_controls_tab(
 			'form_fields_advanced_tab',
 			[
-				'label' => __( 'Advanced', 'webinane-elementor' ),
+				'label' => __( 'Advanced', 'museum-core' ),
 				'condition' => [
 					'field_type!' => 'html',
 				],
@@ -388,7 +388,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'field_value',
 			[
-				'label' => __( 'Default Value', 'webinane-elementor' ),
+				'label' => __( 'Default Value', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'dynamic' => [
@@ -421,9 +421,9 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'custom_id',
 			[
-				'label' => __( 'ID', 'webinane-elementor' ),
+				'label' => __( 'ID', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'description' => __( 'Please make sure the ID is unique and not used elsewhere in this form. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'webinane-elementor' ),
+				'description' => __( 'Please make sure the ID is unique and not used elsewhere in this form. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'museum-core' ),
 				'render_type' => 'none',
 			]
 		);
@@ -431,7 +431,7 @@ class FormElementorWidget extends FormBase {
 		$repeater->add_control(
 			'shortcode',
 			[
-				'label' => __( 'Shortcode', 'webinane-elementor' ),
+				'label' => __( 'Shortcode', 'museum-core' ),
 				'type' => Controls_Manager::RAW_HTML,
 				'classes' => 'forms-field-shortcode',
 				'raw' => '<input class="elementor-form-field-shortcode" readonly />',
@@ -445,17 +445,17 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_form_fields',
 			[
-				'label' => __( 'Form Fields', 'webinane-elementor' ),
+				'label' => __( 'Form Fields', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'form_name',
 			[
-				'label' => __( 'Form Name', 'webinane-elementor' ),
+				'label' => __( 'Form Name', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'New Form', 'webinane-elementor' ),
-				'placeholder' => __( 'Form Name', 'webinane-elementor' ),
+				'default' => __( 'New Form', 'museum-core' ),
+				'placeholder' => __( 'Form Name', 'museum-core' ),
 			]
 		);
 
@@ -468,23 +468,23 @@ class FormElementorWidget extends FormBase {
 					[
 						'custom_id' => 'name',
 						'field_type' => 'text',
-						'field_label' => __( 'Name', 'webinane-elementor' ),
-						'placeholder' => __( 'Name', 'webinane-elementor' ),
+						'field_label' => __( 'Name', 'museum-core' ),
+						'placeholder' => __( 'Name', 'museum-core' ),
 						'width' => '100',
 					],
 					[
 						'custom_id' => 'email',
 						'field_type' => 'email',
 						'required' => 'true',
-						'field_label' => __( 'Email', 'webinane-elementor' ),
-						'placeholder' => __( 'Email', 'webinane-elementor' ),
+						'field_label' => __( 'Email', 'museum-core' ),
+						'placeholder' => __( 'Email', 'museum-core' ),
 						'width' => '100',
 					],
 					[
 						'custom_id' => 'message',
 						'field_type' => 'textarea',
-						'field_label' => __( 'Message', 'webinane-elementor' ),
-						'placeholder' => __( 'Message', 'webinane-elementor' ),
+						'field_label' => __( 'Message', 'museum-core' ),
+						'placeholder' => __( 'Message', 'museum-core' ),
 						'width' => '100',
 					],
 				],
@@ -495,14 +495,14 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'input_size',
 			[
-				'label' => __( 'Input Size', 'webinane-elementor' ),
+				'label' => __( 'Input Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'xs' => __( 'Extra Small', 'webinane-elementor' ),
-					'sm' => __( 'Small', 'webinane-elementor' ),
-					'md' => __( 'Medium', 'webinane-elementor' ),
-					'lg' => __( 'Large', 'webinane-elementor' ),
-					'xl' => __( 'Extra Large', 'webinane-elementor' ),
+					'xs' => __( 'Extra Small', 'museum-core' ),
+					'sm' => __( 'Small', 'museum-core' ),
+					'md' => __( 'Medium', 'museum-core' ),
+					'lg' => __( 'Large', 'museum-core' ),
+					'xl' => __( 'Extra Large', 'museum-core' ),
 				],
 				'default' => 'sm',
 				'separator' => 'before',
@@ -512,10 +512,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'show_labels',
 			[
-				'label' => __( 'Label', 'webinane-elementor' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'webinane-elementor' ),
-				'label_off' => __( 'Hide', 'webinane-elementor' ),
+				'label_on' => __( 'Show', 'museum-core' ),
+				'label_off' => __( 'Hide', 'museum-core' ),
 				'return_value' => 'true',
 				'default' => 'true',
 				'separator' => 'before',
@@ -525,10 +525,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'mark_required',
 			[
-				'label' => __( 'Required Mark', 'webinane-elementor' ),
+				'label' => __( 'Required Mark', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'webinane-elementor' ),
-				'label_off' => __( 'Hide', 'webinane-elementor' ),
+				'label_on' => __( 'Show', 'museum-core' ),
+				'label_off' => __( 'Hide', 'museum-core' ),
 				'default' => '',
 				'condition' => [
 					'show_labels!' => '',
@@ -539,11 +539,11 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'label_position',
 			[
-				'label' => __( 'Label Position', 'webinane-elementor' ),
+				'label' => __( 'Label Position', 'museum-core' ),
 				'type' => Controls_Manager::HIDDEN,
 				'options' => [
-					'above' => __( 'Above', 'webinane-elementor' ),
-					'inline' => __( 'Inline', 'webinane-elementor' ),
+					'above' => __( 'Above', 'museum-core' ),
+					'inline' => __( 'Inline', 'museum-core' ),
 				],
 				'default' => 'above',
 				'condition' => [
@@ -557,24 +557,24 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_submit_button',
 			[
-				'label' => __( 'Submit Button', 'webinane-elementor' ),
+				'label' => __( 'Submit Button', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text',
 			[
-				'label' => __( 'Text', 'webinane-elementor' ),
+				'label' => __( 'Text', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Send', 'webinane-elementor' ),
-				'placeholder' => __( 'Send', 'webinane-elementor' ),
+				'default' => __( 'Send', 'museum-core' ),
+				'placeholder' => __( 'Send', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_size',
 			[
-				'label' => __( 'Size', 'webinane-elementor' ),
+				'label' => __( 'Size', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'sm',
 				'options' => self::get_button_sizes(),
@@ -584,10 +584,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_responsive_control(
 			'button_width',
 			[
-				'label' => __( 'Column Width', 'webinane-elementor' ),
+				'label' => __( 'Column Width', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Default', 'webinane-elementor' ),
+					'' => __( 'Default', 'museum-core' ),
 					'100' => '100%',
 					'80' => '80%',
 					'75' => '75%',
@@ -606,23 +606,23 @@ class FormElementorWidget extends FormBase {
 		$this->add_responsive_control(
 			'button_align',
 			[
-				'label' => __( 'Alignment', 'webinane-elementor' ),
+				'label' => __( 'Alignment', 'museum-core' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'start' => [
-						'title' => __( 'Left', 'webinane-elementor' ),
+						'title' => __( 'Left', 'museum-core' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'webinane-elementor' ),
+						'title' => __( 'Center', 'museum-core' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'end' => [
-						'title' => __( 'Right', 'webinane-elementor' ),
+						'title' => __( 'Right', 'museum-core' ),
 						'icon' => 'eicon-text-align-right',
 					],
 					'stretch' => [
-						'title' => __( 'Justified', 'webinane-elementor' ),
+						'title' => __( 'Justified', 'museum-core' ),
 						'icon' => 'eicon-text-align-justify',
 					],
 				],
@@ -634,7 +634,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'selected_button_icon',
 			[
-				'label' => __( 'Icon', 'webinane-elementor' ),
+				'label' => __( 'Icon', 'museum-core' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'button_icon',
 				'label_block' => true,
@@ -644,12 +644,12 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_icon_align',
 			[
-				'label' => __( 'Icon Position', 'webinane-elementor' ),
+				'label' => __( 'Icon Position', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'left',
 				'options' => [
-					'left' => __( 'Before', 'webinane-elementor' ),
-					'right' => __( 'After', 'webinane-elementor' ),
+					'left' => __( 'Before', 'museum-core' ),
+					'right' => __( 'After', 'museum-core' ),
 				],
 				'condition' => [
 					'selected_button_icon[value]!' => '',
@@ -660,7 +660,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_icon_indent',
 			[
-				'label' => __( 'Icon Spacing', 'webinane-elementor' ),
+				'label' => __( 'Icon Spacing', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -680,12 +680,12 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_css_id',
 			[
-				'label' => __( 'Button ID', 'webinane-elementor' ),
+				'label' => __( 'Button ID', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __( 'Add your custom id WITHOUT the Pound key. e.g: my-id', 'webinane-elementor' ),
+				'title' => __( 'Add your custom id WITHOUT the Pound key. e.g: my-id', 'museum-core' ),
 				'label_block' => false,
-				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'webinane-elementor' ),
+				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'museum-core' ),
 				'separator' => 'before',
 
 			]
@@ -696,7 +696,7 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_integration',
 			[
-				'label' => __( 'Actions After Submit', 'webinane-elementor' ),
+				'label' => __( 'Actions After Submit', 'museum-core' ),
 			]
 		);
 
@@ -711,7 +711,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'submit_actions',
 			[
-				'label' => __( 'Add Action', 'webinane-elementor' ),
+				'label' => __( 'Add Action', 'museum-core' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => true,
 				'options' => [
@@ -723,7 +723,7 @@ class FormElementorWidget extends FormBase {
 				'default' => [
 					'email',
 				],
-				'description' => __( 'Add actions that will be performed after a visitor submits the form (e.g. send an email notification). Choosing an action will add its setting below.', 'webinane-elementor' ),
+				'description' => __( 'Add actions that will be performed after a visitor submits the form (e.g. send an email notification). Choosing an action will add its setting below.', 'museum-core' ),
 			]
 		);
 
@@ -736,7 +736,7 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_form_options',
 			[
-				'label' => __( 'Additional Options', 'webinane-elementor' ),
+				'label' => __( 'Additional Options', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -744,10 +744,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'form_id',
 			[
-				'label' => __( 'Form ID', 'webinane-elementor' ),
+				'label' => __( 'Form ID', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'placeholder' => 'new_form_id',
-				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'webinane-elementor' ),
+				'description' => __( 'Please make sure the ID is unique and not used elsewhere on the page this form is displayed. This field allows <code>A-z 0-9</code> & underscore chars without spaces.', 'museum-core' ),
 				'separator' => 'after',
 			]
 		);
@@ -755,7 +755,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'custom_messages',
 			[
-				'label' => __( 'Custom Messages', 'webinane-elementor' ),
+				'label' => __( 'Custom Messages', 'museum-core' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
 				'separator' => 'before',
@@ -768,10 +768,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'success_message',
 			[
-				'label' => __( 'Success Message', 'webinane-elementor' ),
+				'label' => __( 'Success Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' =>  __( 'The form was sent successfully.', 'webinane-elementor' ),
-				'placeholder' =>  __( 'The form was sent successfully.', 'webinane-elementor' ),
+				'default' =>  __( 'The form was sent successfully.', 'museum-core' ),
+				'placeholder' =>  __( 'The form was sent successfully.', 'museum-core' ),
 				'label_block' => true,
 				'condition' => [
 					'custom_messages!' => '',
@@ -783,10 +783,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'error_message',
 			[
-				'label' => __( 'Error Message', 'webinane-elementor' ),
+				'label' => __( 'Error Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'An error occured.', 'webinane-elementor' ),
-				'placeholder' => __( 'An error occured.', 'webinane-elementor' ),
+				'default' => __( 'An error occured.', 'museum-core' ),
+				'placeholder' => __( 'An error occured.', 'museum-core' ),
 				'label_block' => true,
 				'condition' => [
 					'custom_messages!' => '',
@@ -798,10 +798,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'required_field_message',
 			[
-				'label' => __( 'Required Message', 'webinane-elementor' ),
+				'label' => __( 'Required Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'This field is required.', 'webinane-elementor' ),
-				'placeholder' => __( 'This field is required.', 'webinane-elementor' ),
+				'default' => __( 'This field is required.', 'museum-core' ),
+				'placeholder' => __( 'This field is required.', 'museum-core' ),
 				'label_block' => true,
 				'condition' => [
 					'custom_messages!' => '',
@@ -813,10 +813,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'invalid_message',
 			[
-				'label' => __( 'Invalid Message', 'webinane-elementor' ),
+				'label' => __( 'Invalid Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'There\'s something wrong. The form is invalid.', 'webinane-elementor' ),
-				'placeholder' => __( 'There\'s something wrong. The form is invalid.', 'webinane-elementor' ),
+				'default' => __( 'There\'s something wrong. The form is invalid.', 'museum-core' ),
+				'placeholder' => __( 'There\'s something wrong. The form is invalid.', 'museum-core' ),
 				'label_block' => true,
 				'condition' => [
 					'custom_messages!' => '',
@@ -830,7 +830,7 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_form_style',
 			[
-				'label' => __( 'Form', 'webinane-elementor' ),
+				'label' => __( 'Form', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -838,7 +838,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'webinane-elementor' ),
+				'label' => __( 'Columns Gap', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -859,7 +859,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'webinane-elementor' ),
+				'label' => __( 'Rows Gap', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -880,7 +880,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'heading_label',
 			[
-				'label' => __( 'Label', 'webinane-elementor' ),
+				'label' => __( 'Label', 'museum-core' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -889,7 +889,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'label_spacing',
 			[
-				'label' => __( 'Spacing', 'webinane-elementor' ),
+				'label' => __( 'Spacing', 'museum-core' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0,
@@ -914,7 +914,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'label_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group > label, {{WRAPPER}} .elementor-field-subgroup label' => 'color: {{VALUE}};',
@@ -929,7 +929,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'mark_required_color',
 			[
-				'label' => __( 'Mark Color', 'webinane-elementor' ),
+				'label' => __( 'Mark Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -955,7 +955,7 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_field_style',
 			[
-				'label' => __( 'Field', 'webinane-elementor' ),
+				'label' => __( 'Field', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -963,7 +963,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'field_text_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group .elementor-field' => 'color: {{VALUE}};',
@@ -987,7 +987,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'field_background_color',
 			[
-				'label' => __( 'Background Color', 'webinane-elementor' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1001,7 +1001,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'field_border_color',
 			[
-				'label' => __( 'Border Color', 'webinane-elementor' ),
+				'label' => __( 'Border Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-field-group:not(.elementor-field-type-upload) .elementor-field:not(.elementor-select-wrapper)' => 'border-color: {{VALUE}};',
@@ -1015,7 +1015,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'field_border_width',
 			[
-				'label' => __( 'Border Width', 'webinane-elementor' ),
+				'label' => __( 'Border Width', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'placeholder' => '1',
 				'size_units' => [ 'px' ],
@@ -1029,7 +1029,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'field_border_radius',
 			[
-				'label' => __( 'Border Radius', 'webinane-elementor' ),
+				'label' => __( 'Border Radius', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1042,7 +1042,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_responsive_control(
 			'field_padding',
 			[
-				'label' => __( 'Padding', 'elementor' ),
+				'label' => __( 'Padding', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1065,7 +1065,7 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_button_style',
 			[
-				'label' => __( 'Button', 'webinane-elementor' ),
+				'label' => __( 'Button', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1075,14 +1075,14 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'webinane-elementor' ),
+				'label' => __( 'Normal', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_background_color',
 			[
-				'label' => __( 'Background Color', 'webinane-elementor' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -1097,7 +1097,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1126,7 +1126,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'webinane-elementor' ),
+				'label' => __( 'Border Radius', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1138,7 +1138,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_text_padding',
 			[
-				'label' => __( 'Text Padding', 'webinane-elementor' ),
+				'label' => __( 'Text Padding', 'museum-core' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1152,14 +1152,14 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'webinane-elementor' ),
+				'label' => __( 'Hover', 'museum-core' ),
 			]
 		);
 
 		$this->add_control(
 			'button_background_hover_color',
 			[
-				'label' => __( 'Background Color', 'webinane-elementor' ),
+				'label' => __( 'Background Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'background-color: {{VALUE}};',
@@ -1170,7 +1170,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_hover_color',
 			[
-				'label' => __( 'Text Color', 'webinane-elementor' ),
+				'label' => __( 'Text Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'color: {{VALUE}};',
@@ -1181,7 +1181,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'webinane-elementor' ),
+				'label' => __( 'Border Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button:hover' => 'border-color: {{VALUE}};',
@@ -1195,7 +1195,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'button_hover_animation',
 			[
-				'label' => __( 'Animation', 'webinane-elementor' ),
+				'label' => __( 'Animation', 'museum-core' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -1209,7 +1209,7 @@ class FormElementorWidget extends FormBase {
 		$this->start_controls_section(
 			'section_messages_style',
 			[
-				'label' => __( 'Messages', 'webinane-elementor' ),
+				'label' => __( 'Messages', 'museum-core' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1226,7 +1226,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'success_message_color',
 			[
-				'label' => __( 'Success Message Color', 'webinane-elementor' ),
+				'label' => __( 'Success Message Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-message.elementor-message-success' => 'color: {{COLOR}};',
@@ -1237,7 +1237,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'error_message_color',
 			[
-				'label' => __( 'Error Message Color', 'webinane-elementor' ),
+				'label' => __( 'Error Message Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-message.elementor-message-danger' => 'color: {{COLOR}};',
@@ -1248,7 +1248,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'inline_message_color',
 			[
-				'label' => __( 'Inline Message Color', 'webinane-elementor' ),
+				'label' => __( 'Inline Message Color', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-message.elementor-help-inline' => 'color: {{COLOR}};',
@@ -1272,23 +1272,23 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_to',
 			[
-				'label' => __( 'To', 'webinane-elementor' ),
+				'label' => __( 'To', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => get_option( 'admin_email' ),
 				'placeholder' => get_option( 'admin_email' ),
 				'label_block' => true,
-				'title' => __( 'Separate emails with commas', 'webinane-elementor' ),
+				'title' => __( 'Separate emails with commas', 'museum-core' ),
 				'render_type' => 'none',
 			]
 		);
 
 		/* translators: %s: Site title. */
-		$default_message = sprintf( __( 'New message from "%s"', 'webinane-elementor' ), get_option( 'blogname' ) );
+		$default_message = sprintf( __( 'New message from "%s"', 'museum-core' ), get_option( 'blogname' ) );
 
 		$this->add_control(
 			'email_settings_email_subject',
 			[
-				'label' => __( 'Subject', 'webinane-elementor' ),
+				'label' => __( 'Subject', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => $default_message,
 				'placeholder' => $default_message,
@@ -1300,11 +1300,11 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_content',
 			[
-				'label' => __( 'Message', 'webinane-elementor' ),
+				'label' => __( 'Message', 'museum-core' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'default' => '[all-fields]',
 				'placeholder' => '[all-fields]',
-				'description' => sprintf( __( 'By default, all form fields are sent via %s shortcode. To customize sent fields, copy the shortcode that appears inside each field and paste it above.', 'webinane-elementor' ), '<code>[all-fields]</code>' ),
+				'description' => sprintf( __( 'By default, all form fields are sent via %s shortcode. To customize sent fields, copy the shortcode that appears inside each field and paste it above.', 'museum-core' ), '<code>[all-fields]</code>' ),
 				'label_block' => true,
 				'render_type' => 'none',
 			]
@@ -1315,7 +1315,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_from',
 			[
-				'label' => __( 'From Email', 'webinane-elementor' ),
+				'label' => __( 'From Email', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => 'email@' . $site_domain,
 				'render_type' => 'none',
@@ -1325,7 +1325,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_from_name',
 			[
-				'label' => __( 'From Name', 'webinane-elementor' ),
+				'label' => __( 'From Name', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => get_bloginfo( 'name' ),
 				'render_type' => 'none',
@@ -1335,7 +1335,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_reply_to',
 			[
-				'label' => __( 'Reply-To', 'webinane-elementor' ),
+				'label' => __( 'Reply-To', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'' => '',
@@ -1347,10 +1347,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_to_cc',
 			[
-				'label' => __( 'Cc', 'webinane-elementor' ),
+				'label' => __( 'Cc', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __( 'Separate emails with commas', 'webinane-elementor' ),
+				'title' => __( 'Separate emails with commas', 'museum-core' ),
 				'render_type' => 'none',
 			]
 		);
@@ -1358,10 +1358,10 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_to_bcc',
 			[
-				'label' => __( 'Bcc', 'webinane-elementor' ),
+				'label' => __( 'Bcc', 'museum-core' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
-				'title' => __( 'Separate emails with commas', 'webinane-elementor' ),
+				'title' => __( 'Separate emails with commas', 'museum-core' ),
 				'render_type' => 'none',
 			]
 		);
@@ -1369,7 +1369,7 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_form_metadata',
 			[
-				'label' => __( 'Meta Data', 'webinane-elementor' ),
+				'label' => __( 'Meta Data', 'museum-core' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => true,
 				'label_block' => true,
@@ -1383,12 +1383,12 @@ class FormElementorWidget extends FormBase {
 					'credit',
 				],
 				'options' => [
-					'date' => __( 'Date', 'webinane-elementor' ),
-					'time' => __( 'Time', 'webinane-elementor' ),
-					'page_url' => __( 'Page URL', 'webinane-elementor' ),
-					'user_agent' => __( 'User Agent', 'webinane-elementor' ),
-					'remote_ip' => __( 'Remote IP', 'webinane-elementor' ),
-					'credit' => __( 'Credit', 'webinane-elementor' ),
+					'date' => __( 'Date', 'museum-core' ),
+					'time' => __( 'Time', 'museum-core' ),
+					'page_url' => __( 'Page URL', 'museum-core' ),
+					'user_agent' => __( 'User Agent', 'museum-core' ),
+					'remote_ip' => __( 'Remote IP', 'museum-core' ),
+					'credit' => __( 'Credit', 'museum-core' ),
 				],
 				'render_type' => 'none',
 			]
@@ -1397,13 +1397,13 @@ class FormElementorWidget extends FormBase {
 		$this->add_control(
 			'email_settings_email_content_type',
 			[
-				'label' => __( 'Send As', 'webinane-elementor' ),
+				'label' => __( 'Send As', 'museum-core' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'html',
 				'render_type' => 'none',
 				'options' => [
-					'html' => __( 'HTML', 'webinane-elementor' ),
-					'plain' => __( 'Plain', 'webinane-elementor' ),
+					'html' => __( 'HTML', 'museum-core' ),
+					'plain' => __( 'Plain', 'museum-core' ),
 				],
 			]
 		);
@@ -1523,9 +1523,9 @@ class FormElementorWidget extends FormBase {
 		<div x-data="student_wp.alpine.subscription_form" >
 			<form x-on:submit.prevent x-ref="form" class="elementor-form" enctype="multipart/form-data"
 
-			data-error="<?php echo esc_attr( student_get( $instance, 'error_message', __( 'An error occured.', 'webinane-elementor' ) ) ); ?>" method="post" <?php echo $this->get_render_attribute_string( 'form' ); ?>>
+			data-error="<?php echo esc_attr( student_get( $instance, 'error_message', __( 'An error occured.', 'museum-core' ) ) ); ?>" method="post" <?php echo $this->get_render_attribute_string( 'form' ); ?>>
 
-				<div x-show="loading === true" class="form-loader" style="background: url(<?php echo esc_url( STUDENT_PLUGIN_URL . 'inc/Elementor/Modules/Form/images/loader.gif' ); ?>) center no-repeat #fff; display: none"></div>
+				<div x-show="loading === true" class="form-loader" style="background: url(<?php echo esc_url( MUSEUM_CORE_URL . 'inc/Elementor/Modules/Form/images/loader.gif' ); ?>) center no-repeat #fff; display: none"></div>
 				<input type="hidden" name="post_id" value="<?php echo get_the_id() ?>"/>
 				<input type="hidden" name="form_id" value="<?php echo $this->get_id(); ?>"/>
 				<?php wp_nonce_field( 'webinane_elementor_form_builder', '_wpnonce' ) ?>
@@ -1637,7 +1637,7 @@ class FormElementorWidget extends FormBase {
 									<span <?php echo $this->get_render_attribute_string( 'icon-align' ); ?>>
 										<?php $this->render_icon_with_fallback( $instance ); ?>
 										<?php if ( empty( $instance['button_text'] ) ) : ?>
-											<span class="elementor-screen-only"><?php _e( 'Submit', 'webinane-elementor' ); ?></span>
+											<span class="elementor-screen-only"><?php _e( 'Submit', 'museum-core' ); ?></span>
 										<?php endif; ?>
 									</span>
 								<?php endif; ?>
@@ -1654,7 +1654,7 @@ class FormElementorWidget extends FormBase {
 	}
 
 	protected function _content_template() {
-		$submit_text = esc_html__( 'Submit', 'webinane-elementor' );
+		$submit_text = esc_html__( 'Submit', 'museum-core' );
 		?>
 		<form class="elementor-form" id="{{settings.form_id}}" name="{{settings.form_name}}">
 			<div class="elementor-form-fields-wrapper elementor-labels-{{settings.label_position}}">

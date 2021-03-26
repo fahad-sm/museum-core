@@ -9,7 +9,7 @@ namespace MuseumCore\Elementor\Classes\Modules;
 use Elementor\Core\DynamicTags\Tag;
 use Elementor\Modules\DynamicTags\Module;
 use Elementor\Controls_Manager;
-use MuseumCore\Elementor\Classes\StudentModules;
+use MuseumCore\Elementor\Classes\MuseumModules;
 
 class WoocommercePrice extends Tag {
 
@@ -22,7 +22,7 @@ class WoocommercePrice extends Tag {
 	}
 
 	public function get_group() {
-		return StudentModules::WOOCOMMERCE_GROUP;
+		return MuseumModules::WOOCOMMERCE_GROUP;
 	}
 
 	public function get_categories() {

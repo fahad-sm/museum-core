@@ -155,7 +155,7 @@ class ResultsPaged implements \Iterator, JsonSerializable
      */
     public function linkNext($label = null, $attributes = [])
     {
-        $label = __($label ?:  'Next Page &raquo;', 'student-plugin' );
+        $label = __($label ?:  'Next Page &raquo;', 'museum-core' );
 
         if($next = $this->getNextPage()) {
             $url = '';//(new Request)->getModifiedUri(['paged' => $next]);
@@ -178,7 +178,7 @@ class ResultsPaged implements \Iterator, JsonSerializable
      */
     public function linkPrevious($label = null, $attributes = [])
     {
-        $label = __($label ?:  '&laquo; Previous Page', 'student-plugin' );
+        $label = __($label ?:  '&laquo; Previous Page', 'museum-core' );
 
         if($next = $this->getPreviousPage()) {
             $url = '';//(new Request)->getModifiedUri(['paged' => $next]);
