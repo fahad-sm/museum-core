@@ -151,5 +151,58 @@ Redux::setSection( $opt_name, array(
 			'indent'      => false,
 			'required' => [ 'header_source_type', '=', 'd' ],
 		),
+
+		array(
+			'id'       => 'single_page_banner_area_section_st',
+			'type'     => 'section',
+			'title'    => esc_html__( 'Page Banner', 'museum-core' ),
+			'indent'   => true,
+			// 'required' => [ 'single_page_show_banner', '=', true ],
+		),
+		array(
+			'id'      => 'single_page_banner_bg_image',
+			'type'    => 'media',
+			'title'   => esc_html__( 'Background Image', 'museum-core' ),
+			'desc'    => esc_html__( 'Choose the banner background image', 'museum-core' ),
+		),
+		array(
+	        'id'             => 'single_page_banner_spacing',
+	        'type'           => 'spacing',
+	        'output'         => array('.page-header .overlay-gr'),
+	        'mode'           => 'padding',
+	        'units'          => array('em', 'px'),
+	        'units_extended' => 'false',
+	        'title'          => __('Padding', 'museum-core'),
+	        'subtitle'       => __('Enter the banner padding', 'museum-core'),
+	        'desc'           => __('Enter top and bottom spacing of the banner area', 'museum-core'),
+	        'left'	=> false,
+	        'right'	=> false,
+	        'default'            => array(
+	            'padding-top'     => '100px', 
+	            'padding-bottom'  => '100px', 
+	            'units'          => 'px', 
+	        )
+	    ),
+		array(
+			'id'      => 'single_page_breadcrumbs_bg_color',
+			'type'    => 'color',
+			'title'   => esc_html__( 'Breadcrumbs BG color', 'museum-core' ),
+			'desc'    => esc_html__( 'Choose the background color for breadcrumbs', 'museum-core' ),
+			'default'	=> '#130805',
+			'output'	=> ['background-color' => '.breadcrumb']
+		),
+		array(
+			'id'      => 'single_page_breadcrumbs_text_color',
+			'type'    => 'color',
+			'title'   => esc_html__( 'Breadcrumbs Text color', 'museum-core' ),
+			'desc'    => esc_html__( 'Choose the text color for breadcrumbs', 'museum-core' ),
+			'default'	=> '#fff',
+			'output'	=> ['color' => '.breadcrumb a']
+		),
+		array(
+			'id'       => 'single_page_banner_area_section_end',
+			'type'     => 'section',
+			'indent'   => false,
+		),
 	),
 ) );

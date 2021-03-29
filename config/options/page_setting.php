@@ -7,6 +7,23 @@ Redux::setSection( $opt_name, array(
 	'icon'		=> 'el el-folder',
 	'subsection' => false,
 	'fields'     => array(
+		
+		// Page banner Settings
+		array(
+			'id'      => 'single_page_show_banner',
+			'type'    => 'switch',
+			'title'   => esc_html__( 'Show Banner', 'museum-core' ),
+			'desc'    => esc_html__( 'Enable to show page banner', 'museum-core' ),
+			'default' => false,
+		),
+		array(
+			'id'      => 'single_page_show_breads',
+			'type'    => 'switch',
+			'title'   => esc_html__( 'Show Breadcrumbs', 'museum-core' ),
+			'desc'    => esc_html__( 'Enable to show page Breadcrumbs', 'museum-core' ),
+			'default' => false,
+		),
+		// Page meta settings.		
 		array(
 			'id'      => 'single_page_source_type',
 			'type'    => 'button_set',
@@ -120,7 +137,7 @@ Redux::setSection( $opt_name, array(
 			'default' => false,
 			'required' => [ 'page_socials_sharing', '=', true ],
 		),
-		array(
+		/*array(
 			'id'      => 'single_page_author_box',
 			'type'    => 'switch',
 			'title'   => esc_html__( 'Show Author Box', 'museum-core' ),
@@ -135,7 +152,7 @@ Redux::setSection( $opt_name, array(
 			'desc'    => esc_html__( 'Enable to show author Social Media on page', 'museum-core' ),
 			'default' => false,
 			'required' => [ 'page_socials_sharing', '=', true ],
-		),
+		),*/
 
 		array(
 			'id'       => 'page_sidebar_layout',
