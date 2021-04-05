@@ -7,33 +7,10 @@ Redux::setSection( $opt_name, array(
 	'icon'   => 'el el-indent-left',
 	'fields' => array(
 		array(
-			'id'      => 'blog_source_type',
-			'type'    => 'button_set',
-			'title'   => esc_html__( 'Blog Source Type', 'museum-core' ),
-			'options' => array(
-				'd' => esc_html__( 'Default', 'museum-core' ),
-				'e' => esc_html__( 'Elementor', 'museum-core' ),
-			),
-			'default' => 'd',
-		),
-		array(
-			'id'       => 'blog_elementor_template',
-			'type'     => 'select',
-			'title'    => __( 'Template', 'museum-core' ),
-			'data'     => 'posts',
-			'args'     => [
-				'post_type' => [ 'elementor_library' ],
-				'posts_per_page'=> -1,
-			],
-			'required' => [ 'blog_source_type', '=', 'e' ],
-		),
-
-		array(
 			'id'       => 'blog_default_st',
 			'type'     => 'section',
 			'title'    => esc_html__( 'Blog Default', 'museum-core' ),
 			'indent'   => true,
-			'required' => [ 'blog_source_type', '=', 'd' ],
 		),
 		array(
 			'id'      => 'blog_page_banner',
@@ -50,15 +27,20 @@ Redux::setSection( $opt_name, array(
 			'required' => array( 'blog_page_banner', '=', true ),
 		),
 		array(
-			'id'       => 'blog_page_background',
-			'type'     => 'media',
-			'url'      => true,
-			'title'    => esc_html__( 'Background Image', 'museum-core' ),
-			'desc'     => esc_html__( 'Insert background image for banner', 'museum-core' ),
-			'default'  => '',
-			'required' => array( 'blog_page_banner', '=', true ),
+			'id'	=> 'blog_page_background_grad',
+		    'type' => 'color_gradient',
+		    'title' => esc_html__( 'Background Color' , 'museum-core' ),
+		    'subtitle' => esc_html__( 'Choose the gradient color' , 'museum-core' ),
+		    'desc' => esc_html__( 'Enter the background color' , 'museum-core' ),
+		    'compiler' => true,
+		    'output' => array(
+		        'background' => '.blog .overlay-gr'
+		    ),
+		    'default' => array(
+		        'from' => 'rgb(241, 145, 0)',
+		        'to'	=> 'rgba(199, 64, 64, 0.9)'
+		    )
 		),
-
 		array(
 			'id'       => 'blog_sidebar_layout',
 			'type'     => 'image_select',
@@ -68,15 +50,15 @@ Redux::setSection( $opt_name, array(
 
 				'left'  => array(
 					'alt' => esc_html__( '2 Column Left', 'museum-core' ),
-					'img' => get_template_directory_uri() . '/assets/images/redux/2cl.png',
+					'img' => get_template_directory_uri() . '/assets/images/left.png',
 				),
 				'full'  => array(
 					'alt' => esc_html__( '1 Column', 'museum-core' ),
-					'img' => get_template_directory_uri() . '/assets/images/redux/1col.png',
+					'img' => get_template_directory_uri() . '/assets/images/full.png',
 				),
 				'right' => array(
 					'alt' => esc_html__( '2 Column Right', 'museum-core' ),
-					'img' => get_template_directory_uri() . '/assets/images/redux/2cr.png',
+					'img' => get_template_directory_uri() . '/assets/images/right.png',
 				),
 			),
 
@@ -91,7 +73,7 @@ Redux::setSection( $opt_name, array(
 			'required' => array(
 				array( 'blog_sidebar_layout', '=', array( 'left', 'right' ) ),
 			),
-			'options'  => museum_get_sidebars(),
+			'data'  => 'sidebars',
 		),
 		array(
 			'id'      => 'blog_post_comments',

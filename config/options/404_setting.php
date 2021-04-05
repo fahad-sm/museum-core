@@ -48,13 +48,19 @@ Redux::setSection( $opt_name, array(
 			'required' => array( '404_page_banner', '=', true ),
 		),
 		array(
-			'id'       => '404_page_background',
-			'type'     => 'media',
-			'url'      => true,
-			'title'    => esc_html__( 'Background Image', 'museum-core' ),
-			'desc'     => esc_html__( 'Insert background image for banner', 'museum-core' ),
-			'default'  => '',
-			'required' => array( '404_page_banner', '=', true ),
+			'id'	=> '404_page_background_grad',
+		    'type' => 'color_gradient',
+		    'title' => esc_html__( 'Background Color' , 'museum-core' ),
+		    'subtitle' => esc_html__( 'Choose the gradient color' , 'museum-core' ),
+		    'desc' => esc_html__( 'Enter the background color' , 'museum-core' ),
+		    'compiler' => true,
+		    'output' => array(
+		        '.error404 .overlay-gr'
+		    ),
+		    'default' => array(
+		        'from' => 'rgb(241, 145, 0)',
+		        'to'	=> 'rgba(199, 64, 64, 0.9)'
+		    )
 		),
 		array(
 			'id'       => 'error_page_image',
@@ -64,38 +70,22 @@ Redux::setSection( $opt_name, array(
 			'desc'     => esc_html__( 'Insert Error Page image for banner', 'museum-core' ),
 		),
 		array(
-			'id'    => '404-page_title',
+			'id'    => '404_page_heading',
+			'type'  => 'text',
+			'title' => esc_html__( 'Main Heading', 'museum-core' ),
+			'desc'  => esc_html__( 'Enter 404 section title that you want to show', 'museum-core' ),
+		),
+		array(
+			'id'    => '404_page_title',
 			'type'  => 'text',
 			'title' => esc_html__( '404 Title', 'museum-core' ),
 			'desc'  => esc_html__( 'Enter 404 section title that you want to show', 'museum-core' ),
 		),
 		array(
-			'id'    => '404-page-text',
+			'id'    => '404_page_text',
 			'type'  => 'textarea',
 			'title' => esc_html__( '404 Page Description', 'museum-core' ),
 			'desc'  => esc_html__( 'Enter 404 page description that you want to show.', 'museum-core' ),
-		),
-		array(
-			'id'    => '404_page_form',
-			'type'  => 'switch',
-			'title' => esc_html__( 'Show Search Form', 'museum-core' ),
-			'desc'  => esc_html__( 'Enable to show search form on 404 page', 'museum-core' ),
-			'default'  => true,
-		),
-		array(
-			'id'    => 'back_home_btn',
-			'type'  => 'switch',
-			'title' => esc_html__( 'Show Button', 'museum-core' ),
-			'desc'  => esc_html__( 'Enable to show back to home button.', 'museum-core' ),
-			'default'  => true,
-		),
-		array(
-			'id'       => 'back_home_btn_label',
-			'type'     => 'text',
-			'title'    => esc_html__( 'Button Label', 'museum-core' ),
-			'desc'     => esc_html__( 'Enter back to home button label that you want to show.', 'museum-core' ),
-			'default'  => esc_html__( 'Back To Home Page', 'museum-core' ),
-			'required' => array( 'back_home_btn', '=', true ),
 		),
 		array(
 			'id'     => '404_post_settings_end',
