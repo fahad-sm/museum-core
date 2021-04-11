@@ -63,7 +63,7 @@ Redux::setSection( $opt_name, array(
 		    'title'    => esc_html__( 'Menu Color', 'museum-core' ),
 		    'desc'     => esc_html__( 'Choose the top level menu color.', 'museum-core' ),
 			'default'  => '#616566',
-			'output'	=> array('color' => '.ow-navigation .navbar-nav > li > a')
+			'output'	=> array('color' => 'header .ow-navigation .navbar-nav > li > a')
 	    ),
 	    array(
 		    'id'       => 'menu_bg_color',
@@ -71,7 +71,7 @@ Redux::setSection( $opt_name, array(
 		    'title'    => esc_html__( 'Menu Background Color', 'museum-core' ),
 		    'desc'     => esc_html__( 'Choose the top level menu bg color.', 'museum-core' ),
 			'default'  => 'transparent',
-			'output'	=> array('background-color' => '.ow-navigation .navbar-nav > li > a')
+			'output'	=> array('background-color' => 'header .ow-navigation .navbar-nav > li > a')
 	    ),
 	    array(
 		    'id'       => 'active_menu_color',
@@ -79,7 +79,7 @@ Redux::setSection( $opt_name, array(
 		    'title'    => esc_html__( 'Active Menu Color', 'museum-core' ),
 		    'desc'     => esc_html__( 'Choose the top level active/hover menu color.', 'museum-core' ),
 			'default'  => '#000',
-			'output'	=> array('color' => '.ow-navigation .navbar-nav > li.current-menu-item > a, .ow-navigation .navbar-nav > li:hover > a')
+			'output'	=> array('color' => 'header .ow-navigation .navbar-nav > li.current-menu-item > a, header .ow-navigation .navbar-nav > li:hover > a')
 	    ),
 	    array(
 		    'id'       => 'active_menu_bg_color',
@@ -87,7 +87,7 @@ Redux::setSection( $opt_name, array(
 		    'title'    => esc_html__( 'Active Menu Background Color', 'museum-core' ),
 		    'desc'     => esc_html__( 'Choose the top level active/hover bg menu color.', 'museum-core' ),
 			'default'  => 'transparent',
-			'output'	=> array('background-color' => '.ow-navigation .navbar-nav > li.current-menu-item > a, .ow-navigation .navbar-nav > li:hover > a')
+			'output'	=> array('background-color' => 'header .ow-navigation .navbar-nav > li.current-menu-item > a, header .ow-navigation .navbar-nav > li:hover > a')
 	    ),
 	    array(
 			'id'       => 'header_v1_menu_settings_section_end',

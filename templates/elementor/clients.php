@@ -20,9 +20,9 @@ if (! $qry->have_posts() ) {
 }
 
 if( $carousel == "yes" ) {
-	include get_theme_file_path( 'template-parts/client-list.php' );
+	include get_theme_file_path( 'template-parts/client-grid.php' );
 }
 else {
-	include get_theme_file_path( 'template-parts/client-grid.php' );
+	include get_theme_file_path( 'template-parts/client-list.php' );
 }
 

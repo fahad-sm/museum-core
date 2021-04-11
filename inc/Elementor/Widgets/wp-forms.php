@@ -17,7 +17,7 @@ class WpForms extends Widget_Base
 	}
 
 	public function get_title() {
-		return esc_html__( 'Smartx WP Forms', 'museum-core' );
+		return esc_html__( 'WP Forms', 'museum-core' );
 	}
 
 	public function get_icon() {
@@ -25,7 +25,7 @@ class WpForms extends Widget_Base
 	}
 
 	public function get_categories() {
-		return ['smartx-widget'];
+		return ['we-widget'];
 	}
 
 	/**

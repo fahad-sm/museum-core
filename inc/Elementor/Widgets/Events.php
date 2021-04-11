@@ -60,6 +60,14 @@ class Events extends Widget_Base {
 			]
 		);
 		$this->add_control(
+			'length',
+			[
+				'label'     => esc_html__( 'Excerpt Length', 'museum-core' ),
+				'type'      => Controls_Manager::NUMBER,
+				'default' => 50,
+			]
+		);
+		$this->add_control(
 			'show_view_event_btn',
 			[
 				'label'     => esc_html__( 'Show View Event Button', 'museum-core' ),
@@ -184,6 +192,28 @@ class Events extends Widget_Base {
 
 		$this->end_controls_section();
 
+		// Wrapper Styles
+		$this->start_controls_section(
+			'museum_event_Wrapper_style',
+			[
+				'label' => esc_html__( 'Wrapper', 'museum-core' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'wrapper_padding',
+			[
+				'label' => __( 'Padding', 'museum-core' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'{{WRAPPER}} .sec-100px' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->end_controls_section();
 		// Title Styles
 		$this->start_controls_section(
 			'museum_event_posts_style',
