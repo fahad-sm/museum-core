@@ -12,6 +12,7 @@ return [
 		MuseumCore\Elementor\Widgets\Heading::class,
 		MuseumCore\Elementor\Widgets\IconBox::class,
 		MuseumCore\Elementor\Widgets\Testimonials::class,
+		MuseumCore\Elementor\Widgets\Timing::class,
 		// MuseumCore\Elementor\Widgets\Stats::class,
 	]
 ];
