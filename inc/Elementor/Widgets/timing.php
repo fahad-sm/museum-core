@@ -56,7 +56,7 @@ class Timing extends Widget_Base {
 		);
 
 		$this->add_control(
-			'icon',
+			'Icon',
 			[
 				'label' => __( 'Icon', 'text-domain' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
@@ -84,7 +84,7 @@ $this->add_control(
 						'default' => __( 'time', 'plugin-name' ),
 					],
 					[
-						'name' => 'Days',
+						'name' => 'days',
 						'label' => __( 'Days', 'plugin-name' ),
 						'type' => \Elementor\Controls_Manager::TEXT,
 						'placeholder' => __( 'DAYS', 'plugin-name' ),
@@ -121,7 +121,7 @@ $this->add_control(
 		$this->start_controls_section(
 			'section_heading_style',
 			[
-				'label' => esc_html__( 'Section Heading', 'museum-core' ),
+				'label' => esc_html__( 'Heading', 'museum-core' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -149,62 +149,101 @@ $this->add_control(
 
 		$this->end_controls_section();
 
-		// Title Styles
+		// Section days Styles
 		$this->start_controls_section(
-			'posts_style',
+			'section_days_style',
 			[
-				'label' => esc_html__( 'Title', 'museum-core' ),
+				'label' => esc_html__( 'Days', 'museum-core' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
 
-		$this->start_controls_tabs( 'blog_posts_title_style', [] );
-		$this->start_controls_tab(
-			'title_style_normal',
-			[
-				'label' =>esc_html__( 'Normal', 'museum-core' ),
-			]
-		);
-
+		
 		$this->add_control(
-			'title_color_normal',
+			'section_days_color_normal',
 			[
-				'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
+				'label' => esc_html_x( 'Days Color', 'Title Control', 'museum-core' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .entry-header a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .section-header h5' => 'color: {{VALUE}};',
 				],
 			]
 		);
-		$this->end_controls_tab();
-
-		$this->start_controls_tab(
-			'title_color_hover_style',
-			[
-				'label' =>esc_html__( 'Hover', 'museum-core' ),
-			]
-		);
-		$this->add_control(
-			'title_color_hover',
-			[
-				'label' => esc_html_x( 'Color', 'Title Control', 'museum-core' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .entry-header a:hover' => 'color: {{VALUE}};',
-				],
-			]
-		);
-		$this->end_controls_tab();
-		$this->end_controls_tabs();
+		
 
 		$this->add_group_control(
 			Group_Control_Typography::get_type(), [
-				'name'       => 'posts_meta_typography',
-				'selector'   => '{{WRAPPER}} .entry-header a',
+				'name'       => 'section_days_typography',
+				'selector'   => '{{WRAPPER}} .section-header h5',
 			]
 		);
+
+		$this->end_controls_section();
+
+			// Section time Styles
+		$this->start_controls_section(
+			'section_time_style',
+			[
+				'label' => esc_html__( 'Time', 'museum-core' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		
+		$this->add_control(
+			'section_time_color_normal',
+			[
+				'label' => esc_html_x( 'time Color', 'Title Control', 'museum-core' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .section-time p' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(), [
+				'name'       => 'section_time_typography',
+				'selector'   => '{{WRAPPER}} .section-time p',
+			]
+		);
+
+		$this->end_controls_section();
+	// Section text Styles
+
+		
+$this->start_controls_section(
+			'section_text_style',
+			[
+				'label' => esc_html__( 'Text', 'museum-core' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		
+		$this->add_control(
+			'section_text_color_normal',
+			[
+				'label' => esc_html_x( 'text Color', 'Title Control', 'museum-core' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .section-appointment .appoiment' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(), [
+				'name'       => 'section_text_typography',
+				'selector'   => '{{WRAPPER}} .section-appointment .appoiment',
+			]
+		);
+		
 
 		$this->end_controls_section();
 
@@ -452,9 +491,21 @@ $this->add_control(
 	 */
 	public function render() {
 		$settings = $this->get_settings_for_display();
-	echo '<h3>' . $settings['Heading'] . '</h3>';
-	
-	Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' ] );
+	 '<h3>' . $settings['Heading'] . '</h3>';
+	 	if ( $settings['list'] ) {
+			
+			foreach (  $settings['list'] as $item ) {
+				 '<dt class="elementor-repeater-item-' . $item['_id'] . '">' . $item['text'] . '</dt>';
+				 '<dd>' . $item['days'] . '</dd>';
+			}
+			
+
+
+
+
+
+		}
+	  Icons_Manager::render_icon( $settings['Icon'], [ 'aria-hidden' => 'true' ] );
 		include $this->getFile('');
 	}
 
