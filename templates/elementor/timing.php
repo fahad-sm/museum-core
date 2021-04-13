@@ -21,25 +21,19 @@ if($is_manual_selection === 'yes') {
 $query = new WP_Query($args);
 ?>
 <div class="col-md-5">
-					<div class="hrs">
-						<h3><i class="ion-ios-clock-outline"></i><?php the_title();?></h3>								<ul>
-									<li class="col-md-5 no-padding">
-										<h5></h5>
-										<p><?php echo get_the_date( 'n M', get_the_ID() ); ?></p>
+					<div class="hrs section-header">
+						<h3 ><i class="ion-ios-clock-outline"></i><?php echo $settings['Heading']?></h3>							
+						<ul>
+									<li class="col-md-5 no-padding section-time">
+										<h5><?php echo $item['days'] ?></h5>
+										<p class="time"><?php echo $item['time'] ?></p>
 									</li>
-									<li class="col-md-7 no-padding">
-										<span class="appoiment">School appoinments </span>
-									</li>
-								</ul>
-																<ul>
-									<li class="col-md-5 no-padding">
-										<h5>Thu - Sun</h5>
-										<p>8:00 Am to 7:00 Pm</p>
-									</li>
-									<li class="col-md-7 no-padding">
-										<span class="appoiment">Tourists appoinments </span>
+									<li class="col-md-7 no-padding section-appointment">
+										<span class="appoiment"><?php echo $item['text'] ?></span>
 									</li>
 								</ul>
+														
+								
 													</div>
 				</div>
 
