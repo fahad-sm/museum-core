@@ -25,7 +25,7 @@ class WpForms extends Widget_Base
 	}
 
 	public function get_categories() {
-		return ['we-widget'];
+		return ['wpforms-page-buttonwidget'];
 	}
 
 	/**
