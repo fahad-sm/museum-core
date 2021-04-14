@@ -36,7 +36,7 @@ class ACFFA_Admin
 		}
 		?>
 		<div class="notice notice-info is-dismissible">
-			<p><?php echo sprintf( __( 'Visit the new ACF <a href="%s">FontAwesome Settings</a> page to change FontAwesome icon version, or to create custom icon sets.', 'acf-font-awesome' ), admin_url( '/edit.php?post_type=acf-field-group&page=fontawesome-settings' ) ); ?></p>
+			<p><?php echo sprintf( __( 'Visit the new ACF <a href="%s">FontAwesome Settings</a> page to change FontAwesome icon version, or to create custom icon sets.', 'museum-core' ), admin_url( '/edit.php?post_type=acf-field-group&page=fontawesome-settings' ) ); ?></p>
 		</div>
 		<?php
 		unset( $acffa_settings['show_upgrade_notice'] );
@@ -53,7 +53,7 @@ class ACFFA_Admin
 		$curl_info = curl_version();
 		?>
 		<div class="notice notice-error is-dismissible">
-			<p><?php _e( 'The plugin "Advanced Custom Fields: Font Awesome" has detected an error while retrieving the latest FontAwesome icons. This may be due to temporary CDN downtime. However if problems persist, please contact your hosting provider to ensure cURL is installed and up to date. Detected cURL version: ', 'acf-font-awesome' ) . $curl_info['version']; ?></p>
+			<p><?php _e( 'The plugin "Advanced Custom Fields: Font Awesome" has detected an error while retrieving the latest FontAwesome icons. This may be due to temporary CDN downtime. However if problems persist, please contact your hosting provider to ensure cURL is installed and up to date. Detected cURL version: ', 'museum-core' ) . $curl_info['version']; ?></p>
 		</div>
 		<?php
 	}
@@ -71,9 +71,9 @@ class ACFFA_Admin
 		wp_register_script( 'multi-select-js', ACFFA_PUBLIC_PATH . 'assets/inc/multi-select/jquery.multi-select.js', array( 'jquery' ), '0.9.12', true );
 		wp_enqueue_script( 'acffa-settings', ACFFA_PUBLIC_PATH . 'assets/js/settings.js', array( 'multi-select-js', 'quicksearch-js' ), '1.0.0', true );
 		wp_localize_script( 'acffa-settings', 'ACFFA', array(
-			'search_string'		=> __( 'Search List', 'acf-font-awesome' ),
-			'confirm_delete'	=> __( 'Are you sure you want to delete this icon set?', 'acf-font-awesome' ),
-			'delete_fail'		=> __( 'There was an error while trying to delete the icon set, please refresh the page and try again.', 'acf-font-awesome' )
+			'search_string'		=> __( 'Search List', 'museum-core' ),
+			'confirm_delete'	=> __( 'Are you sure you want to delete this icon set?', 'museum-core' ),
+			'delete_fail'		=> __( 'There was an error while trying to delete the icon set, please refresh the page and try again.', 'museum-core' )
 		));
 	}
 
@@ -83,7 +83,7 @@ class ACFFA_Admin
 			return $links;
 		}
 
-		array_unshift( $links, '<a href="' . esc_url( admin_url( '/edit.php?post_type=acf-field-group&page=fontawesome-settings' ) ) . '">' . esc_html__( 'Settings', 'acf-font-awesome' ) . '</a>' );
+		array_unshift( $links, '<a href="' . esc_url( admin_url( '/edit.php?post_type=acf-field-group&page=fontawesome-settings' ) ) . '">' . esc_html__( 'Settings', 'museum-core' ) . '</a>' );
 
 		return $links;
 	}
@@ -106,7 +106,7 @@ class ACFFA_Admin
 	{
 		$errors = get_settings_errors( 'acffa_messages' );
 		if ( isset( $_GET['settings-updated'] ) && ! $errors ) {
-			add_settings_error( 'acffa_messages', 'acffa_message', __( 'Settings Saved', 'acf-font-awesome' ), 'updated' );
+			add_settings_error( 'acffa_messages', 'acffa_message', __( 'Settings Saved', 'museum-core' ), 'updated' );
 		}
 
 		settings_errors( 'acffa_messages' );
@@ -138,14 +138,14 @@ class ACFFA_Admin
 
 		add_settings_section(
 			'acffa_section_developers',
-			__( 'Major Version', 'acf-font-awesome' ),
+			__( 'Major Version', 'museum-core' ),
 			array( $this, 'acffa_section_developers_cb' ),
 			'acffa'
 		);
 
 		add_settings_field(
 			'acffa_major_version',
-			__( 'Version', 'acf-font-awesome' ),
+			__( 'Version', 'museum-core' ),
 			array( $this, 'acffa_major_version_cb' ),
 			'acffa',
 			'acffa_section_developers',
@@ -157,7 +157,7 @@ class ACFFA_Admin
 
 		add_settings_field(
 			'acffa_pro_cdn',
-			__( 'Enable Pro Icons?', 'acf-font-awesome' ),
+			__( 'Enable Pro Icons?', 'museum-core' ),
 			array( $this, 'acffa_pro_cdn_cb' ),
 			'acffa',
 			'acffa_section_developers',
@@ -181,14 +181,14 @@ class ACFFA_Admin
 
 		add_settings_section(
 			'acffa_section_icon_set_builder',
-			__( 'Icon Set Builder', 'acf-font-awesome' ),
+			__( 'Icon Set Builder', 'museum-core' ),
 			array( $this, 'acffa_section_icon_set_builder_cb' ),
 			'acffa'
 		);
 
 		add_settings_field(
 			'acffa_new_icon_set_label',
-			__( 'New Icon Set Label', 'acf-font-awesome' ),
+			__( 'New Icon Set Label', 'museum-core' ),
 			array( $this, 'acffa_new_icon_set_label_cb' ),
 			'acffa',
 			'acffa_section_icon_set_builder',
@@ -200,7 +200,7 @@ class ACFFA_Admin
 
 		add_settings_field(
 			'acffa_new_icon_set',
-			__( 'New Icon Set', 'acf-font-awesome' ),
+			__( 'New Icon Set', 'museum-core' ),
 			array( $this, 'acffa_new_icon_set_cb' ),
 			'acffa',
 			'acffa_section_icon_set_builder',
@@ -212,7 +212,7 @@ class ACFFA_Admin
 
 		add_settings_field(
 			'acffa_existing_icon_sets',
-			__( 'Existing Icon Sets', 'acf-font-awesome' ),
+			__( 'Existing Icon Sets', 'museum-core' ),
 			array( $this, 'acffa_existing_icon_sets_cb' ),
 			'acffa',
 			'acffa_section_icon_set_builder',
@@ -241,9 +241,9 @@ class ACFFA_Admin
 		}
 
 		if ( $data['acffa_new_icon_set_label'] && ! $data['acffa_new_icon_set'] ) {
-			add_settings_error( 'acffa_messages', 'missing_label', __( 'Please select at least one icon when adding a new custom icon set.', 'acf-font-awesome' ), 'error' );
+			add_settings_error( 'acffa_messages', 'missing_label', __( 'Please select at least one icon when adding a new custom icon set.', 'museum-core' ), 'error' );
 		} else if ( $data['acffa_new_icon_set'] && ! $data['acffa_new_icon_set_label'] ) {
-			add_settings_error( 'acffa_messages', 'missing_icons', __( 'Label is required when adding a new custom icon set.', 'acf-font-awesome' ), 'error' );
+			add_settings_error( 'acffa_messages', 'missing_icons', __( 'Label is required when adding a new custom icon set.', 'museum-core' ), 'error' );
 		}
 
 		return $data;
@@ -253,8 +253,8 @@ class ACFFA_Admin
 	{
 		?>
 		<p id="<?php echo esc_attr( $args['id'] ); ?>">
-			<?php _e( 'FontAwesome underwent big changes with the release of version 5. It is best to choose a version and stick with it.', 'acf-font-awesome' ); ?><br>
-			<em><?php _e( 'Any icon selections saved prior to switching versions will need to be re-selected and re-saved after switching.', 'acf-font-awesome' ); ?></em>
+			<?php _e( 'FontAwesome underwent big changes with the release of version 5. It is best to choose a version and stick with it.', 'museum-core' ); ?><br>
+			<em><?php _e( 'Any icon selections saved prior to switching versions will need to be re-selected and re-saved after switching.', 'museum-core' ); ?></em>
 		</p>
 		<?php
 	}
@@ -266,17 +266,17 @@ class ACFFA_Admin
 		?>
 		<select <?php echo $attributes; ?> id="<?php echo esc_attr( $args['label_for'] ); ?>" name="acffa_settings[<?php echo esc_attr( $args['label_for'] ); ?>]">
 			<option value="4" <?php echo isset( $options[ $args[ 'label_for'] ] ) ? ( selected( $options[ $args[ 'label_for'] ], 4, false ) ) : ( '' ); ?>>
-			<?php _e( '4.x', 'acf-font-awesome' ); ?>
+			<?php _e( '4.x', 'museum-core' ); ?>
 			</option>
 			<option value="5" <?php echo isset( $options[ $args[ 'label_for'] ] ) ? ( selected( $options[ $args[ 'label_for'] ], 5, false ) ) : ( '' ); ?>>
-			<?php _e( '5.x', 'acf-font-awesome' ); ?>
+			<?php _e( '5.x', 'museum-core' ); ?>
 			</option>
 		</select>
 		<?php
 		if ( defined( 'ACFFA_OVERRIDE_MAJOR_VERSION' ) ) :
 			?>
 			<p>
-				<em><?php _e( 'The major version is manually set with the "ACFFA_override_major_version" filter, and cannot be modified from this screen. Please remove or update the filter to make changes.', 'acf-font-awesome' ); ?></em>
+				<em><?php _e( 'The major version is manually set with the "ACFFA_override_major_version" filter, and cannot be modified from this screen. Please remove or update the filter to make changes.', 'museum-core' ); ?></em>
 			</p>
 			<?php
 		endif;
@@ -287,13 +287,13 @@ class ACFFA_Admin
 		$options = get_option( 'acffa_settings' );
 		?>
 		<p>
-			<?php _e( 'If you have a FontAwesome Pro license, check the box below to enable the pro icons.', 'acf-font-awesome' ); ?><br>
-			<em><?php _e( 'NOTE: You MUST add this domain in your FontAwesome "Pro CDN Domains" in order for this to work!', 'acf-font-awesome' ); ?></em>
+			<?php _e( 'If you have a FontAwesome Pro license, check the box below to enable the pro icons.', 'museum-core' ); ?><br>
+			<em><?php _e( 'NOTE: You MUST add this domain in your FontAwesome "Pro CDN Domains" in order for this to work!', 'museum-core' ); ?></em>
 		</p>
 		<br>
 		<p>
 			<input type="checkbox" value="1" id="<?php echo esc_attr( $args['label_for'] ); ?>" name="acffa_settings[<?php echo esc_attr( $args['label_for'] ); ?>]" <?php echo isset( $options[ $args[ 'label_for'] ] ) ? ( checked( $options[ $args[ 'label_for'] ] ) ) : ( '' ); ?> />
-			<label for="<?php echo esc_attr( $args['label_for'] ); ?>"><?php _e( 'I have enabled this domain for CDN use. Turn on the pro icons!', 'acf-font-awesome' ); ?></label>
+			<label for="<?php echo esc_attr( $args['label_for'] ); ?>"><?php _e( 'I have enabled this domain for CDN use. Turn on the pro icons!', 'museum-core' ); ?></label>
 		</p>
 		<?php
 	}
@@ -309,11 +309,11 @@ class ACFFA_Admin
 	{
 		?>
 		<p id="<?php echo esc_attr( $args['id'] ); ?>">
-			<?php _e( 'Use the icon set builder to create custom collections of FontAwesome icons to be used in your ACF FontAwesome fields', 'acf-font-awesome' ); ?><br>
-			<em><?php _e( 'If you\'ve made changes the the FontAwesome version you are loading above, please refresh this page to see those changes reflected in the list below.', 'acf-font-awesome' ); ?></em>
+			<?php _e( 'Use the icon set builder to create custom collections of FontAwesome icons to be used in your ACF FontAwesome fields', 'museum-core' ); ?><br>
+			<em><?php _e( 'If you\'ve made changes the the FontAwesome version you are loading above, please refresh this page to see those changes reflected in the list below.', 'museum-core' ); ?></em>
 		</p>
 		<p class="icon-builder-complete-changes-notice">
-	 		<strong><?php _e( 'You must save your changes to the major version before using the icon set builder.', 'acf-font-awesome' ); ?></strong>
+	 		<strong><?php _e( 'You must save your changes to the major version before using the icon set builder.', 'museum-core' ); ?></strong>
 		</p>
 		<?php
 	}
@@ -321,9 +321,9 @@ class ACFFA_Admin
 	public function acffa_new_icon_set_label_cb( $args )
 	{
 		?>
-		<input type="text" id="<?php echo esc_attr( $args['label_for'] ); ?>" name="acffa_settings[<?php echo esc_attr( $args['label_for'] ); ?>]" placeholder="<?php _e( 'Custom Icon Set Name', 'acf-font-awesome' ); ?>">
+		<input type="text" id="<?php echo esc_attr( $args['label_for'] ); ?>" name="acffa_settings[<?php echo esc_attr( $args['label_for'] ); ?>]" placeholder="<?php _e( 'Custom Icon Set Name', 'museum-core' ); ?>">
 		<p>
-			<em><?php _e( 'NOTE: Providing a label that is already in use will overwrite the existing custom icon set.', 'acf-font-awesome' ); ?></em>
+			<em><?php _e( 'NOTE: Providing a label that is already in use will overwrite the existing custom icon set.', 'museum-core' ); ?></em>
 		</p>
 		<?php
 	}
@@ -360,7 +360,7 @@ class ACFFA_Admin
 					}
 				} else {
 					?>
-					<option value=""><?php _e( 'No Icons Found', 'acf-font-awesome' ); ?></option>
+					<option value=""><?php _e( 'No Icons Found', 'museum-core' ); ?></option>
 					<?php
 				}
 			?>
@@ -384,7 +384,7 @@ class ACFFA_Admin
 				}
 				?>
 				<li class="icon-set" data-set-label="<?php echo esc_html( $icon_set_label ); ?>" data-set-name="<?php echo esc_html( $icon_set_name ); ?>">
-					<span><strong><?php echo esc_html( $icon_set_label ); ?></strong> <span class="actions">( <a href="#" class="edit-icon-set"><?php _e( 'Load For Editing', 'acf-font-awesome' ); ?></a> | <a href="#" class="view-icon-list"><?php _e( 'Toggle Icon List', 'acf-font-awesome' ); ?></a> | <a href="#" class="delete-icon-set" data-icon-set-name="<?php echo esc_html( $icon_set_name ); ?>" data-nonce="<?php echo wp_create_nonce( 'acffa_delete_set_' . $icon_set_name ); ?>"><?php _e( 'Delete Icon Set', 'acf-font-awesome' ); ?></a> )</span></span>
+					<span><strong><?php echo esc_html( $icon_set_label ); ?></strong> <span class="actions">( <a href="#" class="edit-icon-set"><?php _e( 'Load For Editing', 'museum-core' ); ?></a> | <a href="#" class="view-icon-list"><?php _e( 'Toggle Icon List', 'museum-core' ); ?></a> | <a href="#" class="delete-icon-set" data-icon-set-name="<?php echo esc_html( $icon_set_name ); ?>" data-nonce="<?php echo wp_create_nonce( 'acffa_delete_set_' . $icon_set_name ); ?>"><?php _e( 'Delete Icon Set', 'museum-core' ); ?></a> )</span></span>
 					<ul class="icon-list">
 						<?php
 							if ( version_compare( ACFFA_MAJOR_VERSION, 5, '>=' ) ) {
@@ -422,7 +422,7 @@ class ACFFA_Admin
 			</ul>
 			<?php
 		} else {
-			_e( 'No existing custom icon set(s) found.', 'acf-font-awesome' );
+			_e( 'No existing custom icon set(s) found.', 'museum-core' );
 		}
 	}
 

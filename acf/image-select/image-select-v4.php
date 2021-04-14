@@ -15,8 +15,8 @@ class acf_field_image_select extends acf_field
 	{
 		// vars
 		$this->name        = 'image_select';
-		$this->label       = __('Image Select');
-		$this->category    = __("Choice",'acf');
+		$this->label       = __('Image Select', 'museum-core');
+		$this->category    = __("Choice",'museum-core');
 		$this->defaults    = array(
 			'choices'			=>	array(),
 			'default_value'		=>	'',
@@ -136,10 +136,10 @@ class acf_field_image_select extends acf_field
 		?>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
-				<label for=""><?php _e("Choices",'acf'); ?></label>
-				<p class="description"><?php _e("Enter your choices one per line",'acf'); ?><br>
-				<?php _e("Red",'acf'); ?><br /><?php _e("Blue",'acf'); ?><br>
-				<?php _e("red : Red",'acf'); ?><br /><?php _e("blue : Blue",'acf'); ?></p>
+				<label for=""><?php _e("Choices",'museum-core'); ?></label>
+				<p class="description"><?php _e("Enter your choices one per line",'museum-core'); ?><br>
+				<?php _e("Red",'museum-core'); ?><br /><?php _e("Blue",'museum-core'); ?><br>
+				<?php _e("red : Red",'museum-core'); ?><br /><?php _e("blue : Blue",'museum-core'); ?></p>
 			</td>
 			<td>
 				<?php
@@ -154,14 +154,14 @@ class acf_field_image_select extends acf_field
 				?>
 				<div class="image-select-option-description">
 					<p class="description">
-						<?php _e("<span style='color:#BC0B0B'>Please note:</span> The first value of each choices will used as name of image.<br>Like for '<strong>Blue</strong>' or '<strong>blue : Blue</strong>', the image name will be '<strong>blue.png</strong>' .",'acf'); ?>
+						<?php _e("<span style='color:#BC0B0B'>Please note:</span> The first value of each choices will used as name of image.<br>Like for '<strong>Blue</strong>' or '<strong>blue : Blue</strong>', the image name will be '<strong>blue.png</strong>' .",'museum-core'); ?>
 					</p>
 				</div>
 			</td>
 		</tr>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
-				<label><?php _e("Default Value",'acf'); ?></label>
+				<label><?php _e("Default Value",'museum-core'); ?></label>
 			</td>
 			<td>
 				<?php
@@ -177,7 +177,7 @@ class acf_field_image_select extends acf_field
 		</tr>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
-				<label><?php _e("Allow Multiple Choices?",'acf'); ?></label>
+				<label><?php _e("Allow Multiple Choices?",'museum-core'); ?></label>
 			</td>
 			<td>
 				<?php
@@ -186,8 +186,8 @@ class acf_field_image_select extends acf_field
 					'name'	=>	'fields['.$key.'][multiple]',
 					'value'	=>	$field['multiple'],
 					'choices'	=>	array(
-						1	=>	__("Yes",'acf'),
-						0	=>	__("No",'acf'),
+						1	=>	__("Yes",'museum-core'),
+						0	=>	__("No",'museum-core'),
 					),
 					'layout'	=>	'horizontal',
 				));
@@ -196,8 +196,8 @@ class acf_field_image_select extends acf_field
 		</tr>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
-				<label><?php _e("Image Path",'acf'); ?></label>
-				<p class="description"><?php _e("Enter complete URL for images.",'acf'); ?></p>
+				<label><?php _e("Image Path",'museum-core'); ?></label>
+				<p class="description"><?php _e("Enter complete URL for images.",'museum-core'); ?></p>
 			</td>
 			<td>
 				<?php
@@ -211,7 +211,7 @@ class acf_field_image_select extends acf_field
 				?>
 				<div class="image-select-option-description">
 					<p class="description">
-						<?php _e("<span style='color:#BC0B0B'>Some Important Paths:</span>'",'acf'); ?>
+						<?php _e("<span style='color:#BC0B0B'>Some Important Paths:</span>'",'museum-core'); ?>
 						<ul>
 							<li><strong>Theme URL:</strong> <?php echo get_template_directory_uri();?> (<em><u>If current theme is child theme.</u></em>)</li>
 							<li><strong>Current/Child Theme:</strong> <?php echo get_stylesheet_directory_uri();?></li>
@@ -224,7 +224,7 @@ class acf_field_image_select extends acf_field
 		</tr>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
-				<label><?php _e("Image Extension",'acf'); ?></label>
+				<label><?php _e("Image Extension",'museum-core'); ?></label>
 			</td>
 			<td>
 				<?php

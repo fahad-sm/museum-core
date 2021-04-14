@@ -27,7 +27,7 @@ class acf_field_{{field_name}} extends acf_Field
 
 		// set name / title
 		$this->name = '{{field_name}}';
-		$this->title = __('{{field_label}}');
+		$this->title = __('{{field_label}}', 'museum-core');
 		$this->defaults = array(
 			// add default here to merge into your field.
 			// This makes life easy when creating the field options as you don't need to use any if( isset('') ) logic. eg:
@@ -127,8 +127,8 @@ class acf_field_{{field_name}} extends acf_Field
 		?>
 <tr class="field_option field_option_<?php echo $this->name; ?>">
 	<td class="label">
-		<label><?php _e("Preview Size", 'acf'); ?></label>
-		<p class="description"><?php _e("Thumbnail is advised", 'acf'); ?></p>
+		<label><?php _e("Preview Size", 'museum-core'); ?></label>
+		<p class="description"><?php _e("Thumbnail is advised", 'museum-core'); ?></p>
 	</td>
 	<td>
 		<?php
@@ -139,8 +139,8 @@ class acf_field_{{field_name}} extends acf_Field
 			'value'	  => $field['preview_size'],
 			'layout'  => 'horizontal',
 			'choices'	=> array(
-				'thumbnail' => __('Thumbnail'),
-				'something_else' => __('Something Else'),
+				'thumbnail' => __('Thumbnail', 'museum-core'),
+				'something_else' => __('Something Else', 'museum-core'),
 			)
 		));
 

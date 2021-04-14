@@ -1,10 +1,10 @@
-# Copyright (C) 2021 YOUR NAME HERE
+# Copyright (C) 2021 iHekrit
 # This file is distributed under the same license as the Museum Core package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Museum Core 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/museum-core\n"
-"POT-Creation-Date: 2021-03-26 00:02:34+00:00\n"
+"POT-Creation-Date: 2021-04-14 19:54:19+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,6 +24,672 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:39
+msgid ""
+"Visit the new ACF <a href=\"%s\">FontAwesome Settings</a> page to change "
+"FontAwesome icon version, or to create custom icon sets."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:56
+msgid ""
+"The plugin \"Advanced Custom Fields: Font Awesome\" has detected an error "
+"while retrieving the latest FontAwesome icons. This may be due to temporary "
+"CDN downtime. However if problems persist, please contact your hosting "
+"provider to ensure cURL is installed and up to date. Detected cURL version: "
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:74
+msgid "Search List"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:75
+msgid "Are you sure you want to delete this icon set?"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:76
+msgid ""
+"There was an error while trying to delete the icon set, please refresh the "
+"page and try again."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:86
+#: inc/Elementor/Widgets/Blog.php:46 inc/Elementor/Widgets/History.php:340
+msgid "Settings"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:109
+msgid "Settings Saved"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:141
+msgid "Major Version"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:148
+#: redux/ReduxCore/inc/welcome/views/status_report.php:715
+msgid "Version"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:160
+msgid "Enable Pro Icons?"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:184
+msgid "Icon Set Builder"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:191
+msgid "New Icon Set Label"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:203
+msgid "New Icon Set"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:215
+msgid "Existing Icon Sets"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:244
+msgid "Please select at least one icon when adding a new custom icon set."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:246
+msgid "Label is required when adding a new custom icon set."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:256
+msgid ""
+"FontAwesome underwent big changes with the release of version 5. It is best "
+"to choose a version and stick with it."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:257
+msgid ""
+"Any icon selections saved prior to switching versions will need to be "
+"re-selected and re-saved after switching."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:269
+msgid "4.x"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:272
+msgid "5.x"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:279
+msgid ""
+"The major version is manually set with the \"ACFFA_override_major_version\" "
+"filter, and cannot be modified from this screen. Please remove or update "
+"the filter to make changes."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:290
+msgid ""
+"If you have a FontAwesome Pro license, check the box below to enable the "
+"pro icons."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:291
+msgid ""
+"NOTE: You MUST add this domain in your FontAwesome \"Pro CDN Domains\" in "
+"order for this to work!"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:296
+msgid "I have enabled this domain for CDN use. Turn on the pro icons!"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:312
+msgid ""
+"Use the icon set builder to create custom collections of FontAwesome icons "
+"to be used in your ACF FontAwesome fields"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:313
+msgid ""
+"If you've made changes the the FontAwesome version you are loading above, "
+"please refresh this page to see those changes reflected in the list below."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:316
+msgid ""
+"You must save your changes to the major version before using the icon set "
+"builder."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:324
+msgid "Custom Icon Set Name"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:326
+msgid ""
+"NOTE: Providing a label that is already in use will overwrite the existing "
+"custom icon set."
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:363
+msgid "No Icons Found"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:387
+msgid "Load For Editing"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:387
+msgid "Toggle Icon List"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:387
+msgid "Delete Icon Set"
+msgstr ""
+
+#: acf/acf-fontawesome/admin/class-ACFFA-Admin.php:425
+msgid "No existing custom icon set(s) found."
+msgstr ""
+
+#: acf/acf-fontawesome/assets/inc/class-ACFFA-Loader-5.php:311
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:69
+msgid "Solid"
+msgstr ""
+
+#: acf/acf-fontawesome/assets/inc/class-ACFFA-Loader-5.php:315
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:73
+msgid "Brands"
+msgstr ""
+
+#: acf/acf-fontawesome/assets/inc/class-ACFFA-Loader-5.php:319
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:330
+#: inc/Elementor/Modules/Form/Form__old.php:332
+msgid "Light"
+msgstr ""
+
+#: acf/acf-fontawesome/assets/inc/class-ACFFA-Loader-5.php:323
+msgid "Duotone"
+msgstr ""
+
+#: acf/acf-fontawesome/assets/inc/class-ACFFA-Loader-5.php:328
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:70
+#: redux/ReduxCore/inc/fields/link_color/field_link_color.php:90
+msgid "Regular"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:19
+msgid "Font Awesome Icon"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:60
+msgid "Icon Sets"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:61
+msgid "Specify which icon set(s) to load"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:71
+msgid "Light (FontAwesome Pro License Required)"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:72
+msgid "Duotone (FontAwesome Pro License Required)"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:74
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:79
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:92
+msgid "Custom Icon Set"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:78
+msgid "All Icons"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:88
+msgid "No custom icon set(s) found"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:93
+msgid "Create custom icon sets in the <a href=\"%s\">FontAwesome Settings page</a>."
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:104
+msgid "Icon Preview"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:112
+msgid "Default Label"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:121
+msgid "Default Icon"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:136
+msgid "Return Value"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:137
+msgid "Specify the returned value on front end"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:141
+msgid "Icon Element"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:142
+msgid "Icon Class"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:143
+msgid "Icon Unicode"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:144
+msgid "Icon Object"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:149
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:67
+msgid "Allow Null?"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:154
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:165
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:177
+#: acf/acf-repeater/4/views/options.php:174
+#: acf/acf-repeater/4/views/options.php:219
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:95
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:72
+#: acf/image-select/image-select-v4.php:189
+#: acf/image-select/image-select-v5.php:134
+#: inc/Elementor/Widgets/History.php:80 inc/Elementor/Widgets/History.php:169
+#: inc/Elementor/Widgets/History.php:181 inc/Elementor/Widgets/History.php:258
+#: inc/Elementor/Widgets/History.php:304 inc/Elementor/Widgets/History.php:349
+#: inc/Elementor/Widgets/History.php:1360
+#: inc/Elementor/Widgets/History.php:1402
+msgid "Yes"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:155
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:166
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:178
+#: acf/acf-repeater/4/views/options.php:175
+#: acf/acf-repeater/4/views/options.php:220
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:96
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:73
+#: acf/image-select/image-select-v4.php:190
+#: acf/image-select/image-select-v5.php:135
+#: inc/Elementor/Widgets/History.php:81 inc/Elementor/Widgets/History.php:170
+#: inc/Elementor/Widgets/History.php:182 inc/Elementor/Widgets/History.php:259
+#: inc/Elementor/Widgets/History.php:305 inc/Elementor/Widgets/History.php:350
+#: inc/Elementor/Widgets/History.php:1361
+#: inc/Elementor/Widgets/History.php:1403
+msgid "No"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:160
+msgid "Show Icon Preview"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:161
+msgid ""
+"Set to 'Yes' to include a larger icon preview on any admin pages using this "
+"field."
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:172
+msgid "Enqueue FontAwesome?"
+msgstr ""
+
+#: acf/acf-fontawesome/fields/acf-font-awesome-v5.php:173
+msgid "Set to 'Yes' to enqueue FA in the footer on any pages using this field."
+msgstr ""
+
+#: acf/acf-repeater/4/repeater.php:22 acf/acf-repeater/5/repeater.php:25
+#: inc/Elementor/Widgets/Timing.php:76
+msgid "Repeater"
+msgstr ""
+
+#: acf/acf-repeater/4/repeater.php:23 acf/acf-repeater/4/views/options.php:30
+#: acf/acf-repeater/4/views/options.php:356 acf/acf-repeater/5/repeater.php:499
+#: config/options/archive_setting.php:48 config/options/author_setting.php:48
+#: config/options/blog_setting.php:47 config/options/category_setting.php:47
+#: config/options/page_setting.php:160 config/options/search_setting.php:47
+#: config/options/single_post_setting.php:163 config/options/tag_setting.php:48
+msgid "Layout"
+msgstr ""
+
+#: acf/acf-repeater/4/repeater.php:29 acf/acf-repeater/5/repeater.php:215
+#: acf/acf-repeater/5/repeater.php:519
+msgid "Add Row"
+msgstr ""
+
+#: acf/acf-repeater/4/repeater.php:32
+msgid "Minimum rows reached ( {min} rows )"
+msgstr ""
+
+#: acf/acf-repeater/4/repeater.php:33
+msgid "Maximum rows reached ( {max} rows )"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:22
+msgid "New Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:23
+msgid "new_field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:44
+msgid "Repeater Fields"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:52
+msgid "Field Order"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:53
+#: acf/acf-repeater/4/views/options.php:101
+msgid "Field Label"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:54
+#: acf/acf-repeater/4/views/options.php:117
+msgid "Field Name"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:55
+#: acf/acf-repeater/4/views/options.php:132
+msgid "Field Type"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:63
+msgid "No fields. Click the \"+ Add Sub Field button\" to create your first field."
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:79
+#: acf/acf-repeater/4/views/options.php:82
+msgid "Edit this Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:82
+msgid "Edit"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:83
+msgid "Read documentation for this field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:83 redux/class.redux-plugin.php:415
+msgid "Docs"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:84
+msgid "Duplicate this Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:84
+msgid "Duplicate"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:85
+msgid "Delete this Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:85
+#: redux/ReduxCore/inc/fields/slides/field_slides.php:167
+#: redux/ReduxCore/inc/fields/slides/field_slides.php:220
+msgid "Delete"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:102
+msgid "This is the name which will appear on the edit page"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:118
+msgid "Single word, no spaces. Underscores and dashes allowed"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:147
+msgid "Field Instructions"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:166
+msgid "Required?"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:184
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:254
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:587
+#: inc/Elementor/Modules/Form/Form__old.php:256
+#: inc/Elementor/Modules/Form/Form__old.php:589
+msgid "Column Width"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:211
+msgid "Conditional Logic"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:262
+msgid "is equal to"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:263
+msgid "is not equal to"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:281
+msgid "Show this field when"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:287
+msgid "all"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:288
+msgid "any"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:291
+msgid "these rules are met"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:300
+msgid "Save Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:305
+msgid "Close Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:305
+msgid "Close Sub Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:320
+msgid "Drag and drop to reorder"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:321
+msgid "+ Add Sub Field"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:328 acf/acf-repeater/5/repeater.php:479
+msgid "Minimum Rows"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:342 acf/acf-repeater/5/repeater.php:489
+msgid "Maximum Rows"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:366 acf/acf-repeater/5/repeater.php:506
+msgid "Table"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:367 acf/acf-repeater/5/repeater.php:508
+msgid "Row"
+msgstr ""
+
+#: acf/acf-repeater/4/views/options.php:375 acf/acf-repeater/5/repeater.php:515
+msgid "Button Label"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:36
+msgid "Minimum rows reached ({min} rows)"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:37
+msgid "Maximum rows reached ({max} rows)"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:343
+msgid "Drag to reorder"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:345
+msgid "Click to toggle"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:390
+msgid "Add row"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:391
+msgid "Remove row"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:438
+msgid "Sub Fields"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:468
+msgid "Collapsed"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:469
+msgid "Select a sub field to show when row is collapsed"
+msgstr ""
+
+#: acf/acf-repeater/5/repeater.php:507
+msgid "Block"
+msgstr ""
+
+#: acf/acf-repeater/acf-repeater.php:43
+msgid "Advanced Custom Fields: Repeater Field"
+msgstr ""
+
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:40
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:37
+msgid "Sidebar Selector"
+msgstr ""
+
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:41
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:38
+#: acf/image-select/image-select-v4.php:19
+#: acf/image-select/image-select-v5.php:19
+msgid "Choice"
+msgstr ""
+
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:85
+msgid "Allow Null"
+msgstr ""
+
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:108
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:78
+#: acf/image-select/image-select-v4.php:164
+#: acf/image-select/image-select-v5.php:124
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:391
+#: inc/Elementor/Modules/Form/Form__old.php:393
+msgid "Default Value"
+msgstr ""
+
+#: acf/acf-sidebar/acf-sidebar_selector-v4.php:147
+#: acf/acf-sidebar/acf-sidebar_selector-v5.php:105
+msgid "Select a Sidebar"
+msgstr ""
+
+#: acf/image-select/image-select-v3.php:30
+msgid "{{field_label}}"
+msgstr ""
+
+#: acf/image-select/image-select-v3.php:130
+msgid "Preview Size"
+msgstr ""
+
+#: acf/image-select/image-select-v3.php:131
+msgid "Thumbnail is advised"
+msgstr ""
+
+#: acf/image-select/image-select-v3.php:142
+msgid "Thumbnail"
+msgstr ""
+
+#: acf/image-select/image-select-v3.php:143
+msgid "Something Else"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:18
+#: acf/image-select/image-select-v5.php:18
+msgid "Image Select"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:139
+#: acf/image-select/image-select-v5.php:117
+msgid "Choices"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:140
+msgid "Enter your choices one per line"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:141
+msgid "Red"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:141
+msgid "Blue"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:142
+msgid "red : Red"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:142
+msgid "blue : Blue"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:157
+msgid ""
+"<span style='color:#BC0B0B'>Please note:</span> The first value of each "
+"choices will used as name of image.<br>Like for '<strong>Blue</strong>' or "
+"'<strong>blue : Blue</strong>', the image name will be "
+"'<strong>blue.png</strong>' ."
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:180
+#: acf/image-select/image-select-v5.php:130
+msgid "Allow Multiple Choices?"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:199
+#: acf/image-select/image-select-v5.php:141
+msgid "Image Path"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:200
+msgid "Enter complete URL for images."
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:214
+msgid "<span style='color:#BC0B0B'>Some Important Paths:</span>'"
+msgstr ""
+
+#: acf/image-select/image-select-v4.php:227
+#: acf/image-select/image-select-v5.php:153
+msgid "Image Extension"
+msgstr ""
+
 #: config/options/404_setting.php:4
 msgid "404 Page Settings"
 msgstr ""
@@ -32,11 +698,9 @@ msgstr ""
 msgid "404 Source Type"
 msgstr ""
 
-#: config/options/404_setting.php:14 config/options/archive_setting.php:14
-#: config/options/author_setting.php:14 config/options/blog_setting.php:14
-#: config/options/category_setting.php:14 config/options/footer_setting.php:14
-#: config/options/headers_setting.php:13 config/options/search_setting.php:14
-#: config/options/single_post_setting.php:14 config/options/tag_setting.php:14
+#: config/options/404_setting.php:14 config/options/footer_setting.php:14
+#: config/options/headers_setting.php:13 config/options/page_setting.php:32
+#: config/options/single_post_setting.php:31
 #: inc/Elementor/Classes/Modules/CurrentDateTime.php:38
 #: inc/Elementor/Classes/Modules/CurrentDateTime.php:56
 #: inc/Elementor/Classes/Modules/PostDate.php:52
@@ -49,20 +713,15 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: config/options/404_setting.php:15 config/options/archive_setting.php:15
-#: config/options/author_setting.php:15 config/options/blog_setting.php:15
-#: config/options/category_setting.php:15 config/options/footer_setting.php:15
-#: config/options/headers_setting.php:14 config/options/search_setting.php:15
-#: config/options/single_post_setting.php:15 config/options/tag_setting.php:15
+#: config/options/404_setting.php:15 config/options/footer_setting.php:15
+#: config/options/headers_setting.php:14 config/options/page_setting.php:33
+#: config/options/single_post_setting.php:32
 #: inc/Elementor/Modules/Form/FormRecord.php:254
 msgid "Elementor"
 msgstr ""
 
-#: config/options/404_setting.php:22 config/options/archive_setting.php:22
-#: config/options/author_setting.php:22 config/options/blog_setting.php:22
-#: config/options/category_setting.php:22 config/options/footer_setting.php:22
-#: config/options/headers_setting.php:21 config/options/search_setting.php:22
-#: config/options/tag_setting.php:22
+#: config/options/404_setting.php:22 config/options/footer_setting.php:22
+#: config/options/headers_setting.php:21
 msgid "Template"
 msgstr ""
 
@@ -70,98 +729,100 @@ msgstr ""
 msgid "404 Default"
 msgstr ""
 
-#: config/options/404_setting.php:39 config/options/archive_setting.php:41
-#: config/options/author_setting.php:41 config/options/blog_setting.php:41
-#: config/options/category_setting.php:41 config/options/search_setting.php:41
-#: config/options/tag_setting.php:41
+#: config/options/404_setting.php:39 config/options/archive_setting.php:18
+#: config/options/author_setting.php:18 config/options/blog_setting.php:18
+#: config/options/category_setting.php:18 config/options/page_setting.php:15
+#: config/options/search_setting.php:18
+#: config/options/single_post_setting.php:14 config/options/tag_setting.php:19
 msgid "Show Banner"
 msgstr ""
 
-#: config/options/404_setting.php:40 config/options/archive_setting.php:42
-#: config/options/author_setting.php:42 config/options/blog_setting.php:42
-#: config/options/category_setting.php:42 config/options/search_setting.php:42
-#: config/options/tag_setting.php:42
+#: config/options/404_setting.php:40 config/options/archive_setting.php:19
+#: config/options/author_setting.php:19 config/options/blog_setting.php:19
+#: config/options/category_setting.php:19 config/options/search_setting.php:19
+#: config/options/tag_setting.php:20
 msgid "Enable to show banner on blog"
 msgstr ""
 
-#: config/options/404_setting.php:46 config/options/archive_setting.php:48
-#: config/options/author_setting.php:48 config/options/blog_setting.php:48
-#: config/options/category_setting.php:48 config/options/search_setting.php:48
-#: config/options/tag_setting.php:48
+#: config/options/404_setting.php:46 config/options/archive_setting.php:25
+#: config/options/author_setting.php:25 config/options/blog_setting.php:25
+#: config/options/category_setting.php:25 config/options/search_setting.php:25
+#: config/options/tag_setting.php:26
 msgid "Banner Section Title"
 msgstr ""
 
-#: config/options/404_setting.php:47 config/options/archive_setting.php:49
-#: config/options/author_setting.php:49 config/options/blog_setting.php:49
-#: config/options/category_setting.php:49 config/options/search_setting.php:49
-#: config/options/tag_setting.php:49
+#: config/options/404_setting.php:47 config/options/archive_setting.php:26
+#: config/options/author_setting.php:26 config/options/blog_setting.php:26
+#: config/options/category_setting.php:26 config/options/search_setting.php:26
+#: config/options/tag_setting.php:27
 msgid "Enter the title to show in banner section"
 msgstr ""
 
-#: config/options/404_setting.php:54 config/options/archive_setting.php:56
-#: config/options/author_setting.php:56 config/options/blog_setting.php:56
-#: config/options/category_setting.php:56 config/options/search_setting.php:56
-#: config/options/tag_setting.php:56
-msgid "Background Image"
+#: config/options/404_setting.php:53 config/options/archive_setting.php:33
+#: config/options/author_setting.php:33 config/options/blog_setting.php:32
+#: config/options/category_setting.php:32 config/options/footer_setting.php:33
+#: config/options/search_setting.php:32 config/options/tag_setting.php:33
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:990
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:1085
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:1162
+#: inc/Elementor/Modules/Form/Form__old.php:990
+#: inc/Elementor/Modules/Form/Form__old.php:1064
+#: inc/Elementor/Modules/Form/Form__old.php:1141
+#: inc/Elementor/Modules/Form/LoginElementorWidget.php:470
+#: inc/Elementor/Modules/Form/LoginElementorWidget.php:565
+#: inc/Elementor/Modules/Form/LoginElementorWidget.php:632
+#: inc/Elementor/Modules/Form/RegisterElementorWidget.php:470
+#: inc/Elementor/Modules/Form/RegisterElementorWidget.php:565
+#: inc/Elementor/Modules/Form/RegisterElementorWidget.php:632
+#: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:342
+#: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:437
+#: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:504
+#: inc/Elementor/Modules/Services/Services.php:294
+#: inc/Elementor/Modules/Services/Services.php:341
+#: inc/Elementor/Widgets/History.php:936
+msgid "Background Color"
 msgstr ""
 
-#: config/options/404_setting.php:55 config/options/archive_setting.php:57
-#: config/options/author_setting.php:57 config/options/blog_setting.php:57
-#: config/options/category_setting.php:57 config/options/search_setting.php:57
-#: config/options/tag_setting.php:57
-msgid "Insert background image for banner"
+#: config/options/404_setting.php:54 config/options/archive_setting.php:34
+#: config/options/author_setting.php:34 config/options/blog_setting.php:33
+#: config/options/category_setting.php:33 config/options/search_setting.php:33
+#: config/options/tag_setting.php:34
+msgid "Choose the gradient color"
 msgstr ""
 
-#: config/options/404_setting.php:63
-msgid "Error Page Image"
-msgstr ""
-
-#: config/options/404_setting.php:64
-msgid "Insert Error Page image for banner"
+#: config/options/404_setting.php:55 config/options/archive_setting.php:35
+#: config/options/author_setting.php:35 config/options/blog_setting.php:34
+#: config/options/category_setting.php:34 config/options/search_setting.php:34
+#: config/options/tag_setting.php:35
+msgid "Enter the background color"
 msgstr ""
 
 #: config/options/404_setting.php:69
-msgid "404 Title"
+msgid "Error Page Image"
 msgstr ""
 
 #: config/options/404_setting.php:70
-msgid "Enter 404 section title that you want to show"
+msgid "Insert Error Page image for banner"
 msgstr ""
 
 #: config/options/404_setting.php:75
-msgid "404 Page Description"
+msgid "Main Heading"
 msgstr ""
 
-#: config/options/404_setting.php:76
-msgid "Enter 404 page description that you want to show."
+#: config/options/404_setting.php:76 config/options/404_setting.php:82
+msgid "Enter 404 section title that you want to show"
 msgstr ""
 
 #: config/options/404_setting.php:81
-msgid "Show Search Form"
+msgid "404 Title"
 msgstr ""
 
-#: config/options/404_setting.php:82
-msgid "Enable to show search form on 404 page"
+#: config/options/404_setting.php:87
+msgid "404 Page Description"
 msgstr ""
 
 #: config/options/404_setting.php:88
-msgid "Show Button"
-msgstr ""
-
-#: config/options/404_setting.php:89
-msgid "Enable to show back to home button."
-msgstr ""
-
-#: config/options/404_setting.php:95
-msgid "Button Label"
-msgstr ""
-
-#: config/options/404_setting.php:96
-msgid "Enter back to home button label that you want to show."
-msgstr ""
-
-#: config/options/404_setting.php:97
-msgid "Back To Home Page"
+msgid "Enter 404 page description that you want to show."
 msgstr ""
 
 #: config/options/archive_setting.php:4
@@ -169,52 +830,44 @@ msgid "Archive Page Settings"
 msgstr ""
 
 #: config/options/archive_setting.php:12
-msgid "Archive Source Type"
-msgstr ""
-
-#: config/options/archive_setting.php:34
 msgid "Archive Default"
 msgstr ""
 
-#: config/options/archive_setting.php:65 config/options/author_setting.php:65
-#: config/options/blog_setting.php:65 config/options/category_setting.php:67
-#: config/options/search_setting.php:67 config/options/tag_setting.php:67
-msgid "Layout"
-msgstr ""
-
-#: config/options/archive_setting.php:66 config/options/author_setting.php:66
-#: config/options/blog_setting.php:66 config/options/category_setting.php:68
-#: config/options/search_setting.php:68 config/options/tag_setting.php:68
+#: config/options/archive_setting.php:49 config/options/author_setting.php:49
+#: config/options/blog_setting.php:48 config/options/category_setting.php:48
+#: config/options/page_setting.php:161 config/options/search_setting.php:48
+#: config/options/single_post_setting.php:164 config/options/tag_setting.php:49
 msgid "Select main content and sidebar alignment."
 msgstr ""
 
-#: config/options/archive_setting.php:70 config/options/author_setting.php:70
-#: config/options/blog_setting.php:70 config/options/category_setting.php:72
-#: config/options/search_setting.php:72 config/options/tag_setting.php:72
+#: config/options/archive_setting.php:53 config/options/author_setting.php:53
+#: config/options/blog_setting.php:52 config/options/category_setting.php:52
+#: config/options/search_setting.php:52 config/options/tag_setting.php:53
 msgid "2 Column Left"
 msgstr ""
 
-#: config/options/archive_setting.php:74 config/options/author_setting.php:74
-#: config/options/blog_setting.php:74 config/options/category_setting.php:76
-#: config/options/search_setting.php:76 config/options/tag_setting.php:76
+#: config/options/archive_setting.php:57 config/options/author_setting.php:57
+#: config/options/blog_setting.php:56 config/options/category_setting.php:56
+#: config/options/search_setting.php:56 config/options/tag_setting.php:57
 msgid "1 Column"
 msgstr ""
 
-#: config/options/archive_setting.php:78 config/options/author_setting.php:78
-#: config/options/blog_setting.php:78 config/options/category_setting.php:80
-#: config/options/search_setting.php:80 config/options/tag_setting.php:80
+#: config/options/archive_setting.php:61 config/options/author_setting.php:61
+#: config/options/blog_setting.php:60 config/options/category_setting.php:60
+#: config/options/search_setting.php:60 config/options/tag_setting.php:61
 msgid "2 Column Right"
 msgstr ""
 
-#: config/options/archive_setting.php:89 config/options/author_setting.php:89
-#: config/options/blog_setting.php:89 config/options/category_setting.php:91
-#: config/options/search_setting.php:91 config/options/tag_setting.php:91
+#: config/options/archive_setting.php:72 config/options/author_setting.php:72
+#: config/options/blog_setting.php:71 config/options/category_setting.php:71
+#: config/options/page_setting.php:184 config/options/search_setting.php:71
+#: config/options/single_post_setting.php:187 config/options/tag_setting.php:72
 msgid "Sidebar"
 msgstr ""
 
-#: config/options/archive_setting.php:90 config/options/author_setting.php:90
-#: config/options/blog_setting.php:90 config/options/category_setting.php:92
-#: config/options/search_setting.php:92 config/options/tag_setting.php:92
+#: config/options/archive_setting.php:73 config/options/author_setting.php:73
+#: config/options/blog_setting.php:72 config/options/category_setting.php:72
+#: config/options/search_setting.php:72 config/options/tag_setting.php:73
 msgid "Select sidebar to show at blog listing page"
 msgstr ""
 
@@ -223,10 +876,6 @@ msgid "Author Page Settings"
 msgstr ""
 
 #: config/options/author_setting.php:12
-msgid "Author Source Type"
-msgstr ""
-
-#: config/options/author_setting.php:34
 msgid "Author Default"
 msgstr ""
 
@@ -235,35 +884,31 @@ msgid "Blog Page Settings"
 msgstr ""
 
 #: config/options/blog_setting.php:12
-msgid "Blog Source Type"
-msgstr ""
-
-#: config/options/blog_setting.php:34
 msgid "Blog Default"
 msgstr ""
 
-#: config/options/blog_setting.php:99
+#: config/options/blog_setting.php:81
 msgid "Show Post Comments"
 msgstr ""
 
-#: config/options/blog_setting.php:100
+#: config/options/blog_setting.php:82
 msgid "Enable to show post comments on posts listing"
 msgstr ""
 
-#: config/options/blog_setting.php:107
-#: config/options/single_post_setting.php:37
+#: config/options/blog_setting.php:89 config/options/page_setting.php:63
+#: config/options/single_post_setting.php:62
 msgid "Show Author"
 msgstr ""
 
-#: config/options/blog_setting.php:108
+#: config/options/blog_setting.php:90
 msgid "Enable to show author on posts listing"
 msgstr ""
 
-#: config/options/blog_setting.php:114
+#: config/options/blog_setting.php:96
 msgid "Show Post Date"
 msgstr ""
 
-#: config/options/blog_setting.php:115
+#: config/options/blog_setting.php:97
 msgid "Enable to show post data on posts listing"
 msgstr ""
 
@@ -292,10 +937,6 @@ msgid "Category Page Settings"
 msgstr ""
 
 #: config/options/category_setting.php:12
-msgid "Category Source Type"
-msgstr ""
-
-#: config/options/category_setting.php:34
 msgid "Category Default"
 msgstr ""
 
@@ -315,95 +956,62 @@ msgstr ""
 msgid "Footer Source Type"
 msgstr ""
 
-#: config/options/footer_setting.php:34
-msgid "Footer Settings"
-msgstr ""
-
-#: config/options/footer_setting.php:40 config/options/footer_setting.php:41
-msgid "Choose Footer Styles"
-msgstr ""
-
-#: config/options/footer_setting.php:45
-msgid "Footer Style 1"
+#: config/options/footer_setting.php:41
+msgid "Enable Footer Top"
 msgstr ""
 
 #: config/options/footer_setting.php:49
-msgid "Footer Style 2"
+msgid "Footer Settings"
 msgstr ""
 
-#: config/options/footer_setting.php:53
-msgid "Footer Style 3"
-msgstr ""
-
-#: config/options/footer_setting.php:57
-msgid "Footer Style 4"
+#: config/options/footer_setting.php:55 config/options/header2_setting.php:23
+#: config/options/header3_setting.php:23 config/options/header_setting.php:23
+#: config/options/logo_setting.php:13
+msgid "Logo"
 msgstr ""
 
 #: config/options/footer_setting.php:61
-msgid "Footer Style 5"
+msgid "Menu"
 msgstr ""
 
-#: config/options/footer_setting.php:65
-msgid "Footer Style 6"
+#: config/options/footer_setting.php:77
+msgid "Enable Footer Bottom"
 msgstr ""
 
-#: config/options/footer_setting.php:81
-msgid "Footer Style One Settings"
+#: config/options/footer_setting.php:85
+msgid "Footer Bottom"
 msgstr ""
 
-#: config/options/footer_setting.php:87 config/options/footer_setting.php:132
-#: config/options/footer_setting.php:164 config/options/footer_setting.php:195
-#: config/options/footer_setting.php:227 config/options/footer_setting.php:245
-msgid "Footer Menu html"
+#: config/options/footer_setting.php:91
+#: inc/Elementor/Classes/Modules/TheEventCalendarVenue.php:45
+#: inc/VC/GoogleMap.php:25
+msgid "Address"
 msgstr ""
 
-#: config/options/footer_setting.php:88 config/options/footer_setting.php:133
-#: config/options/footer_setting.php:165 config/options/footer_setting.php:196
-#: config/options/footer_setting.php:228 config/options/footer_setting.php:246
-msgid "Enter the raw html"
+#: config/options/footer_setting.php:97
+#: inc/Elementor/Classes/Modules/TheEventCalendarOrganizer.php:47
+#: inc/Elementor/Classes/Modules/TheEventCalendarVenue.php:47
+msgid "Phone"
 msgstr ""
 
-#: config/options/footer_setting.php:95 config/options/footer_setting.php:125
-#: config/options/footer_setting.php:157 config/options/footer_setting.php:220
-#: config/options/footer_setting.php:253
-msgid "Copyright Text"
+#: config/options/footer_setting.php:103
+#: inc/Elementor/Classes/Modules/AuthorInfo.php:58
+#: inc/Elementor/Classes/Modules/ContactUrl.php:40
+#: inc/Elementor/Classes/Modules/ContactUrl.php:58
+#: inc/Elementor/Classes/Modules/TheEventCalendarOrganizer.php:49
+#: inc/Elementor/Classes/Modules/UserInfo.php:84
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:46
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:479
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:480
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:718
+#: inc/Elementor/Modules/Form/Form__old.php:46
+#: inc/Elementor/Modules/Form/Form__old.php:481
+#: inc/Elementor/Modules/Form/Form__old.php:482
+msgid "Email"
 msgstr ""
 
-#: config/options/footer_setting.php:96 config/options/footer_setting.php:126
-#: config/options/footer_setting.php:158 config/options/footer_setting.php:221
-#: config/options/footer_setting.php:254
-msgid "Enter the Copyright Text"
-msgstr ""
-
-#: config/options/footer_setting.php:102 config/options/footer_setting.php:172
-#: config/options/footer_setting.php:260 config/options/header2_setting.php:74
-#: config/options/header3_setting.php:74 config/options/header_setting.php:74
-msgid "Social Profiles"
-msgstr ""
-
-#: config/options/footer_setting.php:112
-msgid "Footer Style Two Settings"
-msgstr ""
-
-#: config/options/footer_setting.php:119 config/options/footer_setting.php:151
-#: config/options/footer_setting.php:189 config/options/footer_setting.php:214
-msgid "Footer Background Image"
-msgstr ""
-
-#: config/options/footer_setting.php:144
-msgid "Footer Style Three Settings"
-msgstr ""
-
-#: config/options/footer_setting.php:182
-msgid "Footer Style Four Settings"
-msgstr ""
-
-#: config/options/footer_setting.php:207
-msgid "Footer Style Five Settings"
-msgstr ""
-
-#: config/options/footer_setting.php:239
-msgid "Footer Style Six Settings"
+#: config/options/footer_setting.php:109
+msgid "Social Links"
 msgstr ""
 
 #: config/options/general_setting.php:4
@@ -476,11 +1084,6 @@ msgstr ""
 msgid "Text Logo"
 msgstr ""
 
-#: config/options/header2_setting.php:23 config/options/header3_setting.php:23
-#: config/options/header_setting.php:23 config/options/logo_setting.php:13
-msgid "Logo"
-msgstr ""
-
 #: config/options/header2_setting.php:24 config/options/header3_setting.php:24
 #: config/options/header_setting.php:24
 msgid "Insert site logo image with adjustable size for the logo section"
@@ -510,7 +1113,7 @@ msgstr ""
 #: config/options/header_setting.php:51
 #: inc/Elementor/Modules/Services/Services.php:187
 #: inc/Elementor/Modules/Services/Services.php:260
-#: inc/Elementor/Widgets/History.php:1175
+#: inc/Elementor/Widgets/Gallery.php:244 inc/Elementor/Widgets/History.php:1175
 #: inc/Elementor/Widgets/History.php:1558 inc/Elementor/Widgets/wp-forms.php:97
 #: inc/Elementor/Widgets/wp-forms.php:167
 #: inc/Elementor/Widgets/wp-forms.php:334
@@ -520,6 +1123,11 @@ msgstr ""
 #: config/options/header2_setting.php:58 config/options/header3_setting.php:58
 #: config/options/header_setting.php:58
 msgid "Select Styles for text logo"
+msgstr ""
+
+#: config/options/header2_setting.php:74 config/options/header3_setting.php:74
+#: config/options/header_setting.php:74
+msgid "Social Profiles"
 msgstr ""
 
 #: config/options/header2_setting.php:75 config/options/header3_setting.php:75
@@ -625,6 +1233,55 @@ msgstr ""
 
 #: config/options/headers_setting.php:143
 msgid "Choose the dropdown active/hover bg menu color."
+msgstr ""
+
+#: config/options/headers_setting.php:158
+msgid "Page Banner"
+msgstr ""
+
+#: config/options/headers_setting.php:165
+msgid "Background Image"
+msgstr ""
+
+#: config/options/headers_setting.php:166
+msgid "Choose the banner background image"
+msgstr ""
+
+#: config/options/headers_setting.php:175
+#: inc/Elementor/Modules/Form/FormElementorWidget.php:1045
+#: inc/Elementor/Widgets/Blog.php:368 inc/Elementor/Widgets/Blog.php:482
+#: inc/Elementor/Widgets/Events.php:207 inc/Elementor/Widgets/Events.php:364
+#: inc/Elementor/Widgets/History.php:521 inc/Elementor/Widgets/History.php:582
+#: inc/Elementor/Widgets/History.php:667 inc/Elementor/Widgets/History.php:1031
+#: inc/Elementor/Widgets/History.php:1151
+#: inc/Elementor/Widgets/History.php:1500
+#: inc/Elementor/Widgets/wp-forms.php:202
+#: inc/Elementor/Widgets/wp-forms.php:357
+msgid "Padding"
+msgstr ""
+
+#: config/options/headers_setting.php:176
+msgid "Enter the banner padding"
+msgstr ""
+
+#: config/options/headers_setting.php:177
+msgid "Enter top and bottom spacing of the banner area"
+msgstr ""
+
+#: config/options/headers_setting.php:189
+msgid "Breadcrumbs BG color"
+msgstr ""
+
+#: config/options/headers_setting.php:190
+msgid "Choose the background color for breadcrumbs"
+msgstr ""
+
+#: config/options/headers_setting.php:197
+msgid "Breadcrumbs Text color"
+msgstr ""
+
+#: config/options/headers_setting.php:198
+msgid "Choose the text color for breadcrumbs"
 msgstr ""
 
 #: config/options/heading_setting.php:5
@@ -743,15 +1400,157 @@ msgstr ""
 msgid "Insert site logo image"
 msgstr ""
 
+#: config/options/page_setting.php:4
+msgid "Page Settings"
+msgstr ""
+
+#: config/options/page_setting.php:16 config/options/single_post_setting.php:15
+msgid "Enable to show page banner"
+msgstr ""
+
+#: config/options/page_setting.php:22 config/options/single_post_setting.php:21
+msgid "Show Breadcrumbs"
+msgstr ""
+
+#: config/options/page_setting.php:23 config/options/single_post_setting.php:22
+msgid "Enable to show page Breadcrumbs"
+msgstr ""
+
+#: config/options/page_setting.php:30 config/options/single_post_setting.php:29
+msgid "Source Type"
+msgstr ""
+
+#: config/options/page_setting.php:41 config/options/single_post_setting.php:40
+msgid "Page Default"
+msgstr ""
+
+#: config/options/page_setting.php:48 config/options/single_post_setting.php:47
+msgid "Show Meta"
+msgstr ""
+
+#: config/options/page_setting.php:49 config/options/single_post_setting.php:48
+msgid "Enable to show page meta"
+msgstr ""
+
+#: config/options/page_setting.php:55 config/options/single_post_setting.php:54
+msgid "Show Date"
+msgstr ""
+
+#: config/options/page_setting.php:56 config/options/single_post_setting.php:55
+msgid "Enable to show page publish date"
+msgstr ""
+
+#: config/options/page_setting.php:64 config/options/single_post_setting.php:63
+msgid "Enable to show author on page"
+msgstr ""
+
+#: config/options/page_setting.php:72 config/options/single_post_setting.php:71
+msgid "Show Comments"
+msgstr ""
+
+#: config/options/page_setting.php:73 config/options/single_post_setting.php:72
+msgid "Enable to show number of comments on page"
+msgstr ""
+
+#: config/options/page_setting.php:80 config/options/single_post_setting.php:79
+msgid "Enable Social Sharing"
+msgstr ""
+
+#: config/options/page_setting.php:81 config/options/single_post_setting.php:80
+msgid "Enable to show social sharing icons"
+msgstr ""
+
+#: config/options/page_setting.php:87 config/options/single_post_setting.php:86
+msgid "Show Facebook Page Share"
+msgstr ""
+
+#: config/options/page_setting.php:88 config/options/single_post_setting.php:87
+msgid "Enable to show page Share to Facebook"
+msgstr ""
+
+#: config/options/page_setting.php:95 config/options/single_post_setting.php:94
+msgid "Show Twitter Page Share"
+msgstr ""
+
+#: config/options/page_setting.php:96 config/options/single_post_setting.php:95
+msgid "Enable to show Post Share to Twitter"
+msgstr ""
+
+#: config/options/page_setting.php:103
+#: config/options/single_post_setting.php:102
+msgid "Show Linkedin page Share"
+msgstr ""
+
+#: config/options/page_setting.php:104
+#: config/options/single_post_setting.php:103
+msgid "Enable to show page Share to Linkedin"
+msgstr ""
+
+#: config/options/page_setting.php:111
+#: config/options/single_post_setting.php:110
+msgid "Show Pinterest page Share"
+msgstr ""
+
+#: config/options/page_setting.php:112
+#: config/options/single_post_setting.php:111
+msgid "Enable to show page Share to Pinterest"
+msgstr ""
+
+#: config/options/page_setting.php:119
+#: config/options/single_post_setting.php:118
+msgid "Show Reddit page Share"
+msgstr ""
+
+#: config/options/page_setting.php:120
+#: config/options/single_post_setting.php:119
+msgid "Enable to show page Share to Reddit"
+msgstr ""
+
+#: config/options/page_setting.php:127
+#: config/options/single_post_setting.php:126
+msgid "Show Tumblr page Share"
+msgstr ""
+
+#: config/options/page_setting.php:128
+#: config/options/single_post_setting.php:127
+msgid "Enable to show page Share to Tumblr"
+msgstr ""
+
+#: config/options/page_setting.php:135
+#: config/options/single_post_setting.php:134
+msgid "Show Digg page Share"
+msgstr ""
+
+#: config/options/page_setting.php:136
+#: config/options/single_post_setting.php:135
+msgid "Enable to show page Share to Digg"
+msgstr ""
+
+#: config/options/page_setting.php:165
+#: config/options/single_post_setting.php:168
+msgid "Left sidebar"
+msgstr ""
+
+#: config/options/page_setting.php:169
+#: config/options/single_post_setting.php:172
+msgid "Full width"
+msgstr ""
+
+#: config/options/page_setting.php:173
+#: config/options/single_post_setting.php:176
+msgid "Right sidebar"
+msgstr ""
+
+#: config/options/page_setting.php:185
+#: config/options/single_post_setting.php:188
+msgid "Select sidebar to show at page"
+msgstr ""
+
 #: config/options/search_setting.php:4
 msgid "Search Page Settings"
 msgstr ""
 
 #: config/options/search_setting.php:12
-msgid "Search Source Type"
-msgstr ""
-
-#: config/options/search_setting.php:34
 msgid "Search Default"
 msgstr ""
 
@@ -771,120 +1570,28 @@ msgstr ""
 msgid "Single Post Settings"
 msgstr ""
 
-#: config/options/single_post_setting.php:12
-msgid "Single Post Source Type"
-msgstr ""
-
-#: config/options/single_post_setting.php:23
-msgid "Post Default"
-msgstr ""
-
-#: config/options/single_post_setting.php:30
-msgid "Show Date"
-msgstr ""
-
-#: config/options/single_post_setting.php:31
-msgid "Enable to show post publish date on posts detail page"
-msgstr ""
-
-#: config/options/single_post_setting.php:38
-msgid "Enable to show author on posts detail page"
-msgstr ""
-
-#: config/options/single_post_setting.php:45
-msgid "Show Comments"
-msgstr ""
-
-#: config/options/single_post_setting.php:46
-msgid "Enable to show number of comments on posts single page"
-msgstr ""
-
-#: config/options/single_post_setting.php:52
-msgid "Show Tags"
-msgstr ""
-
-#: config/options/single_post_setting.php:53
-msgid "Enable to show post tags on posts single page"
-msgstr ""
-
-#: config/options/single_post_setting.php:59
-msgid "Show Facebook Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:60
-msgid "Enable to show Post Share to Facebook"
-msgstr ""
-
-#: config/options/single_post_setting.php:66
-msgid "Show Twitter Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:67
-msgid "Enable to show Post Share to Twitter"
-msgstr ""
-
-#: config/options/single_post_setting.php:73
-msgid "Show Linkedin Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:74
-msgid "Enable to show Post Share to Linkedin"
-msgstr ""
-
-#: config/options/single_post_setting.php:80
-msgid "Show Pinterest Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:81
-msgid "Enable to show Post Share to Pinterest"
-msgstr ""
-
-#: config/options/single_post_setting.php:87
-msgid "Show Reddit Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:88
-msgid "Enable to show Post Share to Reddit"
-msgstr ""
-
-#: config/options/single_post_setting.php:94
-msgid "Show Tumblr Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:95
-msgid "Enable to show Post Share to Tumblr"
-msgstr ""
-
-#: config/options/single_post_setting.php:101
-msgid "Show Digg Post Share"
-msgstr ""
-
-#: config/options/single_post_setting.php:102
-msgid "Enable to show Post Share to Digg"
-msgstr ""
-
-#: config/options/single_post_setting.php:108
+#: config/options/single_post_setting.php:142
 msgid "Show Author Box"
 msgstr ""
 
-#: config/options/single_post_setting.php:109
-msgid "Enable to show author box on post detail page."
+#: config/options/single_post_setting.php:143
+msgid "Enable to show author box on page."
 msgstr ""
 
-#: config/options/single_post_setting.php:115
-msgid "Show Author Social Media"
+#: config/options/single_post_setting.php:149
+msgid "Show Tags"
 msgstr ""
 
-#: config/options/single_post_setting.php:116
-msgid "Enable to show author Social Media on posts detail page"
+#: config/options/single_post_setting.php:150
+msgid "Enable to show tags"
 msgstr ""
 
-#: config/options/single_post_setting.php:122
-msgid "Author Social Profiles"
+#: config/options/single_post_setting.php:156
+msgid "Show Cats"
 msgstr ""
 
-#: config/options/single_post_setting.php:123
-msgid "show author Social Media on posts detail page"
+#: config/options/single_post_setting.php:157
+msgid "Enable to show cats"
 msgstr ""
 
 #: config/options/tag_setting.php:4
@@ -892,10 +1599,6 @@ msgid "Tag Page Settings"
 msgstr ""
 
 #: config/options/tag_setting.php:12
-msgid "Tag Source Type"
-msgstr ""
-
-#: config/options/tag_setting.php:34
 msgid "Tag Default"
 msgstr ""
 
@@ -942,15 +1645,15 @@ msgstr ""
 msgid "<p>This is the sidebar content, HTML is allowed.</p>"
 msgstr ""
 
-#: config/options.php:235
+#: config/options.php:236
 msgid "Documentation"
 msgstr ""
 
-#: config/options.php:350
+#: config/options.php:351
 msgid "Section via hook"
 msgstr ""
 
-#: config/options.php:351
+#: config/options.php:352
 msgid ""
 "<p class=\"description\">This is a section created by adding a filter to "
 "the sections array. Can be used by child themes to add/remove sections from "
@@ -961,16 +1664,17 @@ msgstr ""
 msgid "Client"
 msgstr ""
 
-#: config/post_types.php:6 inc/VC/Clients.php:11
+#: config/post_types.php:6 inc/Elementor/Widgets/Clients.php:29
+#: inc/VC/Clients.php:11
 msgid "Clients"
 msgstr ""
 
-#: config/post_types.php:13 inc/Elementor/Widgets/Gallery.php:29
+#: config/post_types.php:14 inc/Elementor/Widgets/Gallery.php:29
 #: inc/VC/Gallery.php:10
 msgid "Gallery"
 msgstr ""
 
-#: config/post_types.php:14
+#: config/post_types.php:15
 msgid "Galleries"
 msgstr ""
 
@@ -1046,21 +1750,6 @@ msgstr ""
 #: inc/Elementor/Classes/Modules/AuthorInfo.php:57
 #: inc/Elementor/Classes/Modules/UserInfo.php:83
 msgid "Bio"
-msgstr ""
-
-#: inc/Elementor/Classes/Modules/AuthorInfo.php:58
-#: inc/Elementor/Classes/Modules/ContactUrl.php:40
-#: inc/Elementor/Classes/Modules/ContactUrl.php:58
-#: inc/Elementor/Classes/Modules/TheEventCalendarOrganizer.php:49
-#: inc/Elementor/Classes/Modules/UserInfo.php:84
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:46
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:479
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:480
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:718
-#: inc/Elementor/Modules/Form/Form__old.php:46
-#: inc/Elementor/Modules/Form/Form__old.php:481
-#: inc/Elementor/Modules/Form/Form__old.php:482
-msgid "Email"
 msgstr ""
 
 #: inc/Elementor/Classes/Modules/AuthorInfo.php:59
@@ -1289,8 +1978,9 @@ msgstr ""
 #: inc/Elementor/Modules/Services/Services.php:142
 #: inc/Elementor/Modules/Services/Services.php:178
 #: inc/Elementor/Widgets/Blog.php:53 inc/Elementor/Widgets/Blog.php:167
-#: inc/Elementor/Widgets/Blog.php:230 inc/Elementor/Widgets/Events.php:161
-#: inc/Elementor/Widgets/Events.php:191 inc/Elementor/Widgets/Gallery.php:64
+#: inc/Elementor/Widgets/Blog.php:230 inc/Elementor/Widgets/Clients.php:112
+#: inc/Elementor/Widgets/Events.php:169 inc/Elementor/Widgets/Events.php:221
+#: inc/Elementor/Widgets/Gallery.php:113 inc/Elementor/Widgets/Gallery.php:216
 #: inc/Elementor/Widgets/History.php:461 inc/Elementor/Widgets/History.php:642
 #: inc/Elementor/Widgets/Stats.php:56
 #: inc/Elementor/Widgets/Testimonials.php:141 inc/VC/About.php:17
@@ -1468,6 +2158,7 @@ msgid "Post Excerpt"
 msgstr ""
 
 #: inc/Elementor/Classes/Modules/PostExcerpt.php:35
+#: inc/Elementor/Widgets/Events.php:65
 msgid "Excerpt Length"
 msgstr ""
 
@@ -1669,11 +2360,6 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: inc/Elementor/Classes/Modules/TheEventCalendarOrganizer.php:47
-#: inc/Elementor/Classes/Modules/TheEventCalendarVenue.php:47
-msgid "Phone"
-msgstr ""
-
 #: inc/Elementor/Classes/Modules/TheEventCalendarStartDate.php:29
 msgid "Event Start Date"
 msgstr ""
@@ -1692,11 +2378,6 @@ msgstr ""
 
 #: inc/Elementor/Classes/Modules/TheEventCalendarVenue.php:44
 msgid "State or Province"
-msgstr ""
-
-#: inc/Elementor/Classes/Modules/TheEventCalendarVenue.php:45
-#: inc/VC/GoogleMap.php:25
-msgid "Address"
 msgstr ""
 
 #: inc/Elementor/Classes/Modules/TheEventCalendarVenue.php:46
@@ -1836,7 +2517,8 @@ msgstr ""
 #: inc/Elementor/Modules/Form/FormRecord.php:219
 #: inc/Elementor/Modules/Form/Form__old.php:55
 #: inc/Elementor/Modules/Services/Services.php:141
-#: inc/Elementor/Widgets/Blog.php:166 inc/Elementor/Widgets/Events.php:160
+#: inc/Elementor/Widgets/Blog.php:166 inc/Elementor/Widgets/Clients.php:111
+#: inc/Elementor/Widgets/Events.php:168 inc/Elementor/Widgets/Gallery.php:112
 msgid "Date"
 msgstr ""
 
@@ -1918,6 +2600,7 @@ msgstr ""
 #: inc/Elementor/Modules/Form/LoginElementorWidget.php:94
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:94
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:94
+#: inc/Elementor/Widgets/Timing.php:95 inc/Elementor/Widgets/Timing.php:211
 msgid "Text"
 msgstr ""
 
@@ -1966,10 +2649,11 @@ msgstr ""
 
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:75
 #: inc/Elementor/Modules/Form/Form__old.php:77
-#: inc/Elementor/Widgets/Events.php:46 inc/Elementor/Widgets/History.php:141
-#: inc/Elementor/Widgets/History.php:634 inc/Elementor/Widgets/Stats.php:46
-#: inc/Elementor/Widgets/Testimonials.php:46 inc/VC/About.php:24
-#: inc/VC/GoogleMap.php:44 inc/VC/Testimonial.php:17
+#: inc/Elementor/Widgets/Clients.php:46 inc/Elementor/Widgets/Events.php:46
+#: inc/Elementor/Widgets/Gallery.php:46 inc/Elementor/Widgets/Heading.php:46
+#: inc/Elementor/Widgets/History.php:141 inc/Elementor/Widgets/History.php:634
+#: inc/Elementor/Widgets/Stats.php:46 inc/Elementor/Widgets/Testimonials.php:46
+#: inc/VC/About.php:24 inc/VC/GoogleMap.php:44 inc/VC/Testimonial.php:17
 msgid "Content"
 msgstr ""
 
@@ -2031,13 +2715,6 @@ msgstr ""
 msgid "Inline List"
 msgstr ""
 
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:254
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:587
-#: inc/Elementor/Modules/Form/Form__old.php:256
-#: inc/Elementor/Modules/Form/Form__old.php:589
-msgid "Column Width"
-msgstr ""
-
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:305
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:577
 #: inc/Elementor/Modules/Form/Form__old.php:307
@@ -2060,8 +2737,8 @@ msgstr ""
 #: inc/Elementor/Modules/Services/Services.php:200
 #: inc/Elementor/Modules/Services/Services.php:273
 #: inc/Elementor/Widgets/Blog.php:239 inc/Elementor/Widgets/Blog.php:298
-#: inc/Elementor/Widgets/Blog.php:411 inc/Elementor/Widgets/Events.php:205
-#: inc/Elementor/Widgets/Events.php:264 inc/Elementor/Widgets/Gallery.php:130
+#: inc/Elementor/Widgets/Blog.php:411 inc/Elementor/Widgets/Events.php:235
+#: inc/Elementor/Widgets/Events.php:294 inc/Elementor/Widgets/Gallery.php:150
 #: inc/Elementor/Widgets/History.php:506 inc/Elementor/Widgets/History.php:847
 #: inc/Elementor/Widgets/History.php:1207
 #: inc/Elementor/Widgets/History.php:1419
@@ -2081,11 +2758,6 @@ msgstr ""
 #: inc/Elementor/Modules/Services/Services.php:90
 #: redux/ReduxCore/inc/fields/typography/field_typography.php:281
 msgid "Style"
-msgstr ""
-
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:330
-#: inc/Elementor/Modules/Form/Form__old.php:332
-msgid "Light"
 msgstr ""
 
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:331
@@ -2135,11 +2807,6 @@ msgstr ""
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:381
 #: inc/Elementor/Modules/Form/Form__old.php:383
 msgid "Advanced"
-msgstr ""
-
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:391
-#: inc/Elementor/Modules/Form/Form__old.php:393
-msgid "Default Value"
 msgstr ""
 
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:426
@@ -2192,8 +2859,8 @@ msgstr ""
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:236
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:247
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:62
-#: inc/Elementor/Widgets/Blog.php:63 inc/Elementor/Widgets/Events.php:67
-#: inc/Elementor/Widgets/History.php:452
+#: inc/Elementor/Widgets/Blog.php:63 inc/Elementor/Widgets/Clients.php:55
+#: inc/Elementor/Widgets/Events.php:75 inc/Elementor/Widgets/History.php:452
 msgid "Show"
 msgstr ""
 
@@ -2212,8 +2879,8 @@ msgstr ""
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:235
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:246
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:61
-#: inc/Elementor/Widgets/Blog.php:64 inc/Elementor/Widgets/Events.php:68
-#: inc/Elementor/Widgets/History.php:453
+#: inc/Elementor/Widgets/Blog.php:64 inc/Elementor/Widgets/Clients.php:56
+#: inc/Elementor/Widgets/Events.php:76 inc/Elementor/Widgets/History.php:453
 msgid "Hide"
 msgstr ""
 
@@ -2249,7 +2916,7 @@ msgstr ""
 #: inc/Elementor/Modules/Form/LoginElementorWidget.php:119
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:119
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:119
-#: inc/Elementor/Widgets/wp-forms.php:398
+#: inc/Elementor/Widgets/Heading.php:62 inc/Elementor/Widgets/wp-forms.php:398
 msgid "Alignment"
 msgstr ""
 
@@ -2258,8 +2925,9 @@ msgstr ""
 #: inc/Elementor/Modules/Form/LoginElementorWidget.php:123
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:123
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:123
-#: inc/Elementor/Widgets/History.php:200 inc/Elementor/Widgets/History.php:383
-#: inc/Elementor/Widgets/History.php:401 inc/Elementor/Widgets/wp-forms.php:403
+#: inc/Elementor/Widgets/Heading.php:66 inc/Elementor/Widgets/History.php:200
+#: inc/Elementor/Widgets/History.php:383 inc/Elementor/Widgets/History.php:401
+#: inc/Elementor/Widgets/wp-forms.php:403
 #: redux/ReduxCore/inc/fields/border/field_border.php:159
 #: redux/ReduxCore/inc/fields/spacing/field_spacing.php:236
 msgid "Left"
@@ -2270,8 +2938,8 @@ msgstr ""
 #: inc/Elementor/Modules/Form/LoginElementorWidget.php:127
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:127
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:127
-#: inc/Elementor/Widgets/History.php:204 inc/Elementor/Widgets/History.php:405
-#: inc/Elementor/Widgets/wp-forms.php:407
+#: inc/Elementor/Widgets/Heading.php:70 inc/Elementor/Widgets/History.php:204
+#: inc/Elementor/Widgets/History.php:405 inc/Elementor/Widgets/wp-forms.php:407
 msgid "Center"
 msgstr ""
 
@@ -2280,8 +2948,9 @@ msgstr ""
 #: inc/Elementor/Modules/Form/LoginElementorWidget.php:131
 #: inc/Elementor/Modules/Form/RegisterElementorWidget.php:131
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:131
-#: inc/Elementor/Widgets/History.php:208 inc/Elementor/Widgets/History.php:384
-#: inc/Elementor/Widgets/History.php:409 inc/Elementor/Widgets/wp-forms.php:411
+#: inc/Elementor/Widgets/Heading.php:74 inc/Elementor/Widgets/History.php:208
+#: inc/Elementor/Widgets/History.php:384 inc/Elementor/Widgets/History.php:409
+#: inc/Elementor/Widgets/wp-forms.php:411
 #: redux/ReduxCore/inc/fields/border/field_border.php:145
 #: redux/ReduxCore/inc/fields/spacing/field_spacing.php:222
 msgid "Right"
@@ -2298,7 +2967,7 @@ msgstr ""
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:637
 #: inc/Elementor/Modules/Form/Form__old.php:639
 #: inc/Elementor/Widgets/History.php:62 inc/Elementor/Widgets/History.php:269
-#: inc/Elementor/Widgets/History.php:833
+#: inc/Elementor/Widgets/History.php:833 inc/Elementor/Widgets/Timing.php:61
 msgid "Icon"
 msgstr ""
 
@@ -2469,27 +3138,6 @@ msgstr ""
 msgid "Mark Color"
 msgstr ""
 
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:990
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:1085
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:1162
-#: inc/Elementor/Modules/Form/Form__old.php:990
-#: inc/Elementor/Modules/Form/Form__old.php:1064
-#: inc/Elementor/Modules/Form/Form__old.php:1141
-#: inc/Elementor/Modules/Form/LoginElementorWidget.php:470
-#: inc/Elementor/Modules/Form/LoginElementorWidget.php:565
-#: inc/Elementor/Modules/Form/LoginElementorWidget.php:632
-#: inc/Elementor/Modules/Form/RegisterElementorWidget.php:470
-#: inc/Elementor/Modules/Form/RegisterElementorWidget.php:565
-#: inc/Elementor/Modules/Form/RegisterElementorWidget.php:632
-#: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:342
-#: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:437
-#: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:504
-#: inc/Elementor/Modules/Services/Services.php:294
-#: inc/Elementor/Modules/Services/Services.php:341
-#: inc/Elementor/Widgets/History.php:936
-msgid "Background Color"
-msgstr ""
-
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:1004
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:1184
 #: inc/Elementor/Modules/Form/Form__old.php:1004
@@ -2522,7 +3170,7 @@ msgstr ""
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:384
 #: inc/Elementor/Modules/Form/RegistrationElementorWidget.php:460
 #: inc/Elementor/Widgets/Blog.php:379 inc/Elementor/Widgets/Blog.php:504
-#: inc/Elementor/Widgets/Events.php:345 inc/Elementor/Widgets/History.php:555
+#: inc/Elementor/Widgets/Events.php:375 inc/Elementor/Widgets/History.php:555
 #: inc/Elementor/Widgets/History.php:611 inc/Elementor/Widgets/History.php:893
 #: inc/Elementor/Widgets/History.php:964 inc/Elementor/Widgets/History.php:1245
 #: inc/Elementor/Widgets/History.php:1309
@@ -2530,18 +3178,6 @@ msgstr ""
 #: inc/Elementor/Widgets/wp-forms.php:228
 #: inc/Elementor/Widgets/wp-forms.php:383
 msgid "Border Radius"
-msgstr ""
-
-#: inc/Elementor/Modules/Form/FormElementorWidget.php:1045
-#: inc/Elementor/Widgets/Blog.php:368 inc/Elementor/Widgets/Blog.php:482
-#: inc/Elementor/Widgets/Events.php:334 inc/Elementor/Widgets/History.php:521
-#: inc/Elementor/Widgets/History.php:582 inc/Elementor/Widgets/History.php:667
-#: inc/Elementor/Widgets/History.php:1031
-#: inc/Elementor/Widgets/History.php:1151
-#: inc/Elementor/Widgets/History.php:1500
-#: inc/Elementor/Widgets/wp-forms.php:202
-#: inc/Elementor/Widgets/wp-forms.php:357
-msgid "Padding"
 msgstr ""
 
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:1068
@@ -2575,8 +3211,8 @@ msgstr ""
 #: inc/Elementor/Modules/Services/Services.php:222
 #: inc/Elementor/Modules/Services/Services.php:320
 #: inc/Elementor/Widgets/Blog.php:259 inc/Elementor/Widgets/Blog.php:330
-#: inc/Elementor/Widgets/Blog.php:443 inc/Elementor/Widgets/Events.php:225
-#: inc/Elementor/Widgets/Events.php:296 inc/Elementor/Widgets/Gallery.php:161
+#: inc/Elementor/Widgets/Blog.php:443 inc/Elementor/Widgets/Events.php:255
+#: inc/Elementor/Widgets/Events.php:326 inc/Elementor/Widgets/Gallery.php:181
 #: inc/Elementor/Widgets/History.php:567 inc/Elementor/Widgets/History.php:913
 #: inc/Elementor/Widgets/History.php:1272
 #: inc/Elementor/Widgets/History.php:1436
@@ -2650,8 +3286,9 @@ msgstr ""
 
 #: inc/Elementor/Modules/Form/FormElementorWidget.php:1387
 #: inc/Elementor/Modules/Form/FormRecord.php:226
-#: inc/Elementor/Modules/Form/Form__old.php:56 inc/VC/About.php:57
-#: inc/VC/Timing.php:37
+#: inc/Elementor/Modules/Form/Form__old.php:56
+#: inc/Elementor/Widgets/Timing.php:81 inc/Elementor/Widgets/Timing.php:178
+#: inc/VC/About.php:57 inc/VC/Timing.php:37
 msgid "Time"
 msgstr ""
 
@@ -2893,7 +3530,8 @@ msgid "Services"
 msgstr ""
 
 #: inc/Elementor/Modules/Services/Services.php:84
-#: inc/Elementor/Widgets/Blog.php:95 inc/Elementor/Widgets/Events.php:90
+#: inc/Elementor/Widgets/Blog.php:95 inc/Elementor/Widgets/Clients.php:81
+#: inc/Elementor/Widgets/Events.php:98 inc/Elementor/Widgets/Gallery.php:69
 msgid "Query"
 msgstr ""
 
@@ -2939,19 +3577,22 @@ msgid "Random"
 msgstr ""
 
 #: inc/Elementor/Modules/Services/Services.php:151
-#: inc/Elementor/Widgets/Blog.php:180 inc/Elementor/Widgets/Events.php:174
+#: inc/Elementor/Widgets/Blog.php:180 inc/Elementor/Widgets/Clients.php:124
+#: inc/Elementor/Widgets/Events.php:182 inc/Elementor/Widgets/Gallery.php:125
 #: inc/VC/Blog.php:42 inc/VC/Clients.php:43 inc/VC/Events.php:59
 #: inc/VC/Gallery.php:56
 msgid "Order"
 msgstr ""
 
 #: inc/Elementor/Modules/Services/Services.php:155
-#: inc/Elementor/Widgets/Blog.php:184 inc/Elementor/Widgets/Events.php:178
+#: inc/Elementor/Widgets/Blog.php:184 inc/Elementor/Widgets/Clients.php:128
+#: inc/Elementor/Widgets/Events.php:186 inc/Elementor/Widgets/Gallery.php:129
 msgid "DESC"
 msgstr ""
 
 #: inc/Elementor/Modules/Services/Services.php:156
-#: inc/Elementor/Widgets/Blog.php:183 inc/Elementor/Widgets/Events.php:177
+#: inc/Elementor/Widgets/Blog.php:183 inc/Elementor/Widgets/Clients.php:127
+#: inc/Elementor/Widgets/Events.php:185 inc/Elementor/Widgets/Gallery.php:128
 msgid "ASC"
 msgstr ""
 
@@ -2975,9 +3616,9 @@ msgstr ""
 
 #: inc/Elementor/Modules/Services/Services.php:310
 #: inc/Elementor/Modules/Services/Services.php:357
-#: inc/Elementor/Widgets/History.php:548 inc/Elementor/Widgets/History.php:604
-#: inc/Elementor/Widgets/History.php:883 inc/Elementor/Widgets/History.php:949
-#: inc/Elementor/Widgets/History.php:1238
+#: inc/Elementor/Widgets/Heading.php:120 inc/Elementor/Widgets/History.php:548
+#: inc/Elementor/Widgets/History.php:604 inc/Elementor/Widgets/History.php:883
+#: inc/Elementor/Widgets/History.php:949 inc/Elementor/Widgets/History.php:1238
 #: inc/Elementor/Widgets/History.php:1302
 #: inc/Elementor/Widgets/wp-forms.php:221
 #: inc/Elementor/Widgets/wp-forms.php:376
@@ -2992,10 +3633,6 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:46 inc/Elementor/Widgets/History.php:340
-msgid "Settings"
-msgstr ""
-
 #: inc/Elementor/Widgets/Blog.php:61
 msgid "Show More Button"
 msgstr ""
@@ -3008,51 +3645,57 @@ msgstr ""
 msgid "More Button Link"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:102 inc/Elementor/Widgets/Events.php:97
+#: inc/Elementor/Widgets/Blog.php:102 inc/Elementor/Widgets/Clients.php:88
+#: inc/Elementor/Widgets/Events.php:105 inc/Elementor/Widgets/Gallery.php:76
 msgid "Posts Count"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:114 inc/Elementor/Widgets/Events.php:108
+#: inc/Elementor/Widgets/Blog.php:114 inc/Elementor/Widgets/Events.php:116
 msgid "Select posts by:"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:118 inc/Elementor/Widgets/Events.php:112
+#: inc/Elementor/Widgets/Blog.php:118 inc/Elementor/Widgets/Events.php:120
 msgid "Recent Post"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:119 inc/Elementor/Widgets/Events.php:113
+#: inc/Elementor/Widgets/Blog.php:119 inc/Elementor/Widgets/Events.php:121
 msgid "Selected Post"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:120 inc/Elementor/Widgets/Events.php:114
+#: inc/Elementor/Widgets/Blog.php:120 inc/Elementor/Widgets/Events.php:122
 msgid "Category Post"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:129 inc/Elementor/Widgets/Events.php:123
+#: inc/Elementor/Widgets/Blog.php:129 inc/Elementor/Widgets/Events.php:131
 msgid "Search & Select"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:140 inc/Elementor/Widgets/Events.php:134
+#: inc/Elementor/Widgets/Blog.php:140 inc/Elementor/Widgets/Events.php:142
 msgid "Select Categories"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:152 inc/Elementor/Widgets/Events.php:146
+#: inc/Elementor/Widgets/Blog.php:152 inc/Elementor/Widgets/Clients.php:98
+#: inc/Elementor/Widgets/Events.php:154 inc/Elementor/Widgets/Gallery.php:98
 msgid "Offset"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:163 inc/Elementor/Widgets/Events.php:157
+#: inc/Elementor/Widgets/Blog.php:163 inc/Elementor/Widgets/Clients.php:108
+#: inc/Elementor/Widgets/Events.php:165 inc/Elementor/Widgets/Gallery.php:109
 msgid "Order by"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:168 inc/Elementor/Widgets/Events.php:162
+#: inc/Elementor/Widgets/Blog.php:168 inc/Elementor/Widgets/Clients.php:113
+#: inc/Elementor/Widgets/Events.php:170 inc/Elementor/Widgets/Gallery.php:114
 msgid "Author"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:169 inc/Elementor/Widgets/Events.php:163
+#: inc/Elementor/Widgets/Blog.php:169 inc/Elementor/Widgets/Clients.php:114
+#: inc/Elementor/Widgets/Events.php:171 inc/Elementor/Widgets/Gallery.php:115
 msgid "Modified"
 msgstr ""
 
-#: inc/Elementor/Widgets/Blog.php:170 inc/Elementor/Widgets/Events.php:164
+#: inc/Elementor/Widgets/Blog.php:170 inc/Elementor/Widgets/Clients.php:115
+#: inc/Elementor/Widgets/Events.php:172 inc/Elementor/Widgets/Gallery.php:116
 msgid "Comments"
 msgstr ""
 
@@ -3065,7 +3708,7 @@ msgid "Read More Button"
 msgstr ""
 
 #: inc/Elementor/Widgets/Blog.php:391 inc/Elementor/Widgets/Blog.php:516
-#: inc/Elementor/Widgets/Events.php:357 inc/Elementor/Widgets/History.php:540
+#: inc/Elementor/Widgets/Events.php:387 inc/Elementor/Widgets/History.php:540
 #: inc/Elementor/Widgets/History.php:596 inc/Elementor/Widgets/History.php:1549
 msgid "Box Shadow"
 msgstr ""
@@ -3076,6 +3719,10 @@ msgstr ""
 
 #: inc/Elementor/Widgets/Blog.php:493
 msgid "Marding"
+msgstr ""
+
+#: inc/Elementor/Widgets/Clients.php:53
+msgid "Enable Carousel"
 msgstr ""
 
 #: inc/Elementor/Widgets/Events.php:29 inc/VC/Events.php:10
@@ -3094,77 +3741,70 @@ msgstr ""
 msgid "Two"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:65
+#: inc/Elementor/Widgets/Events.php:73
 msgid "Show View Event Button"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:76
+#: inc/Elementor/Widgets/Events.php:84
 msgid "View Event Label"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:255
+#: inc/Elementor/Widgets/Events.php:199
+msgid "Wrapper"
+msgstr ""
+
+#: inc/Elementor/Widgets/Events.php:285
 msgid "View Event Button"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:367
+#: inc/Elementor/Widgets/Events.php:397
 msgid "Date Box"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:375 inc/Elementor/Widgets/History.php:513
+#: inc/Elementor/Widgets/Events.php:405 inc/Elementor/Widgets/History.php:513
 #: inc/Elementor/Widgets/History.php:574 inc/Elementor/Widgets/History.php:1228
 #: inc/Elementor/Widgets/History.php:1292
 #: inc/Elementor/Widgets/History.php:1539
 msgid "Background"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:405
+#: inc/Elementor/Widgets/Events.php:435
 msgid "Date Typography"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:412
+#: inc/Elementor/Widgets/Events.php:442
 msgid "Month Typography"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:46
-msgid "Carousel"
+#: inc/Elementor/Widgets/Gallery.php:53 inc/VC/Events.php:32
+msgid "Columns"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:55 inc/Elementor/Widgets/History.php:109
-#: inc/Elementor/Widgets/History.php:1370
-#: inc/Elementor/Widgets/Testimonials.php:74
-msgid "Choose Image"
+#: inc/Elementor/Widgets/Gallery.php:56
+msgid "Three"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:66 inc/Elementor/Widgets/Gallery.php:92
-#: inc/Elementor/Widgets/Gallery.php:98 inc/Elementor/Widgets/Gallery.php:104
-#: inc/Elementor/Widgets/Testimonials.php:85
-#: inc/Elementor/Widgets/Testimonials.php:111
-#: inc/Elementor/Widgets/Testimonials.php:117
-#: inc/Elementor/Widgets/Testimonials.php:123
-msgid "Dr. John Doe"
-msgstr ""
-
-#: inc/Elementor/Widgets/Gallery.php:73
-msgid "Tagline"
-msgstr ""
-
-#: inc/Elementor/Widgets/Gallery.php:79 inc/VC/Gallery.php:67
-msgid "Tags"
+#: inc/Elementor/Widgets/Gallery.php:57
+msgid "Four"
 msgstr ""
 
 #: inc/Elementor/Widgets/Gallery.php:87
-#: inc/Elementor/Widgets/Testimonials.php:29
-#: inc/Elementor/Widgets/Testimonials.php:106
-msgid "Testimonials"
+msgid "Select Tags"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:93 inc/Elementor/Widgets/Gallery.php:99
-#: inc/Elementor/Widgets/Gallery.php:105
-msgid "Chemistry"
+#: inc/Elementor/Widgets/Gallery.php:142 inc/VC/Gallery.php:67
+msgid "Tags"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:122
-msgid "Filter Buttons"
+#: inc/Elementor/Widgets/Heading.php:29
+msgid "Styled Heading"
+msgstr ""
+
+#: inc/Elementor/Widgets/Heading.php:53 inc/Elementor/Widgets/Heading.php:89
+#: inc/Elementor/Widgets/Timing.php:46 inc/Elementor/Widgets/Timing.php:53
+#: inc/Elementor/Widgets/Timing.php:114 inc/VC/About.php:37
+#: inc/VC/Timing.php:17
+msgid "Heading"
 msgstr ""
 
 #: inc/Elementor/Widgets/History.php:31 inc/Elementor/Widgets/History.php:47
@@ -3179,24 +3819,13 @@ msgstr ""
 msgid "Add icon? "
 msgstr ""
 
-#: inc/Elementor/Widgets/History.php:80 inc/Elementor/Widgets/History.php:169
-#: inc/Elementor/Widgets/History.php:181 inc/Elementor/Widgets/History.php:258
-#: inc/Elementor/Widgets/History.php:304 inc/Elementor/Widgets/History.php:349
-#: inc/Elementor/Widgets/History.php:1360
-#: inc/Elementor/Widgets/History.php:1402
-msgid "Yes"
-msgstr ""
-
-#: inc/Elementor/Widgets/History.php:81 inc/Elementor/Widgets/History.php:170
-#: inc/Elementor/Widgets/History.php:182 inc/Elementor/Widgets/History.php:259
-#: inc/Elementor/Widgets/History.php:305 inc/Elementor/Widgets/History.php:350
-#: inc/Elementor/Widgets/History.php:1361
-#: inc/Elementor/Widgets/History.php:1403
-msgid "No"
-msgstr ""
-
 #: inc/Elementor/Widgets/History.php:91
 msgid "Header Icon"
+msgstr ""
+
+#: inc/Elementor/Widgets/History.php:109 inc/Elementor/Widgets/History.php:1370
+#: inc/Elementor/Widgets/Testimonials.php:74
+msgid "Choose Image"
 msgstr ""
 
 #: inc/Elementor/Widgets/History.php:126
@@ -3452,12 +4081,24 @@ msgstr ""
 msgid "Styling"
 msgstr ""
 
+#: inc/Elementor/Widgets/Testimonials.php:29
+#: inc/Elementor/Widgets/Testimonials.php:106
+msgid "Testimonials"
+msgstr ""
+
 #: inc/Elementor/Widgets/Testimonials.php:53
 msgid "Left Arrow Icon"
 msgstr ""
 
 #: inc/Elementor/Widgets/Testimonials.php:62
 msgid "Right Arrow Icon"
+msgstr ""
+
+#: inc/Elementor/Widgets/Testimonials.php:85
+#: inc/Elementor/Widgets/Testimonials.php:111
+#: inc/Elementor/Widgets/Testimonials.php:117
+#: inc/Elementor/Widgets/Testimonials.php:123
+msgid "Dr. John Doe"
 msgstr ""
 
 #: inc/Elementor/Widgets/Testimonials.php:92
@@ -3486,8 +4127,38 @@ msgstr ""
 msgid "Carousel Icon"
 msgstr ""
 
+#: inc/Elementor/Widgets/Timing.php:29
+msgid "Timings"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:83
+msgid "TIME"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:84
+msgid "time"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:88 inc/Elementor/Widgets/Timing.php:91
+#: inc/Elementor/Widgets/Timing.php:146 inc/VC/About.php:51
+#: inc/VC/Timing.php:31
+msgid "Days"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:90
+msgid "DAYS"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:97
+msgid "TEXT"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:98
+msgid "text"
+msgstr ""
+
 #: inc/Elementor/Widgets/wp-forms.php:20
-msgid "Smartx WP Forms"
+msgid "WP Forms"
 msgstr ""
 
 #: inc/Elementor/Widgets/wp-forms.php:62
@@ -3564,10 +4235,6 @@ msgstr ""
 msgid "Enter the button text and link"
 msgstr ""
 
-#: inc/VC/About.php:37 inc/VC/Timing.php:17
-msgid "Heading"
-msgstr ""
-
 #: inc/VC/About.php:38 inc/VC/About.php:45 inc/VC/Timing.php:9
 #: inc/VC/Timing.php:18 inc/VC/Timing.php:25
 msgid "Timing"
@@ -3583,10 +4250,6 @@ msgstr ""
 
 #: inc/VC/About.php:46 inc/VC/Timing.php:26
 msgid "Enter the office hours area"
-msgstr ""
-
-#: inc/VC/About.php:51 inc/VC/Timing.php:31
-msgid "Days"
 msgstr ""
 
 #: inc/VC/About.php:52 inc/VC/Timing.php:32
@@ -3622,8 +4285,8 @@ msgstr ""
 msgid "Enter the description"
 msgstr ""
 
-#: inc/VC/Events.php:32
-msgid "Columns"
+#: inc/VC/Events.php:77
+msgid "Except Length"
 msgstr ""
 
 #: inc/VC/Gallery.php:18 inc/VC/History.php:26
@@ -3720,6 +4383,34 @@ msgstr ""
 
 #: inc/VC/Testimonial.php:9
 msgid "Testimonial"
+msgstr ""
+
+#: inc/Widgets/RecentPosts.php:12
+msgid "Your site&#8217;s most recent Posts with thumbnail."
+msgstr ""
+
+#: inc/Widgets/RecentPosts.php:14
+msgid "Museum :: Recent Posts with Thumbnail"
+msgstr ""
+
+#: inc/Widgets/RecentPosts.php:27
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/Widgets/RecentPosts.php:106 inc/Widgets/UpcomingEvents.php:100
+msgid "Title:"
+msgstr ""
+
+#: inc/Widgets/RecentPosts.php:111 inc/Widgets/UpcomingEvents.php:105
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/Widgets/UpcomingEvents.php:12 inc/Widgets/UpcomingEvents.php:27
+msgid "Upcoming Events"
+msgstr ""
+
+#: inc/Widgets/UpcomingEvents.php:14
+msgid "OW :: Upcoming Events"
 msgstr ""
 
 #: redux/ReduxCore/core/enqueue.php:452
@@ -4125,10 +4816,6 @@ msgstr ""
 msgid "Clear Gallery"
 msgstr ""
 
-#: redux/ReduxCore/inc/fields/link_color/field_link_color.php:90
-msgid "Regular"
-msgstr ""
-
 #: redux/ReduxCore/inc/fields/link_color/field_link_color.php:98
 msgid "Visited"
 msgstr ""
@@ -4162,11 +4849,6 @@ msgstr ""
 #: redux/ReduxCore/inc/fields/slides/field_slides.php:73
 #: redux/ReduxCore/inc/fields/slides/field_slides.php:174
 msgid "New %s"
-msgstr ""
-
-#: redux/ReduxCore/inc/fields/slides/field_slides.php:167
-#: redux/ReduxCore/inc/fields/slides/field_slides.php:220
-msgid "Delete"
 msgstr ""
 
 #: redux/ReduxCore/inc/fields/slides/field_slides.php:223
@@ -4992,10 +5674,6 @@ msgstr ""
 msgid "The name of the current active theme."
 msgstr ""
 
-#: redux/ReduxCore/inc/welcome/views/status_report.php:715
-msgid "Version"
-msgstr ""
-
 #: redux/ReduxCore/inc/welcome/views/status_report.php:716
 msgid "The installed version of the current active theme."
 msgstr ""
@@ -5264,10 +5942,6 @@ msgstr ""
 msgid "Click here to activate the sample config file."
 msgstr ""
 
-#: redux/class.redux-plugin.php:415
-msgid "Docs"
-msgstr ""
-
 #: redux/class.redux-plugin.php:416
 msgid "Repo"
 msgstr ""
@@ -5296,44 +5970,45 @@ msgstr ""
 msgid "Read More..."
 msgstr ""
 
+#: templates/elementor/gallery.php:49
+msgid "Origin: "
+msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "Museum Core"
 msgstr ""
 
-#. Plugin URI of the plugin/theme
-msgid "PLUGIN SITE HERE"
+#. Author URI of the plugin/theme
+msgid "https://premiumlayers.com"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "PLUGIN DESCRIPTION HERE"
+msgid "Museum plugin theme"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "YOUR NAME HERE"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "YOUR SITE HERE"
+msgid "iHekrit"
 msgstr ""
 
 #: inc/Elementor/Widgets/Blog.php:207 inc/Elementor/Widgets/Blog.php:246
-#: inc/Elementor/Widgets/Blog.php:265 inc/Elementor/Widgets/Events.php:212
-#: inc/Elementor/Widgets/Events.php:231 inc/Elementor/Widgets/Gallery.php:137
-#: inc/Elementor/Widgets/Gallery.php:167
+#: inc/Elementor/Widgets/Blog.php:265 inc/Elementor/Widgets/Events.php:242
+#: inc/Elementor/Widgets/Events.php:261 inc/Elementor/Widgets/Gallery.php:223
+#: inc/Elementor/Widgets/Heading.php:98 inc/Elementor/Widgets/Heading.php:129
 #: inc/Elementor/Widgets/Testimonials.php:157
 #: inc/Elementor/Widgets/Testimonials.php:176
+#: inc/Elementor/Widgets/Timing.php:123
 msgctxt "Title Control"
 msgid "Color"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:148 inc/Elementor/Widgets/Gallery.php:178
+#: inc/Elementor/Widgets/Gallery.php:198
 msgctxt "Title Control"
 msgid "Background Color"
 msgstr ""
 
-#: inc/Elementor/Widgets/Gallery.php:193
+#: inc/Elementor/Widgets/Gallery.php:234
 msgctxt "Title Control"
-msgid "Overlay Background Color"
+msgid "Hover Color"
 msgstr ""
 
 #: inc/Elementor/Widgets/Stats.php:140
@@ -5361,9 +6036,24 @@ msgctxt "Title Control"
 msgid "Numbers Typography"
 msgstr ""
 
+#: inc/Elementor/Widgets/Timing.php:155
+msgctxt "Title Control"
+msgid "Days Color"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:187
+msgctxt "Title Control"
+msgid "time Color"
+msgstr ""
+
+#: inc/Elementor/Widgets/Timing.php:220
+msgctxt "Title Control"
+msgid "text Color"
+msgstr ""
+
 #: inc/Elementor/Widgets/Blog.php:305 inc/Elementor/Widgets/Blog.php:336
 #: inc/Elementor/Widgets/Blog.php:418 inc/Elementor/Widgets/Blog.php:449
-#: inc/Elementor/Widgets/Events.php:271 inc/Elementor/Widgets/Events.php:302
+#: inc/Elementor/Widgets/Events.php:301 inc/Elementor/Widgets/Events.php:332
 #: inc/Elementor/Widgets/Testimonials.php:216
 #: inc/Elementor/Widgets/Testimonials.php:247
 msgctxt "Button Control"
@@ -5372,21 +6062,41 @@ msgstr ""
 
 #: inc/Elementor/Widgets/Blog.php:316 inc/Elementor/Widgets/Blog.php:347
 #: inc/Elementor/Widgets/Blog.php:429 inc/Elementor/Widgets/Blog.php:460
-#: inc/Elementor/Widgets/Events.php:282 inc/Elementor/Widgets/Events.php:313
+#: inc/Elementor/Widgets/Events.php:312 inc/Elementor/Widgets/Events.php:343
 #: inc/Elementor/Widgets/Testimonials.php:227
 #: inc/Elementor/Widgets/Testimonials.php:258
 msgctxt "Button Control"
 msgid "Background Color"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:383
+#: inc/Elementor/Widgets/Events.php:413
 msgctxt "Button Control"
 msgid "Date Color"
 msgstr ""
 
-#: inc/Elementor/Widgets/Events.php:394
+#: inc/Elementor/Widgets/Events.php:424
 msgctxt "Button"
 msgid "Month Year Color"
+msgstr ""
+
+#: inc/Elementor/Widgets/Gallery.php:157 inc/Elementor/Widgets/Gallery.php:187
+msgctxt "museum-core"
+msgid "Color"
+msgstr ""
+
+#: inc/Elementor/Widgets/Gallery.php:168
+msgctxt "museum-core"
+msgid "Background Color"
+msgstr ""
+
+#: inc/Elementor/Widgets/Heading.php:141
+msgctxt "museum-core"
+msgid "Height"
+msgstr ""
+
+#: inc/Elementor/Widgets/Heading.php:164
+msgctxt "museum-core"
+msgid "Width"
 msgstr ""
 
 #: inc/Elementor/Widgets/wp-forms.php:84 inc/Elementor/Widgets/wp-forms.php:144

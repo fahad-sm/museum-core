@@ -40,7 +40,7 @@ class acf_plugin_repeater {
 		$this->settings = array(
 			
 			// basic
-			'name'				=> __('Advanced Custom Fields: Repeater Field', 'acf'),
+			'name'				=> __('Advanced Custom Fields: Repeater Field', 'museum-core'),
 			'version'			=> '2.0.1',
 						
 			// urls

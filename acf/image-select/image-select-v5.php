@@ -15,8 +15,8 @@ class acf_field_image_select extends acf_field
 	{
 		// vars
 		$this->name        = 'image_select';
-		$this->label       = __('Image Select');
-		$this->category    = __("Choice",'acf');
+		$this->label       = __('Image Select', 'museum-core');
+		$this->category    = __("Choice",'museum-core');
 		$this->defaults    = array(
 			'choices'			=>	array(),
 			'default_value'		=>	'',
@@ -114,31 +114,31 @@ class acf_field_image_select extends acf_field
 
 
 		acf_render_field_setting($field, array(
-			'label' => __("Choices"),
+			'label' => __("Choices", 'museum-core'),
 			'type'	=>	'textarea',
 			'name'	=>	'choices',
 			'instructions' => "Enter your choices one per line. <br /><span style='color:#BC0B0B'>Please note:</span> The first value of each choices will used as name of image.<br>Like for '<strong>Blue</strong>' or '<strong>blue : Blue</strong>', the image name will be '<strong>blue.png</strong>"
 		));
 
 		acf_render_field_setting($field, array(
-			'label'	=> __('Default Value'),
+			'label'	=> __('Default Value', 'museum-core'),
 			'type'	=>	'text',
 			'name'	=>	'default_value',
 		));
 
 		acf_render_field_setting($field, array(
-			'label'	=> __('Allow Multiple Choices?'),
+			'label'	=> __('Allow Multiple Choices?', 'museum-core'),
 			'name'	=>	'multiple',
 			'type'	=> 'radio',
 			'choices'	=>	array(
-				1	=>	__("Yes",'acf'),
-				0	=>	__("No",'acf'),
+				1	=>	__("Yes",'museum-core'),
+				0	=>	__("No",'museum-core'),
 			),
 			'layout'	=>	'horizontal',
 		));
 
 		acf_render_field_setting($field, array(
-			'label'	=> __('Image Path'),
+			'label'	=> __('Image Path', 'museum-core'),
 			'instructions' => "Enter complete URL for images<br /><span style='color:#BC0B0B'>Some Important Paths:</span><ul>
 					<li><strong>Theme URL:</strong>" . get_template_directory_uri() . "(<em><u>If current theme is child theme.</u></em>)</li>
 					<li><strong>Current/Child Theme:</strong>" . get_stylesheet_directory_uri() . "</li>
@@ -150,7 +150,7 @@ class acf_field_image_select extends acf_field
 		));
 
 		acf_render_field_setting($field, array(
-			'label'	=> _('Image Extension'),
+			'label'	=> _('Image Extension', 'museum-core'),
 			'type'	=>	'text',
 			'name'	=>	'image_extension',
 		));
