@@ -72,6 +72,17 @@ class Events
                     	'min_length' => 1,
                     ]
                 ),
+                array(
+                    "type" => "textfield",
+                    "heading" => esc_html__("Except Length", 'museum-core'),
+                    "param_name" => "length",
+                    "value"	=> 50,
+                    /*"dependency" => array(
+				        "element" => "columns",
+				        "value" => 1
+				    )*/
+                ),
+                
 				/*array(
 					"type" => "vc_link",
 					"heading" => __("Button", "museum-core"),

@@ -21,7 +21,7 @@ if($is_manual_selection === 'yes') {
 
 $qry = new WP_Query($args);
 
-if( $column == 1 ) {
+if( $column == 'one' ) {
 	include get_theme_file_path( 'template-parts/events-1.php' );
 }
 else if( $column == "two" ) {

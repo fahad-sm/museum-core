@@ -3,6 +3,8 @@
 namespace MuseumCore\Classes;
 
 use MuseumCore\Register\Registry;
+use MuseumCore\Widgets\RecentPosts;
+use MuseumCore\Widgets\UpcomingEvents;
 
 
 class Plugin
@@ -24,6 +26,8 @@ class Plugin
 		add_action('wp_ajax_nopriv_museum_core_ajax', [Ajax::class, 'init']);
 		// 
 		add_action('vc_before_init', [__CLASS__, 'vc_init']);
+
+		add_action('widgets_init', [__CLASS__, 'widgets_init']);
 	}
 
 	/**
@@ -117,5 +121,19 @@ class Plugin
 	            }
 	        }
 	    }
+	}
+
+	/**
+	 * REgister Custom widgets.
+	 * @return [type] [description]
+	 */
+	public static function widgets_init() {
+
+		/* Script For Widget */
+		add_image_size( 'museumwp-90-90', 90, 90, true ); /* Upcoming Widget */
+		add_image_size( 'museumwp-59-59', 59, 59, true ); /* Recent Post Widget */
+
+		register_widget( RecentPosts::class );
+		register_widget( UpcomingEvents::class );
 	}
 }
