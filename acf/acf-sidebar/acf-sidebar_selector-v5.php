@@ -34,8 +34,8 @@ class acf_field_sidebar_selector extends acf_field {
 	function __construct() {
 
 		$this->name = 'sidebar_selector';
-		$this->label = __( 'Sidebar Selector', 'acf-sidebar-selector-field' );
-		$this->category = __( "Choice",'acf' );
+		$this->label = __( 'Sidebar Selector', 'museum-core' );
+		$this->category = __( "Choice",'museum-core' );
 		$this->defaults = array(
 			'allow_null' => '1',
 			'default_value' => ''
@@ -64,18 +64,18 @@ class acf_field_sidebar_selector extends acf_field {
 	function render_field_settings( $field ) {
 
 		acf_render_field_setting( $field, array(
-			'label'			=> __('Allow Null?','acf-sidebar-selector-field'),
+			'label'			=> __('Allow Null?','museum-core'),
 			'type'			=> 'radio',
 			'name'			=> 'allow_null',
 			'layout'  =>  'horizontal',
 			'choices' =>  array(
-				'1' => __('Yes', 'acf-sidebar-selector-field'),
-				'0' => __('No', 'acf-sidebar-selector-field'),
+				'1' => __('Yes', 'museum-core'),
+				'0' => __('No', 'museum-core'),
 			)
 		));
 
 		acf_render_field_setting( $field, array(
-			'label'			=> __('Default Value','acf-sidebar-selector-field'),
+			'label'			=> __('Default Value','museum-core'),
 			'type'			=> 'text',
 			'name'			=> 'default_value',
 		));
@@ -102,7 +102,7 @@ class acf_field_sidebar_selector extends acf_field {
 		<div>
 			<select name='<?php echo $field['name'] ?>'>
 				<?php if ( !empty( $field['allow_null'] ) ) : ?>
-					<option value=''><?php _e( 'Select a Sidebar', 'acf' ) ?></option>
+					<option value=''><?php _e( 'Select a Sidebar', 'museum-core' ) ?></option>
 				<?php endif ?>
 				<?php
 					foreach( $wp_registered_sidebars as $sidebar ) :

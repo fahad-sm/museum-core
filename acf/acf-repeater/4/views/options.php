@@ -19,15 +19,15 @@ if( !$field['row_limit'] )
 // add clone
 $field['sub_fields'][] = apply_filters('acf/load_field_defaults',  array(
 	'key'	=> 'field_clone',
-	'label'	=> __("New Field",'acf'),
-	'name'	=> __("new_field",'acf'),
+	'label'	=> __("New Field",'museum-core'),
+	'name'	=> __("new_field",'museum-core'),
 	'type'	=> 'text',
 ));
 
 
 // get name of all fields for use in field type drop down
 $fields_names = apply_filters('acf/registered_fields', array());
-unset( $fields_names[ __("Layout",'acf') ]['tab'] );
+unset( $fields_names[ __("Layout",'museum-core') ]['tab'] );
 
 
 // conditional logic dummy data
@@ -41,7 +41,7 @@ $conditional_logic_rule = array(
 ?>
 <tr class="field_option field_option_<?php echo $this->name; ?> field_option_<?php echo $this->name; ?>_fields">
 	<td class="label">
-		<label><?php _e("Repeater Fields",'acf'); ?></label>
+		<label><?php _e("Repeater Fields",'museum-core'); ?></label>
 	</td>
 	<td>
 	<div class="repeater">
@@ -49,10 +49,10 @@ $conditional_logic_rule = array(
 			<table class="acf widefat">
 				<thead>
 					<tr>
-						<th class="field_order"><?php _e('Field Order','acf'); ?></th>
-						<th class="field_label"><?php _e('Field Label','acf'); ?></th>
-						<th class="field_name"><?php _e('Field Name','acf'); ?></th>
-						<th class="field_type"><?php _e('Field Type','acf'); ?></th>
+						<th class="field_order"><?php _e('Field Order','museum-core'); ?></th>
+						<th class="field_label"><?php _e('Field Label','museum-core'); ?></th>
+						<th class="field_name"><?php _e('Field Name','museum-core'); ?></th>
+						<th class="field_type"><?php _e('Field Type','museum-core'); ?></th>
 					</tr>
 				</thead>
 			</table>
@@ -60,7 +60,7 @@ $conditional_logic_rule = array(
 		<div class="fields">
 
 			<div class="no_fields_message" <?php if(count($field['sub_fields']) > 1){ echo 'style="display:none;"'; } ?>>
-				<?php _e("No fields. Click the \"+ Add Sub Field button\" to create your first field.",'acf'); ?>
+				<?php _e("No fields. Click the \"+ Add Sub Field button\" to create your first field.",'museum-core'); ?>
 			</div>
 	
 			<?php foreach($field['sub_fields'] as $sub_field): 
@@ -76,13 +76,13 @@ $conditional_logic_rule = array(
 							<td class="field_order"><span class="circle"><?php echo (int)$sub_field['order_no'] + 1; ?></span></td>
 							<td class="field_label">
 								<strong>
-									<a class="acf_edit_field" title="<?php _e("Edit this Field",'acf'); ?>" href="javascript:;"><?php echo $sub_field['label']; ?></a>
+									<a class="acf_edit_field" title="<?php _e("Edit this Field",'museum-core'); ?>" href="javascript:;"><?php echo $sub_field['label']; ?></a>
 								</strong>
 								<div class="row_options">
-									<span><a class="acf_edit_field" title="<?php _e("Edit this Field",'acf'); ?>" href="javascript:;"><?php _e("Edit",'acf'); ?></a> | </span>
-									<span><a title="<?php _e("Read documentation for this field",'acf'); ?>" href="http://www.advancedcustomfields.com/docs/field-types/" target="_blank"><?php _e("Docs",'acf'); ?></a> | </span>
-									<span><a class="acf_duplicate_field" title="<?php _e("Duplicate this Field",'acf'); ?>" href="javascript:;"><?php _e("Duplicate",'acf'); ?></a> | </span>
-									<span><a class="acf_delete_field" title="<?php _e("Delete this Field",'acf'); ?>" href="javascript:;"><?php _e("Delete",'acf'); ?></a>
+									<span><a class="acf_edit_field" title="<?php _e("Edit this Field",'museum-core'); ?>" href="javascript:;"><?php _e("Edit",'museum-core'); ?></a> | </span>
+									<span><a title="<?php _e("Read documentation for this field",'museum-core'); ?>" href="http://www.advancedcustomfields.com/docs/field-types/" target="_blank"><?php _e("Docs",'museum-core'); ?></a> | </span>
+									<span><a class="acf_duplicate_field" title="<?php _e("Duplicate this Field",'museum-core'); ?>" href="javascript:;"><?php _e("Duplicate",'museum-core'); ?></a> | </span>
+									<span><a class="acf_delete_field" title="<?php _e("Delete this Field",'museum-core'); ?>" href="javascript:;"><?php _e("Delete",'museum-core'); ?></a>
 								</div>
 							</td>
 							<td class="field_name"><?php echo $sub_field['name']; ?></td>
@@ -98,8 +98,8 @@ $conditional_logic_rule = array(
 							<tbody>
 								<tr class="field_label">
 									<td class="label">
-										<label><?php _e("Field Label",'acf'); ?> <span class="required">*</span></label>
-										<p class="description"><?php _e("This is the name which will appear on the edit page",'acf'); ?></p>
+										<label><?php _e("Field Label",'museum-core'); ?> <span class="required">*</span></label>
+										<p class="description"><?php _e("This is the name which will appear on the edit page",'museum-core'); ?></p>
 									</td>
 									<td>
 										<?php 
@@ -114,8 +114,8 @@ $conditional_logic_rule = array(
 								</tr>
 								<tr class="field_name">
 									<td class="label">
-										<label><?php _e("Field Name",'acf'); ?> <span class="required">*</span></label>
-										<p class="description"><?php _e("Single word, no spaces. Underscores and dashes allowed",'acf'); ?></p>
+										<label><?php _e("Field Name",'museum-core'); ?> <span class="required">*</span></label>
+										<p class="description"><?php _e("Single word, no spaces. Underscores and dashes allowed",'museum-core'); ?></p>
 									</td>
 									<td>
 										<?php 
@@ -129,7 +129,7 @@ $conditional_logic_rule = array(
 									</td>
 								</tr>
 								<tr class="field_type">
-									<td class="label"><label><?php _e("Field Type",'acf'); ?> <span class="required">*</span></label></td>
+									<td class="label"><label><?php _e("Field Type",'museum-core'); ?> <span class="required">*</span></label></td>
 									<td>
 										<?php 
 										do_action('acf/create_field', array(
@@ -144,7 +144,7 @@ $conditional_logic_rule = array(
 									</td>
 								</tr>
 								<tr class="field_instructions">
-									<td class="label"><label><?php _e("Field Instructions",'acf'); ?></label></td>
+									<td class="label"><label><?php _e("Field Instructions",'museum-core'); ?></label></td>
 									<td>
 										<?php
 										
@@ -163,7 +163,7 @@ $conditional_logic_rule = array(
 									</td>
 								</tr>
 								<tr class="required">
-									<td class="label"><label><?php _e("Required?",'acf'); ?></label></td>
+									<td class="label"><label><?php _e("Required?",'museum-core'); ?></label></td>
 									<td>
 										<?php 
 										do_action('acf/create_field', array(
@@ -171,8 +171,8 @@ $conditional_logic_rule = array(
 											'name'	=>	'fields[' .$fake_name . '][required]',
 											'value'	=>	$sub_field['required'],
 											'choices'	=>	array(
-												1	=>	__("Yes",'acf'),
-												0	=>	__("No",'acf'),
+												1	=>	__("Yes",'museum-core'),
+												0	=>	__("No",'museum-core'),
 											),
 											'layout'	=>	'horizontal',
 										));
@@ -181,7 +181,7 @@ $conditional_logic_rule = array(
 								</tr>
 								<tr class="field_column_width">
 									<td class="label">
-										<label><?php _e("Column Width",'acf'); ?></label>
+										<label><?php _e("Column Width",'museum-core'); ?></label>
 									</td>
 									<td>
 										<?php 
@@ -208,7 +208,7 @@ $conditional_logic_rule = array(
 								
 								?>
 								<tr class="conditional-logic" data-field_name="<?php echo $field['key']; ?>">
-									<td class="label"><label><?php _e("Conditional Logic",'acf'); ?></label></td>
+									<td class="label"><label><?php _e("Conditional Logic",'museum-core'); ?></label></td>
 									<td>
 										<?php 
 										do_action('acf/create_field', array(
@@ -216,8 +216,8 @@ $conditional_logic_rule = array(
 											'name'	=>	'fields[' . $fake_name . '][conditional_logic][status]',
 											'value'	=>	$sub_field['conditional_logic']['status'],
 											'choices'	=>	array(
-												1	=>	__("Yes",'acf'),
-												0	=>	__("No",'acf'),
+												1	=>	__("Yes",'museum-core'),
+												0	=>	__("No",'museum-core'),
 											),
 											'layout'	=>	'horizontal',
 										));
@@ -259,8 +259,8 @@ $conditional_logic_rule = array(
 																'name'	=>	'fields[' . $fake_name . '][conditional_logic][rules][' . $rule_i . '][operator]',
 																'value'	=>	$rule['operator'],
 																'choices'	=>	array(
-																	'=='	=>	__("is equal to",'acf'),
-																	'!='	=>	__("is not equal to",'acf'),
+																	'=='	=>	__("is equal to",'museum-core'),
+																	'!='	=>	__("is not equal to",'museum-core'),
 																),
 															));
 															?>
@@ -278,17 +278,17 @@ $conditional_logic_rule = array(
 											</table>
 											
 											<ul class="hl clearfix">
-												<li style="padding:4px 4px 0 0;"><?php _e("Show this field when",'acf'); ?></li>
+												<li style="padding:4px 4px 0 0;"><?php _e("Show this field when",'museum-core'); ?></li>
 												<li><?php do_action('acf/create_field', array(
 														'type'	=>	'select',
 														'name'	=>	'fields[' . $fake_name . '][conditional_logic][allorany]',
 														'value'	=>	$sub_field['conditional_logic']['allorany'],
 														'choices' => array(
-															'all'	=>	__("all",'acf'),
-															'any'	=>	__("any",'acf'),							
+															'all'	=>	__("all",'museum-core'),
+															'any'	=>	__("any",'museum-core'),							
 														),
 												)); ?></li>
-												<li style="padding:4px 0 0 4px;"><?php _e("these rules are met",'acf'); ?></li>
+												<li style="padding:4px 0 0 4px;"><?php _e("these rules are met",'museum-core'); ?></li>
 											</ul>
 											
 										</div>
@@ -297,12 +297,12 @@ $conditional_logic_rule = array(
 								</tr>
 								<tr class="field_save">
 									<td class="label">
-										<!-- <label><?php _e("Save Field",'acf'); ?></label> -->
+										<!-- <label><?php _e("Save Field",'museum-core'); ?></label> -->
 									</td>
 									<td>
 										<ul class="hl clearfix">
 											<li>
-												<a class="acf_edit_field acf-button grey" title="<?php _e("Close Field",'acf'); ?>" href="javascript:;"><?php _e("Close Sub Field",'acf'); ?></a>
+												<a class="acf_edit_field acf-button grey" title="<?php _e("Close Field",'museum-core'); ?>" href="javascript:;"><?php _e("Close Sub Field",'museum-core'); ?></a>
 											</li>
 										</ul>
 									</td>
@@ -317,15 +317,15 @@ $conditional_logic_rule = array(
 			<?php endforeach; ?>
 		</div>
 		<div class="table_footer">
-			<div class="order_message"><?php _e('Drag and drop to reorder','acf'); ?></div>
-			<a href="javascript:;" id="add_field" class="acf-button"><?php _e('+ Add Sub Field','acf'); ?></a>
+			<div class="order_message"><?php _e('Drag and drop to reorder','museum-core'); ?></div>
+			<a href="javascript:;" id="add_field" class="acf-button"><?php _e('+ Add Sub Field','museum-core'); ?></a>
 		</div>
 	</div>
 	</td>
 </tr>
 <tr class="field_option field_option_<?php echo $this->name; ?>">
 	<td class="label">
-		<label><?php _e("Minimum Rows",'acf'); ?></label>
+		<label><?php _e("Minimum Rows",'museum-core'); ?></label>
 	</td>
 	<td>
 		<?php 
@@ -339,7 +339,7 @@ $conditional_logic_rule = array(
 </tr>
 <tr class="field_option field_option_<?php echo $this->name; ?>">
 	<td class="label">
-		<label><?php _e("Maximum Rows",'acf'); ?></label>
+		<label><?php _e("Maximum Rows",'museum-core'); ?></label>
 	</td>
 	<td>
 		<?php 
@@ -353,7 +353,7 @@ $conditional_logic_rule = array(
 </tr>
 <tr class="field_option field_option_<?php echo $this->name; ?> field_option_<?php echo $this->name; ?>_layout">
 	<td class="label">
-		<label><?php _e("Layout",'acf'); ?></label>
+		<label><?php _e("Layout",'museum-core'); ?></label>
 	</td>
 	<td>
 		<?php 
@@ -363,8 +363,8 @@ $conditional_logic_rule = array(
 			'value'	=>	$field['layout'],
 			'layout'	=>	'horizontal',
 			'choices'	=>	array(
-				'table'	=>	__("Table",'acf'),
-				'row'	=>	__("Row",'acf')
+				'table'	=>	__("Table",'museum-core'),
+				'row'	=>	__("Row",'museum-core')
 			)
 		));
 		?>
@@ -372,7 +372,7 @@ $conditional_logic_rule = array(
 </tr>
 <tr class="field_option field_option_<?php echo $this->name; ?>">
 	<td class="label">
-		<label><?php _e("Button Label",'acf'); ?></label>
+		<label><?php _e("Button Label",'museum-core'); ?></label>
 	</td>
 	<td>
 		<?php 

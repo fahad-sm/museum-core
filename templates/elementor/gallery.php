@@ -46,7 +46,7 @@ $qry = new WP_Query( $qry_args );
 							<a href="<?php echo esc_url( the_permalink() ); ?>" title="<?php the_title_attribute(); ?>">
 								<?php the_title(); ?>
 							</a>
-							<p><span><?php esc_html_e("Origin: ", "museumwp-toolkit"); ?></span><?php echo esc_attr( get_field( 'museumwp_cf_origin' ) ); ?></p>
+							<p><span><?php esc_html_e("Origin: ", "museum-core"); ?></span><?php echo esc_attr( get_field( 'museumwp_cf_origin' ) ); ?></p>
 						</div>
 					</div>
 				</li>

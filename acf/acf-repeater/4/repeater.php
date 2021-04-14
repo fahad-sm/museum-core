@@ -19,18 +19,18 @@ class acf_field_repeater extends acf_field
 	{
 		// vars
 		$this->name = 'repeater';
-		$this->label = __("Repeater",'acf');
-		$this->category = __("Layout",'acf');
+		$this->label = __("Repeater",'museum-core');
+		$this->category = __("Layout",'museum-core');
 		$this->defaults = array(
 			'sub_fields'	=>	array(),
 			'row_min'		=>	0,
 			'row_limit'		=>	0,
 			'layout' 		=> 'table',
-			'button_label'	=>	__("Add Row",'acf'),
+			'button_label'	=>	__("Add Row",'museum-core'),
 		);
 		$this->l10n = array(
-			'min'	=>	__("Minimum rows reached ( {min} rows )",'acf'),
-			'max'	=>	__("Maximum rows reached ( {max} rows )",'acf'),
+			'min'	=>	__("Minimum rows reached ( {min} rows )",'museum-core'),
+			'max'	=>	__("Maximum rows reached ( {max} rows )",'museum-core'),
 		);
 		
 		

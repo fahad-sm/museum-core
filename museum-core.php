@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name:     Museum Core
- * Plugin URI:      PLUGIN SITE HERE
- * Description:     PLUGIN DESCRIPTION HERE
- * Author:          YOUR NAME HERE
- * Author URI:      YOUR SITE HERE
+ * Plugin URI:      https://premiumlayers.com
+ * Description:     Museum plugin theme
+ * Author:          iHekrit
+ * Author URI:      https://premiumlayers.com
  * Text Domain:     museum-core
  * Domain Path:     /languages
  * Version:         1.0.0

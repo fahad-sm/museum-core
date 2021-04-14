@@ -308,24 +308,24 @@ class ACFFA_Loader_5
 	{
 		switch ( $prefix ) {
 			case 'fas':
-				$label = __( 'Solid', 'acf-font-awesome' );
+				$label = __( 'Solid', 'museum-core' );
 				break;
 
 			case 'fab':
-				$label = __( 'Brands', 'acf-font-awesome' );
+				$label = __( 'Brands', 'museum-core' );
 				break;
 
 			case 'fal':
-				$label = __( 'Light', 'acf-font-awesome' );
+				$label = __( 'Light', 'museum-core' );
 				break;
 
 			case 'fad':
-				$label = __( 'Duotone', 'acf-font-awesome' );
+				$label = __( 'Duotone', 'museum-core' );
 				break;
 
 			case 'far':
 			default:
-				$label = __( 'Regular', 'acf-font-awesome' );
+				$label = __( 'Regular', 'museum-core' );
 				break;
 		}
 

@@ -59,19 +59,19 @@ class Heading extends Widget_Base {
 		$this->add_control(
 			'text_align',
 			[
-				'label' => __( 'Alignment', 'plugin-domain' ),
+				'label' => __( 'Alignment', 'museum-core' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'plugin-domain' ),
+						'title' => __( 'Left', 'museum-core' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'plugin-domain' ),
+						'title' => __( 'Center', 'museum-core' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'plugin-domain' ),
+						'title' => __( 'Right', 'museum-core' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],

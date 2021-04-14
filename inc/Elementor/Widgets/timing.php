@@ -58,7 +58,7 @@ class Timing extends Widget_Base {
 		$this->add_control(
 			'Icon',
 			[
-				'label' => __( 'Icon', 'text-domain' ),
+				'label' => __( 'Icon', 'museum-core' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 				'default' => [
 					'value' => 'fas fa-star',

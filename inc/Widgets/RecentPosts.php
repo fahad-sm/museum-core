@@ -9,9 +9,9 @@ class RecentPosts extends \WP_Widget {
 
 	public function __construct() {
 
-		$widget_ops = array( 'classname' => 'widget_recentposts', 'description' => __( "Your site&#8217;s most recent Posts with thumbnail.", "museumwp-toolkit" ) );
+		$widget_ops = array( 'classname' => 'widget_recentposts', 'description' => __( "Your site&#8217;s most recent Posts with thumbnail.", "museum-core" ) );
 
-		parent::__construct('widget_recentposts', __('Museum :: Recent Posts with Thumbnail', "museumwp-toolkit"), $widget_ops);
+		parent::__construct('widget_recentposts', __('Museum :: Recent Posts with Thumbnail', "museum-core"), $widget_ops);
 
 		$this->alt_option_name = 'widget_recentposts';
 	}
@@ -24,7 +24,7 @@ class RecentPosts extends \WP_Widget {
 
 		ob_start();
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts', "museumwp-toolkit" );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts', "museum-core" );
 
 		/** This filter is documented in wp-includes/default-widgets.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -103,12 +103,12 @@ class RecentPosts extends \WP_Widget {
 		$number    = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', "museumwp-toolkit" ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', "museum-core" ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number of posts to show:', "museumwp-toolkit" ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number of posts to show:', "museum-core" ); ?></label>
 			<input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" size="3" />
 		</p>
 		<?php

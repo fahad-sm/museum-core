@@ -16,7 +16,7 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 		{
 			$this->version = 'v' . ACFFA_MAJOR_VERSION;
 			$this->name = 'font-awesome';	
-			$this->label = __( 'Font Awesome Icon', 'acf-font-awesome');
+			$this->label = __( 'Font Awesome Icon', 'museum-core');
 			$this->category = 'content';
 			$this->settings = $settings;
 
@@ -57,8 +57,8 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 		public function render_field_settings( $field )
 		{
 			$icon_sets_args = array(
-				'label'			=> __( 'Icon Sets', 'acf-font-awesome' ),
-				'instructions'	=> __( 'Specify which icon set(s) to load', 'acf-font-awesome' ),
+				'label'			=> __( 'Icon Sets', 'museum-core' ),
+				'instructions'	=> __( 'Specify which icon set(s) to load', 'museum-core' ),
 				'type'			=> 'checkbox',
 				'name'			=> 'icon_sets',
 				'value'			=> ! empty( $field['icon_sets'] ) ? $field['icon_sets'] : 'far'
@@ -66,17 +66,17 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 
 			if ( version_compare( ACFFA_MAJOR_VERSION, 5, '>=' ) ) {
 				$icon_sets_args['choices'] = array(
-					'fas'		=> __( 'Solid', 'acf-font-awesome' ),
-					'far'		=> __( 'Regular', 'acf-font-awesome' ),
-					'fal'		=> __( 'Light (FontAwesome Pro License Required)', 'acf-font-awesome' ),
-					'fad'		=> __( 'Duotone (FontAwesome Pro License Required)', 'acf-font-awesome' ),
-					'fab'		=> __( 'Brands', 'acf-font-awesome' ),
-					'custom'	=> __( 'Custom Icon Set', 'acf-font-awesome' )
+					'fas'		=> __( 'Solid', 'museum-core' ),
+					'far'		=> __( 'Regular', 'museum-core' ),
+					'fal'		=> __( 'Light (FontAwesome Pro License Required)', 'museum-core' ),
+					'fad'		=> __( 'Duotone (FontAwesome Pro License Required)', 'museum-core' ),
+					'fab'		=> __( 'Brands', 'museum-core' ),
+					'custom'	=> __( 'Custom Icon Set', 'museum-core' )
 				);
 			} else {
 				$icon_sets_args['choices'] = array(
-					'all'		=> __( 'All Icons', 'acf-font-awesome' ),
-					'custom'	=> __( 'Custom Icon Set', 'acf-font-awesome' )
+					'all'		=> __( 'All Icons', 'museum-core' ),
+					'custom'	=> __( 'Custom Icon Set', 'museum-core' )
 				);
 			}
 			acf_render_field_setting( $field, $icon_sets_args );
@@ -85,12 +85,12 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 			if ( isset( $custom_icon_set_choices[ $this->version ] ) && ! empty( $custom_icon_set_choices[ $this->version ] ) ) {
 				$custom_icon_set_choices = $custom_icon_set_choices[ $this->version ];
 			} else {
-				$custom_icon_set_choices = array( __( 'No custom icon set(s) found', 'acf-font-awesome' ) );
+				$custom_icon_set_choices = array( __( 'No custom icon set(s) found', 'museum-core' ) );
 			}
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Custom Icon Set', 'acf-font-awesome' ),
-				'instructions'	=> sprintf( __( 'Create custom icon sets in the <a href="%s">FontAwesome Settings page</a>.', 'acf-font-awesome' ), admin_url( '/edit.php?post_type=acf-field-group&page=fontawesome-settings' ) ),
+				'label'			=> __( 'Custom Icon Set', 'museum-core' ),
+				'instructions'	=> sprintf( __( 'Create custom icon sets in the <a href="%s">FontAwesome Settings page</a>.', 'museum-core' ), admin_url( '/edit.php?post_type=acf-field-group&page=fontawesome-settings' ) ),
 				'type'			=> 'select',
 				'name'			=> 'custom_icon_set',
 				'class'	  		=> 'custom-icon-set',
@@ -101,7 +101,7 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 			));
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Icon Preview', 'acf-font-awesome' ),
+				'label'			=> __( 'Icon Preview', 'museum-core' ),
 				'instructions'	=> '',
 				'type'			=> 'message',
 				'name'			=> 'fa_live_preview',
@@ -109,7 +109,7 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 			));
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Default Label', 'acf-font-awesome' ),
+				'label'			=> __( 'Default Label', 'museum-core' ),
 				'instructions'	=> 'Used internally to store the select label for the default icon. For performance reasons.',
 				'type'			=> 'text',
 				'name'			=> 'default_label',
@@ -118,7 +118,7 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 			));
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Default Icon', 'acf-font-awesome' ),
+				'label'			=> __( 'Default Icon', 'museum-core' ),
 				'instructions'	=> '',
 				'type'			=> 'select',
 				'name'			=> 'default_value',
@@ -133,49 +133,49 @@ if ( ! class_exists( 'acf_field_font_awesome' ) ) :
 			));
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Return Value', 'acf-font-awesome' ),
-				'instructions'	=> __( 'Specify the returned value on front end', 'acf-font-awesome' ),
+				'label'			=> __( 'Return Value', 'museum-core' ),
+				'instructions'	=> __( 'Specify the returned value on front end', 'museum-core' ),
 				'type'			=> 'radio',
 				'name'			=> 'save_format',
 				'choices'	=>	array(
-					'element'	=>	__( 'Icon Element', 'acf-font-awesome' ),
-					'class'		=>	__( 'Icon Class', 'acf-font-awesome' ),
-					'unicode'	=>	__( 'Icon Unicode', 'acf-font-awesome' ),
-					'object'	=>	__( 'Icon Object', 'acf-font-awesome' ),
+					'element'	=>	__( 'Icon Element', 'museum-core' ),
+					'class'		=>	__( 'Icon Class', 'museum-core' ),
+					'unicode'	=>	__( 'Icon Unicode', 'museum-core' ),
+					'object'	=>	__( 'Icon Object', 'museum-core' ),
 				)
 			));
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Allow Null?', 'acf-font-awesome' ),
+				'label'			=> __( 'Allow Null?', 'museum-core' ),
 				'instructions'	=> '',
 				'type'			=> 'radio',
 				'name'			=> 'allow_null',
 				'choices'	=>	array(
-					1	=>	__( 'Yes', 'acf-font-awesome' ),
-					0	=>	__( 'No', 'acf-font-awesome' )
+					1	=>	__( 'Yes', 'museum-core' ),
+					0	=>	__( 'No', 'museum-core' )
 				)
 			));
 
 			acf_render_field_setting( $field, array(
-				'label'			=> __( 'Show Icon Preview', 'acf-font-awesome' ),
-				'instructions'	=> __( 'Set to \'Yes\' to include a larger icon preview on any admin pages using this field.', 'acf-font-awesome' ),
+				'label'			=> __( 'Show Icon Preview', 'museum-core' ),
+				'instructions'	=> __( 'Set to \'Yes\' to include a larger icon preview on any admin pages using this field.', 'museum-core' ),
 				'type'			=> 'radio',
 				'name'			=> 'show_preview',
 				'choices'	=>	array(
-					1	=>	__( 'Yes', 'acf-font-awesome' ),
-					0	=>	__( 'No', 'acf-font-awesome' )
+					1	=>	__( 'Yes', 'museum-core' ),
+					0	=>	__( 'No', 'museum-core' )
 				)
 			));
 
 			if ( ! apply_filters( 'ACFFA_always_enqueue_fa', false ) ) {
 				acf_render_field_setting( $field, array(
-					'label'			=> __( 'Enqueue FontAwesome?', 'acf-font-awesome' ),
-					'instructions'	=> __( 'Set to \'Yes\' to enqueue FA in the footer on any pages using this field.', 'acf-font-awesome' ),
+					'label'			=> __( 'Enqueue FontAwesome?', 'museum-core' ),
+					'instructions'	=> __( 'Set to \'Yes\' to enqueue FA in the footer on any pages using this field.', 'museum-core' ),
 					'type'			=> 'radio',
 					'name'			=> 'enqueue_fa',
 					'choices'	=>	array(
-						1	=>	__( 'Yes', 'acf-font-awesome' ),
-						0	=>	__( 'No', 'acf-font-awesome' )
+						1	=>	__( 'Yes', 'museum-core' ),
+						0	=>	__( 'No', 'museum-core' )
 					)
 				));
 			}
